@@ -17,6 +17,39 @@
       ],
       "usage_instructions": "Type or paste your text into the box and the counters update instantly as you type. Use it to check essay lengths, tweet limits, meta descriptions or any text with a size limit. Everything is processed locally in your browser - your text is never sent anywhere.",
       "seed": true
+    },
+    {
+      "slug": "loan-emi-calculator",
+      "title": "Loan EMI Calculator",
+      "category": "finance",
+      "date_published": "2026-09-19",
+      "status": "published",
+      "h1": "Loan EMI Calculator",
+      "seo_description": "Calculate your loan's monthly EMI, total payment and interest instantly. Enter principal, rate and term to see results.",
+      "keywords": [
+        "loan emi calculator",
+        "monthly payment calculator",
+        "loan interest calculator",
+        "EMI calculator"
+      ],
+      "usage_instructions": "Enter the loan amount, annual interest rate and term in years, then click Calculate. The monthly payment, total payment and total interest will be shown below."
+    },
+    {
+      "slug": "temperature-converter",
+      "title": "Temperature Converter",
+      "category": "unit-conversion",
+      "date_published": "2026-09-19",
+      "status": "published",
+      "h1": "Temperature Converter",
+      "seo_description": "Quickly convert temperatures between Celsius, Fahrenheit, and Kelvin. Enter a value and select units to get instant results.",
+      "keywords": [
+        "temperature converter",
+        "celsius to fahrenheit",
+        "fahrenheit to kelvin",
+        "kelvin to celsius",
+        "unit conversion"
+      ],
+      "usage_instructions": "Enter a temperature value, select the source unit and the target unit, then click Convert. The result will appear below. Invalid inputs show a friendly error message."
     }
   ]
 }
