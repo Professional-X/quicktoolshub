@@ -19,6 +19,7 @@ from common import (
     normalize_text,
     parse_llm_json,
     registry_tools,
+    resolve_model,
     title_similarity,
     token_overlap,
     utc_now_iso,
@@ -95,7 +96,7 @@ def _llm_semantic_check(idea: dict, best_tool: dict | None) -> bool:
     )
     try:
         content = groq_chat(
-            config()["llm"]["idea_model"],
+            resolve_model("idea"),
             [{"role": "user", "content": prompt}],
             max_tokens=200,
             temperature=0.0,

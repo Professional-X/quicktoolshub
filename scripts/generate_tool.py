@@ -11,6 +11,7 @@ import re
 from common import (
     config,
     groq_chat,
+    resolve_model,
     slugify,
     truncate_chars,
 )
@@ -91,7 +92,7 @@ def generate_tool(idea: dict) -> tuple[str, dict]:
         output=idea.get("output", ""),
     )
     content = groq_chat(
-        cfg["code_model"],
+        resolve_model("code"),
         [{"role": "user", "content": prompt}],
         max_tokens=cfg.get("max_output_tokens_code", 6000),
         temperature=0.35,

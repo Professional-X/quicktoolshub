@@ -201,6 +201,65 @@ def _check_budget() -> None:
 
 # -------------------------------------------------------------------- LLM ---
 
+MODEL_FALLBACKS = {
+    "idea": [
+        "llama-3.1-8b-instant",
+        "llama-3.3-70b-versatile",
+        "openai/gpt-oss-20b",
+        "openai/gpt-oss-120b",
+        "gemma2-9b-it",
+        "qwen/qwen3-32b",
+    ],
+    "code": [
+        "llama-3.3-70b-versatile",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b",
+        "moonshotai/kimi-k2-instruct-0905",
+        "qwen/qwen3-32b",
+        "llama-3.1-8b-instant",
+    ],
+}
+
+_MODEL_CACHE = None
+
+
+def list_models() -> list:
+    """Model ids available to this account (cached per process)."""
+    global _MODEL_CACHE
+    if _MODEL_CACHE is None:
+        api_key = os.environ.get("LLM_API_KEY", "")
+        if not api_key:
+            raise RuntimeError("LLM_API_KEY environment variable is not set")
+        api_base = config()["llm"].get("api_base", "https://api.groq.com/openai/v1").rstrip("/")
+        resp = requests.get(f"{api_base}/models",
+                            headers={"Authorization": f"Bearer {api_key}"}, timeout=60)
+        if resp.status_code == 403:
+            raise RuntimeError(
+                "LLM API returned 403 Forbidden on /models - key revoked, "
+                "region-blocked or account restricted."
+            )
+        resp.raise_for_status()
+        _MODEL_CACHE = [m.get("id", "") for m in resp.json().get("data", [])]
+    return _MODEL_CACHE
+
+
+def resolve_model(kind: str) -> str:
+    """Resolve the configured model for 'idea'/'code' to one this account can
+    actually use, walking a fallback chain when models are deprecated."""
+    cfg = config()["llm"]
+    preferred = cfg["idea_model"] if kind == "idea" else cfg["code_model"]
+    available = list_models()
+    if preferred in available:
+        return preferred
+    for cand in MODEL_FALLBACKS.get(kind, []):
+        if cand in available:
+            return cand
+    for m in available:
+        if any(k in m for k in ("llama", "gpt-oss", "qwen", "kimi", "gemma")):
+            return m
+    raise RuntimeError(f"no usable chat model available; account models: {available[:20]}")
+
+
 def groq_chat(model: str, messages: list, max_tokens: int = 2000,
               temperature: float = 0.5, json_mode: bool = False,
               purpose: str = "") -> str:

@@ -1,8 +1,9 @@
 """Pre-flight validation for the daily run.
 
 Verifies the LLM_API_KEY works against the configured provider before the
-pipeline spends anything. Writes a human-readable diagnosis to the GitHub
-step summary when running in Actions, and exits non-zero on fatal problems.
+pipeline spends anything, resolves which models this account can actually
+use (models get deprecated over time), and writes a human-readable diagnosis
+to the GitHub step summary. Exits non-zero on fatal problems.
 """
 from __future__ import annotations
 
@@ -11,7 +12,14 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from common import config, groq_chat, registry_tools, utc_today  # noqa: E402
+from common import (  # noqa: E402
+    config,
+    groq_chat,
+    list_models,
+    registry_tools,
+    resolve_model,
+    utc_today,
+)
 
 
 def main() -> int:
@@ -23,32 +31,45 @@ def main() -> int:
         print("FATAL: LLM_API_KEY secret is not set")
         return 1
 
-    # cheap models endpoint style check via tiny completion
+    # ---- model discovery ---------------------------------------------------
     try:
-        reply = groq_chat(
-            cfg["idea_model"],
-            [{"role": "user", "content": "Reply with exactly: OK"}],
-            max_tokens=5,
-            temperature=0.0,
-            purpose="preflight",
-        )
-        lines.append(f"- Idea model `{cfg['idea_model']}`: reachable (reply: {reply.strip()[:20]!r})")
+        available = list_models()
+        lines.append(f"- Account models available: {len(available)}")
+        lines.append("  ```")
+        for m in available[:25]:
+            lines.append(f"  {m}")
+        lines.append("  ```")
+        idea_model = resolve_model("idea")
+        code_model = resolve_model("code")
+        lines.append(f"- Resolved idea model: `{idea_model}`")
+        lines.append(f"- Resolved code model: `{code_model}`")
+    except Exception as e:
+        print("\n".join(lines))
+        print(f"FATAL: model discovery failed - {e}")
+        summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary_path:
+            with open(summary_path, "a", encoding="utf-8") as f:
+                f.write(f"\n**FATAL (model discovery):** {e}\n")
+        return 1
+
+    # ---- live completion smoke tests ---------------------------------------
+    try:
+        reply = groq_chat(idea_model,
+                          [{"role": "user", "content": "Reply with exactly: OK"}],
+                          max_tokens=10, temperature=0.0, purpose="preflight")
+        lines.append(f"- Idea model smoke test: OK ({reply.strip()[:20]!r})")
     except Exception as e:
         ok = False
-        lines.append(f"- Idea model `{cfg['idea_model']}`: FAILED - {e}")
+        lines.append(f"- Idea model smoke test: FAILED - {e}")
 
     try:
-        reply = groq_chat(
-            cfg["code_model"],
-            [{"role": "user", "content": "Reply with exactly: OK"}],
-            max_tokens=5,
-            temperature=0.0,
-            purpose="preflight",
-        )
-        lines.append(f"- Code model `{cfg['code_model']}`: reachable (reply: {reply.strip()[:20]!r})")
+        reply = groq_chat(code_model,
+                          [{"role": "user", "content": "Reply with exactly: OK"}],
+                          max_tokens=10, temperature=0.0, purpose="preflight")
+        lines.append(f"- Code model smoke test: OK ({reply.strip()[:20]!r})")
     except Exception as e:
         ok = False
-        lines.append(f"- Code model `{cfg['code_model']}`: FAILED - {e}")
+        lines.append(f"- Code model smoke test: FAILED - {e}")
 
     reg = registry_tools()
     lines += [

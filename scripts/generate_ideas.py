@@ -16,6 +16,7 @@ from common import (
     log_append,
     parse_llm_json,
     registry_tools,
+    resolve_model,
     slugify,
 )
 
@@ -64,7 +65,7 @@ def propose_ideas(n: int | None = None) -> list:
     )
 
     content = groq_chat(
-        cfg["idea_model"],
+        resolve_model("idea"),
         [{"role": "user", "content": prompt}],
         max_tokens=cfg.get("max_output_tokens_ideas", 2000),
         temperature=0.85,
