@@ -1,0 +1,22 @@
+{
+  "tools": [
+    {
+      "slug": "word-counter",
+      "title": "Word Counter",
+      "category": "text",
+      "date_published": "2026-09-19",
+      "status": "published",
+      "h1": "Word Counter",
+      "seo_description": "Free online word counter. Count words, characters, sentences and paragraphs instantly as you type. No signup, runs in your browser.",
+      "keywords": [
+        "word counter",
+        "character count",
+        "sentence counter",
+        "word count tool",
+        "text counter"
+      ],
+      "usage_instructions": "Type or paste your text into the box and the counters update instantly as you type. Use it to check essay lengths, tweet limits, meta descriptions or any text with a size limit. Everything is processed locally in your browser - your text is never sent anywhere.",
+      "seed": true
+    }
+  ]
+}

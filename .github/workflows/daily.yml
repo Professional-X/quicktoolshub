@@ -1,0 +1,54 @@
+name: Daily Tool Factory
+
+on:
+  schedule:
+    # Daily at 02:17 UTC (off-peak). Manual runs via workflow_dispatch.
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-tool-factory
+  cancel-in-progress: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: playwright install --with-deps chromium
+
+      - name: Validate LLM API key
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: python scripts/validate_setup.py
+
+      - name: Run daily pipeline (Steps A-G)
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: python scripts/run_daily.py
+
+      - name: Upload daily run log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-log
+          path: logs/*.json
+          if-no-files-found: ignore

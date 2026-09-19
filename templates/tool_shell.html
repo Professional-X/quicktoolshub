@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>{{SEO_TITLE}}</title>
+<meta name="description" content="{{SEO_DESCRIPTION}}"/>
+<meta property="og:title" content="{{SEO_TITLE}}"/>
+<meta property="og:description" content="{{SEO_DESCRIPTION}}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="{{CANONICAL_URL}}"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="{{CANONICAL_URL}}"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EQ%3C/text%3E%3C/svg%3E"/>
+<script type="application/ld+json">{{JSONLD}}</script>
+<style>
+:root{--bg:#f5f7fa;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--accent:#2563eb;--accent-dark:#1e40af;--border:#e5e7eb;--radius:12px;--maxw:980px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img,iframe{max-width:100%}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header.site-header{background:var(--card);border-bottom:1px solid var(--border)}
+.site-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.logo{font-weight:800;font-size:19px;color:#111827;white-space:nowrap}
+.top-nav{display:flex;gap:16px;font-size:14px}
+.top-nav a{color:var(--muted);font-weight:600}
+.top-nav a:hover{color:var(--accent)}
+.ad-zone{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 8px;overflow:hidden}
+.ad-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af}
+@media (max-width:767px){.hide-mobile{display:none!important}}
+@media (min-width:768px){.hide-desktop{display:none!important}}
+.breadcrumb{font-size:13px;color:var(--muted);margin:16px 0 2px}
+.breadcrumb .sep{margin:0 6px;color:#d1d5db}
+h1{font-size:clamp(22px,4.5vw,30px);line-height:1.25;margin:8px 0 14px;color:#111827}
+.tool-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:0 1px 2px rgba(16,24,40,.05);min-height:220px}
+.how-to{background:#eef4ff;border:1px solid #dbe7ff;border-radius:var(--radius);padding:16px 20px;margin-top:18px}
+.how-to h2{margin:0 0 6px;font-size:17px;color:#1e40af}
+.how-to p{margin:0;color:#374151;font-size:15px}
+.related{margin-top:26px}
+.related h2{font-size:19px;margin:0 0 10px}
+.related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.related li{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:14.5px}
+.related a{font-weight:600}
+.ad-native{width:100%;max-width:728px}
+footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid var(--border)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:18px 0;color:var(--muted);font-size:13.5px}
+.footer-links{display:flex;gap:14px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-inner">
+    <a class="logo" href="{{HOMEPAGE_URL}}">{{SITE_NAME}}</a>
+    <nav class="top-nav">
+      <a href="{{HOMEPAGE_URL}}">All Tools</a>
+      <a href="{{CATEGORY_URL}}">{{CATEGORY_NAME}} Tools</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ad-zone" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <div class="hide-desktop">{{AD_TOP_DESKTOP}}</div>
+  <div class="hide-mobile">{{AD_TOP_MOBILE}}</div>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="{{HOMEPAGE_URL}}">Home</a><span class="sep">/</span><a href="{{CATEGORY_URL}}">{{CATEGORY_NAME}}</a><span class="sep">/</span><span aria-current="page">{{TITLE}}</span>
+  </nav>
+  <h1>{{H1}}</h1>
+  <div class="tool-card">
+{{TOOL_HTML}}
+  </div>
+
+  <section class="how-to">
+    <h2>How to use this tool</h2>
+    <p>{{USAGE_INSTRUCTIONS}}</p>
+  </section>
+
+  <div class="ad-zone" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-native">{{AD_NATIVE}}</div>
+  </div>
+
+  <section class="related">
+    <h2>Related tools</h2>
+    <ul>{{RELATED_LINKS}}</ul>
+  </section>
+
+  <div class="ad-zone hide-mobile" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    {{AD_FOOTER}}
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>&copy; {{YEAR}} {{SITE_NAME}}. All tools run entirely in your browser.</div>
+    <div class="footer-links">
+      <a href="{{HOMEPAGE_URL}}">Home</a>
+      <a href="{{DOMAIN}}/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+{{ANALYTICS}}
+</body>
+</html>

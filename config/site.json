@@ -1,0 +1,47 @@
+{
+  "site_name": "QuickToolsHub",
+  "tagline": "Free, instant, privacy-friendly web tools. Everything runs in your browser.",
+  "domain": "https://professional-x.github.io/quicktoolshub",
+  "ad_slots": {
+    "leaderboard_728x90": "<script>\n  atOptions = {\n    'key' : 'b8cb302039695a8ca6be0d1670ae3030',\n    'format' : 'iframe',\n    'height' : 90,\n    'width' : 728,\n    'params' : {}\n  };\n</script>\n<script src=\"https://versatilesentiment.com/b8cb302039695a8ca6be0d1670ae3030/invoke.js\"></script>",
+    "rectangle_300x250": "<script>\n  atOptions = {\n    'key' : '3e064c14d68f63c18b5aa4b6b1873c46',\n    'format' : 'iframe',\n    'height' : 250,\n    'width' : 300,\n    'params' : {}\n  };\n</script>\n<script src=\"https://versatilesentiment.com/3e064c14d68f63c18b5aa4b6b1873c46/invoke.js\"></script>",
+    "banner_468x60": "<script>\n  atOptions = {\n    'key' : '0ed8bf9af74609561a1e84bb22ed0e94',\n    'format' : 'iframe',\n    'height' : 60,\n    'width' : 468,\n    'params' : {}\n  };\n</script>\n<script src=\"https://versatilesentiment.com/0ed8bf9af74609561a1e84bb22ed0e94/invoke.js\"></script>",
+    "native_banner": "<script async=\"async\" data-cfasync=\"false\" src=\"https://versatilesentiment.com/5c991e90ba5b575e7b10c12fd4006cba/invoke.js\"></script>\n<div id=\"container-5c991e90ba5b575e7b10c12fd4006cba\"></div>"
+  },
+  "analytics_snippet": "",
+  "llm": {
+    "provider": "groq",
+    "api_base": "https://api.groq.com/openai/v1",
+    "idea_model": "llama-3.1-8b-instant",
+    "code_model": "llama-3.3-70b-versatile",
+    "max_ideas_per_day": 8,
+    "max_tools_published_per_day": 4,
+    "max_generation_attempts_per_day": 6,
+    "daily_token_budget": 200000,
+    "daily_cost_budget_usd": 2.0,
+    "max_output_tokens_ideas": 2000,
+    "max_output_tokens_code": 6000,
+    "price_per_mtok": {
+      "llama-3.1-8b-instant": { "input": 0.05, "output": 0.08 },
+      "llama-3.3-70b-versatile": { "input": 0.59, "output": 0.79 },
+      "_default": { "input": 1.0, "output": 3.0 }
+    }
+  },
+  "dedup": {
+    "reject_threshold": 0.8,
+    "ambiguous_zone": 0.6,
+    "max_llm_checks_per_day": 2
+  },
+  "categories": [
+    "text",
+    "math",
+    "finance",
+    "date-time",
+    "image",
+    "developer",
+    "unit-conversion",
+    "health",
+    "productivity",
+    "random-fun"
+  ]
+}

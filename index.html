@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QuickToolsHub — Free Online Tools</title>
+<meta name="description" content="QuickToolsHub: Free, instant, privacy-friendly web tools. Everything runs in your browser."/>
+<meta property="og:title" content="QuickToolsHub — Free Online Tools"/>
+<meta property="og:description" content="QuickToolsHub: Free, instant, privacy-friendly web tools. Everything runs in your browser."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://professional-x.github.io/quicktoolshub/"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="https://professional-x.github.io/quicktoolshub/"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EQ%3C/text%3E%3C/svg%3E"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "QuickToolsHub", "url": "https://professional-x.github.io/quicktoolshub/", "description": "Free, instant, privacy-friendly web tools. Everything runs in your browser."}</script>
+<style>
+:root{--bg:#f5f7fa;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--accent:#2563eb;--border:#e5e7eb;--radius:12px;--maxw:980px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header.site-header{background:var(--card);border-bottom:1px solid var(--border)}
+.site-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.logo{font-weight:800;font-size:19px;color:#111827;white-space:nowrap}
+.top-nav{display:flex;gap:16px;font-size:14px}
+.top-nav a{color:var(--muted);font-weight:600}
+.ad-zone{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 8px;overflow:hidden}
+.ad-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af}
+@media (max-width:767px){.hide-mobile{display:none!important}}
+@media (min-width:768px){.hide-desktop{display:none!important}}
+.hero{text-align:center;padding:36px 0 6px}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 8px;color:#111827}
+.hero p{color:var(--muted);margin:0 auto;max-width:600px}
+.search-wrap{max-width:600px;margin:22px auto 0;display:flex}
+.search-wrap input{flex:1;min-width:0;border:1px solid var(--border);border-right:none;border-radius:10px 0 0 10px;padding:12px 16px;font-size:16px;outline:none;background:#fff;color:var(--text)}
+.search-wrap input:focus{border-color:var(--accent)}
+.search-wrap button{border:1px solid var(--accent);background:var(--accent);color:#fff;padding:0 20px;border-radius:0 10px 10px 0;font-size:15px;font-weight:700;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:18px 0 6px}
+.chip{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:600}
+.chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.stats{color:var(--muted);font-size:14px;margin:14px 0 0}
+.cat-section{margin-top:30px}
+.cat-section > h2{font-size:21px;margin:0 0 4px;color:#111827}
+.cat-section > h2 a{color:#111827}
+.cat-desc{color:var(--muted);font-size:14px;margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.tile{display:block;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;color:var(--text);transition:box-shadow .15s,transform .15s}
+.tile:hover{box-shadow:0 6px 16px rgba(16,24,40,.08);text-decoration:none;transform:translateY(-1px)}
+.tile h3{margin:8px 0 4px;font-size:16.5px;color:#111827}
+.tile p{margin:0;font-size:13.8px;color:var(--muted)}
+.badge{display:inline-block;background:#eff6ff;color:#1d4ed8;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:2px 9px}
+.no-results{display:none;text-align:center;color:var(--muted);padding:30px 0}
+.coming-soon{margin-top:34px;background:var(--card);border:1px dashed var(--border);border-radius:var(--radius);padding:18px 20px}
+.coming-soon h2{font-size:18px;margin:0 0 8px;color:#111827}
+.coming-soon .links{display:flex;flex-wrap:wrap;gap:8px}
+.coming-soon .links a{background:#f3f4f6;border:1px solid var(--border);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--muted);font-weight:600}
+.ad-native{width:100%;max-width:728px}
+footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid var(--border)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:18px 0;color:var(--muted);font-size:13.5px}
+.footer-links{display:flex;gap:14px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-inner">
+    <a class="logo" href="https://professional-x.github.io/quicktoolshub/">QuickToolsHub</a>
+    <nav class="top-nav"><a href="https://professional-x.github.io/quicktoolshub/">All Tools</a></nav>
+  </div>
+</header>
+
+<div class="ad-zone">
+  <div class="ad-label">Advertisement</div>
+  <div class="hide-desktop"><script>
+  atOptions = {
+    'key' : 'b8cb302039695a8ca6be0d1670ae3030',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/b8cb302039695a8ca6be0d1670ae3030/invoke.js"></script></div>
+  <div class="hide-mobile"><script>
+  atOptions = {
+    'key' : '3e064c14d68f63c18b5aa4b6b1873c46',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/3e064c14d68f63c18b5aa4b6b1873c46/invoke.js"></script></div>
+</div>
+
+<main class="container">
+  <section class="hero">
+    <h1>Free Online Tools</h1>
+    <p>Free, instant, privacy-friendly web tools. Everything runs in your browser.</p>
+    <div class="search-wrap">
+      <input type="search" id="tool-search" placeholder="Search 1 tools: calculator, converter, generator..." aria-label="Search tools"/>
+      <button type="button" id="search-btn">Search</button>
+    </div>
+    <div class="chips">
+      <a class="chip" href="#cat-text">Text (1)</a>
+    </div>
+    <p class="stats">1 tools published &middot; all run 100% in your browser &middot; no signup</p>
+  </section>
+
+  <div class="ad-zone">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-native"><script async="async" data-cfasync="false" src="https://versatilesentiment.com/5c991e90ba5b575e7b10c12fd4006cba/invoke.js"></script>
+<div id="container-5c991e90ba5b575e7b10c12fd4006cba"></div></div>
+  </div>
+
+  <section class="cat-section" id="cat-text">
+    <h2><a href="https://professional-x.github.io/quicktoolshub/category/text/">Text Tools</a></h2>
+    <p class="cat-desc">Formatters, counters, case converters and other everyday text utilities.</p>
+    <div class="grid">
+      <a class="tile" href="https://professional-x.github.io/quicktoolshub/tools/word-counter/" data-search="word counter free online word counter. count words, characters, sentences and paragraphs instantly as you type. no signup, runs in your browser. text word counter character count sentence counter word count tool text counter">
+        <span class="badge">Text</span>
+        <h3>Word Counter</h3>
+        <p>Free online word counter. Count words, characters, sentences and paragraphs instantly as you type. No signup, runs in your browser.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="coming-soon">
+    <h2>More categories coming soon</h2>
+    <div class="links">
+      <a href="https://professional-x.github.io/quicktoolshub/category/math/">Math</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/finance/">Finance</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/date-time/">Date &amp; Time</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/image/">Image</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/developer/">Developer</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/unit-conversion/">Unit Conversion</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/health/">Health</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/productivity/">Productivity</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/random-fun/">Random &amp; Fun</a>
+    </div>
+  </section>
+
+  <p class="no-results" id="no-results">No tools match your search. Try a different keyword.</p>
+
+  <div class="ad-zone hide-mobile">
+    <div class="ad-label">Advertisement</div>
+    <script>
+  atOptions = {
+    'key' : '0ed8bf9af74609561a1e84bb22ed0e94',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/0ed8bf9af74609561a1e84bb22ed0e94/invoke.js"></script>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>&copy; 2026 QuickToolsHub. All tools run entirely in your browser.</div>
+    <div class="footer-links">
+      <a href="https://professional-x.github.io/quicktoolshub/">Home</a>
+      <a href="https://professional-x.github.io/quicktoolshub/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var input=document.getElementById('tool-search');
+  var btn=document.getElementById('search-btn');
+  if(!input)return;
+  var tiles=Array.prototype.slice.call(document.querySelectorAll('.tile[data-search]'));
+  var sections=Array.prototype.slice.call(document.querySelectorAll('.cat-section'));
+  var none=document.getElementById('no-results');
+  function runFilter(){
+    var q=input.value.trim().toLowerCase();
+    var visible=0;
+    tiles.forEach(function(t){var show=!q||t.getAttribute('data-search').indexOf(q)!==-1;t.style.display=show?'':'none';if(show)visible++;});
+    sections.forEach(function(s){var any=s.querySelector('.tile:not([style*="none"])');s.style.display=any?'':'none';});
+    if(none)none.style.display=visible?'none':'block';
+  }
+  input.addEventListener('input',runFilter);
+  if(btn)btn.addEventListener('click',runFilter);
+})();
+</script>
+
+</body>
+</html>

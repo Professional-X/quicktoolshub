@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "slug": "text",
+      "name": "Text",
+      "description": "Formatters, counters, case converters and other everyday text utilities."
+    },
+    {
+      "slug": "math",
+      "name": "Math",
+      "description": "Calculators and solvers for everyday math problems."
+    },
+    {
+      "slug": "finance",
+      "name": "Finance",
+      "description": "Loan, savings, tax and budgeting calculators."
+    },
+    {
+      "slug": "date-time",
+      "name": "Date & Time",
+      "description": "Date difference, age, countdown and timezone helpers."
+    },
+    {
+      "slug": "image",
+      "name": "Image",
+      "description": "Client-side image resize, convert and compress tools."
+    },
+    {
+      "slug": "developer",
+      "name": "Developer",
+      "description": "Formatters, encoders and generators for developers."
+    },
+    {
+      "slug": "unit-conversion",
+      "name": "Unit Conversion",
+      "description": "Convert length, weight, temperature, data and more."
+    },
+    {
+      "slug": "health",
+      "name": "Health",
+      "description": "BMI, calories and other everyday health calculators."
+    },
+    {
+      "slug": "productivity",
+      "name": "Productivity",
+      "description": "Timers, checklists and small workflow helpers."
+    },
+    {
+      "slug": "random-fun",
+      "name": "Random & Fun",
+      "description": "Random pickers, generators and novelty tools."
+    }
+  ]
+}
