@@ -284,7 +284,7 @@ def groq_chat(model: str, messages: list, max_tokens: int = 2000,
         body["response_format"] = {"type": "json_object"}
 
     last_error = None
-    for attempt in range(2):  # one retry on transient errors
+    for attempt in range(3):  # retries with backoff (rate limits are often per-minute)
         try:
             resp = requests.post(
                 f"{api_base}/chat/completions",
@@ -295,6 +295,10 @@ def groq_chat(model: str, messages: list, max_tokens: int = 2000,
             )
             if resp.status_code == 429 or resp.status_code >= 500:
                 last_error = f"HTTP {resp.status_code}: {resp.text[:300]}"
+                if attempt < 2:
+                    import time
+                    time.sleep(35 if resp.status_code == 429 else 10)
+                    continue
                 raise requests.RequestException(last_error)
             if resp.status_code == 403:
                 raise RuntimeError(
