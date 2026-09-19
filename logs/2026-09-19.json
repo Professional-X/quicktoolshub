@@ -25,6 +25,15 @@
         "2026-09-19T17:12:55+00:00 PUBLISHED sentence-length-analyzer",
         "2026-09-19T17:12:55+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-19T20:40:30+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-19T20:40:32+00:00 Step A: proposed 8 ideas",
+        "2026-09-19T20:40:32+00:00 Step B: 8 ideas survived dedup",
+        "2026-09-19T20:40:32+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -210,9 +219,104 @@
         ],
         "output": "BMI value and category"
       }
+    ],
+    [
+      {
+        "title": "Time Zone Converter",
+        "slug": "time-zone-converter",
+        "category": "date-time",
+        "one_line_pitch": "Convert times between multiple time zones instantly.",
+        "inputs": [
+          "Date and time",
+          "Source time zone",
+          "Target time zone"
+        ],
+        "output": "Converted local time in target zone."
+      },
+      {
+        "title": "BMI Calculator",
+        "slug": "bmi-calculator",
+        "category": "health",
+        "one_line_pitch": "Calculate Body Mass Index from weight and height.",
+        "inputs": [
+          "Weight (kg or lbs)",
+          "Height (cm or inches)"
+        ],
+        "output": "BMI value and weight category."
+      },
+      {
+        "title": "Credit Score Range Estimator",
+        "slug": "credit-score-estimator",
+        "category": "finance",
+        "one_line_pitch": "Estimate credit score range based on credit history.",
+        "inputs": [
+          "Monthly debt-to-income ratio",
+          "Number of open accounts",
+          "Credit utilization (%)"
+        ],
+        "output": "Estimated credit score range."
+      },
+      {
+        "title": "Base64 Encoder/Decoder",
+        "slug": "base64-encoder-decoder",
+        "category": "developer",
+        "one_line_pitch": "Encode or decode text to/from Base64 format.",
+        "inputs": [
+          "Text input",
+          "Encode or Decode selection"
+        ],
+        "output": "Base64 result or decoded text."
+      },
+      {
+        "title": "Palindrome Checker",
+        "slug": "palindrome-checker",
+        "category": "text",
+        "one_line_pitch": "Check if a string is a palindrome, ignoring spaces and punctuation.",
+        "inputs": [
+          "String"
+        ],
+        "output": "True/False result."
+      },
+      {
+        "title": "Random Password Generator",
+        "slug": "random-password-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Generate strong passwords with custom length and character sets.",
+        "inputs": [
+          "Password length",
+          "Include uppercase",
+          "Include numbers",
+          "Include symbols"
+        ],
+        "output": "Generated password."
+      },
+      {
+        "title": "SVG Color Picker",
+        "slug": "svg-color-picker",
+        "category": "image",
+        "one_line_pitch": "Pick colors from an SVG image and export hex codes.",
+        "inputs": [
+          "SVG file upload",
+          "Click on element"
+        ],
+        "output": "Hex color code and element details."
+      },
+      {
+        "title": "Simple Interest Calculator",
+        "slug": "simple-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Compute simple interest, total amount, and rate.",
+        "inputs": [
+          "Principal",
+          "Rate (%)",
+          "Time (years)"
+        ],
+        "output": "Interest amount and total payable."
+      }
     ]
   ],
   "ideas_rejected": [
+    [],
     [],
     []
   ],
@@ -427,10 +531,37 @@
       "completion_tokens": 3211,
       "total_tokens": 4156,
       "est_cost_usd": 0.010578
+    },
+    {
+      "time": "2026-09-19T20:40:30+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-19T20:40:30+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-19T20:40:32+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 542,
+      "completion_tokens": 1268,
+      "total_tokens": 1810,
+      "est_cost_usd": 0.004346
     }
   ],
   "budget": {
-    "tokens": 25161,
-    "usd": 0.062201
+    "tokens": 27143,
+    "usd": 0.066759
   }
 }
