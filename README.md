@@ -68,3 +68,29 @@ python scripts/build_sitemap_and_home.py   # rebuild static pages only
 
 `git` commit runs locally too; pushing requires the CI environment or
 `PUSH_ENABLED=1` plus an `origin` remote.
+
+## Publishing schedule
+
+The pipeline runs **3 times a day** (02:17, 10:17, 18:17 UTC — 07:47 / 15:47 /
+23:47 IST), defined as literal cron entries in `.github/workflows/daily.yml`.
+Daily publish caps are shared across all runs of the same UTC day, so the
+worst case per day is still `max_tools_published_per_day`.
+
+The public **schedule page** (`/schedule/`) is rebuilt from
+`config/site.json` -> `schedule.times_utc` on every run and shows:
+
+- the exact run times (UTC + configured display timezone),
+- a live countdown to the next batch,
+- how the pipeline works, and
+- the publish history grouped by day (from `registry.json`).
+
+To change the schedule: edit both the cron entries in `daily.yml` and
+`schedule.times_utc` in `config/site.json`, then push — GitHub requires
+literal cron values in workflow files, so there is no runtime override.
+
+## Search-engine verification
+
+`config/site.json` -> `google_site_verification` is injected as a
+`<meta name="google-site-verification">` tag into the head of every generated
+page (home, schedule, categories, tools). To verify the site in Google Search
+Console, just replace that value — no template edits needed.

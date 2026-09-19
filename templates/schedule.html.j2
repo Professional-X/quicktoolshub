@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+{% if site.google_verification %}<meta name="google-site-verification" content="{{ site.google_verification }}"/>{% endif %}
+<title>Publishing Schedule — {{ site.name }}</title>
+<meta name="description" content="{{ site.meta_description }}"/>
+<meta property="og:title" content="Publishing Schedule — {{ site.name }}"/>
+<meta property="og:description" content="{{ site.meta_description }}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="{{ site.domain }}/schedule/"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="{{ site.domain }}/schedule/"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EQ%3C/text%3E%3C/svg%3E"/>
+<script type="application/ld+json">{{ jsonld | safe }}</script>
+<style>
+:root{--bg:#f5f7fa;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--accent:#2563eb;--accent-dark:#1e40af;--border:#e5e7eb;--radius:12px;--maxw:980px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header.site-header{background:var(--card);border-bottom:1px solid var(--border)}
+.site-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.logo{font-weight:800;font-size:19px;color:#111827;white-space:nowrap}
+.top-nav{display:flex;gap:16px;font-size:14px}
+.top-nav a{color:var(--muted);font-weight:600}
+.top-nav a:hover{color:var(--accent)}
+.top-nav a[aria-current="page"]{color:var(--accent)}
+.ad-zone{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 8px;overflow:hidden}
+.ad-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af}
+@media (max-width:767px){.hide-mobile{display:none!important}}
+@media (min-width:768px){.hide-desktop{display:none!important}}
+.breadcrumb{font-size:13px;color:var(--muted);margin:16px 0 2px}
+.breadcrumb .sep{margin:0 6px;color:#d1d5db}
+h1{font-size:clamp(22px,4.5vw,30px);line-height:1.25;margin:8px 0 10px;color:#111827}
+.intro{color:var(--muted);margin:0 0 18px;max-width:640px}
+.badge{display:inline-block;background:#eff6ff;color:#1d4ed8;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:2px 9px;text-decoration:none}
+.next-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:18px}
+.next-card h2{margin:0 0 6px;font-size:18px;color:#111827}
+.next-time{font-size:22px;font-weight:800;color:var(--accent-dark);margin:6px 0 2px}
+.next-sub{color:var(--muted);font-size:14px;margin:0}
+.times-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:16px 0 0}
+.time-card{background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.time-card .run{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280}
+.time-card .utc{font-size:20px;font-weight:800;color:#111827;margin:4px 0 0}
+.time-card .loc{font-size:13.5px;color:var(--accent-dark);font-weight:700;margin-top:2px}
+.time-card .ist-note{font-size:12px;color:var(--muted);margin-top:2px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 24px}
+.fact{background:var(--card);border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:600;color:#374151}
+.how{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
+.how h2{margin:0 0 10px;font-size:19px;color:#111827}
+.how ol{margin:0;padding-left:22px;color:#374151}
+.how li{margin-bottom:7px;font-size:15px}
+.how li:last-child{margin-bottom:0}
+.history h2{font-size:19px;margin:0 0 4px;color:#111827}
+.history .history-sub{color:var(--muted);font-size:14px;margin:0 0 14px}
+.day-block{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:12px}
+.day-block h3{margin:0 0 8px;font-size:15.5px;color:#111827;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.day-block h3 .pill{background:#f3f4f6;border:1px solid var(--border);color:var(--muted);font-size:11px;font-weight:700;border-radius:999px;padding:1px 8px}
+.day-block ul{list-style:none;margin:0;padding:0}
+.day-block li{padding:6px 0;border-top:1px solid #f1f5f9;font-size:14.5px}
+.day-block li:first-child{border-top:none}
+.day-block li .cat{color:var(--muted);font-size:12.5px;margin-left:6px}
+.empty-history{background:var(--card);border:1px dashed var(--border);border-radius:var(--radius);padding:22px;text-align:center;color:var(--muted)}
+.gate-note{color:var(--muted);font-size:13.5px;margin:10px 0 0}
+.ad-native{width:100%;max-width:728px}
+footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid var(--border)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:18px 0;color:var(--muted);font-size:13.5px}
+.footer-links{display:flex;gap:14px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-inner">
+    <a class="logo" href="{{ site.domain }}/{{ site.base_path }}">{{ site.name }}</a>
+    <nav class="top-nav">
+      <a href="{{ site.domain }}/{{ site.base_path }}">All Tools</a>
+      <a href="{{ site.domain }}/schedule/" aria-current="page">Schedule</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ad-zone">
+  <div class="ad-label">Advertisement</div>
+  <div class="hide-desktop">{{ ad_top_desktop | safe }}</div>
+  <div class="hide-mobile">{{ ad_top_mobile | safe }}</div>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ site.domain }}/{{ site.base_path }}">Home</a><span class="sep">/</span><span aria-current="page">Schedule</span>
+  </nav>
+  <h1>Publishing Schedule &mdash; new tools {{ schedule_count }}x a day</h1>
+  <p class="intro">{{ site.name }} runs a fully automated pipeline that invents, builds, tests and publishes small browser tools &mdash; no humans in the loop. Every run can add up to {{ max_per_day }} new tools; anything that fails the quality gate is silently discarded, so you only ever see working tools.</p>
+
+  <div class="next-card">
+    <h2>Next batch</h2>
+    <p class="next-time" id="next-batch">checking&hellip;</p>
+    <p class="next-sub" id="next-batch-sub">Times below are fixed every day (UTC).</p>
+  </div>
+
+  <div class="times-grid">
+    {% for t in schedule_times %}
+    <div class="time-card">
+      <div class="run">Run {{ loop.index }} of {{ schedule_count }}</div>
+      <div class="utc">{{ t.utc }} UTC</div>
+      <div class="loc">{{ t.local }} {{ t.label }}</div>
+      <div class="ist-note">same time, every day</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <p class="facts" style="margin-top:18px">
+    <span class="fact">{{ schedule_count }} runs / day</span>
+    <span class="fact">up to {{ max_per_day }} tools / day</span>
+    <span class="fact">{{ total_tools }} tools live now</span>
+    <span class="fact">quality-gated before publish</span>
+  </p>
+
+  <section class="how">
+    <h2>How each run works</h2>
+    <ol>
+      <li><strong>Ideas</strong> &mdash; a small LLM proposes candidate tool ideas based on what the site already has.</li>
+      <li><strong>Dedup</strong> &mdash; near-duplicates of existing tools are dropped (token overlap + title similarity + an LLM judge for borderline cases).</li>
+      <li><strong>Generation</strong> &mdash; a code model writes the tool as a self-contained HTML fragment with a strict structure contract.</li>
+      <li><strong>Quality gate</strong> &mdash; headless Chromium runs functional tests, accessibility and mobile-layout checks; zero-JS-error is mandatory.</li>
+      <li><strong>Publish</strong> &mdash; passing tools are wrapped in the site shell (SEO + ad slots), registered and the site is rebuilt.</li>
+      <li><strong>Ship</strong> &mdash; everything is committed and pushed; GitHub Pages serves the new pages within minutes.</li>
+    </ol>
+  </section>
+
+  <div class="ad-zone">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-native">{{ ad_native | safe }}</div>
+  </div>
+
+  <section class="history">
+    <h2>Recently published</h2>
+    <p class="history-sub">What the pipeline actually shipped, newest first (latest {{ history | length }} publishing day{{ 's' if history | length != 1 else '' }} shown).</p>
+    {% if history %}
+      {% for day in history %}
+      <div class="day-block">
+        <h3>{{ day.label }} <span class="pill">{{ day.tools | length }} tool{{ 's' if day.tools | length != 1 else '' }}</span></h3>
+        <ul>
+          {% for t in day.tools %}
+          <li><a href="{{ t.url }}">{{ t.title }}</a><span class="cat">{{ t.category_name }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+      <p class="gate-note">Some days show nothing new: if every candidate fails the quality gate or LLM rate limits are hit, zero publications is the correct, safe outcome &mdash; the next run simply tries again.</p>
+    {% else %}
+      <div class="empty-history">No tools published yet &mdash; the first batch lands at the next scheduled run above.</div>
+    {% endif %}
+  </section>
+
+  <div class="ad-zone hide-mobile">
+    <div class="ad-label">Advertisement</div>
+    {{ ad_footer | safe }}
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>&copy; {{ year }} {{ site.name }}. All tools run entirely in your browser.</div>
+    <div class="footer-links">
+      <a href="{{ site.domain }}/{{ site.base_path }}">Home</a>
+      <a href="{{ site.domain }}/schedule/">Schedule</a>
+      <a href="{{ site.domain }}/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var times={{ next_runs_json | safe }};
+  if(!times.length)return;
+  function nextRun(){
+    var now=new Date(), best=null;
+    for(var i=0;i<times.length;i++){
+      var p=String(times[i]).split(':');
+      var h=parseInt(p[0],10)||0, m=parseInt(p[1],10)||0;
+      var d=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate(),h,m));
+      if(d<=now) d=new Date(d.getTime()+86400000);
+      if(!best||d<best)best=d;
+    }
+    return best;
+  }
+  function pad(n){return (n<10?'0':'')+n;}
+  function fmt(d){
+    var diff=Math.max(0,d-new Date());
+    var mins=Math.floor(diff/60000), h=Math.floor(mins/60), m=mins%60;
+    var utc=pad(d.getUTCHours())+':'+pad(d.getUTCMinutes())+' UTC';
+    var local=d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+    var inStr=h>0?('in '+h+'h '+m+'m'):('in '+m+' min');
+    return inStr+' \u2014 '+utc+' ('+local+' your time)';
+  }
+  var el=document.getElementById('next-batch');
+  if(!el)return;
+  function tick(){el.textContent=fmt(nextRun());}
+  tick();
+  setInterval(tick,30000);
+})();
+</script>
+{{ analytics | safe }}
+</body>
+</html>

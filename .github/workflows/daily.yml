@@ -2,8 +2,12 @@ name: Daily Tool Factory
 
 on:
   schedule:
-    # Daily at 02:17 UTC (off-peak). Manual runs via workflow_dispatch.
+    # Schedule feature: multiple runs per day, UTC times (07:47 / 15:47 / 23:47 IST).
+    # Keep in sync with config/site.json -> schedule.times_utc.
+    # Daily publish caps are shared across all runs of the same UTC day.
     - cron: "17 2 * * *"
+    - cron: "17 10 * * *"
+    - cron: "17 18 * * *"
   workflow_dispatch:
 
 permissions:

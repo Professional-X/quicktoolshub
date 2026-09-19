@@ -64,6 +64,7 @@ def inject_shell(slug: str, tool_html: str, meta: dict) -> str:
         "CATEGORY_NAME": html_escape(cat_name),
         "CATEGORY_URL": html_escape(f"{dom}/category/{cat_slug}/"),
         "HOMEPAGE_URL": html_escape(f"{dom}/"),
+        "SCHEDULE_URL": html_escape(f"{dom}/schedule/"),
         "SITE_NAME": html_escape(cfg["site_name"]),
         "DOMAIN": html_escape(dom),
         "YEAR": utc_today()[:4],
@@ -72,6 +73,11 @@ def inject_shell(slug: str, tool_html: str, meta: dict) -> str:
         ),
         "TOOL_HTML": tool_html,
         "JSONLD": jsonld_str,
+        "GOOGLE_VERIFICATION": (
+            f'<meta name="google-site-verification" '
+            f'content="{html_escape(cfg.get("google_site_verification", ""))}"/>'
+            if cfg.get("google_site_verification") else ""
+        ),
         "RELATED_LINKS": _related_links(slug, cat_slug),
         "AD_TOP_DESKTOP": ads["leaderboard_728x90"],
         "AD_TOP_MOBILE": ads["rectangle_300x250"],

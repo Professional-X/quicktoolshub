@@ -1,6 +1,13 @@
 {
   "site_name": "QuickToolsHub",
   "tagline": "Free, instant, privacy-friendly web tools. Everything runs in your browser.",
+  "google_site_verification": "G2vh7thaFzRth3rRTxefSY6bvn5haiJBrooxvAYmj1M",
+  "schedule": {
+    "times_utc": ["02:17", "10:17", "18:17"],
+    "display_timezone_label": "IST",
+    "display_utc_offset_minutes": 330,
+    "note": "UTC times when the pipeline runs. Keep in sync with the cron entries in .github/workflows/daily.yml (GitHub requires literal cron values there). The homepage 'next batch' countdown and /schedule/ page are generated from this list. Daily publish caps are shared across all runs of the same UTC day."
+  },
   "domain": "https://professional-x.github.io/quicktoolshub",
   "ad_slots": {
     "leaderboard_728x90": "<script>\n  atOptions = {\n    'key' : 'b8cb302039695a8ca6be0d1670ae3030',\n    'format' : 'iframe',\n    'height' : 90,\n    'width' : 728,\n    'params' : {}\n  };\n</script>\n<script src=\"https://versatilesentiment.com/b8cb302039695a8ca6be0d1670ae3030/invoke.js\"></script>",

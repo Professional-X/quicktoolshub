@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+{% if site.google_verification %}<meta name="google-site-verification" content="{{ site.google_verification }}"/>{% endif %}
 <title>{{ site.name }} — Free Online Tools</title>
 <meta name="description" content="{{ site.meta_description }}"/>
 <meta property="og:title" content="{{ site.name }} — Free Online Tools"/>
@@ -41,6 +42,10 @@ header.site-header{background:var(--card);border-bottom:1px solid var(--border)}
 .chip{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:600}
 .chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
 .stats{color:var(--muted);font-size:14px;margin:14px 0 0}
+.schedule-line{margin:8px 0 0;color:var(--muted);font-size:14px}
+.schedule-line .badge{margin-right:4px;text-decoration:none}
+.schedule-line .badge:hover{background:#dbeafe;color:#1d4ed8;text-decoration:none}
+.schedule-line strong{color:#1e40af}
 .cat-section{margin-top:30px}
 .cat-section > h2{font-size:21px;margin:0 0 4px;color:#111827}
 .cat-section > h2 a{color:#111827}
@@ -66,7 +71,7 @@ footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid v
 <header class="site-header">
   <div class="container site-inner">
     <a class="logo" href="{{ site.domain }}/{{ site.base_path }}">{{ site.name }}</a>
-    <nav class="top-nav"><a href="{{ site.domain }}/{{ site.base_path }}">All Tools</a></nav>
+    <nav class="top-nav"><a href="{{ site.domain }}/{{ site.base_path }}">All Tools</a><a href="{{ site.domain }}/schedule/">Schedule</a></nav>
   </div>
 </header>
 
@@ -90,6 +95,10 @@ footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid v
       {% endfor %}
     </div>
     <p class="stats">{{ total_tools }} tools published &middot; all run 100% in your browser &middot; no signup</p>
+    <p class="schedule-line" id="schedule-line">
+      <a class="badge" href="{{ site.domain }}/schedule/">Schedule</a>
+      New tools added automatically {{ schedule_count }}x every day &middot; next batch: <strong id="next-batch">checking&hellip;</strong>
+    </p>
   </section>
 
   <div class="ad-zone">
@@ -137,6 +146,7 @@ footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid v
     <div>&copy; {{ year }} {{ site.name }}. All tools run entirely in your browser.</div>
     <div class="footer-links">
       <a href="{{ site.domain }}/{{ site.base_path }}">Home</a>
+      <a href="{{ site.domain }}/schedule/">Schedule</a>
       <a href="{{ site.domain }}/sitemap.xml">Sitemap</a>
     </div>
   </div>
@@ -158,6 +168,33 @@ footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid v
   }
   input.addEventListener('input',runFilter);
   if(btn)btn.addEventListener('click',runFilter);
+})();
+(function(){
+  var times={{ schedule_times_json | safe }};
+  if(!times.length)return;
+  function nextRun(){
+    var now=new Date(), best=null;
+    for(var i=0;i<times.length;i++){
+      var p=String(times[i]).split(':');
+      var h=parseInt(p[0],10)||0, m=parseInt(p[1],10)||0;
+      var d=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate(),h,m));
+      if(d<=now) d=new Date(d.getTime()+86400000);
+      if(!best||d<best)best=d;
+    }
+    return best;
+  }
+  function fmt(d){
+    var mins=Math.max(0,Math.round((d-new Date())/60000));
+    var h=Math.floor(mins/60), m=mins%60;
+    var local=d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+    if(h>0)return local+' (in '+h+'h '+m+'m)';
+    return local+' (in '+m+' min)';
+  }
+  var el=document.getElementById('next-batch');
+  if(!el)return;
+  function tick(){el.textContent=fmt(nextRun());}
+  tick();
+  setInterval(tick,30000);
 })();
 </script>
 {{ analytics | safe }}

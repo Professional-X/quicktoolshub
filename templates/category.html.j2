@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+{% if site.google_verification %}<meta name="google-site-verification" content="{{ site.google_verification }}"/>{% endif %}
 <title>{{ c.name }} Tools — {{ site.name }}</title>
 <meta name="description" content="Free online {{ c.name | lower }} tools. {{ c.description }}"/>
 <link rel="canonical" href="{{ site.domain }}/category/{{ c.slug }}/"/>
@@ -41,7 +42,7 @@ footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid v
 <header class="site-header">
   <div class="container site-inner">
     <a class="logo" href="{{ site.domain }}/{{ site.base_path }}">{{ site.name }}</a>
-    <nav class="top-nav"><a href="{{ site.domain }}/{{ site.base_path }}">All Tools</a></nav>
+    <nav class="top-nav"><a href="{{ site.domain }}/{{ site.base_path }}">All Tools</a><a href="{{ site.domain }}/schedule/">Schedule</a></nav>
   </div>
 </header>
 
@@ -85,6 +86,7 @@ footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid v
     <div>&copy; {{ year }} {{ site.name }}. All tools run entirely in your browser.</div>
     <div class="footer-links">
       <a href="{{ site.domain }}/{{ site.base_path }}">Home</a>
+      <a href="{{ site.domain }}/schedule/">Schedule</a>
       <a href="{{ site.domain }}/sitemap.xml">Sitemap</a>
     </div>
   </div>
