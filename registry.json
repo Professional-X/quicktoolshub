@@ -50,6 +50,23 @@
         "unit conversion"
       ],
       "usage_instructions": "Enter a temperature value, select the source unit and the target unit, then click Convert. The result will appear below. Invalid inputs show a friendly error message."
+    },
+    {
+      "slug": "sentence-length-analyzer",
+      "title": "Sentence Length Analyzer",
+      "category": "text",
+      "date_published": "2026-09-19",
+      "status": "published",
+      "h1": "Sentence Length Analyzer",
+      "seo_description": "Enter a paragraph to instantly see the shortest, longest and average sentence lengths in words.",
+      "keywords": [
+        "sentence length",
+        "analyze sentences",
+        "average sentence length",
+        "shortest sentence",
+        "longest sentence"
+      ],
+      "usage_instructions": "Paste or type a paragraph into the box and click “Analyze”. The tool will display the shortest, longest, and average sentence lengths in words."
     }
   ]
 }
