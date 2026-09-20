@@ -67,6 +67,40 @@
         "longest sentence"
       ],
       "usage_instructions": "Paste or type a paragraph into the box and click “Analyze”. The tool will display the shortest, longest, and average sentence lengths in words."
+    },
+    {
+      "slug": "quadratic-equation-solver",
+      "title": "Quadratic Equation Solver",
+      "category": "math",
+      "date_published": "2026-09-20",
+      "status": "published",
+      "h1": "Quadratic Equation Solver",
+      "seo_description": "Quickly solve ax² + bx + c = 0 for real or complex roots. Enter coefficients and get accurate results instantly.",
+      "keywords": [
+        "quadratic equation solver",
+        "solve ax^2+bx+c",
+        "real roots",
+        "complex roots",
+        "math calculator"
+      ],
+      "usage_instructions": "Enter the coefficients a, b, and c, then click “Calculate”. The tool will display the roots, handling real and complex solutions. Errors are shown if inputs are missing or invalid."
+    },
+    {
+      "slug": "json-beautifier",
+      "title": "JSON Beautifier",
+      "category": "developer",
+      "date_published": "2026-09-20",
+      "status": "published",
+      "h1": "JSON Beautifier",
+      "seo_description": "Paste your minified JSON and instantly get a readable, pretty-printed version. No external services, works entirely in your browser.",
+      "keywords": [
+        "JSON formatter",
+        "beautify JSON",
+        "pretty print JSON",
+        "online JSON beautifier",
+        "format JSON"
+      ],
+      "usage_instructions": "Paste minified JSON into the box below and click “Beautify” to format it with indentation. The formatted result appears below."
     }
   ]
 }
