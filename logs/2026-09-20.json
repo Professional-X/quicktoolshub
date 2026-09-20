@@ -15,6 +15,17 @@
         "2026-09-20T07:47:26+00:00 PUBLISHED json-beautifier",
         "2026-09-20T07:47:26+00:00 generation attempt cap reached (6); stopping for the day"
       ]
+    },
+    {
+      "started_at": "2026-09-20T14:14:35+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-20T14:14:37+00:00 Step A: proposed 8 ideas",
+        "2026-09-20T14:14:37+00:00 Step B: 7 ideas survived dedup",
+        "2026-09-20T14:14:46+00:00 PUBLISHED bmi-calculator",
+        "2026-09-20T14:14:56+00:00 PUBLISHED date-difference-calculator",
+        "2026-09-20T14:14:56+00:00 publish cap reached (4/day); skipping remaining 5 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -110,10 +121,109 @@
         ],
         "output": "BMI value and weight category."
       }
+    ],
+    [
+      {
+        "title": "BMI Calculator",
+        "slug": "bmi-calculator",
+        "category": "health",
+        "one_line_pitch": "Calculate Body Mass Index from weight and height.",
+        "inputs": [
+          "Weight (kg)",
+          "Height (cm)"
+        ],
+        "output": "BMI and category"
+      },
+      {
+        "title": "Date Difference Calculator",
+        "slug": "date-difference-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Find days, weeks, and months between two dates.",
+        "inputs": [
+          "Start date",
+          "End date"
+        ],
+        "output": "Difference in days, weeks, months"
+      },
+      {
+        "title": "Password Strength Meter",
+        "slug": "password-strength-meter",
+        "category": "developer",
+        "one_line_pitch": "Assess password strength and give suggestions.",
+        "inputs": [
+          "Password"
+        ],
+        "output": "Strength score and feedback"
+      },
+      {
+        "title": "Rot13 Encoder/Decoder",
+        "slug": "rot13-encoder-decoder",
+        "category": "text",
+        "one_line_pitch": "Encode or decode text using Rot13 cipher.",
+        "inputs": [
+          "Text",
+          "Mode (Encode/Decode)"
+        ],
+        "output": "Converted text"
+      },
+      {
+        "title": "Fraction to Decimal Converter",
+        "slug": "fraction-to-decimal-converter",
+        "category": "math",
+        "one_line_pitch": "Convert a fraction to decimal and percentage.",
+        "inputs": [
+          "Numerator",
+          "Denominator"
+        ],
+        "output": "Decimal value and percent"
+      },
+      {
+        "title": "LCM Calculator",
+        "slug": "lcm-calculator",
+        "category": "math",
+        "one_line_pitch": "Find the least common multiple of two or more numbers.",
+        "inputs": [
+          "Numbers (comma separated)"
+        ],
+        "output": "LCM"
+      },
+      {
+        "title": "Simple Interest Calculator",
+        "slug": "simple-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Compute simple interest and total amount.",
+        "inputs": [
+          "Principal",
+          "Rate (%)",
+          "Time (years)"
+        ],
+        "output": "Simple interest and total amount"
+      },
+      {
+        "title": "Random Password Generator",
+        "slug": "random-password-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Generate random passwords of desired length and complexity.",
+        "inputs": [
+          "Length",
+          "Include numbers",
+          "Include symbols",
+          "Include uppercase"
+        ],
+        "output": "Generated password"
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "lcm-calculator",
+        "title": "LCM Calculator",
+        "reason": "rejected: duplicate of same-batch idea 'BMI Calculator'",
+        "at": "2026-09-20T14:14:37+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -369,10 +479,55 @@
       "completion_tokens": 2103,
       "total_tokens": 3046,
       "est_cost_usd": 0.007252
+    },
+    {
+      "time": "2026-09-20T14:14:35+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-20T14:14:35+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-20T14:14:37+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 641,
+      "completion_tokens": 1549,
+      "total_tokens": 2190,
+      "est_cost_usd": 0.005288
+    },
+    {
+      "time": "2026-09-20T14:14:41+00:00",
+      "purpose": "code_generation:bmi-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 945,
+      "completion_tokens": 1759,
+      "total_tokens": 2704,
+      "est_cost_usd": 0.006222
+    },
+    {
+      "time": "2026-09-20T14:14:52+00:00",
+      "purpose": "code_generation:date-difference-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 951,
+      "completion_tokens": 2665,
+      "total_tokens": 3616,
+      "est_cost_usd": 0.008946
     }
   ],
   "budget": {
-    "tokens": 24208,
-    "usd": 0.058356
+    "tokens": 32890,
+    "usd": 0.079024
   }
 }

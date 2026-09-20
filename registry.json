@@ -101,6 +101,39 @@
         "format JSON"
       ],
       "usage_instructions": "Paste minified JSON into the box below and click “Beautify” to format it with indentation. The formatted result appears below."
+    },
+    {
+      "slug": "bmi-calculator",
+      "title": "BMI Calculator",
+      "category": "health",
+      "date_published": "2026-09-20",
+      "status": "published",
+      "h1": "BMI Calculator",
+      "seo_description": "Calculate your Body Mass Index instantly by entering weight in kilograms and height in centimeters. Get your BMI and health category.",
+      "keywords": [
+        "BMI calculator",
+        "body mass index",
+        "BMI formula",
+        "health tool"
+      ],
+      "usage_instructions": "Enter your weight in kilograms and height in centimeters, then click Calculate. Your BMI and the corresponding weight category will appear below."
+    },
+    {
+      "slug": "date-difference-calculator",
+      "title": "Date Difference Calculator",
+      "category": "date-time",
+      "date_published": "2026-09-20",
+      "status": "published",
+      "h1": "Date Difference Calculator",
+      "seo_description": "Calculate the number of days, weeks, and months between two dates instantly. Simple, free online tool.",
+      "keywords": [
+        "date difference",
+        "days between dates",
+        "weeks between dates",
+        "months between dates",
+        "date calculator"
+      ],
+      "usage_instructions": "Select a start date and an end date, then click “Calculate”. The tool will display the total days, weeks, and full months between the dates."
     }
   ]
 }
