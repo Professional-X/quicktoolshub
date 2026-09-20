@@ -26,6 +26,15 @@
         "2026-09-20T14:14:56+00:00 PUBLISHED date-difference-calculator",
         "2026-09-20T14:14:56+00:00 publish cap reached (4/day); skipping remaining 5 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-20T20:49:28+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-20T20:49:30+00:00 Step A: proposed 8 ideas",
+        "2026-09-20T20:49:30+00:00 Step B: 8 ideas survived dedup",
+        "2026-09-20T20:49:30+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -212,6 +221,98 @@
         ],
         "output": "Generated password"
       }
+    ],
+    [
+      {
+        "title": "Reading Level Analyzer",
+        "slug": "reading-level-analyzer",
+        "category": "text",
+        "one_line_pitch": "Compute Flesch‑Kincaid reading level of any text instantly.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Flesch‑Kincaid grade level and readability score."
+      },
+      {
+        "title": "Pythagorean Triples Finder",
+        "slug": "pythagorean-triples-finder",
+        "category": "math",
+        "one_line_pitch": "Find integer triples that satisfy a² + b² = c² for a given side.",
+        "inputs": [
+          "known side value",
+          "side type (a/b/c)"
+        ],
+        "output": "All integer triples matching the input side."
+      },
+      {
+        "title": "Expense Split Calculator",
+        "slug": "expense-split-calculator",
+        "category": "finance",
+        "one_line_pitch": "Split a bill among people using equal shares or custom percentages.",
+        "inputs": [
+          "total amount",
+          "number of people",
+          "split method (equal/custom)",
+          "optional percentages"
+        ],
+        "output": "Per‑person amounts and total remainder."
+      },
+      {
+        "title": "ISO 8601 Validator",
+        "slug": "iso-8601-validator",
+        "category": "date-time",
+        "one_line_pitch": "Validate and parse ISO 8601 date strings in the browser.",
+        "inputs": [
+          "date string"
+        ],
+        "output": "Valid or invalid, with breakdown of components."
+      },
+      {
+        "title": "Base64 Image Encoder/Decoder",
+        "slug": "base64-image-encoder-decoder",
+        "category": "image",
+        "one_line_pitch": "Encode images to base64 or decode base64 to image data.",
+        "inputs": [
+          "image file or base64 string",
+          "mode (encode/decode)"
+        ],
+        "output": "Base64 string or image preview."
+      },
+      {
+        "title": "Markdown Previewer",
+        "slug": "markdown-previewer",
+        "category": "developer",
+        "one_line_pitch": "Live preview of Markdown rendering in the browser.",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "Rendered HTML view."
+      },
+      {
+        "title": "Calorie Burn Calculator",
+        "slug": "calorie-burn-calculator",
+        "category": "health",
+        "one_line_pitch": "Estimate calories burned during activities based on weight and time.",
+        "inputs": [
+          "activity type",
+          "duration (min)",
+          "weight (kg/lb)"
+        ],
+        "output": "Estimated calories burned."
+      },
+      {
+        "title": "Pomodoro Timer",
+        "slug": "pomodoro-timer",
+        "category": "productivity",
+        "one_line_pitch": "Timed work/break intervals with customizable durations.",
+        "inputs": [
+          "work duration",
+          "short break duration",
+          "long break duration",
+          "sessions before long break"
+        ],
+        "output": "Countdown timer and session alerts."
+      }
     ]
   ],
   "ideas_rejected": [
@@ -223,7 +324,8 @@
         "reason": "rejected: duplicate of same-batch idea 'BMI Calculator'",
         "at": "2026-09-20T14:14:37+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -524,10 +626,37 @@
       "completion_tokens": 2665,
       "total_tokens": 3616,
       "est_cost_usd": 0.008946
+    },
+    {
+      "time": "2026-09-20T20:49:28+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-20T20:49:28+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-20T20:49:30+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 731,
+      "completion_tokens": 1601,
+      "total_tokens": 2332,
+      "est_cost_usd": 0.005534
     }
   ],
   "budget": {
-    "tokens": 32890,
-    "usd": 0.079024
+    "tokens": 35394,
+    "usd": 0.08477
   }
 }
