@@ -24,6 +24,15 @@
         "2026-09-21T16:29:13+00:00 Step B: 8 ideas survived dedup",
         "2026-09-21T16:29:13+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-21T21:59:00+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-21T21:59:02+00:00 Step A: proposed 8 ideas",
+        "2026-09-21T21:59:02+00:00 Step B: 8 ideas survived dedup",
+        "2026-09-21T21:59:02+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -205,9 +214,105 @@
         ],
         "output": "Strength score and feedback"
       }
+    ],
+    [
+      {
+        "title": "Readability Score Calculator",
+        "slug": "readability-score-calculator",
+        "category": "text",
+        "one_line_pitch": "Compute Flesch‑Kincaid readability grade from any text.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Readability score and grade level"
+      },
+      {
+        "title": "Greatest Common Divisor (GCD) Tool",
+        "slug": "gcd-tool",
+        "category": "math",
+        "one_line_pitch": "Find the GCD of two or more integers quickly.",
+        "inputs": [
+          "list of integers"
+        ],
+        "output": "GCD value"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate future value of an investment with compound interest.",
+        "inputs": [
+          "principal",
+          "annual interest rate",
+          "compounding periods per year",
+          "time in years",
+          "additional periodic deposit (optional)"
+        ],
+        "output": "Future value and total interest earned"
+      },
+      {
+        "title": "Leap Year Checker",
+        "slug": "leap-year-checker",
+        "category": "date-time",
+        "one_line_pitch": "Determine if a year is a leap year according to Gregorian rules.",
+        "inputs": [
+          "year"
+        ],
+        "output": "Yes/No and explanation"
+      },
+      {
+        "title": "Base64 Image Encoder/Decoder",
+        "slug": "base64-image-encoder-decoder",
+        "category": "image",
+        "one_line_pitch": "Encode an image to Base64 string or decode Base64 to display image.",
+        "inputs": [
+          "image file",
+          "Base64 string"
+        ],
+        "output": "Base64 string or rendered image"
+      },
+      {
+        "title": "CSS Gradient Generator",
+        "slug": "css-gradient-generator",
+        "category": "developer",
+        "one_line_pitch": "Create CSS linear or radial gradients with custom colors and angles.",
+        "inputs": [
+          "color stops",
+          "type (linear/radial)",
+          "angle or shape"
+        ],
+        "output": "CSS gradient code"
+      },
+      {
+        "title": "Speed Converter",
+        "slug": "speed-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert speed units such as km/h, mph, m/s, knots.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted speed"
+      },
+      {
+        "title": "Daily Calorie Needs Calculator",
+        "slug": "daily-calorie-needs-calculator",
+        "category": "health",
+        "one_line_pitch": "Estimate daily caloric requirement using BMR and activity level.",
+        "inputs": [
+          "gender",
+          "age",
+          "weight",
+          "height",
+          "activity level"
+        ],
+        "output": "Estimated daily calories"
+      }
     ]
   ],
   "ideas_rejected": [
+    [],
     [],
     []
   ],
@@ -416,10 +521,37 @@
       "completion_tokens": 1550,
       "total_tokens": 2464,
       "est_cost_usd": 0.005564
+    },
+    {
+      "time": "2026-09-21T21:59:00+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-21T21:59:00+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-21T21:59:02+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 914,
+      "completion_tokens": 1452,
+      "total_tokens": 2366,
+      "est_cost_usd": 0.00527
     }
   ],
   "budget": {
-    "tokens": 32759,
-    "usd": 0.081053
+    "tokens": 35297,
+    "usd": 0.086535
   }
 }
