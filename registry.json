@@ -134,6 +134,74 @@
         "date calculator"
       ],
       "usage_instructions": "Select a start date and an end date, then click “Calculate”. The tool will display the total days, weeks, and full months between the dates."
+    },
+    {
+      "slug": "ascii-art-generator",
+      "title": "ASCII Art Generator",
+      "category": "text",
+      "date_published": "2026-09-21",
+      "status": "published",
+      "h1": "ASCII Art Generator",
+      "seo_description": "Convert any text into ASCII art instantly with optional box styles. No ads, no sign‑up.",
+      "keywords": [
+        "ASCII art",
+        "text to ASCII",
+        "online ASCII generator",
+        "text art",
+        "ASCII box"
+      ],
+      "usage_instructions": "Enter your text, choose a style, and click Generate. The ASCII art will appear below. Empty input shows a friendly reminder."
+    },
+    {
+      "slug": "expense-splitter",
+      "title": "Expense Splitter",
+      "category": "finance",
+      "date_published": "2026-09-21",
+      "status": "published",
+      "h1": "Expense Splitter",
+      "seo_description": "Quickly calculate how to split a total expense among friends. Supports even division or custom shares. No ads, just instant results.",
+      "keywords": [
+        "expense splitter",
+        "bill split calculator",
+        "split expenses",
+        "shared costs",
+        "custom split"
+      ],
+      "usage_instructions": "Enter the total amount and the number of people. Optionally, provide a comma‑separated list of custom splits. Press “Calculate” to see each person’s share."
+    },
+    {
+      "slug": "palindrome-checker",
+      "title": "Palindrome Checker",
+      "category": "text",
+      "date_published": "2026-09-21",
+      "status": "published",
+      "h1": "Palindrome Checker",
+      "seo_description": "Check instantly if any text is a palindrome, ignoring case and punctuation. Simple, free tool.",
+      "keywords": [
+        "palindrome checker",
+        "check palindrome",
+        "text palindrome",
+        "ignore punctuation",
+        "case insensitive palindrome"
+      ],
+      "usage_instructions": "Enter the text you want to test, then click “Check Palindrome”. The result will show true if it reads the same backward, ignoring case and punctuation."
+    },
+    {
+      "slug": "area-unit-converter",
+      "title": "Area Unit Converter",
+      "category": "unit-conversion",
+      "date_published": "2026-09-21",
+      "status": "published",
+      "h1": "Area Unit Converter",
+      "seo_description": "Quickly convert area measurements between square feet, meters, acres, hectares, and more. Simple, accurate, and free.",
+      "keywords": [
+        "area conversion",
+        "square feet to meters",
+        "acre to square meters",
+        "unit converter",
+        "area calculator"
+      ],
+      "usage_instructions": "Enter a numeric value, select the source unit and the target unit, then click Convert. The result will appear below."
     }
   ]
 }
