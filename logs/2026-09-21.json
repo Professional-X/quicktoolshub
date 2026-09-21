@@ -15,6 +15,15 @@
         "2026-09-21T08:04:01+00:00 PUBLISHED area-unit-converter",
         "2026-09-21T08:04:01+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-21T16:29:11+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-21T16:29:13+00:00 Step A: proposed 8 ideas",
+        "2026-09-21T16:29:13+00:00 Step B: 8 ideas survived dedup",
+        "2026-09-21T16:29:13+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -110,9 +119,96 @@
         ],
         "output": "Generated password string"
       }
+    ],
+    [
+      {
+        "title": "Reading Level Calculator",
+        "slug": "reading-level-calculator",
+        "category": "text",
+        "one_line_pitch": "Determines Flesch–Kincaid grade level of entered text.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Grade level score and readability index"
+      },
+      {
+        "title": "GCD/LCM Calculator",
+        "slug": "gcd-lcm-calculator",
+        "category": "math",
+        "one_line_pitch": "Finds greatest common divisor and least common multiple of two numbers.",
+        "inputs": [
+          "integer a",
+          "integer b"
+        ],
+        "output": "GCD and LCM values"
+      },
+      {
+        "title": "Savings Growth Calculator",
+        "slug": "savings-growth-calculator",
+        "category": "finance",
+        "one_line_pitch": "Shows future value of savings with compound interest.",
+        "inputs": [
+          "principal amount",
+          "annual interest rate (%)",
+          "years",
+          "compounding frequency per year"
+        ],
+        "output": "Future value and total interest earned"
+      },
+      {
+        "title": "ISO Week Number Calculator",
+        "slug": "iso-week-number-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Returns ISO week number for a given date.",
+        "inputs": [
+          "date"
+        ],
+        "output": "Week number and year"
+      },
+      {
+        "title": "Image to Base64 Encoder",
+        "slug": "image-to-base64-encoder",
+        "category": "image",
+        "one_line_pitch": "Encodes uploaded image to Base64 string.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "Base64 encoded string"
+      },
+      {
+        "title": "Markdown to HTML Converter",
+        "slug": "markdown-to-html-converter",
+        "category": "developer",
+        "one_line_pitch": "Converts Markdown text to rendered HTML.",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "HTML output"
+      },
+      {
+        "title": "Coin Flip Simulator",
+        "slug": "coin-flip-simulator",
+        "category": "random-fun",
+        "one_line_pitch": "Simulates a coin toss and shows result.",
+        "inputs": [
+          "number of flips (optional)"
+        ],
+        "output": "Heads/Tails distribution or single result"
+      },
+      {
+        "title": "Password Strength Meter",
+        "slug": "password-strength-meter",
+        "category": "developer",
+        "one_line_pitch": "Assesses password strength and gives score.",
+        "inputs": [
+          "password string"
+        ],
+        "output": "Strength score and feedback"
+      }
     ]
   ],
   "ideas_rejected": [
+    [],
     []
   ],
   "tools_published": [],
@@ -293,10 +389,37 @@
       "completion_tokens": 2644,
       "total_tokens": 3597,
       "est_cost_usd": 0.008885
+    },
+    {
+      "time": "2026-09-21T16:29:11+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-21T16:29:11+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-21T16:29:13+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 914,
+      "completion_tokens": 1550,
+      "total_tokens": 2464,
+      "est_cost_usd": 0.005564
     }
   ],
   "budget": {
-    "tokens": 30123,
-    "usd": 0.075277
+    "tokens": 32759,
+    "usd": 0.081053
   }
 }
