@@ -252,6 +252,23 @@
         "smallest divisor"
       ],
       "usage_instructions": "Enter an integer greater than 1 and press Check. The result will tell you if the number is prime, and if not, the smallest divisor."
+    },
+    {
+      "slug": "base64-encoder-decoder",
+      "title": "Base64 Encoder / Decoder",
+      "category": "developer",
+      "date_published": "2026-09-22",
+      "status": "published",
+      "h1": "Base64 Encoder / Decoder",
+      "seo_description": "Quickly encode text to Base64 or decode Base64 strings back to readable text directly in your browser.",
+      "keywords": [
+        "Base64 encode",
+        "Base64 decode",
+        "online Base64 tool",
+        "text to Base64",
+        "decode Base64"
+      ],
+      "usage_instructions": "Enter the text you want to encode or a Base64 string to decode, select the operation, and click the button. The result appears below. Errors are shown if the input is empty or invalid."
     }
   ]
 }
