@@ -202,6 +202,56 @@
         "area calculator"
       ],
       "usage_instructions": "Enter a numeric value, select the source unit and the target unit, then click Convert. The result will appear below."
+    },
+    {
+      "slug": "markdown-to-html-converter",
+      "title": "Markdown to HTML Converter",
+      "category": "developer",
+      "date_published": "2026-09-22",
+      "status": "published",
+      "h1": "Markdown to HTML Converter",
+      "seo_description": "Convert Markdown text to clean HTML instantly in your browser. No server, no sign‑up – just paste and click.",
+      "keywords": [
+        "markdown to html",
+        "online markdown converter",
+        "markdown html tool",
+        "convert markdown",
+        "browser markdown"
+      ],
+      "usage_instructions": "Paste or type Markdown in the box below and click Convert to see the HTML output."
+    },
+    {
+      "slug": "simple-interest-calculator",
+      "title": "Simple Interest Calculator",
+      "category": "finance",
+      "date_published": "2026-09-22",
+      "status": "published",
+      "h1": "Simple Interest Calculator",
+      "seo_description": "Calculate simple interest instantly by entering principal, annual rate, and years. Get accurate results in seconds.",
+      "keywords": [
+        "simple interest calculator",
+        "calculate interest",
+        "finance tool",
+        "interest formula",
+        "principal rate time"
+      ],
+      "usage_instructions": "Enter the principal amount, annual interest rate (as %), and the number of years. Click Calculate to see the simple interest. All fields are required and must be numeric."
+    },
+    {
+      "slug": "prime-number-checker",
+      "title": "Prime Number Checker",
+      "category": "math",
+      "date_published": "2026-09-22",
+      "status": "published",
+      "h1": "Prime Number Checker",
+      "seo_description": "Check instantly if a number is prime and see its smallest divisor if not. Simple, fast, and mobile-friendly.",
+      "keywords": [
+        "prime number checker",
+        "is a number prime",
+        "prime test online",
+        "smallest divisor"
+      ],
+      "usage_instructions": "Enter an integer greater than 1 and press Check. The result will tell you if the number is prime, and if not, the smallest divisor."
     }
   ]
 }
