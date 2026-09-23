@@ -13,6 +13,15 @@
         "2026-09-23T07:47:48+00:00 PUBLISHED roman-numeral-converter",
         "2026-09-23T07:47:48+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-23T15:02:28+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-23T15:02:31+00:00 Step A: proposed 4 ideas",
+        "2026-09-23T15:02:31+00:00 Step B: 4 ideas survived dedup",
+        "2026-09-23T15:02:31+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -91,9 +100,56 @@
         ],
         "output": "Converted file size with unit."
       }
+    ],
+    [
+      {
+        "title": "Time Zone Converter",
+        "slug": "time-zone-converter",
+        "category": "date-time",
+        "one_line_pitch": "Convert any local time between time zones instantly.",
+        "inputs": [
+          "date and time",
+          "source time zone",
+          "target time zone"
+        ],
+        "output": "Converted date and time in target time zone"
+      },
+      {
+        "title": "Tax Bracket Calculator",
+        "slug": "tax-bracket-calculator",
+        "category": "finance",
+        "one_line_pitch": "Determine U.S. federal tax bracket and estimated tax based on taxable income.",
+        "inputs": [
+          "taxable income"
+        ],
+        "output": "Tax bracket, standard deduction, and approximate tax owed"
+      },
+      {
+        "title": "Body Fat Percentage Calculator",
+        "slug": "body-fat-percentage-calculator",
+        "category": "health",
+        "one_line_pitch": "Estimate body fat percentage from weight, height, waist, and other measurements.",
+        "inputs": [
+          "weight (kg)",
+          "height (cm)",
+          "waist circumference (cm)"
+        ],
+        "output": "Estimated body fat percentage and health category"
+      },
+      {
+        "title": "Reading Level Calculator",
+        "slug": "reading-level-calculator",
+        "category": "text",
+        "one_line_pitch": "Calculate Flesch–Kincaid reading level of any paragraph.",
+        "inputs": [
+          "text paragraph"
+        ],
+        "output": "Reading grade level, Flesch score, and readability summary"
+      }
     ]
   ],
   "ideas_rejected": [
+    [],
     []
   ],
   "tools_published": [],
@@ -179,10 +235,37 @@
       "completion_tokens": 3229,
       "total_tokens": 4176,
       "est_cost_usd": 0.010634
+    },
+    {
+      "time": "2026-09-23T15:02:28+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-23T15:02:28+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-23T15:02:31+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 1293,
+      "completion_tokens": 2000,
+      "total_tokens": 3293,
+      "est_cost_usd": 0.007293
     }
   ],
   "budget": {
-    "tokens": 19866,
-    "usd": 0.047588
+    "tokens": 23331,
+    "usd": 0.055093
   }
 }
