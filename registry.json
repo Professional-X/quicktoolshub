@@ -269,6 +269,73 @@
         "decode Base64"
       ],
       "usage_instructions": "Enter the text you want to encode or a Base64 string to decode, select the operation, and click the button. The result appears below. Errors are shown if the input is empty or invalid."
+    },
+    {
+      "slug": "hex-color-picker",
+      "title": "Hex Color Picker",
+      "category": "image",
+      "date_published": "2026-09-23",
+      "status": "published",
+      "h1": "Hex Color Picker",
+      "seo_description": "Enter a hex color code to instantly see its swatch and RGB values. Simple, fast, and mobile-friendly.",
+      "keywords": [
+        "hex color picker",
+        "hex to rgb",
+        "color converter",
+        "color swatch",
+        "rgb values"
+      ],
+      "usage_instructions": "Enter a hex color code (e.g., #FF5733) and click “Show Color”. The swatch and RGB values will appear below."
+    },
+    {
+      "slug": "password-strength-meter",
+      "title": "Password Strength Meter",
+      "category": "random-fun",
+      "date_published": "2026-09-23",
+      "status": "published",
+      "h1": "Password Strength Meter",
+      "seo_description": "Enter a password to instantly see its strength score, category, and tips to improve security.",
+      "keywords": [
+        "password strength",
+        "password checker",
+        "security score",
+        "password strength meter",
+        "how strong is my password"
+      ],
+      "usage_instructions": "Type a password into the field below. The meter will show a score, strength category, and suggestions to make it more secure."
+    },
+    {
+      "slug": "text-to-morse-code",
+      "title": "Text to Morse Code",
+      "category": "text",
+      "date_published": "2026-09-23",
+      "status": "published",
+      "h1": "Text to Morse Code Converter",
+      "seo_description": "Easily convert any text into Morse code with our free online tool. Type or paste your text and get the dot‑dash representation instantly.",
+      "keywords": [
+        "text to morse code",
+        "morse code converter",
+        "online morse translator",
+        "convert text to morse"
+      ],
+      "usage_instructions": "Enter the text you want to translate into Morse code, then click “Convert”. The result appears below. Only letters, numbers and basic punctuation are supported."
+    },
+    {
+      "slug": "roman-numeral-converter",
+      "title": "Roman Numeral Converter",
+      "category": "math",
+      "date_published": "2026-09-23",
+      "status": "published",
+      "h1": "Roman Numeral Converter",
+      "seo_description": "Convert numbers to Roman numerals and vice‑versa instantly. Enter an Arabic number (1‑3999) or a Roman numeral and get the result.",
+      "keywords": [
+        "roman numeral converter",
+        "arabic to roman",
+        "roman to arabic",
+        "number conversion",
+        "roman numeral calculator"
+      ],
+      "usage_instructions": "Enter an Arabic number (1‑3999) or a Roman numeral, then click Convert. The result will appear below. Invalid inputs show an error message."
     }
   ]
 }
