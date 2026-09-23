@@ -22,6 +22,15 @@
         "2026-09-23T15:02:31+00:00 Step B: 4 ideas survived dedup",
         "2026-09-23T15:02:31+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-23T21:30:44+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-23T21:30:45+00:00 Step A: proposed 8 ideas",
+        "2026-09-23T21:30:45+00:00 Step B: 8 ideas survived dedup",
+        "2026-09-23T21:30:45+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -146,9 +155,104 @@
         ],
         "output": "Reading grade level, Flesch score, and readability summary"
       }
+    ],
+    [
+      {
+        "title": "Time Zone Converter",
+        "slug": "time-zone-converter",
+        "category": "date-time",
+        "one_line_pitch": "Convert a datetime between any two time zones instantly.",
+        "inputs": [
+          "datetime string",
+          "source time zone",
+          "target time zone"
+        ],
+        "output": "converted datetime string"
+      },
+      {
+        "title": "IP to Subnet Mask Calculator",
+        "slug": "ip-to-subnet-mask",
+        "category": "developer",
+        "one_line_pitch": "Get the dotted‑decimal subnet mask from an IP address and prefix length.",
+        "inputs": [
+          "IPv4 address",
+          "CIDR prefix length (0‑32)"
+        ],
+        "output": "subnet mask in dotted‑decimal format"
+      },
+      {
+        "title": "Password Generator",
+        "slug": "password-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Generate a random password with custom length and character sets.",
+        "inputs": [
+          "password length",
+          "include uppercase",
+          "include lowercase",
+          "include numbers",
+          "include symbols"
+        ],
+        "output": "randomly generated password"
+      },
+      {
+        "title": "File Size Converter",
+        "slug": "file-size-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert bytes into KB, MB, GB, or TB with human‑readable formatting.",
+        "inputs": [
+          "size in bytes",
+          "target unit"
+        ],
+        "output": "formatted file size string"
+      },
+      {
+        "title": "Text Readability Score",
+        "slug": "text-readability-score",
+        "category": "text",
+        "one_line_pitch": "Compute Flesch Reading Ease and grade level for any paragraph.",
+        "inputs": [
+          "paragraph text"
+        ],
+        "output": "readability score and grade level"
+      },
+      {
+        "title": "Base64 Image Encoder",
+        "slug": "base64-image-encoder",
+        "category": "developer",
+        "one_line_pitch": "Encode any uploaded image to a base64 data URI in the browser.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "base64 data URI string"
+      },
+      {
+        "title": "Currency Symbol Lookup",
+        "slug": "currency-symbol-lookup",
+        "category": "text",
+        "one_line_pitch": "Find the symbol and country for any ISO 4217 currency code.",
+        "inputs": [
+          "3‑letter currency code"
+        ],
+        "output": "currency symbol and country name"
+      },
+      {
+        "title": "Loan Payoff Calculator with Extra Payments",
+        "slug": "loan-payoff-extended",
+        "category": "finance",
+        "one_line_pitch": "Calculate months to payoff and total interest when adding extra periodic payments.",
+        "inputs": [
+          "principal amount",
+          "annual interest rate",
+          "loan term in years",
+          "payments per year",
+          "extra payment per period"
+        ],
+        "output": "months to payoff, total interest saved, and amortization summary"
+      }
     ]
   ],
   "ideas_rejected": [
+    [],
     [],
     []
   ],
@@ -262,10 +366,37 @@
       "completion_tokens": 2000,
       "total_tokens": 3293,
       "est_cost_usd": 0.007293
+    },
+    {
+      "time": "2026-09-23T21:30:43+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-23T21:30:43+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-23T21:30:45+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 1293,
+      "completion_tokens": 1435,
+      "total_tokens": 2728,
+      "est_cost_usd": 0.005598
     }
   ],
   "budget": {
-    "tokens": 23331,
-    "usd": 0.055093
+    "tokens": 26231,
+    "usd": 0.060903
   }
 }
