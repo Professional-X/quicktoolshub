@@ -15,6 +15,15 @@
         "2026-09-24T07:39:34+00:00 PUBLISHED pythagorean-triple-finder",
         "2026-09-24T07:39:34+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-24T15:07:39+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-24T15:07:42+00:00 Step A: proposed 8 ideas",
+        "2026-09-24T15:07:42+00:00 Step B: 6 ideas survived dedup",
+        "2026-09-24T15:07:42+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -111,10 +120,113 @@
         ],
         "output": "Resulting URL."
       }
+    ],
+    [
+      {
+        "title": "Time Zone Converter",
+        "slug": "time-zone-converter",
+        "category": "date-time",
+        "one_line_pitch": "Convert a local time to any time zone instantly.",
+        "inputs": [
+          "Local date and time",
+          "Source time zone",
+          "Target time zone"
+        ],
+        "output": "Converted date and time in target zone"
+      },
+      {
+        "title": "Email Address Validator",
+        "slug": "email-address-validator",
+        "category": "developer",
+        "one_line_pitch": "Check if an email address is syntactically valid.",
+        "inputs": [
+          "Email address"
+        ],
+        "output": "Validation result: valid or invalid, with error details"
+      },
+      {
+        "title": "Credit Card Luhn Validator",
+        "slug": "credit-card-luhn-validator",
+        "category": "developer",
+        "one_line_pitch": "Validate credit card numbers using the Luhn algorithm.",
+        "inputs": [
+          "Credit card number"
+        ],
+        "output": "Valid or invalid, plus checksum info"
+      },
+      {
+        "title": "Fibonacci Sequence Generator",
+        "slug": "fibonacci-sequence-generator",
+        "category": "math",
+        "one_line_pitch": "Generate Fibonacci numbers up to N or the Nth term.",
+        "inputs": [
+          "Number of terms or target index"
+        ],
+        "output": "List of Fibonacci numbers or the requested term"
+      },
+      {
+        "title": "Color Space Converter",
+        "slug": "color-space-converter",
+        "category": "image",
+        "one_line_pitch": "Convert colors between HEX, RGB, HSL, and CMYK.",
+        "inputs": [
+          "Color value",
+          "Source format",
+          "Target format"
+        ],
+        "output": "Converted color value"
+      },
+      {
+        "title": "IP Address Validator",
+        "slug": "ip-address-validator",
+        "category": "developer",
+        "one_line_pitch": "Validate IPv4 and IPv6 addresses for correct syntax.",
+        "inputs": [
+          "IP address string"
+        ],
+        "output": "Validation result and address type"
+      },
+      {
+        "title": "Statistical Descriptive Stats Calculator",
+        "slug": "descriptive-stats-calculator",
+        "category": "math",
+        "one_line_pitch": "Compute mean, median, mode, variance, and standard deviation.",
+        "inputs": [
+          "Comma‑separated list of numbers"
+        ],
+        "output": "Statistical summary"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate future value with compound interest.",
+        "inputs": [
+          "Principal",
+          "Annual rate",
+          "Compounding periods per year",
+          "Number of years"
+        ],
+        "output": "Future value, total interest, periodic payment"
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "ip-address-validator",
+        "title": "IP Address Validator",
+        "reason": "rejected: duplicate of same-batch idea 'Email Address Validator'",
+        "at": "2026-09-24T15:07:42+00:00"
+      },
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-09-24T15:07:42+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -262,10 +374,37 @@
       "completion_tokens": 3495,
       "total_tokens": 4454,
       "est_cost_usd": 0.011444
+    },
+    {
+      "time": "2026-09-24T15:07:39+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-24T15:07:39+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-24T15:07:42+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 1481,
+      "completion_tokens": 1684,
+      "total_tokens": 3165,
+      "est_cost_usd": 0.006533
     }
   ],
   "budget": {
-    "tokens": 32509,
-    "usd": 0.081295
+    "tokens": 35846,
+    "usd": 0.08804
   }
 }
