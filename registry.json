@@ -336,6 +336,74 @@
         "roman numeral calculator"
       ],
       "usage_instructions": "Enter an Arabic number (1‑3999) or a Roman numeral, then click Convert. The result will appear below. Invalid inputs show an error message."
+    },
+    {
+      "slug": "text-case-converter",
+      "title": "Text Case Converter",
+      "category": "text",
+      "date_published": "2026-09-24",
+      "status": "published",
+      "h1": "Text Case Converter",
+      "seo_description": "Convert any text to uppercase, lowercase, title case, or camelCase instantly. Simple, free online tool.",
+      "keywords": [
+        "text case converter",
+        "uppercase tool",
+        "lowercase converter",
+        "title case",
+        "camel case online"
+      ],
+      "usage_instructions": "Enter the text you want to change, pick a case from the dropdown, and click Convert. The converted text appears below."
+    },
+    {
+      "slug": "password-generator",
+      "title": "Password Generator",
+      "category": "random-fun",
+      "date_published": "2026-09-24",
+      "status": "published",
+      "h1": "Password Generator",
+      "seo_description": "Generate a random password instantly with custom length and character options. Safe, fast, and easy to use.",
+      "keywords": [
+        "password generator",
+        "random password",
+        "secure password",
+        "custom password length",
+        "online password tool"
+      ],
+      "usage_instructions": "Enter the desired length, choose which character types to include, and click Generate. The password will appear below."
+    },
+    {
+      "slug": "base-converter",
+      "title": "Base Converter",
+      "category": "unit-conversion",
+      "date_published": "2026-09-24",
+      "status": "published",
+      "h1": "Base Converter",
+      "seo_description": "Quickly convert numbers between binary, decimal, octal, and hexadecimal. Simple, free, and works offline.",
+      "keywords": [
+        "base converter",
+        "binary to decimal",
+        "hexadecimal conversion",
+        "number base converter",
+        "octal to hex"
+      ],
+      "usage_instructions": "Enter a number, choose its source base and the target base, then click Convert. The converted value appears below. Invalid input shows an error message."
+    },
+    {
+      "slug": "pythagorean-triple-finder",
+      "title": "Pythagorean Triple Finder",
+      "category": "math",
+      "date_published": "2026-09-24",
+      "status": "published",
+      "h1": "Pythagorean Triple Finder",
+      "seo_description": "Enter a side length and select a, b, or c to list all integer Pythagorean triples containing that side.",
+      "keywords": [
+        "Pythagorean triples",
+        "integer triples",
+        "find triples",
+        "math tool",
+        "side length"
+      ],
+      "usage_instructions": "Enter a side length, choose which side (a, b, or c), and click “Find triples” to list all integer Pythagorean triples containing that side."
     }
   ]
 }
