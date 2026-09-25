@@ -13,6 +13,15 @@
         "2026-09-25T07:51:37+00:00 PUBLISHED prime-factorization-calculator",
         "2026-09-25T07:51:37+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-25T15:17:20+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-25T15:17:22+00:00 Step A: proposed 8 ideas",
+        "2026-09-25T15:17:22+00:00 Step B: 8 ideas survived dedup",
+        "2026-09-25T15:17:22+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -71,9 +80,97 @@
         ],
         "output": "Converted size."
       }
+    ],
+    [
+      {
+        "title": "Reading Level Calculator",
+        "slug": "reading-level-calculator",
+        "category": "text",
+        "one_line_pitch": "Calculate Flesch‑Kincaid grade and reading ease from text.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Flesch‑Kincaid grade level and reading ease score."
+      },
+      {
+        "title": "File Size Converter",
+        "slug": "file-size-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert bytes, KiB, MiB, GiB, etc., instantly.",
+        "inputs": [
+          "size value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted size in target unit."
+      },
+      {
+        "title": "Time Duration Formatter",
+        "slug": "time-duration-formatter",
+        "category": "date-time",
+        "one_line_pitch": "Turn seconds into days, hours, minutes, and seconds format.",
+        "inputs": [
+          "total seconds"
+        ],
+        "output": "Formatted duration string."
+      },
+      {
+        "title": "Age Calculator",
+        "slug": "age-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Compute age in years, months, and days from birth date.",
+        "inputs": [
+          "birth date",
+          "reference date (optional)"
+        ],
+        "output": "Age in years, months, days."
+      },
+      {
+        "title": "QR Code Generator",
+        "slug": "qr-code-generator",
+        "category": "image",
+        "one_line_pitch": "Generate a QR code for any text, no server needed.",
+        "inputs": [
+          "text to encode",
+          "size (optional)"
+        ],
+        "output": "QR code image displayed."
+      },
+      {
+        "title": "Checksum Generator",
+        "slug": "checksum-generator",
+        "category": "developer",
+        "one_line_pitch": "Produce MD5, SHA‑1, or SHA‑256 digest of input text.",
+        "inputs": [
+          "text",
+          "algorithm (MD5/SHA‑1/SHA‑256)"
+        ],
+        "output": "Hex digest of the text."
+      },
+      {
+        "title": "Pig Latin Converter",
+        "slug": "pig-latin-converter",
+        "category": "random-fun",
+        "one_line_pitch": "Convert any English text into Pig Latin.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Text converted to Pig Latin."
+      },
+      {
+        "title": "URL Slugifier",
+        "slug": "url-slugifier",
+        "category": "developer",
+        "one_line_pitch": "Turn any string into a URL‑friendly slug.",
+        "inputs": [
+          "string"
+        ],
+        "output": "URL‑friendly slug."
+      }
     ]
   ],
   "ideas_rejected": [
+    [],
     []
   ],
   "tools_published": [],
@@ -159,10 +256,37 @@
       "completion_tokens": 2434,
       "total_tokens": 3378,
       "est_cost_usd": 0.008246
+    },
+    {
+      "time": "2026-09-25T15:17:20+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-25T15:17:20+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-25T15:17:22+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 1659,
+      "completion_tokens": 1462,
+      "total_tokens": 3121,
+      "est_cost_usd": 0.006045
     }
   ],
   "budget": {
-    "tokens": 22251,
-    "usd": 0.054021
+    "tokens": 25544,
+    "usd": 0.060278
   }
 }
