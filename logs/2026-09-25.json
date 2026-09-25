@@ -22,6 +22,15 @@
         "2026-09-25T15:17:22+00:00 Step B: 8 ideas survived dedup",
         "2026-09-25T15:17:22+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-25T21:35:23+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-25T21:35:25+00:00 Step A: proposed 8 ideas",
+        "2026-09-25T21:35:25+00:00 Step B: 6 ideas survived dedup",
+        "2026-09-25T21:35:25+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -167,11 +176,115 @@
         ],
         "output": "URL‑friendly slug."
       }
+    ],
+    [
+      {
+        "title": "Reading Level Calculator",
+        "slug": "reading-level-calculator",
+        "category": "text",
+        "one_line_pitch": "Calculates Flesch‑Kincaid reading grade level from a paragraph.",
+        "inputs": [
+          "paragraph text"
+        ],
+        "output": "Reading grade level and readability score"
+      },
+      {
+        "title": "GCD Calculator",
+        "slug": "gcd-calculator",
+        "category": "math",
+        "one_line_pitch": "Finds the greatest common divisor of multiple integers.",
+        "inputs": [
+          "comma‑separated integers"
+        ],
+        "output": "GCD value"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Computes future value with compound interest.",
+        "inputs": [
+          "principal amount",
+          "annual interest rate (%)",
+          "compounding frequency per year",
+          "investment duration (years)"
+        ],
+        "output": "Future value and total interest earned"
+      },
+      {
+        "title": "Countdown Timer Generator",
+        "slug": "countdown-timer-generator",
+        "category": "date-time",
+        "one_line_pitch": "Creates an embeddable countdown to a chosen future date/time.",
+        "inputs": [
+          "target date/time",
+          "display format (optional)"
+        ],
+        "output": "JavaScript snippet for an online countdown"
+      },
+      {
+        "title": "Image to Base64 Converter",
+        "slug": "image-to-base64-converter",
+        "category": "image",
+        "one_line_pitch": "Converts an uploaded image file into a Base64 data URL.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "Base64 encoded data URL string"
+      },
+      {
+        "title": "CSS Gradient Generator",
+        "slug": "css-gradient-generator",
+        "category": "developer",
+        "one_line_pitch": "Builds a CSS gradient string from two colors and an angle.",
+        "inputs": [
+          "start color",
+          "end color",
+          "angle or shape"
+        ],
+        "output": "CSS gradient declaration string"
+      },
+      {
+        "title": "Speed Converter",
+        "slug": "speed-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Converts speed between km/h, mph, m/s, and knots.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted speed value with unit"
+      },
+      {
+        "title": "Coin Flip Simulator",
+        "slug": "coin-flip-simulator",
+        "category": "random-fun",
+        "one_line_pitch": "Simulates coin flips and shows heads/tails distribution.",
+        "inputs": [
+          "number of flips"
+        ],
+        "output": "Counts and percentages of heads and tails"
+      }
     ]
   ],
   "ideas_rejected": [
     [],
-    []
+    [],
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-09-25T21:35:25+00:00"
+      },
+      {
+        "slug": "speed-converter",
+        "title": "Speed Converter",
+        "reason": "rejected: duplicate of base-converter (similarity 0.83 > 0.8)",
+        "at": "2026-09-25T21:35:25+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [],
@@ -283,10 +396,37 @@
       "completion_tokens": 1462,
       "total_tokens": 3121,
       "est_cost_usd": 0.006045
+    },
+    {
+      "time": "2026-09-25T21:35:22+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-25T21:35:23+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-25T21:35:25+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 1659,
+      "completion_tokens": 1474,
+      "total_tokens": 3133,
+      "est_cost_usd": 0.006081
     }
   ],
   "budget": {
-    "tokens": 25544,
-    "usd": 0.060278
+    "tokens": 28849,
+    "usd": 0.066571
   }
 }
