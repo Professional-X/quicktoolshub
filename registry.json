@@ -404,6 +404,74 @@
         "side length"
       ],
       "usage_instructions": "Enter a side length, choose which side (a, b, or c), and click “Find triples” to list all integer Pythagorean triples containing that side."
+    },
+    {
+      "slug": "time-zone-converter",
+      "title": "Time Zone Converter",
+      "category": "date-time",
+      "date_published": "2026-09-25",
+      "status": "published",
+      "h1": "Time Zone Converter",
+      "seo_description": "Convert any time between world time zones instantly. Simple, free, and works offline.",
+      "keywords": [
+        "time zone converter",
+        "convert time zones",
+        "world clock",
+        "timezone conversion",
+        "time conversion tool"
+      ],
+      "usage_instructions": "Enter a time (24‑hour HH:MM), type the source time‑zone and the target time‑zone, then click Convert. The result shows the equivalent time in the target zone."
+    },
+    {
+      "slug": "offline-url-shortener",
+      "title": "Offline URL Shortener",
+      "category": "developer",
+      "date_published": "2026-09-25",
+      "status": "published",
+      "h1": "Offline URL Shortener",
+      "seo_description": "Create a short, unique code for any long URL directly in your browser—no server needed. Fast, private, and offline.",
+      "keywords": [
+        "url shortener offline",
+        "generate short link",
+        "client-side short URL",
+        "no server url shortener",
+        "javascript url shortener"
+      ],
+      "usage_instructions": "Enter the long URL in the field below and click “Shorten”. The tool will display a short code (e.g., /abc123) that you can use as a short link."
+    },
+    {
+      "slug": "email-format-validator",
+      "title": "Email Format Validator",
+      "category": "developer",
+      "date_published": "2026-09-25",
+      "status": "published",
+      "h1": "Email Format Validator",
+      "seo_description": "Validate email address format instantly. Enter an email and see if it's syntactically correct. No signup required.",
+      "keywords": [
+        "email validator",
+        "email format checker",
+        "validate email address",
+        "email syntax",
+        "email validation tool"
+      ],
+      "usage_instructions": "Enter an email address below and click Validate. The result will tell you if the format is correct."
+    },
+    {
+      "slug": "prime-factorization-calculator",
+      "title": "Prime Factorization Calculator",
+      "category": "math",
+      "date_published": "2026-09-25",
+      "status": "published",
+      "h1": "Prime Factorization Calculator",
+      "seo_description": "Enter any integer to instantly compute its prime factors. Simple, fast, and mobile-friendly.",
+      "keywords": [
+        "prime factorization",
+        "prime factors",
+        "factor integer",
+        "math tool",
+        "prime factor calculator"
+      ],
+      "usage_instructions": "Enter an integer and press “Calculate” to see its prime factors. The result shows each factor with its multiplicity."
     }
   ]
 }
