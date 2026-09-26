@@ -472,6 +472,74 @@
         "prime factor calculator"
       ],
       "usage_instructions": "Enter an integer and press “Calculate” to see its prime factors. The result shows each factor with its multiplicity."
+    },
+    {
+      "slug": "age-calculator",
+      "title": "Age Calculator",
+      "category": "date-time",
+      "date_published": "2026-09-26",
+      "status": "published",
+      "h1": "Age Calculator",
+      "seo_description": "Enter your birth date to instantly calculate your age in years, months, and days. Simple, accurate, and free.",
+      "keywords": [
+        "age calculator",
+        "calculate age",
+        "birth date age",
+        "exact age",
+        "how old am i"
+      ],
+      "usage_instructions": "Select your birth date using the calendar, then click “Calculate Age”. The result will show your age in years, months, and days."
+    },
+    {
+      "slug": "word-frequency-analyzer",
+      "title": "Word Frequency Analyzer",
+      "category": "text",
+      "date_published": "2026-09-26",
+      "status": "published",
+      "h1": "Word Frequency Analyzer",
+      "seo_description": "Enter text to instantly see how often each word appears. Simple, fast, and free word frequency analyzer.",
+      "keywords": [
+        "word frequency",
+        "text analyzer",
+        "count words",
+        "word count tool",
+        "frequency analysis"
+      ],
+      "usage_instructions": "Paste or type your text into the box, then click “Analyze”. The list of words with their counts will appear below."
+    },
+    {
+      "slug": "phone-number-validator",
+      "title": "Phone Number Validator & Formatter",
+      "category": "developer",
+      "date_published": "2026-09-26",
+      "status": "published",
+      "h1": "Phone Number Validator & Formatter",
+      "seo_description": "Validate any phone number and instantly get it formatted in international E.164 style. Fast client‑side tool with no ads.",
+      "keywords": [
+        "phone number validator",
+        "phone number formatter",
+        "international phone format",
+        "E.164",
+        "validate phone number"
+      ],
+      "usage_instructions": "Enter a phone number and optional country code, then click “Validate & Format”. The tool will tell you if the number is valid and show it in international format."
+    },
+    {
+      "slug": "json-minifier",
+      "title": "JSON Minifier",
+      "category": "developer",
+      "date_published": "2026-09-26",
+      "status": "published",
+      "h1": "JSON Minifier",
+      "seo_description": "Quickly compress JSON into a single-line minified string. Paste your JSON and get the minified version instantly.",
+      "keywords": [
+        "json minifier",
+        "minify json",
+        "compress json",
+        "json formatter",
+        "online json minifier"
+      ],
+      "usage_instructions": "Paste your JSON into the textarea and click “Minify”. The minified JSON will appear below. Errors are shown if the input is not valid JSON."
     }
   ]
 }
