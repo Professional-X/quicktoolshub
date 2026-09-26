@@ -23,6 +23,15 @@
         "2026-09-26T14:30:57+00:00 Step B: 6 ideas survived dedup",
         "2026-09-26T14:30:57+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-26T21:11:08+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-26T21:11:10+00:00 Step A: proposed 5 ideas",
+        "2026-09-26T21:11:10+00:00 Step B: 5 ideas survived dedup",
+        "2026-09-26T21:11:10+00:00 publish cap reached (4/day); skipping remaining 5 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -196,6 +205,62 @@
         ],
         "output": "Roll results and total."
       }
+    ],
+    [
+      {
+        "title": "Reading Level Analyzer",
+        "slug": "reading-level-analyzer",
+        "category": "text",
+        "one_line_pitch": "Calculate Flesch–Kincaid reading level of any text.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Reading level score and grade level"
+      },
+      {
+        "title": "Percentage Change Calculator",
+        "slug": "percentage-change-calculator",
+        "category": "math",
+        "one_line_pitch": "Compute percent increase or decrease between two numbers.",
+        "inputs": [
+          "original value",
+          "new value"
+        ],
+        "output": "Percentage change (positive or negative)"
+      },
+      {
+        "title": "File Size Unit Converter",
+        "slug": "file-size-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert bytes to KB, MB, GB, TB, and vice versa.",
+        "inputs": [
+          "size value",
+          "input unit",
+          "output unit"
+        ],
+        "output": "Converted file size"
+      },
+      {
+        "title": "Reading Time Estimator",
+        "slug": "reading-time-estimator",
+        "category": "text",
+        "one_line_pitch": "Estimate minutes to read a text at average speed.",
+        "inputs": [
+          "text",
+          "reading speed words per minute (optional)"
+        ],
+        "output": "Estimated reading time in minutes"
+      },
+      {
+        "title": "ASCII to Binary Converter",
+        "slug": "ascii-to-binary-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert plain text to its 8-bit binary representation.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Binary string of each character"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -213,7 +278,8 @@
         "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
         "at": "2026-09-26T14:30:57+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -373,10 +439,37 @@
       "completion_tokens": 1320,
       "total_tokens": 3166,
       "est_cost_usd": 0.005806
+    },
+    {
+      "time": "2026-09-26T21:11:07+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-26T21:11:07+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-26T21:11:10+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 1846,
+      "completion_tokens": 2000,
+      "total_tokens": 3846,
+      "est_cost_usd": 0.007846
     }
   ],
   "budget": {
-    "tokens": 24524,
-    "usd": 0.054664
+    "tokens": 28542,
+    "usd": 0.062722
   }
 }
