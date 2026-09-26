@@ -14,6 +14,15 @@
         "2026-09-26T07:44:06+00:00 PUBLISHED json-minifier",
         "2026-09-26T07:44:06+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-26T14:30:55+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-26T14:30:57+00:00 Step A: proposed 8 ideas",
+        "2026-09-26T14:30:57+00:00 Step B: 6 ideas survived dedup",
+        "2026-09-26T14:30:57+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -99,10 +108,112 @@
         ],
         "output": "Pig Latin text."
       }
+    ],
+    [
+      {
+        "title": "Reading Level Estimator",
+        "slug": "reading-level-estimator",
+        "category": "text",
+        "one_line_pitch": "Estimate Flesch–Kincaid reading grade from any paragraph.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Reading grade level (e.g., 8th grade)."
+      },
+      {
+        "title": "Currency Symbol Finder",
+        "slug": "currency-symbol-finder",
+        "category": "unit-conversion",
+        "one_line_pitch": "Find the symbol for any ISO currency code instantly.",
+        "inputs": [
+          "currency code (e.g., USD, EUR)"
+        ],
+        "output": "Currency symbol (e.g., $, €)."
+      },
+      {
+        "title": "ROI Calculator",
+        "slug": "roi-calculator",
+        "category": "finance",
+        "one_line_pitch": "Compute return on investment percentage over time.",
+        "inputs": [
+          "initial investment",
+          "annual return %",
+          "years"
+        ],
+        "output": "Total ROI percentage."
+      },
+      {
+        "title": "ISO Week Number Calculator",
+        "slug": "iso-week-number-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Get ISO week number for any date.",
+        "inputs": [
+          "date (YYYY-MM-DD)"
+        ],
+        "output": "ISO week number."
+      },
+      {
+        "title": "QR Code Generator",
+        "slug": "qr-code-generator",
+        "category": "image",
+        "one_line_pitch": "Create a QR code image from any text.",
+        "inputs": [
+          "text"
+        ],
+        "output": "QR code image (downloadable)."
+      },
+      {
+        "title": "Pressure Unit Converter",
+        "slug": "pressure-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert pressure between PSI, atm, Pa, bar.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted pressure value."
+      },
+      {
+        "title": "Markdown Table Generator",
+        "slug": "markdown-table-generator",
+        "category": "developer",
+        "one_line_pitch": "Build markdown tables from headers and rows.",
+        "inputs": [
+          "header list",
+          "row data arrays"
+        ],
+        "output": "Markdown table string."
+      },
+      {
+        "title": "Dice Roller",
+        "slug": "dice-roller",
+        "category": "random-fun",
+        "one_line_pitch": "Roll any number of dice with custom sides.",
+        "inputs": [
+          "number of dice",
+          "sides per die"
+        ],
+        "output": "Roll results and total."
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "roi-calculator",
+        "title": "ROI Calculator",
+        "reason": "rejected: duplicate of bmi-calculator (similarity 0.86 > 0.8)",
+        "at": "2026-09-26T14:30:57+00:00"
+      },
+      {
+        "slug": "pressure-unit-converter",
+        "title": "Pressure Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
+        "at": "2026-09-26T14:30:57+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -235,10 +346,37 @@
       "completion_tokens": 1831,
       "total_tokens": 2770,
       "est_cost_usd": 0.006432
+    },
+    {
+      "time": "2026-09-26T14:30:55+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-26T14:30:55+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-26T14:30:57+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 1846,
+      "completion_tokens": 1320,
+      "total_tokens": 3166,
+      "est_cost_usd": 0.005806
     }
   ],
   "budget": {
-    "tokens": 21186,
-    "usd": 0.048646
+    "tokens": 24524,
+    "usd": 0.054664
   }
 }
