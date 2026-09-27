@@ -15,6 +15,16 @@
         "2026-09-27T08:13:59+00:00 PUBLISHED number-to-words-converter",
         "2026-09-27T08:13:59+00:00 generation attempt cap reached (6); stopping for the day"
       ]
+    },
+    {
+      "started_at": "2026-09-27T15:10:26+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-27T15:10:29+00:00 Step A: proposed 8 ideas",
+        "2026-09-27T15:10:29+00:00 Step B: 8 ideas survived dedup",
+        "2026-09-27T15:10:39+00:00 PUBLISHED csv-to-json-converter",
+        "2026-09-27T15:10:39+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -108,9 +118,96 @@
         ],
         "output": "Entropy in bits, estimated time to crack"
       }
+    ],
+    [
+      {
+        "title": "CSV to JSON Converter",
+        "slug": "csv-to-json-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert comma-separated data into a JSON array or object representation",
+        "inputs": [
+          "CSV text input",
+          "Include header row? (yes/no)"
+        ],
+        "output": "JSON array of objects or values"
+      },
+      {
+        "title": "URL Parameter Extractor",
+        "slug": "url-parameter-extractor",
+        "category": "developer",
+        "one_line_pitch": "Parse a URL or query string into a list of key‑value pairs",
+        "inputs": [
+          "Full URL or query string"
+        ],
+        "output": "JSON object or table of parameters"
+      },
+      {
+        "title": "HTML Entity Encoder / Decoder",
+        "slug": "html-entity-encoder-decoder",
+        "category": "developer",
+        "one_line_pitch": "Encode or decode special characters to/from HTML entities",
+        "inputs": [
+          "Text"
+        ],
+        "output": "Encoded or decoded string"
+      },
+      {
+        "title": "Text to Pig Latin Translator",
+        "slug": "text-to-pig-latin",
+        "category": "text",
+        "one_line_pitch": "Translate English text into Pig Latin, preserving punctuation",
+        "inputs": [
+          "English text"
+        ],
+        "output": "Pig Latin version of the input"
+      },
+      {
+        "title": "Image to Base64 Encoder",
+        "slug": "image-to-base64-encoder",
+        "category": "image",
+        "one_line_pitch": "Upload an image and get its Base64 representation",
+        "inputs": [
+          "Image file upload"
+        ],
+        "output": "Base64 encoded string of the image data"
+      },
+      {
+        "title": "Markdown Table Formatter",
+        "slug": "markdown-table-formatter",
+        "category": "developer",
+        "one_line_pitch": "Format raw tabular data into clean Markdown table syntax",
+        "inputs": [
+          "Raw table data (rows separated by newlines, columns by tabs or commas)"
+        ],
+        "output": "Markdown formatted table string"
+      },
+      {
+        "title": "Loan Amortization Schedule Calculator",
+        "slug": "loan-amortization-schedule",
+        "category": "finance",
+        "one_line_pitch": "Generate a full amortization schedule for a loan with monthly payments",
+        "inputs": [
+          "Principal amount",
+          "Annual interest rate",
+          "Loan term (years)",
+          "Compounding frequency"
+        ],
+        "output": "Table of payment number, payment amount, principal, interest, and remaining balance"
+      },
+      {
+        "title": "JSON Validator",
+        "slug": "json-validator",
+        "category": "developer",
+        "one_line_pitch": "Check if a JSON string is valid and show error location",
+        "inputs": [
+          "JSON string"
+        ],
+        "output": "Validation result and error details if invalid"
+      }
     ]
   ],
   "ideas_rejected": [
+    [],
     []
   ],
   "tools_published": [],
@@ -297,10 +394,46 @@
       "completion_tokens": 3522,
       "total_tokens": 4464,
       "est_cost_usd": 0.011508
+    },
+    {
+      "time": "2026-09-27T15:10:26+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-27T15:10:26+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-27T15:10:29+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2002,
+      "completion_tokens": 1929,
+      "total_tokens": 3931,
+      "est_cost_usd": 0.007789
+    },
+    {
+      "time": "2026-09-27T15:10:34+00:00",
+      "purpose": "code_generation:csv-to-json-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 957,
+      "completion_tokens": 2316,
+      "total_tokens": 3273,
+      "est_cost_usd": 0.007905
     }
   ],
   "budget": {
-    "tokens": 34374,
-    "usd": 0.085754
+    "tokens": 41750,
+    "usd": 0.10166
   }
 }

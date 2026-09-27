@@ -591,6 +591,22 @@
         "English number converter"
       ],
       "usage_instructions": "Enter a whole number (0‑999,999,999,999) and click “Convert” to see its English words representation."
+    },
+    {
+      "slug": "csv-to-json-converter",
+      "title": "CSV to JSON Converter",
+      "category": "developer",
+      "date_published": "2026-09-27",
+      "status": "published",
+      "h1": "CSV to JSON Converter",
+      "seo_description": "Convert CSV data to JSON instantly. Paste your CSV, choose header option, and get formatted JSON output.",
+      "keywords": [
+        "CSV to JSON",
+        "convert CSV to JSON",
+        "online CSV converter",
+        "CSV JSON tool"
+      ],
+      "usage_instructions": "Paste your CSV data into the textarea, select whether the first row contains headers, and click Convert. The resulting JSON will appear below."
     }
   ]
 }
