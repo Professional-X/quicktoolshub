@@ -25,6 +25,15 @@
         "2026-09-27T15:10:39+00:00 PUBLISHED csv-to-json-converter",
         "2026-09-27T15:10:39+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-27T21:21:05+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-27T21:21:07+00:00 Step A: proposed 8 ideas",
+        "2026-09-27T21:21:07+00:00 Step B: 6 ideas survived dedup",
+        "2026-09-27T21:21:07+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -204,11 +213,112 @@
         ],
         "output": "Validation result and error details if invalid"
       }
+    ],
+    [
+      {
+        "title": "Readability Score Calculator",
+        "slug": "readability-score-calculator",
+        "category": "text",
+        "one_line_pitch": "Calculates Flesch–Kincaid readability score of entered text.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Readability score, grade level, and readability grade."
+      },
+      {
+        "title": "GCD Calculator",
+        "slug": "gcd-calculator",
+        "category": "math",
+        "one_line_pitch": "Finds the greatest common divisor of multiple integers.",
+        "inputs": [
+          "list of integers"
+        ],
+        "output": "GCD value."
+      },
+      {
+        "title": "Inflation Adjusted Value Calculator",
+        "slug": "inflation-adjusted-value",
+        "category": "finance",
+        "one_line_pitch": "Adjusts a historical amount to present value using US CPI data.",
+        "inputs": [
+          "original amount",
+          "original year",
+          "target year"
+        ],
+        "output": "Adjusted value in target year's dollars."
+      },
+      {
+        "title": "Day of Week Calculator",
+        "slug": "day-of-week-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Determines the day of week for any Gregorian date.",
+        "inputs": [
+          "date (YYYY-MM-DD)"
+        ],
+        "output": "Day of week name."
+      },
+      {
+        "title": "Image Average Color Hex",
+        "slug": "image-average-color-hex",
+        "category": "image",
+        "one_line_pitch": "Computes the average hex color of an uploaded image.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "Hex color code (e.g., #AABBCC)."
+      },
+      {
+        "title": "Regex Tester",
+        "slug": "regex-tester",
+        "category": "developer",
+        "one_line_pitch": "Tests a regex pattern against sample text and shows matches.",
+        "inputs": [
+          "regex pattern",
+          "sample text"
+        ],
+        "output": "Match results, indices, and captured groups."
+      },
+      {
+        "title": "Angle Unit Converter",
+        "slug": "angle-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Converts angles between degrees, radians, and gradians.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted angle."
+      },
+      {
+        "title": "Magic 8-Ball",
+        "slug": "magic-8-ball",
+        "category": "random-fun",
+        "one_line_pitch": "Provides a random, classic Magic 8-Ball answer to your question.",
+        "inputs": [
+          "question"
+        ],
+        "output": "Random answer from 20 classic responses."
+      }
     ]
   ],
   "ideas_rejected": [
     [],
-    []
+    [],
+    [
+      {
+        "slug": "gcd-calculator",
+        "title": "GCD Calculator",
+        "reason": "rejected: duplicate of age-calculator (similarity 0.86 > 0.8)",
+        "at": "2026-09-27T21:21:07+00:00"
+      },
+      {
+        "slug": "angle-unit-converter",
+        "title": "Angle Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.87 > 0.8)",
+        "at": "2026-09-27T21:21:07+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -430,10 +540,37 @@
       "completion_tokens": 2316,
       "total_tokens": 3273,
       "est_cost_usd": 0.007905
+    },
+    {
+      "time": "2026-09-27T21:21:05+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-27T21:21:05+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-27T21:21:07+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2047,
+      "completion_tokens": 1617,
+      "total_tokens": 3664,
+      "est_cost_usd": 0.006898
     }
   ],
   "budget": {
-    "tokens": 41750,
-    "usd": 0.10166
+    "tokens": 45586,
+    "usd": 0.10877
   }
 }
