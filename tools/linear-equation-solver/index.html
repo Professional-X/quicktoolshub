@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="google-site-verification" content="G2vh7thaFzRth3rRTxefSY6bvn5haiJBrooxvAYmj1M"/>
+<title>Linear Equation Solver – Find x and y Quickly</title>
+<meta name="description" content="Solve 2x2 linear systems instantly. Enter coefficients and get exact or numeric solutions, with handling for no or infinite solutions."/>
+<meta property="og:title" content="Linear Equation Solver – Find x and y Quickly"/>
+<meta property="og:description" content="Solve 2x2 linear systems instantly. Enter coefficients and get exact or numeric solutions, with handling for no or infinite solutions."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://professional-x.github.io/quicktoolshub/tools/linear-equation-solver/"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="https://professional-x.github.io/quicktoolshub/tools/linear-equation-solver/"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EQ%3C/text%3E%3C/svg%3E"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Linear Equation Solver", "url": "https://professional-x.github.io/quicktoolshub/tools/linear-equation-solver/", "description": "Solve 2x2 linear systems instantly. Enter coefficients and get exact or numeric solutions, with handling for no or infinite solutions.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "datePublished": "2026-09-27", "publisher": {"@type": "Organization", "name": "QuickToolsHub"}}</script>
+<style>
+:root{--bg:#f5f7fa;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--accent:#2563eb;--accent-dark:#1e40af;--border:#e5e7eb;--radius:12px;--maxw:980px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img,iframe{max-width:100%}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header.site-header{background:var(--card);border-bottom:1px solid var(--border)}
+.site-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.logo{font-weight:800;font-size:19px;color:#111827;white-space:nowrap}
+.top-nav{display:flex;gap:16px;font-size:14px}
+.top-nav a{color:var(--muted);font-weight:600}
+.top-nav a:hover{color:var(--accent)}
+.ad-zone{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 8px;overflow:hidden}
+.ad-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af}
+@media (max-width:767px){.hide-mobile{display:none!important}}
+@media (min-width:768px){.hide-desktop{display:none!important}}
+.breadcrumb{font-size:13px;color:var(--muted);margin:16px 0 2px}
+.breadcrumb .sep{margin:0 6px;color:#d1d5db}
+h1{font-size:clamp(22px,4.5vw,30px);line-height:1.25;margin:8px 0 14px;color:#111827}
+.tool-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:0 1px 2px rgba(16,24,40,.05);min-height:220px}
+.how-to{background:#eef4ff;border:1px solid #dbe7ff;border-radius:var(--radius);padding:16px 20px;margin-top:18px}
+.how-to h2{margin:0 0 6px;font-size:17px;color:#1e40af}
+.how-to p{margin:0;color:#374151;font-size:15px}
+.related{margin-top:26px}
+.related h2{font-size:19px;margin:0 0 10px}
+.related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.related li{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:14.5px}
+.related a{font-weight:600}
+.ad-native{width:100%;max-width:728px}
+footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid var(--border)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:18px 0;color:var(--muted);font-size:13.5px}
+.footer-links{display:flex;gap:14px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-inner">
+    <a class="logo" href="https://professional-x.github.io/quicktoolshub/">QuickToolsHub</a>
+    <nav class="top-nav">
+      <a href="https://professional-x.github.io/quicktoolshub/">All Tools</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/math/">Math Tools</a>
+      <a href="https://professional-x.github.io/quicktoolshub/schedule/">Schedule</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ad-zone" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <div class="hide-desktop"><script>
+  atOptions = {
+    'key' : 'b8cb302039695a8ca6be0d1670ae3030',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/b8cb302039695a8ca6be0d1670ae3030/invoke.js"></script></div>
+  <div class="hide-mobile"><script>
+  atOptions = {
+    'key' : '3e064c14d68f63c18b5aa4b6b1873c46',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/3e064c14d68f63c18b5aa4b6b1873c46/invoke.js"></script></div>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://professional-x.github.io/quicktoolshub/">Home</a><span class="sep">/</span><a href="https://professional-x.github.io/quicktoolshub/category/math/">Math</a><span class="sep">/</span><span aria-current="page">Linear Equation Solver</span>
+  </nav>
+  <h1>Linear Equation Solver</h1>
+  <div class="tool-card">
+<div id="tool-root">
+  <h2>Linear Equation Solver</h2>
+  <p class="instructions">Enter the coefficients a, b, c, d, e, and f for the system a·x + b·y = e and c·x + d·y = f, then click Solve. The solution (x, y) or a message about no/infinite solutions will appear below.</p>
+
+  <div class="inputs">
+    <label for="f-a">a:</label>
+    <input type="text" id="f-a" autocomplete="off" />
+
+    <label for="f-b">b:</label>
+    <input type="text" id="f-b" autocomplete="off" />
+
+    <label for="f-c">c:</label>
+    <input type="text" id="f-c" autocomplete="off" />
+
+    <label for="f-d">d:</label>
+    <input type="text" id="f-d" autocomplete="off" />
+
+    <label for="f-e">e:</label>
+    <input type="text" id="f-e" autocomplete="off" />
+
+    <label for="f-f">f:</label>
+    <input type="text" id="f-f" autocomplete="off" />
+  </div>
+
+  <button type="button" id="tool-action">Solve</button>
+
+  <div id="tool-result" aria-live="polite"></div>
+
+  <style>
+    #tool-root {
+      font-family: Arial, sans-serif;
+      color: #222;
+      line-height: 1.4;
+      max-width: 100%;
+    }
+    #tool-root h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #004080;
+    }
+    #tool-root .instructions {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    #tool-root .inputs label {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+    #tool-root .inputs input {
+      width: 100%;
+      padding: 0.4rem;
+      margin-top: 0.2rem;
+      box-sizing: border-box;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    #tool-root .inputs input:focus {
+      outline: none;
+      border-color: #0066cc;
+      box-shadow: 0 0 2px #0066cc;
+    }
+    #tool-root button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: #0066cc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #tool-root button:hover,
+    #tool-root button:focus {
+      background-color: #004c99;
+    }
+    #tool-root #tool-result {
+      margin-top: 1rem;
+      padding: 0.6rem;
+      min-height: 1.2rem;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      word-wrap: break-word;
+    }
+    @media (max-width: 360px) {
+      #tool-root h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      const resultEl = document.getElementById('tool-result');
+      const btn = document.getElementById('tool-action');
+
+      function formatNumber(num) {
+        if (Number.isInteger(num)) return num.toString();
+        return parseFloat(num.toFixed(6)).toString();
+      }
+
+      function solve() {
+        try {
+          const ids = ['f-a', 'f-b', 'f-c', 'f-d', 'f-e', 'f-f'];
+          const values = {};
+          for (const id of ids) {
+            const val = document.getElementById(id).value.trim();
+            if (val === '' || isNaN(val)) {
+              resultEl.textContent = 'Error: please enter valid numbers for all coefficients.';
+              return;
+            }
+            values[id] = parseFloat(val);
+          }
+
+          const a = values['f-a'],
+                b = values['f-b'],
+                c = values['f-c'],
+                d = values['f-d'],
+                e = values['f-e'],
+                f = values['f-f'];
+
+          const det = a * d - b * c;
+
+          if (Math.abs(det) > 1e-12) {
+            const x = (e * d - b * f) / det;
+            const y = (a * f - e * c) / det;
+            resultEl.textContent = `Unique solution: x = ${formatNumber(x)}, y = ${formatNumber(y)}`;
+          } else {
+            // Check consistency
+            const adE = a * f - e * c;
+            const bdE = b * f - e * d;
+            if (Math.abs(adE) < 1e-12 && Math.abs(bdE) < 1e-12) {
+              resultEl.textContent = 'Infinitely many solutions.';
+            } else {
+              resultEl.textContent = 'No solution.';
+            }
+          }
+        } catch (err) {
+          resultEl.textContent = 'An unexpected error occurred. Please try again.';
+          console.error(err);
+        }
+      }
+
+      btn.addEventListener('click', solve);
+    })();
+  </script>
+</div>
+  </div>
+
+  <section class="how-to">
+    <h2>How to use this tool</h2>
+    <p>Enter the coefficients a, b, c, d, e, and f for the system a·x + b·y = e and c·x + d·y = f, then click Solve. The solution (x, y) or a message about no/infinite solutions will appear below.</p>
+  </section>
+
+  <div class="ad-zone" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-native"><script async="async" data-cfasync="false" src="https://versatilesentiment.com/5c991e90ba5b575e7b10c12fd4006cba/invoke.js"></script>
+<div id="container-5c991e90ba5b575e7b10c12fd4006cba"></div></div>
+  </div>
+
+  <section class="related">
+    <h2>Related tools</h2>
+    <ul><li><a href="https://professional-x.github.io/quicktoolshub/tools/quadratic-equation-solver/">Quadratic Equation Solver</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/prime-number-checker/">Prime Number Checker</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/roman-numeral-converter/">Roman Numeral Converter</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/pythagorean-triple-finder/">Pythagorean Triple Finder</a></li></ul>
+  </section>
+
+  <div class="ad-zone hide-mobile" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <script>
+  atOptions = {
+    'key' : '0ed8bf9af74609561a1e84bb22ed0e94',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/0ed8bf9af74609561a1e84bb22ed0e94/invoke.js"></script>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>&copy; 2026 QuickToolsHub. All tools run entirely in your browser.</div>
+    <div class="footer-links">
+      <a href="https://professional-x.github.io/quicktoolshub/">Home</a>
+      <a href="https://professional-x.github.io/quicktoolshub/schedule/">Schedule</a>
+      <a href="https://professional-x.github.io/quicktoolshub/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

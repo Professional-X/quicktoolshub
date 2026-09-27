@@ -540,6 +540,57 @@
         "online json minifier"
       ],
       "usage_instructions": "Paste your JSON into the textarea and click “Minify”. The minified JSON will appear below. Errors are shown if the input is not valid JSON."
+    },
+    {
+      "slug": "linear-equation-solver",
+      "title": "Linear Equation Solver",
+      "category": "math",
+      "date_published": "2026-09-27",
+      "status": "published",
+      "h1": "Linear Equation Solver",
+      "seo_description": "Solve 2x2 linear systems instantly. Enter coefficients and get exact or numeric solutions, with handling for no or infinite solutions.",
+      "keywords": [
+        "linear equation solver",
+        "2x2 system calculator",
+        "solve for x and y",
+        "determinant method",
+        "math tool"
+      ],
+      "usage_instructions": "Enter the coefficients a, b, c, d, e, and f for the system a·x + b·y = e and c·x + d·y = f, then click Solve. The solution (x, y) or a message about no/infinite solutions will appear below."
+    },
+    {
+      "slug": "file-size-converter",
+      "title": "File Size Converter",
+      "category": "unit-conversion",
+      "date_published": "2026-09-27",
+      "status": "published",
+      "h1": "File Size Converter",
+      "seo_description": "Convert file sizes instantly between bytes, kilobytes, megabytes, gigabytes, terabytes and petabytes. Simple, accurate, no ads.",
+      "keywords": [
+        "file size converter",
+        "bytes to kilobytes",
+        "convert megabytes to gigabytes",
+        "online unit conversion",
+        "data size calculator"
+      ],
+      "usage_instructions": "Enter a numeric value, choose the source unit and the target unit, then click Convert to see the result."
+    },
+    {
+      "slug": "number-to-words-converter",
+      "title": "Number to Words Converter",
+      "category": "text",
+      "date_published": "2026-09-27",
+      "status": "published",
+      "h1": "Number to Words Converter",
+      "seo_description": "Convert any whole number up to 999,999,999,999 into its English words instantly. Simple, free, and works offline.",
+      "keywords": [
+        "number to words",
+        "spell numbers",
+        "convert number to text",
+        "number words converter",
+        "English number converter"
+      ],
+      "usage_instructions": "Enter a whole number (0‑999,999,999,999) and click “Convert” to see its English words representation."
     }
   ]
 }
