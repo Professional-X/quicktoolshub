@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="google-site-verification" content="G2vh7thaFzRth3rRTxefSY6bvn5haiJBrooxvAYmj1M"/>
+<title>Readability Score Calculator – Flesch‑Kincaid</title>
+<meta name="description" content="Calculate Flesch Reading Ease and Grade Level for any paragraph instantly."/>
+<meta property="og:title" content="Readability Score Calculator – Flesch‑Kincaid"/>
+<meta property="og:description" content="Calculate Flesch Reading Ease and Grade Level for any paragraph instantly."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://professional-x.github.io/quicktoolshub/tools/readability-score-calculator/"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="https://professional-x.github.io/quicktoolshub/tools/readability-score-calculator/"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EQ%3C/text%3E%3C/svg%3E"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Readability Score Calculator", "url": "https://professional-x.github.io/quicktoolshub/tools/readability-score-calculator/", "description": "Calculate Flesch Reading Ease and Grade Level for any paragraph instantly.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "datePublished": "2026-09-28", "publisher": {"@type": "Organization", "name": "QuickToolsHub"}}</script>
+<style>
+:root{--bg:#f5f7fa;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--accent:#2563eb;--accent-dark:#1e40af;--border:#e5e7eb;--radius:12px;--maxw:980px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img,iframe{max-width:100%}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header.site-header{background:var(--card);border-bottom:1px solid var(--border)}
+.site-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.logo{font-weight:800;font-size:19px;color:#111827;white-space:nowrap}
+.top-nav{display:flex;gap:16px;font-size:14px}
+.top-nav a{color:var(--muted);font-weight:600}
+.top-nav a:hover{color:var(--accent)}
+.ad-zone{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 8px;overflow:hidden}
+.ad-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af}
+@media (max-width:767px){.hide-mobile{display:none!important}}
+@media (min-width:768px){.hide-desktop{display:none!important}}
+.breadcrumb{font-size:13px;color:var(--muted);margin:16px 0 2px}
+.breadcrumb .sep{margin:0 6px;color:#d1d5db}
+h1{font-size:clamp(22px,4.5vw,30px);line-height:1.25;margin:8px 0 14px;color:#111827}
+.tool-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:0 1px 2px rgba(16,24,40,.05);min-height:220px}
+.how-to{background:#eef4ff;border:1px solid #dbe7ff;border-radius:var(--radius);padding:16px 20px;margin-top:18px}
+.how-to h2{margin:0 0 6px;font-size:17px;color:#1e40af}
+.how-to p{margin:0;color:#374151;font-size:15px}
+.related{margin-top:26px}
+.related h2{font-size:19px;margin:0 0 10px}
+.related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.related li{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:14.5px}
+.related a{font-weight:600}
+.ad-native{width:100%;max-width:728px}
+footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid var(--border)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:18px 0;color:var(--muted);font-size:13.5px}
+.footer-links{display:flex;gap:14px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-inner">
+    <a class="logo" href="https://professional-x.github.io/quicktoolshub/">QuickToolsHub</a>
+    <nav class="top-nav">
+      <a href="https://professional-x.github.io/quicktoolshub/">All Tools</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/text/">Text Tools</a>
+      <a href="https://professional-x.github.io/quicktoolshub/schedule/">Schedule</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ad-zone" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <div class="hide-desktop"><script>
+  atOptions = {
+    'key' : 'b8cb302039695a8ca6be0d1670ae3030',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/b8cb302039695a8ca6be0d1670ae3030/invoke.js"></script></div>
+  <div class="hide-mobile"><script>
+  atOptions = {
+    'key' : '3e064c14d68f63c18b5aa4b6b1873c46',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/3e064c14d68f63c18b5aa4b6b1873c46/invoke.js"></script></div>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://professional-x.github.io/quicktoolshub/">Home</a><span class="sep">/</span><a href="https://professional-x.github.io/quicktoolshub/category/text/">Text</a><span class="sep">/</span><span aria-current="page">Readability Score Calculator</span>
+  </nav>
+  <h1>Readability Score Calculator</h1>
+  <div class="tool-card">
+<div id="tool-root">
+  <h1 id="tool-title">Readability Score Calculator</h1>
+  <p class="instructions">Enter a paragraph in the box below and click “Calculate”. The tool will show the Reading Ease, Grade Level, and basic statistics.</p>
+
+  <label for="f-paragraph">Paragraph:</label>
+  <textarea id="f-paragraph" rows="6" placeholder="Type or paste your text here..."></textarea>
+
+  <button type="button" id="tool-action">Calculate</button>
+
+  <div id="tool-result" aria-live="polite"></div>
+
+  <style>
+    #tool-root {
+      font-family: inherit;
+      max-width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    #tool-root h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.5rem;
+      color: #222;
+    }
+    #tool-root .instructions {
+      margin: 0 0 1rem 0;
+      color: #555;
+      line-height: 1.4;
+    }
+    #tool-root label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: #333;
+    }
+    #tool-root textarea {
+      width: 100%;
+      min-height: 120px;
+      padding: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.4;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    #tool-root button {
+      margin-top: 0.8rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      background-color: #0069d9;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #tool-root button:hover,
+    #tool-root button:focus {
+      background-color: #0053b3;
+    }
+    #tool-root #tool-result {
+      margin-top: 1rem;
+      padding: 0.8rem;
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      color: #222;
+      line-height: 1.4;
+      white-space: pre-wrap;
+    }
+    @media (max-width: 360px) {
+      #tool-root textarea,
+      #tool-root button {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      const textarea = document.getElementById('f-paragraph');
+      const button = document.getElementById('tool-action');
+      const resultDiv = document.getElementById('tool-result');
+
+      function countWords(text) {
+        const words = text.trim().split(/\s+/).filter(Boolean);
+        return words.length;
+      }
+
+      function countSentences(text) {
+        const matches = text.match(/[.!?]+/g);
+        return matches ? matches.length : 0;
+      }
+
+      function countSyllables(word) {
+        word = word.toLowerCase().replace(/[^a-z]/g, '');
+        if (!word) return 0;
+        const vowelGroups = word.match(/[aeiouy]+/g);
+        let syllables = vowelGroups ? vowelGroups.length : 0;
+        // Subtract silent 'e'
+        if (word.endsWith('e') && syllables > 1) syllables--;
+        // Ensure at least one syllable
+        return syllables || 1;
+      }
+
+      function totalSyllables(text) {
+        const words = text.trim().split(/\s+/).filter(Boolean);
+        return words.reduce((sum, w) => sum + countSyllables(w), 0);
+      }
+
+      function calculate(text) {
+        const words = countWords(text);
+        const sentences = countSentences(text);
+        const syllables = totalSyllables(text);
+
+        if (words === 0 || sentences === 0) {
+          return { error: 'Please enter a paragraph' };
+        }
+
+        const asl = words / sentences; // average sentence length
+        const asw = syllables / words; // average syllables per word
+
+        const readingEase = 206.835 - 1.015 * asl - 84.6 * asw;
+        const gradeLevel = 0.39 * asl + 11.8 * asw - 15.59;
+
+        return {
+          readingEase: readingEase.toFixed(2),
+          gradeLevel: gradeLevel.toFixed(2),
+          words,
+          sentences,
+          syllables
+        };
+      }
+
+      function render(output) {
+        if (output.error) {
+          resultDiv.textContent = output.error;
+          return;
+        }
+        resultDiv.innerHTML = `
+Reading Ease: ${output.readingEase}
+Grade Level: ${output.gradeLevel}
+Words: ${output.words}
+Sentences: ${output.sentences}
+Syllables: ${output.syllables}
+        `.trim();
+      }
+
+      button.addEventListener('click', () => {
+        try {
+          const text = textarea.value;
+          const result = calculate(text);
+          render(result);
+        } catch (e) {
+          resultDiv.textContent = 'An unexpected error occurred. Please try again.';
+          console.error(e);
+        }
+      });
+    })();
+  </script>
+</div>
+  </div>
+
+  <section class="how-to">
+    <h2>How to use this tool</h2>
+    <p>Enter a paragraph in the box below and click “Calculate”. The tool will show the Reading Ease, Grade Level, and basic statistics.</p>
+  </section>
+
+  <div class="ad-zone" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-native"><script async="async" data-cfasync="false" src="https://versatilesentiment.com/5c991e90ba5b575e7b10c12fd4006cba/invoke.js"></script>
+<div id="container-5c991e90ba5b575e7b10c12fd4006cba"></div></div>
+  </div>
+
+  <section class="related">
+    <h2>Related tools</h2>
+    <ul><li><a href="https://professional-x.github.io/quicktoolshub/tools/word-counter/">Word Counter</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/sentence-length-analyzer/">Sentence Length Analyzer</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/ascii-art-generator/">ASCII Art Generator</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/palindrome-checker/">Palindrome Checker</a></li></ul>
+  </section>
+
+  <div class="ad-zone hide-mobile" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <script>
+  atOptions = {
+    'key' : '0ed8bf9af74609561a1e84bb22ed0e94',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/0ed8bf9af74609561a1e84bb22ed0e94/invoke.js"></script>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>&copy; 2026 QuickToolsHub. All tools run entirely in your browser.</div>
+    <div class="footer-links">
+      <a href="https://professional-x.github.io/quicktoolshub/">Home</a>
+      <a href="https://professional-x.github.io/quicktoolshub/schedule/">Schedule</a>
+      <a href="https://professional-x.github.io/quicktoolshub/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

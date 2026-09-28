@@ -607,6 +607,74 @@
         "CSV JSON tool"
       ],
       "usage_instructions": "Paste your CSV data into the textarea, select whether the first row contains headers, and click Convert. The resulting JSON will appear below."
+    },
+    {
+      "slug": "readability-score-calculator",
+      "title": "Readability Score Calculator",
+      "category": "text",
+      "date_published": "2026-09-28",
+      "status": "published",
+      "h1": "Readability Score Calculator",
+      "seo_description": "Calculate Flesch Reading Ease and Grade Level for any paragraph instantly.",
+      "keywords": [
+        "readability score",
+        "Flesch Kincaid",
+        "text readability",
+        "grade level calculator",
+        "sentence syllable count"
+      ],
+      "usage_instructions": "Enter a paragraph in the box below and click “Calculate”. The tool will show the Reading Ease, Grade Level, and basic statistics."
+    },
+    {
+      "slug": "greatest-common-divisor-calculator",
+      "title": "Greatest Common Divisor Calculator",
+      "category": "math",
+      "date_published": "2026-09-28",
+      "status": "published",
+      "h1": "Greatest Common Divisor (GCD) Calculator",
+      "seo_description": "Enter two or more integers and instantly calculate their greatest common divisor. Simple, fast, and mobile-friendly.",
+      "keywords": [
+        "gcd calculator",
+        "greatest common divisor",
+        "find gcd",
+        "math tool",
+        "calculate gcd"
+      ],
+      "usage_instructions": "Enter two or more integers separated by commas, spaces, or line breaks. Click the Calculate GCD button to see the result."
+    },
+    {
+      "slug": "return-on-investment-calculator",
+      "title": "Return on Investment Calculator",
+      "category": "finance",
+      "date_published": "2026-09-28",
+      "status": "published",
+      "h1": "Return on Investment (ROI) Calculator",
+      "seo_description": "Calculate your Return on Investment (ROI) instantly by entering investment cost, final value, and optional time period.",
+      "keywords": [
+        "ROI calculator",
+        "return on investment",
+        "investment return",
+        "financial calculator",
+        "ROI formula"
+      ],
+      "usage_instructions": "Enter the initial investment and final value, optionally add the time period, then click Calculate. The ROI percentage and net gain will appear below."
+    },
+    {
+      "slug": "leap-year-checker",
+      "title": "Leap Year Checker",
+      "category": "date-time",
+      "date_published": "2026-09-28",
+      "status": "published",
+      "h1": "Leap Year Checker",
+      "seo_description": "Enter a year and instantly see if it’s a leap year according to Gregorian calendar rules. Simple, fast, and mobile‑friendly.",
+      "keywords": [
+        "leap year",
+        "leap year calculator",
+        "Gregorian leap year",
+        "is year a leap year",
+        "leap year checker"
+      ],
+      "usage_instructions": "Enter a year (e.g., 2024) and click “Check”. The tool will tell you if it is a leap year according to Gregorian calendar rules."
     }
   ]
 }
