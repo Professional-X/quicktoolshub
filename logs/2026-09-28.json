@@ -22,6 +22,15 @@
         "2026-09-28T18:11:01+00:00 Step B: 5 ideas survived dedup",
         "2026-09-28T18:11:01+00:00 publish cap reached (4/day); skipping remaining 5 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-28T23:16:48+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-28T23:16:50+00:00 Step A: proposed 8 ideas",
+        "2026-09-28T23:16:50+00:00 Step B: 6 ideas survived dedup",
+        "2026-09-28T23:16:50+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -209,6 +218,92 @@
         ],
         "output": "Easter Sunday date (month and day)"
       }
+    ],
+    [
+      {
+        "title": "ISBN Validator",
+        "slug": "isbn-validator",
+        "category": "developer",
+        "one_line_pitch": "Validate ISBN‑10 or ISBN‑13 and compute check digit.",
+        "inputs": [
+          "ISBN number (digits or with dashes)"
+        ],
+        "output": "Validation result and correct check digit if invalid"
+      },
+      {
+        "title": "CSS Color Name Finder",
+        "slug": "css-color-name-finder",
+        "category": "image",
+        "one_line_pitch": "Find the closest CSS color name for a hex code.",
+        "inputs": [
+          "Hex color code (#RRGGBB)"
+        ],
+        "output": "Nearest CSS color name and RGB values"
+      },
+      {
+        "title": "Base64 Image Encoder / Decoder",
+        "slug": "base64-image-encoder-decoder",
+        "category": "developer",
+        "one_line_pitch": "Encode an image to Base64 or decode a Base64 string to an image.",
+        "inputs": [
+          "Image file (upload) or Base64 string"
+        ],
+        "output": "Base64 string or image preview"
+      },
+      {
+        "title": "IP Address Validator",
+        "slug": "ip-address-validator",
+        "category": "developer",
+        "one_line_pitch": "Check if a string is a valid IPv4 or IPv6 address.",
+        "inputs": [
+          "IP address string"
+        ],
+        "output": "Validation status and address type"
+      },
+      {
+        "title": "Angle Converter",
+        "slug": "angle-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert angles between degrees, radians, and gradians.",
+        "inputs": [
+          "Angle value",
+          "From unit",
+          "To unit"
+        ],
+        "output": "Converted angle"
+      },
+      {
+        "title": "MIME Type Finder",
+        "slug": "mime-type-finder",
+        "category": "developer",
+        "one_line_pitch": "Determine MIME type from a file extension or file name.",
+        "inputs": [
+          "File name or extension"
+        ],
+        "output": "MIME type string"
+      },
+      {
+        "title": "Time Duration Calculator",
+        "slug": "time-duration-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Compute difference between two times of day.",
+        "inputs": [
+          "Start time (HH:MM:SS)",
+          "End time (HH:MM:SS)"
+        ],
+        "output": "Duration in hours, minutes, seconds"
+      },
+      {
+        "title": "Checksum Generator",
+        "slug": "checksum-generator",
+        "category": "developer",
+        "one_line_pitch": "Generate MD5, SHA‑1, SHA‑256 checksums of a text.",
+        "inputs": [
+          "Text string",
+          "Algorithm selector"
+        ],
+        "output": "Hexadecimal checksum"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -244,6 +339,20 @@
         "title": "Speed Unit Converter",
         "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
         "at": "2026-09-28T18:11:01+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "base64-image-encoder-decoder",
+        "title": "Base64 Image Encoder / Decoder",
+        "reason": "rejected: duplicate of base64-encoder-decoder (similarity 0.88 > 0.8)",
+        "at": "2026-09-28T23:16:50+00:00"
+      },
+      {
+        "slug": "angle-converter",
+        "title": "Angle Converter",
+        "reason": "rejected: duplicate of base-converter (similarity 0.83 > 0.8)",
+        "at": "2026-09-28T23:16:50+00:00"
       }
     ]
   ],
@@ -357,10 +466,37 @@
       "completion_tokens": 1330,
       "total_tokens": 3559,
       "est_cost_usd": 0.006219
+    },
+    {
+      "time": "2026-09-28T23:16:48+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-28T23:16:48+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-28T23:16:50+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2229,
+      "completion_tokens": 1557,
+      "total_tokens": 3786,
+      "est_cost_usd": 0.0069
     }
   ],
   "budget": {
-    "tokens": 21568,
-    "usd": 0.046052
+    "tokens": 25526,
+    "usd": 0.053164
   }
 }
