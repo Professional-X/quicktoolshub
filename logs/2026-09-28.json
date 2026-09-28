@@ -13,6 +13,15 @@
         "2026-09-28T08:43:27+00:00 PUBLISHED leap-year-checker",
         "2026-09-28T08:43:27+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-28T18:10:59+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-28T18:11:01+00:00 Step A: proposed 8 ideas",
+        "2026-09-28T18:11:01+00:00 Step B: 5 ideas survived dedup",
+        "2026-09-28T18:11:01+00:00 publish cap reached (4/day); skipping remaining 5 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -105,6 +114,101 @@
         ],
         "output": "Individual results and total"
       }
+    ],
+    [
+      {
+        "title": "Reading Time Estimator",
+        "slug": "reading-time-estimator",
+        "category": "text",
+        "one_line_pitch": "Estimate how long it takes to read a paragraph based on word count and speed.",
+        "inputs": [
+          "paragraph text",
+          "optional words per minute"
+        ],
+        "output": "Estimated reading time in minutes and seconds"
+      },
+      {
+        "title": "Cubic Equation Solver",
+        "slug": "cubic-equation-solver",
+        "category": "math",
+        "one_line_pitch": "Find real or complex roots of a cubic equation ax³+bx²+cx+d=0.",
+        "inputs": [
+          "a coefficient",
+          "b coefficient",
+          "c coefficient",
+          "d constant"
+        ],
+        "output": "Three roots (real or complex) with full expressions"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Compute final amount and total interest for compound interest over time.",
+        "inputs": [
+          "principal amount",
+          "annual interest rate",
+          "compounding frequency per year",
+          "investment duration in years"
+        ],
+        "output": "Final balance and total interest earned"
+      },
+      {
+        "title": "Speed Unit Converter",
+        "slug": "speed-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert speed values between m/s, km/h, mph, and knots.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted speed value with unit"
+      },
+      {
+        "title": "Image Resize Calculator",
+        "slug": "image-resize-calculator",
+        "category": "image",
+        "one_line_pitch": "Calculate new image dimensions when scaling or resizing.",
+        "inputs": [
+          "original width",
+          "original height",
+          "desired width or height or scale factor"
+        ],
+        "output": "New width, new height, and applied scale factor"
+      },
+      {
+        "title": "CSS Grid Gap Calculator",
+        "slug": "css-grid-gap-calculator",
+        "category": "developer",
+        "one_line_pitch": "Determine column widths and gap sizes for CSS grid layouts.",
+        "inputs": [
+          "total container width",
+          "number of columns",
+          "desired gap size"
+        ],
+        "output": "Width per column and total gap space"
+      },
+      {
+        "title": "Coin Flip Simulator",
+        "slug": "coin-flip-simulator",
+        "category": "random-fun",
+        "one_line_pitch": "Simulate heads or tails flips and tally results.",
+        "inputs": [
+          "number of flips"
+        ],
+        "output": "Sequence of outcomes and count of heads/tails"
+      },
+      {
+        "title": "Easter Date Calculator",
+        "slug": "easter-date-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Compute the Gregorian Easter Sunday date for any given year.",
+        "inputs": [
+          "year"
+        ],
+        "output": "Easter Sunday date (month and day)"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -120,6 +224,26 @@
         "title": "BMR Calculator",
         "reason": "rejected: duplicate of bmi-calculator (similarity 0.93 > 0.8)",
         "at": "2026-09-28T08:42:46+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "cubic-equation-solver",
+        "title": "Cubic Equation Solver",
+        "reason": "rejected: duplicate of quadratic-equation-solver (similarity 0.83 > 0.8)",
+        "at": "2026-09-28T18:11:01+00:00"
+      },
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-09-28T18:11:01+00:00"
+      },
+      {
+        "slug": "speed-unit-converter",
+        "title": "Speed Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
+        "at": "2026-09-28T18:11:01+00:00"
       }
     ]
   ],
@@ -206,10 +330,37 @@
       "completion_tokens": 2351,
       "total_tokens": 3298,
       "est_cost_usd": 0.008
+    },
+    {
+      "time": "2026-09-28T18:10:59+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-28T18:10:59+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-28T18:11:01+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2229,
+      "completion_tokens": 1330,
+      "total_tokens": 3559,
+      "est_cost_usd": 0.006219
     }
   ],
   "budget": {
-    "tokens": 17837,
-    "usd": 0.039621
+    "tokens": 21568,
+    "usd": 0.046052
   }
 }
