@@ -15,6 +15,15 @@
         "2026-09-29T08:34:50+00:00 PUBLISHED url-slug-generator",
         "2026-09-29T08:34:50+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-29T16:31:56+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-29T16:32:09+00:00 Step A: proposed 7 ideas",
+        "2026-09-29T16:32:09+00:00 Step B: 7 ideas survived dedup",
+        "2026-09-29T16:32:09+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -107,6 +116,82 @@
         ],
         "output": "Day of week"
       }
+    ],
+    [
+      {
+        "title": "HTML Minifier",
+        "slug": "html-minifier",
+        "category": "developer",
+        "one_line_pitch": "Compress HTML code to a single line, removing whitespace and comments",
+        "inputs": [
+          "HTML code"
+        ],
+        "output": "Minified HTML string"
+      },
+      {
+        "title": "IP Subnet Calculator",
+        "slug": "ip-subnet-calculator",
+        "category": "developer",
+        "one_line_pitch": "Compute network address, broadcast and host count from an IP and CIDR",
+        "inputs": [
+          "IP address",
+          "CIDR mask"
+        ],
+        "output": "Network address, broadcast address, total hosts"
+      },
+      {
+        "title": "File Hash Generator",
+        "slug": "file-hash-generator",
+        "category": "developer",
+        "one_line_pitch": "Calculate SHA-256 (and other) hash of an uploaded file",
+        "inputs": [
+          "File upload"
+        ],
+        "output": "Hash values (hex) for selected algorithms"
+      },
+      {
+        "title": "URL Query Parameter Extractor",
+        "slug": "url-query-extractor",
+        "category": "developer",
+        "one_line_pitch": "Parse a URL and list all query parameters as key‑value pairs",
+        "inputs": [
+          "URL"
+        ],
+        "output": "Table of query parameters"
+      },
+      {
+        "title": "Day of Week Calculator",
+        "slug": "day-of-week-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Find the weekday for any given date",
+        "inputs": [
+          "Date (YYYY-MM-DD)"
+        ],
+        "output": "Day of the week"
+      },
+      {
+        "title": "Image Aspect Ratio Calculator",
+        "slug": "image-aspect-ratio-calculator",
+        "category": "image",
+        "one_line_pitch": "Simplify width and height to the smallest integer aspect ratio",
+        "inputs": [
+          "Width",
+          "Height"
+        ],
+        "output": "Aspect ratio (e.g., 16:9)"
+      },
+      {
+        "title": "Random Number Generator",
+        "slug": "random-number-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Generate a list of random integers within a range",
+        "inputs": [
+          "Minimum value",
+          "Maximum value",
+          "Count"
+        ],
+        "output": "Comma‑separated random numbers"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -117,7 +202,8 @@
         "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
         "at": "2026-09-29T08:32:34+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -265,10 +351,37 @@
       "completion_tokens": 2471,
       "total_tokens": 3413,
       "est_cost_usd": 0.008355
+    },
+    {
+      "time": "2026-09-29T16:31:56+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-29T16:31:56+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-29T16:32:09+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2415,
+      "completion_tokens": 2000,
+      "total_tokens": 4415,
+      "est_cost_usd": 0.008415
     }
   ],
   "budget": {
-    "tokens": 28428,
-    "usd": 0.067322
+    "tokens": 33015,
+    "usd": 0.075949
   }
 }
