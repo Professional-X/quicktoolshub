@@ -24,6 +24,15 @@
         "2026-09-29T16:32:09+00:00 Step B: 7 ideas survived dedup",
         "2026-09-29T16:32:09+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-29T22:15:18+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-29T22:15:21+00:00 Step A: proposed 4 ideas",
+        "2026-09-29T22:15:21+00:00 Step B: 4 ideas survived dedup",
+        "2026-09-29T22:15:21+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -192,6 +201,51 @@
         ],
         "output": "Comma‑separated random numbers"
       }
+    ],
+    [
+      {
+        "title": "Text Summarizer",
+        "slug": "text-summarizer",
+        "category": "text",
+        "one_line_pitch": "Summarize paragraphs into key sentences quickly.",
+        "inputs": [
+          "Text to summarize",
+          "Maximum number of sentences (optional)"
+        ],
+        "output": "A concise summary of the input text."
+      },
+      {
+        "title": "Word Length Histogram",
+        "slug": "word-length-histogram",
+        "category": "text",
+        "one_line_pitch": "Show a histogram of word lengths in your text.",
+        "inputs": [
+          "Input text"
+        ],
+        "output": "A visual bar chart of word length frequencies."
+      },
+      {
+        "title": "Birthday Countdown",
+        "slug": "birthday-countdown",
+        "category": "date-time",
+        "one_line_pitch": "Calculate days, hours, minutes until your next birthday.",
+        "inputs": [
+          "Birth date (YYYY-MM-DD)"
+        ],
+        "output": "Time remaining until next birthday in days, hours, minutes."
+      },
+      {
+        "title": "Currency Formatter",
+        "slug": "currency-formatter",
+        "category": "finance",
+        "one_line_pitch": "Format numbers as local currency strings instantly.",
+        "inputs": [
+          "Number",
+          "Locale (optional)",
+          "Currency code (optional)"
+        ],
+        "output": "Formatted currency string."
+      }
     ]
   ],
   "ideas_rejected": [
@@ -203,6 +257,7 @@
         "at": "2026-09-29T08:32:34+00:00"
       }
     ],
+    [],
     []
   ],
   "tools_published": [],
@@ -378,10 +433,37 @@
       "completion_tokens": 2000,
       "total_tokens": 4415,
       "est_cost_usd": 0.008415
+    },
+    {
+      "time": "2026-09-29T22:15:18+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-29T22:15:18+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-29T22:15:21+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2415,
+      "completion_tokens": 2000,
+      "total_tokens": 4415,
+      "est_cost_usd": 0.008415
     }
   ],
   "budget": {
-    "tokens": 33015,
-    "usd": 0.075949
+    "tokens": 37602,
+    "usd": 0.084576
   }
 }
