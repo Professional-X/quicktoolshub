@@ -1,0 +1,274 @@
+{
+  "date": "2026-09-29",
+  "runs": [
+    {
+      "started_at": "2026-09-29T08:32:31+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-29T08:32:33+00:00 Step A: proposed 8 ideas",
+        "2026-09-29T08:32:34+00:00 Step B: 7 ideas survived dedup",
+        "2026-09-29T08:32:45+00:00 PUBLISHED passive-voice-detector",
+        "2026-09-29T08:32:55+00:00 PUBLISHED calories-burned-calculator",
+        "2026-09-29T08:33:08+00:00 Step C rejected qr-code-generator: missing ---META--- block in LLM output",
+        "2026-09-29T08:33:54+00:00 Step D FAILED image-to-base64-converter: test_cases=False",
+        "2026-09-29T08:34:04+00:00 PUBLISHED html-entity-encoder-decoder",
+        "2026-09-29T08:34:50+00:00 PUBLISHED url-slug-generator",
+        "2026-09-29T08:34:50+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
+      ]
+    }
+  ],
+  "ideas_proposed": [
+    [
+      {
+        "title": "Passive Voice Detector",
+        "slug": "passive-voice-detector",
+        "category": "text",
+        "one_line_pitch": "Detects passive sentences in your text instantly",
+        "inputs": [
+          "text"
+        ],
+        "output": "List of detected passive sentences and their positions"
+      },
+      {
+        "title": "Calories Burned Calculator",
+        "slug": "calories-burned-calculator",
+        "category": "health",
+        "one_line_pitch": "Calculates calories burned based on weight, activity, and duration",
+        "inputs": [
+          "weightKg",
+          "activity",
+          "durationMinutes"
+        ],
+        "output": "Estimated calories burned"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Computes future value with compound interest and frequency",
+        "inputs": [
+          "principal",
+          "rate",
+          "timeYears",
+          "compoundsPerYear"
+        ],
+        "output": "Future value, total interest, and periodic amount"
+      },
+      {
+        "title": "QR Code Generator",
+        "slug": "qr-code-generator",
+        "category": "image",
+        "one_line_pitch": "Generates QR codes from text or URLs",
+        "inputs": [
+          "data",
+          "sizePixels"
+        ],
+        "output": "QR code image"
+      },
+      {
+        "title": "Image to Base64 Converter",
+        "slug": "image-to-base64-converter",
+        "category": "image",
+        "one_line_pitch": "Converts an uploaded image to a Base64 string",
+        "inputs": [
+          "imageFile"
+        ],
+        "output": "Base64 encoded string"
+      },
+      {
+        "title": "HTML Entity Encoder/Decoder",
+        "slug": "html-entity-encoder-decoder",
+        "category": "developer",
+        "one_line_pitch": "Encodes or decodes HTML entities in text",
+        "inputs": [
+          "text",
+          "mode"
+        ],
+        "output": "Encoded or decoded text"
+      },
+      {
+        "title": "URL Slug Generator",
+        "slug": "url-slug-generator",
+        "category": "productivity",
+        "one_line_pitch": "Creates a URL-friendly slug from any text",
+        "inputs": [
+          "text",
+          "separator"
+        ],
+        "output": "URL slug"
+      },
+      {
+        "title": "Day of Week Calculator",
+        "slug": "day-of-week-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Shows the weekday for any given date",
+        "inputs": [
+          "date"
+        ],
+        "output": "Day of week"
+      }
+    ]
+  ],
+  "ideas_rejected": [
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-09-29T08:32:34+00:00"
+      }
+    ]
+  ],
+  "tools_published": [],
+  "tools_failed": [
+    {
+      "slug": "qr-code-generator",
+      "stage": "generate",
+      "reason": "missing ---META--- block in LLM output",
+      "at": "2026-09-29T08:33:08+00:00"
+    },
+    {
+      "slug": "image-to-base64-converter",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-09-29T08:33:54+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=149"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (f-imagefile: file inputs are not supported in automated tests; expected 'Base64 string' not found; actual: 'error: no file selected') | case2: FAIL (f-imagefile: file inputs are not supported in automated tests) | case3: FAIL (f-imagefile: file inputs are not supported in automated tests; expected 'Error: Unsupported file type' not found; actual: 'error: no file selected')"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
+  "llm_calls": [
+    {
+      "time": "2026-09-29T08:32:31+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-29T08:32:31+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-29T08:32:33+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2229,
+      "completion_tokens": 1179,
+      "total_tokens": 3408,
+      "est_cost_usd": 0.005766
+    },
+    {
+      "time": "2026-09-29T08:32:34+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 471,
+      "completion_tokens": 108,
+      "total_tokens": 579,
+      "est_cost_usd": 0.000795
+    },
+    {
+      "time": "2026-09-29T08:32:34+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 458,
+      "completion_tokens": 84,
+      "total_tokens": 542,
+      "est_cost_usd": 0.00071
+    },
+    {
+      "time": "2026-09-29T08:32:40+00:00",
+      "purpose": "code_generation:passive-voice-detector",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 945,
+      "completion_tokens": 2362,
+      "total_tokens": 3307,
+      "est_cost_usd": 0.008031
+    },
+    {
+      "time": "2026-09-29T08:32:51+00:00",
+      "purpose": "code_generation:calories-burned-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 950,
+      "completion_tokens": 2605,
+      "total_tokens": 3555,
+      "est_cost_usd": 0.008765
+    },
+    {
+      "time": "2026-09-29T08:33:08+00:00",
+      "purpose": "code_generation:qr-code-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 942,
+      "completion_tokens": 6000,
+      "total_tokens": 6942,
+      "est_cost_usd": 0.018942
+    },
+    {
+      "time": "2026-09-29T08:33:49+00:00",
+      "purpose": "code_generation:image-to-base64-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 945,
+      "completion_tokens": 2259,
+      "total_tokens": 3204,
+      "est_cost_usd": 0.007722
+    },
+    {
+      "time": "2026-09-29T08:33:59+00:00",
+      "purpose": "code_generation:html-entity-encoder-decoder",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 947,
+      "completion_tokens": 2359,
+      "total_tokens": 3306,
+      "est_cost_usd": 0.008024
+    },
+    {
+      "time": "2026-09-29T08:34:45+00:00",
+      "purpose": "code_generation:url-slug-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 942,
+      "completion_tokens": 2471,
+      "total_tokens": 3413,
+      "est_cost_usd": 0.008355
+    }
+  ],
+  "budget": {
+    "tokens": 28428,
+    "usd": 0.067322
+  }
+}

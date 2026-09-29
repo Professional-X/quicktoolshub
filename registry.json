@@ -675,6 +675,72 @@
         "leap year checker"
       ],
       "usage_instructions": "Enter a year (e.g., 2024) and click “Check”. The tool will tell you if it is a leap year according to Gregorian calendar rules."
+    },
+    {
+      "slug": "passive-voice-detector",
+      "title": "Passive Voice Detector",
+      "category": "text",
+      "date_published": "2026-09-29",
+      "status": "published",
+      "h1": "Passive Voice Detector",
+      "seo_description": "Enter your text and instantly detect passive sentences with positions. Quick, free, and easy to use.",
+      "keywords": [
+        "passive voice detector",
+        "detect passive sentences",
+        "passive voice checker",
+        "grammar tool"
+      ],
+      "usage_instructions": "Paste or type your text into the box, then click “Detect Passive Sentences”. The tool will list any passive sentences and their character positions."
+    },
+    {
+      "slug": "calories-burned-calculator",
+      "title": "Calories Burned Calculator",
+      "category": "health",
+      "date_published": "2026-09-29",
+      "status": "published",
+      "h1": "Calories Burned Calculator",
+      "seo_description": "Quickly calculate calories burned based on your weight, activity type, and duration. No signup needed.",
+      "keywords": [
+        "calories burned calculator",
+        "estimate calories burned",
+        "workout calorie calculator",
+        "MET calculator"
+      ],
+      "usage_instructions": "Enter your weight, select an activity, and specify the duration in minutes. Then click Calculate to see the estimated calories burned."
+    },
+    {
+      "slug": "html-entity-encoder-decoder",
+      "title": "HTML Entity Encoder/Decoder",
+      "category": "developer",
+      "date_published": "2026-09-29",
+      "status": "published",
+      "h1": "HTML Entity Encoder / Decoder",
+      "seo_description": "Quickly encode or decode HTML entities in any text. No ads, fully client‑side, responsive tool for developers.",
+      "keywords": [
+        "HTML entity encoder",
+        "HTML entity decoder",
+        "encode HTML entities",
+        "decode HTML entities",
+        "HTML escape tool"
+      ],
+      "usage_instructions": "Enter text, choose Encode or Decode, then click Convert. The result appears below."
+    },
+    {
+      "slug": "url-slug-generator",
+      "title": "URL Slug Generator",
+      "category": "productivity",
+      "date_published": "2026-09-29",
+      "status": "published",
+      "h1": "URL Slug Generator",
+      "seo_description": "Generate a clean, SEO‑friendly URL slug from any text with a custom separator. Fast, free, and works offline.",
+      "keywords": [
+        "url slug generator",
+        "create slug",
+        "seo friendly url",
+        "slug tool",
+        "text to slug"
+      ],
+      "usage_instructions": "Enter the text you want to convert and choose a separator (default is hyphen). Click “Generate Slug” to see the URL‑friendly result."
     }
   ]
 }
