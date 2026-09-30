@@ -741,6 +741,23 @@
         "text to slug"
       ],
       "usage_instructions": "Enter the text you want to convert and choose a separator (default is hyphen). Click “Generate Slug” to see the URL‑friendly result."
+    },
+    {
+      "slug": "text-to-pig-latin-converter",
+      "title": "Text to Pig Latin Converter",
+      "category": "text",
+      "date_published": "2026-09-30",
+      "status": "published",
+      "h1": "Text to Pig Latin Converter",
+      "seo_description": "Convert any English text to Pig Latin instantly with our free online tool. Quick, easy, and no ads.",
+      "keywords": [
+        "pig latin converter",
+        "english to pig latin",
+        "text translation",
+        "online pig latin",
+        "convert text"
+      ],
+      "usage_instructions": "Enter English text in the box below and click \"Convert\". The Pig Latin version will appear instantly below. Empty input will show a friendly reminder."
     }
   ]
 }
