@@ -73,7 +73,25 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/zodiac-sign-calculator/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://professional-x.github.io/quicktoolshub/tools/text-to-pig-latin-converter/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/markdown-to-plain-text-converter/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/file-extension-to-mime-detector/</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

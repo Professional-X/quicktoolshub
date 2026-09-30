@@ -9,6 +9,18 @@
         "2026-09-30T08:35:26+00:00 Step B: 1 ideas survived dedup",
         "2026-09-30T08:35:39+00:00 PUBLISHED text-to-pig-latin-converter"
       ]
+    },
+    {
+      "started_at": "2026-09-30T16:25:32+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-30T16:25:42+00:00 Step A: proposed 6 ideas",
+        "2026-09-30T16:25:43+00:00 Step B: 5 ideas survived dedup",
+        "2026-09-30T16:25:56+00:00 PUBLISHED zodiac-sign-calculator",
+        "2026-09-30T16:26:07+00:00 PUBLISHED markdown-to-plain-text-converter",
+        "2026-09-30T16:26:26+00:00 PUBLISHED file-extension-to-mime-detector",
+        "2026-09-30T16:26:26+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -23,10 +35,85 @@
         ],
         "output": "Pig Latin text"
       }
+    ],
+    [
+      {
+        "title": "Zodiac Sign Calculator",
+        "slug": "zodiac-sign-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Find your zodiac sign from any birth date instantly.",
+        "inputs": [
+          "day",
+          "month",
+          "year"
+        ],
+        "output": "Zodiac sign and date range"
+      },
+      {
+        "title": "BAC Calculator",
+        "slug": "bac-calculator",
+        "category": "health",
+        "one_line_pitch": "Estimate blood alcohol content from weight, drinks, and time.",
+        "inputs": [
+          "body weight (kg)",
+          "number of drinks",
+          "time since first drink (hours)"
+        ],
+        "output": "Estimated BAC percentage"
+      },
+      {
+        "title": "Markdown to Plain Text Converter",
+        "slug": "markdown-to-plain-text-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert Markdown syntax to plain text, stripping formatting.",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "Plain text"
+      },
+      {
+        "title": "File Extension to MIME Type Detector",
+        "slug": "file-extension-to-mime-detector",
+        "category": "developer",
+        "one_line_pitch": "Get the MIME type for any file extension.",
+        "inputs": [
+          "file extension"
+        ],
+        "output": "MIME type string"
+      },
+      {
+        "title": "Age in Seconds Calculator",
+        "slug": "age-in-seconds-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Calculate exact seconds lived from your birth date and time.",
+        "inputs": [
+          "birth date",
+          "birth time (optional)"
+        ],
+        "output": "Age in seconds"
+      },
+      {
+        "title": "Number to Fibonacci Sequence Generator",
+        "slug": "number-to-fibonacci-generator",
+        "category": "math",
+        "one_line_pitch": "Generate first N Fibonacci numbers.",
+        "inputs": [
+          "N"
+        ],
+        "output": "Array of Fibonacci numbers"
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "bac-calculator",
+        "title": "BAC Calculator",
+        "reason": "rejected: duplicate of bmi-calculator (similarity 0.86 > 0.8)",
+        "at": "2026-09-30T16:25:43+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [],
@@ -75,10 +162,73 @@
       "completion_tokens": 2779,
       "total_tokens": 3722,
       "est_cost_usd": 0.00928
+    },
+    {
+      "time": "2026-09-30T16:25:31+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-30T16:25:32+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-30T16:25:42+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2462,
+      "completion_tokens": 2000,
+      "total_tokens": 4462,
+      "est_cost_usd": 0.008462
+    },
+    {
+      "time": "2026-09-30T16:25:43+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 469,
+      "completion_tokens": 96,
+      "total_tokens": 565,
+      "est_cost_usd": 0.000757
+    },
+    {
+      "time": "2026-09-30T16:25:50+00:00",
+      "purpose": "code_generation:zodiac-sign-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 948,
+      "completion_tokens": 3155,
+      "total_tokens": 4103,
+      "est_cost_usd": 0.010413
+    },
+    {
+      "time": "2026-09-30T16:26:02+00:00",
+      "purpose": "code_generation:markdown-to-plain-text-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 943,
+      "completion_tokens": 2757,
+      "total_tokens": 3700,
+      "est_cost_usd": 0.009214
+    },
+    {
+      "time": "2026-09-30T16:26:20+00:00",
+      "purpose": "code_generation:file-extension-to-mime-detector",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 944,
+      "completion_tokens": 5643,
+      "total_tokens": 6587,
+      "est_cost_usd": 0.017873
     }
   ],
   "budget": {
-    "tokens": 8882,
-    "usd": 0.018704
+    "tokens": 28471,
+    "usd": 0.065635
   }
 }

@@ -758,6 +758,56 @@
         "convert text"
       ],
       "usage_instructions": "Enter English text in the box below and click \"Convert\". The Pig Latin version will appear instantly below. Empty input will show a friendly reminder."
+    },
+    {
+      "slug": "zodiac-sign-calculator",
+      "title": "Zodiac Sign Calculator",
+      "category": "date-time",
+      "date_published": "2026-09-30",
+      "status": "published",
+      "h1": "Zodiac Sign Calculator",
+      "seo_description": "Enter any birth date to instantly discover your zodiac sign and its date range. Quick, accurate, and free.",
+      "keywords": [
+        "zodiac sign",
+        "birth date zodiac",
+        "zodiac calculator",
+        "find zodiac sign"
+      ],
+      "usage_instructions": "Enter your birth day, month, and year, then click Calculate. The tool will show your zodiac sign and its date range."
+    },
+    {
+      "slug": "markdown-to-plain-text-converter",
+      "title": "Markdown to Plain Text Converter",
+      "category": "developer",
+      "date_published": "2026-09-30",
+      "status": "published",
+      "h1": "Markdown to Plain Text Converter",
+      "seo_description": "Paste Markdown and instantly get clean plain text. No formatting, just the raw content.",
+      "keywords": [
+        "markdown to text",
+        "strip markdown formatting",
+        "plain text converter",
+        "markdown converter",
+        "remove markdown"
+      ],
+      "usage_instructions": "Paste your Markdown into the box below and click Convert to obtain plain text without any formatting."
+    },
+    {
+      "slug": "file-extension-to-mime-detector",
+      "title": "File Extension to MIME Type Detector",
+      "category": "developer",
+      "date_published": "2026-09-30",
+      "status": "published",
+      "h1": "File Extension to MIME Type Detector",
+      "seo_description": "Enter a file extension and instantly get its MIME type. Simple, fast, and works offline.",
+      "keywords": [
+        "file extension mime type",
+        "mime type lookup",
+        "extension to mime",
+        "mime type detector",
+        "file type identifier"
+      ],
+      "usage_instructions": "Enter a file extension (e.g., \"jpg\" or \".pdf\") and click “Get MIME type” to see the corresponding MIME type."
     }
   ]
 }
