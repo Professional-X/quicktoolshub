@@ -21,6 +21,15 @@
         "2026-09-30T16:26:26+00:00 PUBLISHED file-extension-to-mime-detector",
         "2026-09-30T16:26:26+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-09-30T22:16:12+00:00",
+      "status": "running",
+      "notes": [
+        "2026-09-30T22:16:23+00:00 Step A: proposed 8 ideas",
+        "2026-09-30T22:16:23+00:00 Step B: 7 ideas survived dedup",
+        "2026-09-30T22:16:23+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -102,6 +111,94 @@
         ],
         "output": "Array of Fibonacci numbers"
       }
+    ],
+    [
+      {
+        "title": "Retirement Savings Planner",
+        "slug": "retirement-savings-planner",
+        "category": "finance",
+        "one_line_pitch": "Estimate how long until retirement and required contributions",
+        "inputs": [
+          "current_age",
+          "retirement_age",
+          "current_savings",
+          "annual_contribution",
+          "expected_return_rate"
+        ],
+        "output": "Years to retirement and projected savings"
+      },
+      {
+        "title": "Gunning Fog Readability Index",
+        "slug": "gunning-fog-index",
+        "category": "text",
+        "one_line_pitch": "Calculate Fog Index and estimated education years for a paragraph",
+        "inputs": [
+          "text"
+        ],
+        "output": "Fog Index score and years of education needed"
+      },
+      {
+        "title": "Speed Unit Converter",
+        "slug": "speed-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert speed between km/h, mph, m/s, and knots",
+        "inputs": [
+          "value",
+          "from_unit",
+          "to_unit"
+        ],
+        "output": "Converted speed with unit"
+      },
+      {
+        "title": "HTML Minifier",
+        "slug": "html-minifier",
+        "category": "developer",
+        "one_line_pitch": "Compress HTML into a single line without formatting",
+        "inputs": [
+          "html"
+        ],
+        "output": "Minified HTML string"
+      },
+      {
+        "title": "Prime Number Generator",
+        "slug": "prime-number-generator",
+        "category": "math",
+        "one_line_pitch": "Generate all prime numbers up to a given limit",
+        "inputs": [
+          "limit"
+        ],
+        "output": "List of prime numbers up to limit"
+      },
+      {
+        "title": "Time Until Next Full Moon",
+        "slug": "next-full-moon",
+        "category": "date-time",
+        "one_line_pitch": "Show time remaining until the next full moon from a given date",
+        "inputs": [
+          "date"
+        ],
+        "output": "Hours, minutes, and seconds until next full moon"
+      },
+      {
+        "title": "Text to Leet Speak Converter",
+        "slug": "leet-speak-converter",
+        "category": "random-fun",
+        "one_line_pitch": "Transform English text into leet speak",
+        "inputs": [
+          "text"
+        ],
+        "output": "Leet speak string"
+      },
+      {
+        "title": "URL Query Parameter Extractor",
+        "slug": "url-query-extractor",
+        "category": "developer",
+        "one_line_pitch": "Parse a URL and list its query parameters as key-value pairs",
+        "inputs": [
+          "url"
+        ],
+        "output": "JSON object of query parameters"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -112,6 +209,14 @@
         "title": "BAC Calculator",
         "reason": "rejected: duplicate of bmi-calculator (similarity 0.86 > 0.8)",
         "at": "2026-09-30T16:25:43+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "speed-unit-converter",
+        "title": "Speed Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
+        "at": "2026-09-30T22:16:23+00:00"
       }
     ]
   ],
@@ -225,10 +330,37 @@
       "completion_tokens": 5643,
       "total_tokens": 6587,
       "est_cost_usd": 0.017873
+    },
+    {
+      "time": "2026-09-30T22:16:11+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-30T22:16:12+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-09-30T22:16:23+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2596,
+      "completion_tokens": 1467,
+      "total_tokens": 4063,
+      "est_cost_usd": 0.006997
     }
   ],
   "budget": {
-    "tokens": 28471,
-    "usd": 0.065635
+    "tokens": 32706,
+    "usd": 0.072844
   }
 }
