@@ -15,6 +15,15 @@
         "2026-10-01T08:59:06+00:00 PUBLISHED markdown-table-generator",
         "2026-10-01T08:59:06+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-01T17:02:43+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-01T17:02:54+00:00 Step A: proposed 8 ideas",
+        "2026-10-01T17:02:54+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-01T17:02:54+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -100,10 +109,101 @@
         "inputs": [],
         "output": "Binary clock animation"
       }
+    ],
+    [
+      {
+        "title": "URL Parameter Extractor",
+        "slug": "url-parameter-extractor",
+        "category": "developer",
+        "one_line_pitch": "Parse any URL and list its query parameters with values.",
+        "inputs": [
+          "URL"
+        ],
+        "output": "JSON object mapping parameter names to values"
+      },
+      {
+        "title": "Markdown Link Extractor",
+        "slug": "markdown-link-extractor",
+        "category": "developer",
+        "one_line_pitch": "Extract all links from markdown and show URLs and titles.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "Table of link texts and URLs"
+      },
+      {
+        "title": "Leet Speak Converter",
+        "slug": "leet-speak-converter",
+        "category": "random-fun",
+        "one_line_pitch": "Convert any text into leet speak with optional custom mappings.",
+        "inputs": [
+          "Text"
+        ],
+        "output": "Leet-speak text"
+      },
+      {
+        "title": "Download Time Estimator",
+        "slug": "download-time-estimator",
+        "category": "productivity",
+        "one_line_pitch": "Estimate download time from file size and bandwidth.",
+        "inputs": [
+          "File size",
+          "Bandwidth"
+        ],
+        "output": "Estimated time in hours, minutes, seconds"
+      },
+      {
+        "title": "Next Full Moon Calculator",
+        "slug": "next-full-moon-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Show days, hours, minutes until the next full moon.",
+        "inputs": [],
+        "output": "Countdown to next full moon"
+      },
+      {
+        "title": "IP Address Validator & Classifier",
+        "slug": "ip-address-validator-classifier",
+        "category": "developer",
+        "one_line_pitch": "Validate IPv4/IPv6 addresses and classify as public/private/loopback.",
+        "inputs": [
+          "IP address"
+        ],
+        "output": "Validity and classification"
+      },
+      {
+        "title": "Pressure Unit Converter",
+        "slug": "pressure-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert pressure between psi, bar, kPa, atm, Pa.",
+        "inputs": [
+          "Pressure value",
+          "From unit",
+          "To unit"
+        ],
+        "output": "Converted pressure"
+      },
+      {
+        "title": "NATO Phonetic Converter",
+        "slug": "nato-phonetic-converter",
+        "category": "text",
+        "one_line_pitch": "Translate text into NATO phonetic alphabet words.",
+        "inputs": [
+          "Text"
+        ],
+        "output": "Phonetic representation"
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "pressure-unit-converter",
+        "title": "Pressure Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
+        "at": "2026-10-01T17:02:54+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -283,10 +383,37 @@
       "completion_tokens": 2167,
       "total_tokens": 3121,
       "est_cost_usd": 0.007455
+    },
+    {
+      "time": "2026-10-01T17:02:42+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-01T17:02:43+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-01T17:02:54+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2802,
+      "completion_tokens": 1835,
+      "total_tokens": 4637,
+      "est_cost_usd": 0.008307
     }
   ],
   "budget": {
-    "tokens": 26993,
-    "usd": 0.062147
+    "tokens": 31802,
+    "usd": 0.070666
   }
 }
