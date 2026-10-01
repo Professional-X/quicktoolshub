@@ -24,6 +24,15 @@
         "2026-10-01T17:02:54+00:00 Step B: 7 ideas survived dedup",
         "2026-10-01T17:02:54+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-01T22:41:36+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-01T22:41:39+00:00 Step A: proposed 8 ideas",
+        "2026-10-01T22:41:39+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-01T22:41:39+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -192,6 +201,94 @@
         ],
         "output": "Phonetic representation"
       }
+    ],
+    [
+      {
+        "title": "Day of the Week Calculator",
+        "slug": "day-of-the-week-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Find the weekday for any given date instantly.",
+        "inputs": [
+          "date (YYYY-MM-DD)"
+        ],
+        "output": "Name of the weekday (e.g., Monday)"
+      },
+      {
+        "title": "Length Unit Converter",
+        "slug": "length-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert lengths between metric and imperial units quickly.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted length value"
+      },
+      {
+        "title": "Body Surface Area Calculator",
+        "slug": "body-surface-area-calculator",
+        "category": "health",
+        "one_line_pitch": "Calculate BSA in m² using height and weight.",
+        "inputs": [
+          "height (cm or inches)",
+          "weight (kg or lbs)"
+        ],
+        "output": "Body surface area in square meters"
+      },
+      {
+        "title": "URL Query Parameter Builder",
+        "slug": "url-query-builder",
+        "category": "developer",
+        "one_line_pitch": "Build a full URL with encoded query parameters from key/value pairs.",
+        "inputs": [
+          "base URL",
+          "key/value pairs (comma‑separated)"
+        ],
+        "output": "Complete URL with query string"
+      },
+      {
+        "title": "Countdown Timer to Future Date",
+        "slug": "countdown-timer",
+        "category": "productivity",
+        "one_line_pitch": "Show remaining time until a chosen future date and time.",
+        "inputs": [
+          "future date/time (YYYY-MM-DD HH:MM:SS)"
+        ],
+        "output": "Days, hours, minutes, seconds until target"
+      },
+      {
+        "title": "Character Frequency Counter",
+        "slug": "character-frequency-counter",
+        "category": "text",
+        "one_line_pitch": "Count how many times each character appears in a text.",
+        "inputs": [
+          "input text"
+        ],
+        "output": "Table of characters with their counts"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Compute future value with annual compounding interest.",
+        "inputs": [
+          "principal",
+          "annual rate (%)",
+          "years"
+        ],
+        "output": "Future value of investment"
+      },
+      {
+        "title": "Image to Base64 Encoder",
+        "slug": "image-to-base64-encoder",
+        "category": "image",
+        "one_line_pitch": "Encode any image file to a Base64 string for embedding.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "Base64 encoded string of the image"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -202,6 +299,14 @@
         "title": "Pressure Unit Converter",
         "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
         "at": "2026-10-01T17:02:54+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-10-01T22:41:39+00:00"
       }
     ]
   ],
@@ -410,10 +515,37 @@
       "completion_tokens": 1835,
       "total_tokens": 4637,
       "est_cost_usd": 0.008307
+    },
+    {
+      "time": "2026-10-01T22:41:36+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-01T22:41:36+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-01T22:41:39+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2802,
+      "completion_tokens": 1578,
+      "total_tokens": 4380,
+      "est_cost_usd": 0.007536
     }
   ],
   "budget": {
-    "tokens": 31802,
-    "usd": 0.070666
+    "tokens": 36354,
+    "usd": 0.078414
   }
 }
