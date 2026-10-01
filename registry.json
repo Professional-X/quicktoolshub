@@ -808,6 +808,73 @@
         "file type identifier"
       ],
       "usage_instructions": "Enter a file extension (e.g., \"jpg\" or \".pdf\") and click “Get MIME type” to see the corresponding MIME type."
+    },
+    {
+      "slug": "reading-time-estimator",
+      "title": "Reading Time Estimator",
+      "category": "productivity",
+      "date_published": "2026-10-01",
+      "status": "published",
+      "h1": "Reading Time Estimator",
+      "seo_description": "Quickly estimate how long a text will take to read by entering word count and reading speed. Get the reading time in minutes and seconds instantly.",
+      "keywords": [
+        "reading time calculator",
+        "estimate reading duration",
+        "words per minute",
+        "reading speed tool",
+        "reading time estimator"
+      ],
+      "usage_instructions": "Enter the total word count of your text and your reading speed (words per minute). Click “Calculate” to see the estimated reading time in minutes and seconds."
+    },
+    {
+      "slug": "isbn-10-to-13-converter",
+      "title": "ISBN-10 to ISBN-13 Converter",
+      "category": "developer",
+      "date_published": "2026-10-01",
+      "status": "published",
+      "h1": "ISBN‑10 to ISBN‑13 Converter",
+      "seo_description": "Convert any 10‑digit ISBN to its 13‑digit equivalent instantly. Free, accurate, and easy to use.",
+      "keywords": [
+        "ISBN conversion",
+        "ISBN-10 to ISBN-13",
+        "book identifier",
+        "online ISBN tool"
+      ],
+      "usage_instructions": "Enter a 10‑digit ISBN (with or without hyphens) in the field below and click Convert. The 13‑digit ISBN will appear below. Invalid inputs show an error message."
+    },
+    {
+      "slug": "linear-congruence-solver",
+      "title": "Linear Congruence Solver",
+      "category": "math",
+      "date_published": "2026-10-01",
+      "status": "published",
+      "h1": "Linear Congruence Solver",
+      "seo_description": "Solve ax ≡ b (mod n) instantly. Enter integers a, b, n to get all solutions modulo n or see if none exist.",
+      "keywords": [
+        "linear congruence",
+        "modular equation solver",
+        "ax ≡ b mod n",
+        "solve congruence",
+        "math tool"
+      ],
+      "usage_instructions": "Enter integers a, b, and n, then click “Solve”. The tool will list all solutions modulo n or indicate that no solution exists."
+    },
+    {
+      "slug": "markdown-table-generator",
+      "title": "Markdown Table Generator",
+      "category": "developer",
+      "date_published": "2026-10-01",
+      "status": "published",
+      "h1": "Markdown Table Generator",
+      "seo_description": "Generate markdown tables by specifying rows, columns, and optional cell patterns. Instant preview and copy-ready output.",
+      "keywords": [
+        "markdown table",
+        "markdown generator",
+        "create markdown table",
+        "table markdown",
+        "markdown tool"
+      ],
+      "usage_instructions": "Enter the number of rows and columns, optionally provide a cell pattern using {r} for row and {c} for column. Click Generate to see the markdown table."
     }
   ]
 }
