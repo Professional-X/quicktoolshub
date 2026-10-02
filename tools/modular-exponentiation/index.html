@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="google-site-verification" content="G2vh7thaFzRth3rRTxefSY6bvn5haiJBrooxvAYmj1M"/>
+<title>Modular Exponentiation Calculator – Compute (base^exp) mod</title>
+<meta name="description" content="Quickly calculate (base^exponent) mod modulus with our free modular exponentiation tool. Enter integers and get the result instantly."/>
+<meta property="og:title" content="Modular Exponentiation Calculator – Compute (base^exp) mod"/>
+<meta property="og:description" content="Quickly calculate (base^exponent) mod modulus with our free modular exponentiation tool. Enter integers and get the result instantly."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://professional-x.github.io/quicktoolshub/tools/modular-exponentiation/"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="https://professional-x.github.io/quicktoolshub/tools/modular-exponentiation/"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EQ%3C/text%3E%3C/svg%3E"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Modular Exponentiation Calculator", "url": "https://professional-x.github.io/quicktoolshub/tools/modular-exponentiation/", "description": "Quickly calculate (base^exponent) mod modulus with our free modular exponentiation tool. Enter integers and get the result instantly.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "datePublished": "2026-10-02", "publisher": {"@type": "Organization", "name": "QuickToolsHub"}}</script>
+<style>
+:root{--bg:#f5f7fa;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--accent:#2563eb;--accent-dark:#1e40af;--border:#e5e7eb;--radius:12px;--maxw:980px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img,iframe{max-width:100%}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header.site-header{background:var(--card);border-bottom:1px solid var(--border)}
+.site-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.logo{font-weight:800;font-size:19px;color:#111827;white-space:nowrap}
+.top-nav{display:flex;gap:16px;font-size:14px}
+.top-nav a{color:var(--muted);font-weight:600}
+.top-nav a:hover{color:var(--accent)}
+.ad-zone{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 8px;overflow:hidden}
+.ad-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af}
+@media (max-width:767px){.hide-mobile{display:none!important}}
+@media (min-width:768px){.hide-desktop{display:none!important}}
+.breadcrumb{font-size:13px;color:var(--muted);margin:16px 0 2px}
+.breadcrumb .sep{margin:0 6px;color:#d1d5db}
+h1{font-size:clamp(22px,4.5vw,30px);line-height:1.25;margin:8px 0 14px;color:#111827}
+.tool-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:0 1px 2px rgba(16,24,40,.05);min-height:220px}
+.how-to{background:#eef4ff;border:1px solid #dbe7ff;border-radius:var(--radius);padding:16px 20px;margin-top:18px}
+.how-to h2{margin:0 0 6px;font-size:17px;color:#1e40af}
+.how-to p{margin:0;color:#374151;font-size:15px}
+.related{margin-top:26px}
+.related h2{font-size:19px;margin:0 0 10px}
+.related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.related li{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:14.5px}
+.related a{font-weight:600}
+.ad-native{width:100%;max-width:728px}
+footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid var(--border)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:18px 0;color:var(--muted);font-size:13.5px}
+.footer-links{display:flex;gap:14px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-inner">
+    <a class="logo" href="https://professional-x.github.io/quicktoolshub/">QuickToolsHub</a>
+    <nav class="top-nav">
+      <a href="https://professional-x.github.io/quicktoolshub/">All Tools</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/math/">Math Tools</a>
+      <a href="https://professional-x.github.io/quicktoolshub/schedule/">Schedule</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ad-zone" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <div class="hide-desktop"><script>
+  atOptions = {
+    'key' : 'b8cb302039695a8ca6be0d1670ae3030',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/b8cb302039695a8ca6be0d1670ae3030/invoke.js"></script></div>
+  <div class="hide-mobile"><script>
+  atOptions = {
+    'key' : '3e064c14d68f63c18b5aa4b6b1873c46',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/3e064c14d68f63c18b5aa4b6b1873c46/invoke.js"></script></div>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://professional-x.github.io/quicktoolshub/">Home</a><span class="sep">/</span><a href="https://professional-x.github.io/quicktoolshub/category/math/">Math</a><span class="sep">/</span><span aria-current="page">Modular Exponentiation Calculator</span>
+  </nav>
+  <h1>Modular Exponentiation Calculator</h1>
+  <div class="tool-card">
+<div id="tool-root">
+  <h2>Modular Exponentiation Calculator</h2>
+  <p class="instructions">Enter integer values for base, exponent, and modulus, then click Calculate. The result shows (base^exponent) mod modulus. Invalid inputs will display an error.</p>
+  <form id="tool-form" novalidate>
+    <div class="field">
+      <label for="f-base">Base</label>
+      <input type="text" id="f-base" autocomplete="off" />
+    </div>
+    <div class="field">
+      <label for="f-exponent">Exponent</label>
+      <input type="text" id="f-exponent" autocomplete="off" />
+    </div>
+    <div class="field">
+      <label for="f-modulus">Modulus</label>
+      <input type="text" id="f-modulus" autocomplete="off" />
+    </div>
+    <button type="button" id="tool-action">Calculate</button>
+  </form>
+  <div id="tool-result" aria-live="polite"></div>
+</div>
+<style>
+  #tool-root {
+    font-family: Arial, sans-serif;
+    color: #222;
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  #tool-root h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #111;
+  }
+  #tool-root .instructions {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  #tool-root .field {
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #tool-root label {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  #tool-root input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #tool-root button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  #tool-root button:hover,
+  #tool-root button:focus {
+    background-color: #004999;
+  }
+  #tool-root #tool-result {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    min-height: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-weight: bold;
+    word-break: break-word;
+  }
+  @media (min-width: 480px) {
+    #tool-root button {
+      width: auto;
+      align-self: flex-start;
+    }
+  }
+</style>
+<script>
+  (function () {
+    const baseInput = document.getElementById('f-base');
+    const expInput = document.getElementById('f-exponent');
+    const modInput = document.getElementById('f-modulus');
+    const resultEl = document.getElementById('tool-result');
+    const actionBtn = document.getElementById('tool-action');
+
+    function showMessage(msg) {
+      resultEl.textContent = msg;
+    }
+
+    function parseBigInt(value) {
+      // Allow leading/trailing spaces
+      const trimmed = value.trim();
+      if (trimmed === '') throw new Error('empty');
+      // Ensure it's a valid integer string (no decimals, no letters)
+      if (!/^-?\d+$/.test(trimmed)) throw new Error('invalid');
+      return BigInt(trimmed);
+    }
+
+    function modPow(base, exponent, modulus) {
+      // binary exponentiation (right-to-left)
+      let result = 1n;
+      let b = ((base % modulus) + modulus) % modulus; // handle negative base
+      let e = exponent;
+      while (e > 0n) {
+        if (e & 1n) result = (result * b) % modulus;
+        e >>= 1n;
+        b = (b * b) % modulus;
+      }
+      return result;
+    }
+
+    function calculate() {
+      try {
+        const base = parseBigInt(baseInput.value);
+        const exponent = parseBigInt(expInput.value);
+        const modulus = parseBigInt(modInput.value);
+
+        if (exponent < 0n) throw new Error('exp-negative');
+        if (modulus <= 0n) throw new Error('mod-nonpositive');
+
+        const res = modPow(base, exponent, modulus);
+        showMessage(res.toString());
+      } catch (e) {
+        if (e.message === 'empty' || e.message === 'invalid') {
+          showMessage('Error: please enter valid integers for all fields.');
+        } else if (e.message === 'exp-negative') {
+          showMessage('Error: exponent must be a non‑negative integer.');
+        } else if (e.message === 'mod-nonpositive') {
+          showMessage('Error: modulus must be a positive integer.');
+        } else {
+          showMessage('Error: unexpected problem occurred.');
+        }
+      }
+    }
+
+    actionBtn.addEventListener('click', calculate);
+    // Optional: allow Enter key to trigger calculation
+    document.getElementById('tool-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      calculate();
+    });
+  })();
+</script>
+  </div>
+
+  <section class="how-to">
+    <h2>How to use this tool</h2>
+    <p>Enter integer values for base, exponent, and modulus, then click Calculate. The result shows (base^exponent) mod modulus. Invalid inputs will display an error.</p>
+  </section>
+
+  <div class="ad-zone" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-native"><script async="async" data-cfasync="false" src="https://versatilesentiment.com/5c991e90ba5b575e7b10c12fd4006cba/invoke.js"></script>
+<div id="container-5c991e90ba5b575e7b10c12fd4006cba"></div></div>
+  </div>
+
+  <section class="related">
+    <h2>Related tools</h2>
+    <ul><li><a href="https://professional-x.github.io/quicktoolshub/tools/quadratic-equation-solver/">Quadratic Equation Solver</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/prime-number-checker/">Prime Number Checker</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/roman-numeral-converter/">Roman Numeral Converter</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/pythagorean-triple-finder/">Pythagorean Triple Finder</a></li></ul>
+  </section>
+
+  <div class="ad-zone hide-mobile" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <script>
+  atOptions = {
+    'key' : '0ed8bf9af74609561a1e84bb22ed0e94',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/0ed8bf9af74609561a1e84bb22ed0e94/invoke.js"></script>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>&copy; 2026 QuickToolsHub. All tools run entirely in your browser.</div>
+    <div class="footer-links">
+      <a href="https://professional-x.github.io/quicktoolshub/">Home</a>
+      <a href="https://professional-x.github.io/quicktoolshub/schedule/">Schedule</a>
+      <a href="https://professional-x.github.io/quicktoolshub/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

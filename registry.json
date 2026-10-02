@@ -875,6 +875,73 @@
         "markdown tool"
       ],
       "usage_instructions": "Enter the number of rows and columns, optionally provide a cell pattern using {r} for row and {c} for column. Click Generate to see the markdown table."
+    },
+    {
+      "slug": "censor-words-filter",
+      "title": "Censor Words Filter",
+      "category": "text",
+      "date_published": "2026-10-02",
+      "status": "published",
+      "h1": "Censor Words Filter",
+      "seo_description": "Mask selected words in any text with asterisks or custom characters instantly.",
+      "keywords": [
+        "censor words",
+        "text filter",
+        "mask profanity",
+        "replace words",
+        "custom replacement"
+      ],
+      "usage_instructions": "Enter the text, list the words to mask (comma‑separated), and optionally choose a replacement character. Click “Censor” to see the filtered text. Errors are shown below the result."
+    },
+    {
+      "slug": "modular-exponentiation",
+      "title": "Modular Exponentiation Calculator",
+      "category": "math",
+      "date_published": "2026-10-02",
+      "status": "published",
+      "h1": "Modular Exponentiation Calculator",
+      "seo_description": "Quickly calculate (base^exponent) mod modulus with our free modular exponentiation tool. Enter integers and get the result instantly.",
+      "keywords": [
+        "modular exponentiation",
+        "modular arithmetic calculator",
+        "base exponent modulus",
+        "fast exponentiation"
+      ],
+      "usage_instructions": "Enter integer values for base, exponent, and modulus, then click Calculate. The result shows (base^exponent) mod modulus. Invalid inputs will display an error."
+    },
+    {
+      "slug": "weekday-calculator",
+      "title": "Weekday Calculator",
+      "category": "date-time",
+      "date_published": "2026-10-02",
+      "status": "published",
+      "h1": "Weekday Calculator",
+      "seo_description": "Enter a date to instantly discover the weekday (Monday, Tuesday, etc.). Simple, fast, and works offline.",
+      "keywords": [
+        "weekday calculator",
+        "day of week",
+        "date to weekday",
+        "find weekday",
+        "date calculator"
+      ],
+      "usage_instructions": "Enter a year, month, and day, then click “Calculate”. The tool will display the corresponding weekday or an error message if the date is invalid."
+    },
+    {
+      "slug": "css-minifier",
+      "title": "CSS Minifier",
+      "category": "developer",
+      "date_published": "2026-10-02",
+      "status": "published",
+      "h1": "CSS Minifier",
+      "seo_description": "Minify CSS code instantly to a single line directly in your browser. No external services needed.",
+      "keywords": [
+        "css minifier",
+        "minify css",
+        "online css minifier",
+        "compress css",
+        "css optimizer"
+      ],
+      "usage_instructions": "Paste your CSS into the textarea and click “Minify”. The minified CSS will appear below. Works entirely in your browser, no data is sent anywhere."
     }
   ]
 }
