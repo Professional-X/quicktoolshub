@@ -14,6 +14,15 @@
         "2026-10-02T08:34:49+00:00 PUBLISHED css-minifier",
         "2026-10-02T08:34:49+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-02T16:17:09+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-02T16:17:20+00:00 Step A: proposed 8 ideas",
+        "2026-10-02T16:17:20+00:00 Step B: 8 ideas survived dedup",
+        "2026-10-02T16:17:20+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -106,6 +115,88 @@
         ],
         "output": "Table of query parameter names and their values."
       }
+    ],
+    [
+      {
+        "title": "HTML to Markdown Converter",
+        "slug": "html-to-markdown-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert raw HTML into clean Markdown syntax instantly.",
+        "inputs": [
+          "HTML string"
+        ],
+        "output": "Markdown string"
+      },
+      {
+        "title": "Number to Chinese Numerals Converter",
+        "slug": "number-to-chinese-numerals",
+        "category": "math",
+        "one_line_pitch": "Translate Arabic numbers into Chinese numeral characters.",
+        "inputs": [
+          "integer (0-999999999)"
+        ],
+        "output": "Chinese numeral string"
+      },
+      {
+        "title": "Text to Braille Converter",
+        "slug": "text-to-braille-converter",
+        "category": "text",
+        "one_line_pitch": "Convert plain text into Unicode Braille patterns for visually impaired readers.",
+        "inputs": [
+          "text string"
+        ],
+        "output": "Braille Unicode string"
+      },
+      {
+        "title": "Fibonacci Sequence Generator",
+        "slug": "fibonacci-sequence-generator",
+        "category": "math",
+        "one_line_pitch": "Generate the first N Fibonacci numbers quickly.",
+        "inputs": [
+          "number of terms"
+        ],
+        "output": "Array of Fibonacci numbers"
+      },
+      {
+        "title": "Text to Emoji Translator",
+        "slug": "text-to-emoji-translator",
+        "category": "random-fun",
+        "one_line_pitch": "Replace common words with corresponding emojis in any text.",
+        "inputs": [
+          "text string"
+        ],
+        "output": "Emoji-enriched text"
+      },
+      {
+        "title": "Image Color Palette Extractor",
+        "slug": "image-color-palette-extractor",
+        "category": "image",
+        "one_line_pitch": "Extract dominant color palette from an uploaded image.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "List of colors with hex codes and RGB values"
+      },
+      {
+        "title": "File Hash Calculator",
+        "slug": "file-hash-calculator",
+        "category": "developer",
+        "one_line_pitch": "Compute MD5, SHA-1, and SHA-256 hashes of any file.",
+        "inputs": [
+          "file upload"
+        ],
+        "output": "Hash values for selected algorithms"
+      },
+      {
+        "title": "Date to ISO Week Number",
+        "slug": "date-to-iso-week-number",
+        "category": "date-time",
+        "one_line_pitch": "Determine the ISO week number for any given date.",
+        "inputs": [
+          "date (YYYY-MM-DD)"
+        ],
+        "output": "ISO week number and year"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -116,7 +207,8 @@
         "reason": "rejected: duplicate of area-unit-converter (similarity 0.84 > 0.8)",
         "at": "2026-10-02T08:33:21+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -249,10 +341,37 @@
       "completion_tokens": 1902,
       "total_tokens": 2847,
       "est_cost_usd": 0.006651
+    },
+    {
+      "time": "2026-10-02T16:17:09+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-02T16:17:09+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-02T16:17:20+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 2984,
+      "completion_tokens": 1970,
+      "total_tokens": 4954,
+      "est_cost_usd": 0.008894
     }
   ],
   "budget": {
-    "tokens": 22970,
-    "usd": 0.051576
+    "tokens": 28096,
+    "usd": 0.060682
   }
 }
