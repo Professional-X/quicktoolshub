@@ -22,6 +22,15 @@
         "2026-10-03T14:44:02+00:00 Step B: 6 ideas survived dedup",
         "2026-10-03T14:44:02+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-03T21:14:30+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-03T21:14:32+00:00 Step A: proposed 8 ideas",
+        "2026-10-03T21:14:32+00:00 Step B: 6 ideas survived dedup",
+        "2026-10-03T21:14:32+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -181,6 +190,90 @@
         ],
         "output": "Strength score, color bar, suggestions."
       }
+    ],
+    [
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert Markdown syntax to LaTeX code instantly.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "LaTeX formatted string"
+      },
+      {
+        "title": "Time Until Next Full Moon Calculator",
+        "slug": "next-full-moon-timer",
+        "category": "date-time",
+        "one_line_pitch": "Show days, hours and minutes until the next full moon from a given date.",
+        "inputs": [
+          "Date (YYYY-MM-DD) – leave blank for today"
+        ],
+        "output": "Time remaining in days, hours, and minutes"
+      },
+      {
+        "title": "HTML to Markdown Converter",
+        "slug": "html-to-markdown-converter",
+        "category": "developer",
+        "one_line_pitch": "Transform any HTML snippet into clean Markdown text.",
+        "inputs": [
+          "HTML snippet"
+        ],
+        "output": "Markdown string"
+      },
+      {
+        "title": "Random Inspirational Quote Generator",
+        "slug": "random-inspirational-quote",
+        "category": "random-fun",
+        "one_line_pitch": "Generate a fresh inspirational quote on demand.",
+        "inputs": [
+          "Optional category"
+        ],
+        "output": "Quote text with author"
+      },
+      {
+        "title": "Hex Color to CMYK Converter",
+        "slug": "hex-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Convert a HEX color code to CMYK components instantly.",
+        "inputs": [
+          "Hex color code (#RRGGBB)"
+        ],
+        "output": "CMYK percentages (C, M, Y, K)"
+      },
+      {
+        "title": "Unicode Code Point Lookup",
+        "slug": "unicode-codepoint-lookup",
+        "category": "text",
+        "one_line_pitch": "Find the name, code point and description of any Unicode character.",
+        "inputs": [
+          "Character or code point (e.g., U+1F600)"
+        ],
+        "output": "Unicode name, code point, and description"
+      },
+      {
+        "title": "URL to QR Code Generator",
+        "slug": "url-to-qr-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Create a QR code image from a URL without external services.",
+        "inputs": [
+          "URL string",
+          "Optional size (pixels)"
+        ],
+        "output": "QR code data URL (base64 PNG)"
+      },
+      {
+        "title": "CSV to XML Converter",
+        "slug": "csv-to-xml-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert CSV data into well‑formed XML instantly.",
+        "inputs": [
+          "CSV text",
+          "Optional header flag"
+        ],
+        "output": "XML string"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -191,6 +284,20 @@
         "title": "Markdown to LaTeX Converter",
         "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
         "at": "2026-10-03T14:44:02+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "markdown-to-latex-converter",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-10-03T21:14:32+00:00"
+      },
+      {
+        "slug": "csv-to-xml-converter",
+        "title": "CSV to XML Converter",
+        "reason": "rejected: duplicate of csv-to-json-converter (similarity 0.83 > 0.8)",
+        "at": "2026-10-03T21:14:32+00:00"
       }
     ]
   ],
@@ -304,10 +411,37 @@
       "completion_tokens": 2000,
       "total_tokens": 5177,
       "est_cost_usd": 0.009177
+    },
+    {
+      "time": "2026-10-03T21:14:30+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-03T21:14:30+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-03T21:14:32+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 3177,
+      "completion_tokens": 1777,
+      "total_tokens": 4954,
+      "est_cost_usd": 0.008508
     }
   ],
   "budget": {
-    "tokens": 27735,
-    "usd": 0.060711
+    "tokens": 32861,
+    "usd": 0.069431
   }
 }
