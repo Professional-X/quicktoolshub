@@ -13,6 +13,15 @@
         "2026-10-03T08:08:21+00:00 PUBLISHED scientific-notation-converter",
         "2026-10-03T08:08:21+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-03T14:43:59+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-03T14:44:02+00:00 Step A: proposed 7 ideas",
+        "2026-10-03T14:44:02+00:00 Step B: 6 ideas survived dedup",
+        "2026-10-03T14:44:02+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -97,10 +106,93 @@
         ],
         "output": "Character name, block, and description"
       }
+    ],
+    [
+      {
+        "title": "SEO Keyword Density Calculator",
+        "slug": "seo-keyword-density",
+        "category": "text",
+        "one_line_pitch": "Calculate keyword density percentages in a text for SEO optimization.",
+        "inputs": [
+          "article text",
+          "list of keywords (comma separated)"
+        ],
+        "output": "Display each keyword with its frequency and percentage of total words."
+      },
+      {
+        "title": "Unit Price Calculator",
+        "slug": "unit-price-calculator",
+        "category": "finance",
+        "one_line_pitch": "Compute price per unit from total cost and quantity.",
+        "inputs": [
+          "total cost",
+          "quantity",
+          "unit type (optional)"
+        ],
+        "output": "Show price per unit and optional unit label."
+      },
+      {
+        "title": "Unix Permission Converter",
+        "slug": "unix-permission-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert symbolic file permissions to octal and explain rights.",
+        "inputs": [
+          "symbolic permissions string (e.g., rwxr-xr--)"
+        ],
+        "output": "Display octal code and human-readable rights."
+      },
+      {
+        "title": "Prime Number Generator",
+        "slug": "prime-number-generator",
+        "category": "math",
+        "one_line_pitch": "Generate all prime numbers up to a given maximum.",
+        "inputs": [
+          "maximum number"
+        ],
+        "output": "List of primes up to the input."
+      },
+      {
+        "title": "Day of Year Calculator",
+        "slug": "day-of-year-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Determine the day number within the year for any date.",
+        "inputs": [
+          "date"
+        ],
+        "output": "Day of year number (1-366)."
+      },
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex-converter",
+        "category": "developer",
+        "one_line_pitch": "Translate Markdown syntax into LaTeX code instantly.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "Corresponding LaTeX representation."
+      },
+      {
+        "title": "Password Strength Visualizer",
+        "slug": "password-strength-visualizer",
+        "category": "random-fun",
+        "one_line_pitch": "Show password strength as a bar with risk level.",
+        "inputs": [
+          "password"
+        ],
+        "output": "Strength score, color bar, suggestions."
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "markdown-to-latex-converter",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-10-03T14:44:02+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [],
@@ -185,10 +277,37 @@
       "completion_tokens": 2419,
       "total_tokens": 3368,
       "est_cost_usd": 0.008206
+    },
+    {
+      "time": "2026-10-03T14:43:58+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-03T14:43:59+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-03T14:44:02+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 3177,
+      "completion_tokens": 2000,
+      "total_tokens": 5177,
+      "est_cost_usd": 0.009177
     }
   ],
   "budget": {
-    "tokens": 22386,
-    "usd": 0.051322
+    "tokens": 27735,
+    "usd": 0.060711
   }
 }
