@@ -942,6 +942,73 @@
         "css optimizer"
       ],
       "usage_instructions": "Paste your CSS into the textarea and click “Minify”. The minified CSS will appear below. Works entirely in your browser, no data is sent anywhere."
+    },
+    {
+      "slug": "credit-card-luhn-checker",
+      "title": "Credit Card Luhn Checker",
+      "category": "finance",
+      "date_published": "2026-10-03",
+      "status": "published",
+      "h1": "Credit Card Luhn Checker",
+      "seo_description": "Quickly verify if a credit card number is valid using the Luhn algorithm. Get instant feedback and the correct checksum digit.",
+      "keywords": [
+        "Luhn check",
+        "credit card validator",
+        "card number checksum",
+        "validate credit card",
+        "Luhn algorithm"
+      ],
+      "usage_instructions": "Enter the credit card number (digits only) in the field below and click “Check”. The tool will tell you if the number is valid and, if not, show the correct checksum digit."
+    },
+    {
+      "slug": "currency-symbol-finder",
+      "title": "Currency Symbol Finder",
+      "category": "finance",
+      "date_published": "2026-10-03",
+      "status": "published",
+      "h1": "Currency Symbol Finder",
+      "seo_description": "Quickly find the symbol, country and description for any ISO 4217 currency code. Enter the 3‑letter code and get results instantly.",
+      "keywords": [
+        "currency symbol",
+        "ISO 4217",
+        "currency code lookup",
+        "currency symbol finder",
+        "currency country"
+      ],
+      "usage_instructions": "Enter a three‑letter ISO 4217 currency code (e.g., USD) and click “Find”. The symbol, country and description will appear below."
+    },
+    {
+      "slug": "hex-to-hsv-converter",
+      "title": "Hex to HSV Converter",
+      "category": "image",
+      "date_published": "2026-10-03",
+      "status": "published",
+      "h1": "Hex to HSV Converter",
+      "seo_description": "Convert any hex color code to its HSV components instantly. Enter a hex value and get Hue, Saturation, and Value percentages.",
+      "keywords": [
+        "hex to hsv",
+        "color converter",
+        "hex to hsv tool",
+        "color conversion",
+        "HSV values"
+      ],
+      "usage_instructions": "Enter a hex color code (e.g., #FF5733) and click Convert to see its Hue, Saturation, and Value. The result appears as Hue (0‑360°), Saturation and Value percentages."
+    },
+    {
+      "slug": "scientific-notation-converter",
+      "title": "Scientific Notation Converter",
+      "category": "math",
+      "date_published": "2026-10-03",
+      "status": "published",
+      "h1": "Scientific Notation Converter",
+      "seo_description": "Convert numbers between plain decimal and scientific notation instantly. Simple, free online tool.",
+      "keywords": [
+        "scientific notation",
+        "decimal to exponential",
+        "number converter",
+        "online calculator"
+      ],
+      "usage_instructions": "Enter a number in either plain decimal or scientific notation (e.g., 12345 or 1.23e4) and click Convert to see the opposite representation."
     }
   ]
 }
