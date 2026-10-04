@@ -1009,6 +1009,74 @@
         "online calculator"
       ],
       "usage_instructions": "Enter a number in either plain decimal or scientific notation (e.g., 12345 or 1.23e4) and click Convert to see the opposite representation."
+    },
+    {
+      "slug": "braille-translator",
+      "title": "Braille Translator",
+      "category": "text",
+      "date_published": "2026-10-04",
+      "status": "published",
+      "h1": "Braille Translator",
+      "seo_description": "Translate English text into Unicode Braille characters instantly. Simple, free, and works offline.",
+      "keywords": [
+        "braille translator",
+        "unicode braille",
+        "text to braille",
+        "english to braille",
+        "braille conversion"
+      ],
+      "usage_instructions": "Enter English text in the box below and click “Translate”. The Braille version will appear instantly. Clear the box to start a new translation."
+    },
+    {
+      "slug": "color-blindness-simulator",
+      "title": "Color Blindness Simulator",
+      "category": "image",
+      "date_published": "2026-10-04",
+      "status": "published",
+      "h1": "Color Blindness Simulator",
+      "seo_description": "Enter a hex color and select a color‑blindness type to view the simulated color and its hex code instantly.",
+      "keywords": [
+        "color blindness simulator",
+        "hex color simulation",
+        "protanopia",
+        "deuteranopia",
+        "tritanopia"
+      ],
+      "usage_instructions": "Enter a hex color (e.g., #ff0000) and select a type of color blindness. Press Simulate to see how the color appears to that viewer."
+    },
+    {
+      "slug": "iso-week-number-calculator",
+      "title": "ISO Week Number Calculator",
+      "category": "date-time",
+      "date_published": "2026-10-04",
+      "status": "published",
+      "h1": "ISO Week Number Calculator",
+      "seo_description": "Enter a date to instantly get its ISO week number and corresponding ISO year. Simple, fast, no ads.",
+      "keywords": [
+        "ISO week number",
+        "week number calculator",
+        "ISO year",
+        "date to week",
+        "week of year"
+      ],
+      "usage_instructions": "Select a date and click “Calculate” to see the ISO week number and year. The result appears below. Leave the field empty to clear the result."
+    },
+    {
+      "slug": "html-comment-extractor",
+      "title": "HTML Comment Extractor",
+      "category": "developer",
+      "date_published": "2026-10-04",
+      "status": "published",
+      "h1": "HTML Comment Extractor",
+      "seo_description": "Paste your HTML code and instantly extract all comment strings. Simple, free, and works entirely in your browser.",
+      "keywords": [
+        "HTML comment extractor",
+        "extract HTML comments",
+        "online comment tool",
+        "HTML parser",
+        "developer utilities"
+      ],
+      "usage_instructions": "Paste your HTML into the box below and click “Extract Comments”. The tool will list every comment found, or tell you if none exist."
     }
   ]
 }
