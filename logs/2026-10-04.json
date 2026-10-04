@@ -14,6 +14,15 @@
         "2026-10-04T08:30:42+00:00 PUBLISHED html-comment-extractor",
         "2026-10-04T08:30:42+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-04T15:23:13+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-04T15:23:15+00:00 Step A: proposed 8 ideas",
+        "2026-10-04T15:23:15+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-04T15:23:15+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -100,6 +109,92 @@
         ],
         "output": "QR code PNG or SVG"
       }
+    ],
+    [
+      {
+        "title": "Markdown Heading Counter",
+        "slug": "markdown-heading-counter",
+        "category": "text",
+        "one_line_pitch": "Counts heading levels in Markdown text instantly.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "Total headings per level (H1-H6)"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Computes future value with compounding periods.",
+        "inputs": [
+          "Principal amount",
+          "Annual rate (%)",
+          "Compounding periods per year",
+          "Number of years"
+        ],
+        "output": "Future value"
+      },
+      {
+        "title": "Leap Second Checker",
+        "slug": "leap-second-checker",
+        "category": "date-time",
+        "one_line_pitch": "Determines if a UTC date has a leap second.",
+        "inputs": [
+          "Date (YYYY-MM-DD)"
+        ],
+        "output": "Leap second present? Yes/No"
+      },
+      {
+        "title": "RGB to CMYK Converter",
+        "slug": "rgb-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Converts RGB hex to CMYK percentages.",
+        "inputs": [
+          "RGB hex code (#RRGGBB)"
+        ],
+        "output": "C, M, Y, K values"
+      },
+      {
+        "title": "CSS Gradient Generator",
+        "slug": "css-gradient-generator",
+        "category": "developer",
+        "one_line_pitch": "Builds CSS linear gradients from color stops.",
+        "inputs": [
+          "Start color",
+          "End color",
+          "Angle (degrees)"
+        ],
+        "output": "CSS gradient string"
+      },
+      {
+        "title": "Pythagorean Theorem Visualizer",
+        "slug": "pythagorean-theorem-visualizer",
+        "category": "math",
+        "one_line_pitch": "Shows a right triangle for given side lengths.",
+        "inputs": [
+          "Side a",
+          "Side b"
+        ],
+        "output": "Triangle diagram and hypotenuse length"
+      },
+      {
+        "title": "Random Quote Generator",
+        "slug": "random-quote-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Displays a random inspirational quote each click.",
+        "inputs": [],
+        "output": "Quote text and author"
+      },
+      {
+        "title": "Hex to Base64 Encoder",
+        "slug": "hex-to-base64-encoder",
+        "category": "developer",
+        "one_line_pitch": "Encodes a hex string into Base64.",
+        "inputs": [
+          "Hex string"
+        ],
+        "output": "Base64 encoded string"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -115,6 +210,14 @@
         "title": "Text to QR Code",
         "reason": "rejected: duplicate of text-to-morse-code (similarity 0.85 > 0.8)",
         "at": "2026-10-04T08:28:33+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-10-04T15:23:15+00:00"
       }
     ]
   ],
@@ -249,10 +352,37 @@
       "completion_tokens": 2034,
       "total_tokens": 2976,
       "est_cost_usd": 0.007044
+    },
+    {
+      "time": "2026-10-04T15:23:13+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-04T15:23:13+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-04T15:23:15+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 3358,
+      "completion_tokens": 1431,
+      "total_tokens": 4789,
+      "est_cost_usd": 0.007651
     }
   ],
   "budget": {
-    "tokens": 27138,
-    "usd": 0.06343
+    "tokens": 32099,
+    "usd": 0.071293
   }
 }
