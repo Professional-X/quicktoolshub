@@ -1077,6 +1077,73 @@
         "developer utilities"
       ],
       "usage_instructions": "Paste your HTML into the box below and click “Extract Comments”. The tool will list every comment found, or tell you if none exist."
+    },
+    {
+      "slug": "payback-period-calculator",
+      "title": "Payback Period Calculator",
+      "category": "finance",
+      "date_published": "2026-10-05",
+      "status": "published",
+      "h1": "Payback Period Calculator",
+      "seo_description": "Calculate how many years and months it takes to recover an investment with our simple Payback Period Calculator.",
+      "keywords": [
+        "payback period",
+        "investment recovery",
+        "financial calculator",
+        "return on investment",
+        "cash flow calculator"
+      ],
+      "usage_instructions": "Enter the initial investment amount and the expected annual net cash flow, then click Calculate. The result shows the payback period in years and months."
+    },
+    {
+      "slug": "image-aspect-ratio-calculator",
+      "title": "Image Aspect Ratio Calculator",
+      "category": "image",
+      "date_published": "2026-10-05",
+      "status": "published",
+      "h1": "Image Aspect Ratio Calculator",
+      "seo_description": "Quickly calculate the aspect ratio of any image by entering its width and height in pixels. Get the simplified ratio instantly.",
+      "keywords": [
+        "image aspect ratio",
+        "aspect ratio calculator",
+        "simplify image dimensions",
+        "photo ratio tool"
+      ],
+      "usage_instructions": "Enter the image width and height in pixels, then click Calculate to see the simplified aspect ratio. Both values must be positive numbers."
+    },
+    {
+      "slug": "javascript-minifier",
+      "title": "JavaScript Minifier",
+      "category": "developer",
+      "date_published": "2026-10-05",
+      "status": "published",
+      "h1": "JavaScript Minifier",
+      "seo_description": "Quickly minify JavaScript code to a single line, removing whitespace and comments. No server needed.",
+      "keywords": [
+        "javascript minifier",
+        "js minify",
+        "compress javascript",
+        "online js minifier",
+        "remove whitespace js"
+      ],
+      "usage_instructions": "Paste your JavaScript code into the box below and click “Minify” to compress it into a single line."
+    },
+    {
+      "slug": "body-surface-area-calculator",
+      "title": "Body Surface Area Calculator",
+      "category": "health",
+      "date_published": "2026-10-05",
+      "status": "published",
+      "h1": "Body Surface Area Calculator",
+      "seo_description": "Calculate your body surface area instantly using DuBois or Mosteller formulas. Enter weight and height for accurate m² results.",
+      "keywords": [
+        "BSA calculator",
+        "body surface area",
+        "DuBois formula",
+        "Mosteller formula",
+        "medical dosage"
+      ],
+      "usage_instructions": "Enter your weight in kilograms and height in centimeters, choose a formula, then click Calculate. The result is shown in square meters."
     }
   ]
 }
