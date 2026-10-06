@@ -1195,6 +1195,22 @@
         "online base36 to decimal"
       ],
       "usage_instructions": "Enter a base‑36 number (using digits 0‑9 and letters A‑Z) in the field below and click Convert. The decimal result will appear instantly. Invalid input will show an error message."
+    },
+    {
+      "slug": "html-tag-counter",
+      "title": "HTML Tag Counter",
+      "category": "developer",
+      "date_published": "2026-10-06",
+      "status": "published",
+      "h1": "HTML Tag Counter",
+      "seo_description": "Paste HTML code and instantly see a list of each tag with its occurrence count. Simple, fast, and works offline.",
+      "keywords": [
+        "HTML tag counter",
+        "count HTML tags",
+        "HTML tag frequency",
+        "online HTML analyzer"
+      ],
+      "usage_instructions": "Paste your HTML snippet into the box below and click “Count Tags” to see a list of each tag with its occurrence count."
     }
   ]
 }

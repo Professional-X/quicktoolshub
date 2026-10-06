@@ -15,6 +15,17 @@
         "2026-10-06T00:07:22+00:00 Step C rejected text-to-leet-speak-converter: LLM call failed after retry: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxw94018ff1vfz74v0hkhnke` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199663, Requested 1289. Please try again in 6m51.264s. Need more tokens? Upgrade to Dev Tier today at https://",
         "2026-10-06T00:07:22+00:00 generation attempt cap reached (6); stopping for the day"
       ]
+    },
+    {
+      "started_at": "2026-10-06T08:59:28+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-06T08:59:39+00:00 Step A: proposed 8 ideas",
+        "2026-10-06T08:59:39+00:00 Step B: 8 ideas survived dedup",
+        "2026-10-06T08:59:52+00:00 Step D FAILED time-until-next-full-moon: test_cases=False",
+        "2026-10-06T09:00:03+00:00 PUBLISHED html-tag-counter",
+        "2026-10-06T09:00:03+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -101,6 +112,89 @@
         ],
         "output": "TSV string."
       }
+    ],
+    [
+      {
+        "title": "Time Until Next Full Moon Calculator",
+        "slug": "time-until-next-full-moon",
+        "category": "date-time",
+        "one_line_pitch": "Calculate days, hours, and minutes until the next full moon from any date.",
+        "inputs": [
+          "start date and time (optional, defaults to now)"
+        ],
+        "output": "Time remaining to the next full moon"
+      },
+      {
+        "title": "HTML Tag Counter",
+        "slug": "html-tag-counter",
+        "category": "developer",
+        "one_line_pitch": "Count the occurrences of each HTML tag in a pasted snippet.",
+        "inputs": [
+          "HTML code"
+        ],
+        "output": "List of tags with their counts"
+      },
+      {
+        "title": "Markdown Header Level Counter",
+        "slug": "markdown-header-level-counter",
+        "category": "developer",
+        "one_line_pitch": "Count how many headers of each level (#, ##, etc.) are in Markdown.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "Table of header levels and their counts"
+      },
+      {
+        "title": "Scrabble Score Calculator",
+        "slug": "scrabble-score-calculator",
+        "category": "random-fun",
+        "one_line_pitch": "Compute the Scrabble point total for any word or phrase.",
+        "inputs": [
+          "Word or phrase"
+        ],
+        "output": "Total Scrabble score"
+      },
+      {
+        "title": "Regular Polygon Area Calculator",
+        "slug": "regular-polygon-area-calculator",
+        "category": "math",
+        "one_line_pitch": "Compute the area of a regular polygon given sides or radius.",
+        "inputs": [
+          "Number of sides",
+          "Side length or radius"
+        ],
+        "output": "Area value"
+      },
+      {
+        "title": "Days Until Next Birthday Calculator",
+        "slug": "days-until-next-birthday",
+        "category": "date-time",
+        "one_line_pitch": "Calculate how many days until your next birthday.",
+        "inputs": [
+          "Birthdate (MM/DD)"
+        ],
+        "output": "Days remaining"
+      },
+      {
+        "title": "ROT13 Encoder/Decoder",
+        "slug": "rot13-encoder-decoder",
+        "category": "text",
+        "one_line_pitch": "Encode or decode text using the ROT13 cipher.",
+        "inputs": [
+          "Text"
+        ],
+        "output": "ROT13 transformed text"
+      },
+      {
+        "title": "NATO Phonetic Alphabet Converter",
+        "slug": "nato-phonetic-alphabet-converter",
+        "category": "text",
+        "one_line_pitch": "Convert letters to NATO phonetic alphabet words.",
+        "inputs": [
+          "Text"
+        ],
+        "output": "NATO phonetic representation"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -111,7 +205,8 @@
         "reason": "rejected: duplicate of csv-to-json-converter (similarity 0.88 > 0.8)",
         "at": "2026-10-06T00:04:16+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -164,6 +259,44 @@
       "stage": "generate",
       "reason": "LLM call failed after retry: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxw94018ff1vfz74v0hkhnke` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199663, Requested 1289. Please try again in 6m51.264s. Need more tokens? Upgrade to Dev Tier today at https://",
       "at": "2026-10-06T00:07:22+00:00"
+    },
+    {
+      "slug": "time-until-next-full-moon",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-06T08:59:52+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=195"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected '29 days' not found; actual: '0 days, 0 hours, 0 minutes') | case2: FAIL (f-start-datetime: fill failed: Locator.fill: Error: Malformed value\nCall log:\n  - waiting for locator(\"#f-start-datetime\").first\n    - locator resolved to <input type=\"datetime-local\" id=\"f-s; expected 'Error:' not found; actual: '5 days, 0 hours, 14 minutes') | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
     }
   ],
   "llm_calls": [
@@ -247,10 +380,55 @@
       "completion_tokens": 2774,
       "total_tokens": 3719,
       "est_cost_usd": 0.009267
+    },
+    {
+      "time": "2026-10-06T08:59:27+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-06T08:59:28+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-06T08:59:39+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 3679,
+      "completion_tokens": 1838,
+      "total_tokens": 5517,
+      "est_cost_usd": 0.009193
+    },
+    {
+      "time": "2026-10-06T08:59:47+00:00",
+      "purpose": "code_generation:time-until-next-full-moon",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 964,
+      "completion_tokens": 3500,
+      "total_tokens": 4464,
+      "est_cost_usd": 0.011464
+    },
+    {
+      "time": "2026-10-06T08:59:58+00:00",
+      "purpose": "code_generation:html-tag-counter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 947,
+      "completion_tokens": 2765,
+      "total_tokens": 3712,
+      "est_cost_usd": 0.009242
     }
   ],
   "budget": {
-    "tokens": 20212,
-    "usd": 0.043768
+    "tokens": 34077,
+    "usd": 0.073879
   }
 }
