@@ -26,6 +26,15 @@
         "2026-10-06T09:00:03+00:00 PUBLISHED html-tag-counter",
         "2026-10-06T09:00:03+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-06T16:49:41+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-06T16:49:43+00:00 Step A: proposed 8 ideas",
+        "2026-10-06T16:49:43+00:00 Step B: 8 ideas survived dedup",
+        "2026-10-06T16:49:43+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -195,6 +204,94 @@
         ],
         "output": "NATO phonetic representation"
       }
+    ],
+    [
+      {
+        "title": "Retirement Savings Calculator",
+        "slug": "retirement-savings-calculator",
+        "category": "finance",
+        "one_line_pitch": "Estimate annual savings needed to reach a retirement nest egg.",
+        "inputs": [
+          "current age",
+          "retirement age",
+          "current savings",
+          "expected annual return (%)",
+          "desired retirement fund"
+        ],
+        "output": "annual savings required"
+      },
+      {
+        "title": "Markdown Table Row Counter",
+        "slug": "markdown-table-row-counter",
+        "category": "developer",
+        "one_line_pitch": "Count rows and columns in a markdown table.",
+        "inputs": [
+          "markdown table text"
+        ],
+        "output": "row count, column count"
+      },
+      {
+        "title": "ISBN-13 Check Digit Calculator",
+        "slug": "isbn-13-check-digit",
+        "category": "developer",
+        "one_line_pitch": "Compute the check digit for a 12-digit ISBN-13.",
+        "inputs": [
+          "12-digit ISBN-13 number"
+        ],
+        "output": "check digit (0-9) or X"
+      },
+      {
+        "title": "Word Length Distribution",
+        "slug": "word-length-distribution",
+        "category": "text",
+        "one_line_pitch": "Show how many words have each length in a paragraph.",
+        "inputs": [
+          "text paragraph"
+        ],
+        "output": "distribution table of word lengths"
+      },
+      {
+        "title": "Binary to Gray Code Converter",
+        "slug": "binary-to-gray-code",
+        "category": "math",
+        "one_line_pitch": "Convert binary numbers to Gray code instantly.",
+        "inputs": [
+          "binary number string"
+        ],
+        "output": "Gray code string"
+      },
+      {
+        "title": "Task Time Estimator",
+        "slug": "task-time-estimator",
+        "category": "productivity",
+        "one_line_pitch": "Estimate total time to complete a task from steps and duration.",
+        "inputs": [
+          "number of steps",
+          "average minutes per step"
+        ],
+        "output": "total estimated time (hh:mm) and minutes"
+      },
+      {
+        "title": "WCAG Color Contrast Checker",
+        "slug": "wcag-color-contrast-checker",
+        "category": "image",
+        "one_line_pitch": "Check foreground/background contrast ratio per WCAG guidelines.",
+        "inputs": [
+          "foreground hex",
+          "background hex"
+        ],
+        "output": "contrast ratio and pass/fail for AA and AAA"
+      },
+      {
+        "title": "URL Query Parameter Extractor",
+        "slug": "url-query-parameter-extractor",
+        "category": "developer",
+        "one_line_pitch": "List all key-value pairs in a URL's query string.",
+        "inputs": [
+          "URL"
+        ],
+        "output": "list of parameters and values"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -206,6 +303,7 @@
         "at": "2026-10-06T00:04:16+00:00"
       }
     ],
+    [],
     []
   ],
   "tools_published": [],
@@ -425,10 +523,37 @@
       "completion_tokens": 2765,
       "total_tokens": 3712,
       "est_cost_usd": 0.009242
+    },
+    {
+      "time": "2026-10-06T16:49:41+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-06T16:49:41+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-06T16:49:43+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 3726,
+      "completion_tokens": 1264,
+      "total_tokens": 4990,
+      "est_cost_usd": 0.007518
     }
   ],
   "budget": {
-    "tokens": 34077,
-    "usd": 0.073879
+    "tokens": 39239,
+    "usd": 0.081609
   }
 }
