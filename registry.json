@@ -1144,6 +1144,57 @@
         "medical dosage"
       ],
       "usage_instructions": "Enter your weight in kilograms and height in centimeters, choose a formula, then click Calculate. The result is shown in square meters."
+    },
+    {
+      "slug": "ascii-to-binary-converter",
+      "title": "ASCII to Binary Converter",
+      "category": "text",
+      "date_published": "2026-10-06",
+      "status": "published",
+      "h1": "ASCII to Binary Converter",
+      "seo_description": "Convert any ASCII text to its binary representation instantly. Simple online tool for developers and students.",
+      "keywords": [
+        "ASCII to binary",
+        "text to binary",
+        "binary converter",
+        "online ASCII converter",
+        "binary conversion"
+      ],
+      "usage_instructions": "Enter text in the field below and click \"Convert\" to see its binary representation. The result shows each character as an 8‑bit binary number separated by spaces."
+    },
+    {
+      "slug": "hex-to-rgb-converter",
+      "title": "Hex Color to RGB Converter",
+      "category": "image",
+      "date_published": "2026-10-06",
+      "status": "published",
+      "h1": "Hex Color to RGB Converter",
+      "seo_description": "Convert any hex color code to its RGB values instantly. Simple, free, and works on mobile.",
+      "keywords": [
+        "hex to rgb",
+        "color converter",
+        "hex color code",
+        "rgb values",
+        "online color tool"
+      ],
+      "usage_instructions": "Enter a hex color (e.g., #1A2B3C) and click Convert. The RGB components will appear below. Invalid codes show an error message."
+    },
+    {
+      "slug": "base-36-to-decimal-converter",
+      "title": "Base-36 to Decimal Converter",
+      "category": "math",
+      "date_published": "2026-10-06",
+      "status": "published",
+      "h1": "Base‑36 to Decimal Converter",
+      "seo_description": "Convert any base‑36 number to its decimal equivalent instantly. Simple, free, and works on any device.",
+      "keywords": [
+        "base 36 to decimal",
+        "base36 converter",
+        "convert base36",
+        "base 36 calculator",
+        "online base36 to decimal"
+      ],
+      "usage_instructions": "Enter a base‑36 number (using digits 0‑9 and letters A‑Z) in the field below and click Convert. The decimal result will appear instantly. Invalid input will show an error message."
     }
   ]
 }
