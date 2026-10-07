@@ -1245,6 +1245,40 @@
         "URL query extractor"
       ],
       "usage_instructions": "Paste a full URL into the field and click “Extract”. The tool will list each query parameter and its value. If the URL is invalid or has no parameters, a friendly message will appear."
+    },
+    {
+      "slug": "factorial-calculator",
+      "title": "Factorial Calculator",
+      "category": "math",
+      "date_published": "2026-10-07",
+      "status": "published",
+      "h1": "Factorial Calculator",
+      "seo_description": "Calculate the factorial of any integer up to 170 instantly. Simple, accurate, and mobile‑friendly.",
+      "keywords": [
+        "factorial calculator",
+        "compute n!",
+        "factorial of a number",
+        "math tool",
+        "online factorial"
+      ],
+      "usage_instructions": "Enter an integer between 0 and 170, then click Calculate. The result appears below. Invalid inputs show an error message."
+    },
+    {
+      "slug": "day-of-year-calculator",
+      "title": "Day of the Year Calculator",
+      "category": "date-time",
+      "date_published": "2026-10-07",
+      "status": "published",
+      "h1": "Day of the Year Calculator",
+      "seo_description": "Calculate the day number of any Gregorian date. Enter year, month, and day to instantly see its ordinal position (1‑366).",
+      "keywords": [
+        "day of year calculator",
+        "ordinal date",
+        "day number",
+        "date to day of year",
+        "calculate day of year"
+      ],
+      "usage_instructions": "Enter a year, month, and day, then click Calculate to see the day's ordinal number in that year."
     }
   ]
 }

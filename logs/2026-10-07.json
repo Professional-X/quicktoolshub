@@ -11,6 +11,17 @@
         "2026-10-07T08:40:28+00:00 PUBLISHED url-parameter-extractor",
         "2026-10-07T08:40:38+00:00 Step D FAILED svg-path-length-calculator: test_cases=False"
       ]
+    },
+    {
+      "started_at": "2026-10-07T17:26:06+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-07T17:26:18+00:00 Step A: proposed 6 ideas",
+        "2026-10-07T17:26:18+00:00 Step B: 3 ideas survived dedup",
+        "2026-10-07T17:26:29+00:00 PUBLISHED factorial-calculator",
+        "2026-10-07T17:26:39+00:00 PUBLISHED day-of-year-calculator",
+        "2026-10-07T17:26:39+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -49,10 +60,99 @@
         ],
         "output": "Path length in pixels."
       }
+    ],
+    [
+      {
+        "title": "Factorial Calculator",
+        "slug": "factorial-calculator",
+        "category": "math",
+        "one_line_pitch": "Compute n! instantly for any integer up to 170.",
+        "inputs": [
+          "n (integer)"
+        ],
+        "output": "Factorial of n"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate future value with compound interest given principal, rate, period, and compounding frequency.",
+        "inputs": [
+          "principal",
+          "annual rate (%)",
+          "years",
+          "compounds per year"
+        ],
+        "output": "Future value and total interest earned"
+      },
+      {
+        "title": "Day of the Year Calculator",
+        "slug": "day-of-year-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Find the ordinal day number for any Gregorian date.",
+        "inputs": [
+          "year",
+          "month",
+          "day"
+        ],
+        "output": "Day of the year (1-365/366)"
+      },
+      {
+        "title": "Hex Color to CMYK Converter",
+        "slug": "hex-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Convert hex RGB color to CMYK components.",
+        "inputs": [
+          "hex color code"
+        ],
+        "output": "C, M, Y, K percentages"
+      },
+      {
+        "title": "JSON to YAML Converter",
+        "slug": "json-to-yaml-converter",
+        "category": "developer",
+        "one_line_pitch": "Paste JSON and get a clean, indented YAML representation.",
+        "inputs": [
+          "JSON string"
+        ],
+        "output": "YAML text"
+      },
+      {
+        "title": "Speed Unit Converter",
+        "slug": "speed-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert speeds between km/h, mph, m/s, knots.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted speed"
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-10-07T17:26:18+00:00"
+      },
+      {
+        "slug": "hex-to-cmyk-converter",
+        "title": "Hex Color to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-rgb-converter (similarity 0.87 > 0.8)",
+        "at": "2026-10-07T17:26:18+00:00"
+      },
+      {
+        "slug": "speed-unit-converter",
+        "title": "Speed Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
+        "at": "2026-10-07T17:26:18+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -167,10 +267,55 @@
       "completion_tokens": 2111,
       "total_tokens": 3058,
       "est_cost_usd": 0.00728
+    },
+    {
+      "time": "2026-10-07T17:26:06+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-07T17:26:06+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-07T17:26:18+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 3818,
+      "completion_tokens": 2000,
+      "total_tokens": 5818,
+      "est_cost_usd": 0.009818
+    },
+    {
+      "time": "2026-10-07T17:26:24+00:00",
+      "purpose": "code_generation:factorial-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 946,
+      "completion_tokens": 2446,
+      "total_tokens": 3392,
+      "est_cost_usd": 0.008284
+    },
+    {
+      "time": "2026-10-07T17:26:34+00:00",
+      "purpose": "code_generation:day-of-year-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 955,
+      "completion_tokens": 2127,
+      "total_tokens": 3082,
+      "est_cost_usd": 0.007336
     }
   ],
   "budget": {
-    "tokens": 17165,
-    "usd": 0.036101
+    "tokens": 29629,
+    "usd": 0.061751
   }
 }
