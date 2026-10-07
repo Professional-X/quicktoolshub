@@ -1211,6 +1211,40 @@
         "online HTML analyzer"
       ],
       "usage_instructions": "Paste your HTML snippet into the box below and click “Count Tags” to see a list of each tag with its occurrence count."
+    },
+    {
+      "slug": "css-box-model-calculator",
+      "title": "CSS Box Model Calculator",
+      "category": "developer",
+      "date_published": "2026-10-07",
+      "status": "published",
+      "h1": "CSS Box Model Calculator",
+      "seo_description": "Quickly calculate an element's total size including padding, border, and margin. Enter values in pixels and get instant results.",
+      "keywords": [
+        "CSS box model",
+        "width height calculator",
+        "padding border margin",
+        "web design tool",
+        "CSS size calculator"
+      ],
+      "usage_instructions": "Enter the content width, height, padding, border, and margin in pixels. The calculator will show the total element size including all box‑model layers."
+    },
+    {
+      "slug": "url-parameter-extractor",
+      "title": "URL Parameter Extractor",
+      "category": "developer",
+      "date_published": "2026-10-07",
+      "status": "published",
+      "h1": "URL Parameter Extractor",
+      "seo_description": "Enter a URL to instantly list its query parameters and values. Simple, fast, no ads.",
+      "keywords": [
+        "URL parameters",
+        "query string parser",
+        "extract URL query",
+        "developer tool",
+        "URL query extractor"
+      ],
+      "usage_instructions": "Paste a full URL into the field and click “Extract”. The tool will list each query parameter and its value. If the URL is invalid or has no parameters, a friendly message will appear."
     }
   ]
 }
