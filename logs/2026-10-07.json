@@ -22,6 +22,15 @@
         "2026-10-07T17:26:39+00:00 PUBLISHED day-of-year-calculator",
         "2026-10-07T17:26:39+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-07T23:05:50+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-07T23:05:53+00:00 Step A: proposed 3 ideas",
+        "2026-10-07T23:05:53+00:00 Step B: 3 ideas survived dedup",
+        "2026-10-07T23:05:53+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -129,6 +138,40 @@
         ],
         "output": "Converted speed"
       }
+    ],
+    [
+      {
+        "title": "Checksum Generator",
+        "slug": "checksum-generator",
+        "category": "developer",
+        "one_line_pitch": "Generate MD5, SHA‑1, SHA‑256, or SHA‑512 hashes of any text instantly.",
+        "inputs": [
+          "Text to hash",
+          "Hash algorithm (MD5, SHA‑1, SHA‑256, SHA‑512)"
+        ],
+        "output": "Hash string"
+      },
+      {
+        "title": "Fraction Simplifier",
+        "slug": "fraction-simplifier",
+        "category": "math",
+        "one_line_pitch": "Simplify a fraction to its lowest terms instantly.",
+        "inputs": [
+          "Numerator",
+          "Denominator"
+        ],
+        "output": "Simplified fraction"
+      },
+      {
+        "title": "ROT13 Cipher",
+        "slug": "rot13-cipher",
+        "category": "random-fun",
+        "one_line_pitch": "Encode or decode any text with ROT13 in the browser.",
+        "inputs": [
+          "Text"
+        ],
+        "output": "ROT13 encoded/decoded text"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -152,7 +195,8 @@
         "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
         "at": "2026-10-07T17:26:18+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -312,10 +356,37 @@
       "completion_tokens": 2127,
       "total_tokens": 3082,
       "est_cost_usd": 0.007336
+    },
+    {
+      "time": "2026-10-07T23:05:50+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-07T23:05:50+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-07T23:05:53+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 3916,
+      "completion_tokens": 2000,
+      "total_tokens": 5916,
+      "est_cost_usd": 0.009916
     }
   ],
   "budget": {
-    "tokens": 29629,
-    "usd": 0.061751
+    "tokens": 35717,
+    "usd": 0.071879
   }
 }
