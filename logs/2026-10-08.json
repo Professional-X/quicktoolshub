@@ -14,6 +14,15 @@
         "2026-10-08T09:01:10+00:00 PUBLISHED md-table-to-csv-converter",
         "2026-10-08T09:01:10+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-08T17:28:59+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-08T17:29:01+00:00 Step A: proposed 8 ideas",
+        "2026-10-08T17:29:01+00:00 Step B: 8 ideas survived dedup",
+        "2026-10-08T17:29:01+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -100,6 +109,89 @@
         ],
         "output": "Contrast ratio and compliance level."
       }
+    ],
+    [
+      {
+        "title": "Next Full Moon Calculator",
+        "slug": "next-full-moon-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Calculate time until the next full moon from a chosen date.",
+        "inputs": [
+          "date (YYYY-MM-DD)"
+        ],
+        "output": "time remaining until next full moon (days, hours, minutes)"
+      },
+      {
+        "title": "Unit Price Calculator",
+        "slug": "unit-price-calculator",
+        "category": "finance",
+        "one_line_pitch": "Determine the unit price from total cost and quantity.",
+        "inputs": [
+          "total cost",
+          "quantity"
+        ],
+        "output": "unit price"
+      },
+      {
+        "title": "Fibonacci Sequence Generator",
+        "slug": "fibonacci-sequence-generator",
+        "category": "math",
+        "one_line_pitch": "Generate the first N Fibonacci numbers instantly.",
+        "inputs": [
+          "n (positive integer)"
+        ],
+        "output": "list of Fibonacci numbers"
+      },
+      {
+        "title": "Cumulative Sum Calculator",
+        "slug": "cumulative-sum-calculator",
+        "category": "math",
+        "one_line_pitch": "Compute running totals of a list of numbers.",
+        "inputs": [
+          "comma-separated numbers"
+        ],
+        "output": "array of cumulative sums"
+      },
+      {
+        "title": "Frequency to Musical Note Converter",
+        "slug": "frequency-to-musical-note",
+        "category": "random-fun",
+        "one_line_pitch": "Convert an audio frequency to its closest musical note.",
+        "inputs": [
+          "frequency in Hz"
+        ],
+        "output": "note name and octave"
+      },
+      {
+        "title": "Text to Leet Speak Converter",
+        "slug": "text-to-leet-speak",
+        "category": "random-fun",
+        "one_line_pitch": "Transform text into leet (1337) slang instantly.",
+        "inputs": [
+          "text"
+        ],
+        "output": "leet-ified text"
+      },
+      {
+        "title": "ROT13 Encoder / Decoder",
+        "slug": "rot13-encoder-decoder",
+        "category": "text",
+        "one_line_pitch": "Encode or decode text using ROT13 cipher.",
+        "inputs": [
+          "text"
+        ],
+        "output": "ROT13 transformed text"
+      },
+      {
+        "title": "NATO Phonetic Alphabet Converter",
+        "slug": "nato-phonetic-converter",
+        "category": "text",
+        "one_line_pitch": "Spell words using NATO phonetic alphabet.",
+        "inputs": [
+          "text"
+        ],
+        "output": "NATO spelled phrase"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -110,7 +202,8 @@
         "reason": "rejected: duplicate of hex-to-hsv-converter (similarity 0.83 > 0.8)",
         "at": "2026-10-08T08:59:06+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -243,10 +336,37 @@
       "completion_tokens": 2398,
       "total_tokens": 3343,
       "est_cost_usd": 0.008139
+    },
+    {
+      "time": "2026-10-08T17:28:58+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-08T17:28:58+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-08T17:29:01+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 4096,
+      "completion_tokens": 1850,
+      "total_tokens": 5946,
+      "est_cost_usd": 0.009646
     }
   ],
   "budget": {
-    "tokens": 23958,
-    "usd": 0.052366
+    "tokens": 30076,
+    "usd": 0.062224
   }
 }
