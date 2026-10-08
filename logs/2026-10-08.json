@@ -23,6 +23,15 @@
         "2026-10-08T17:29:01+00:00 Step B: 8 ideas survived dedup",
         "2026-10-08T17:29:01+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-08T23:22:26+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-08T23:22:29+00:00 Step A: proposed 8 ideas",
+        "2026-10-08T23:22:29+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-08T23:22:29+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -192,6 +201,92 @@
         ],
         "output": "NATO spelled phrase"
       }
+    ],
+    [
+      {
+        "title": "File Name Sanitizer",
+        "slug": "file-name-sanitizer",
+        "category": "developer",
+        "one_line_pitch": "Clean file names by removing illegal characters for Windows, macOS, and Linux.",
+        "inputs": [
+          "original filename",
+          "target OS"
+        ],
+        "output": "sanitized filename"
+      },
+      {
+        "title": "Credit Card Expiration Checker",
+        "slug": "credit-card-expiration-checker",
+        "category": "finance",
+        "one_line_pitch": "Determine if a credit card is expired based on expiry date and current date.",
+        "inputs": [
+          "expiry month",
+          "expiry year"
+        ],
+        "output": "expired status and days until expiry"
+      },
+      {
+        "title": "BMI Weight Range Calculator",
+        "slug": "bmi-weight-range-calculator",
+        "category": "health",
+        "one_line_pitch": "Find the weight range for a target BMI and given height.",
+        "inputs": [
+          "height (cm)",
+          "target BMI"
+        ],
+        "output": "minimum and maximum weight in kg"
+      },
+      {
+        "title": "Hex to CMYK Converter",
+        "slug": "hex-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Convert a hex color to CMYK percentages.",
+        "inputs": [
+          "hex color"
+        ],
+        "output": "C, M, Y, K values"
+      },
+      {
+        "title": "Time Duration Formatter",
+        "slug": "time-duration-formatter",
+        "category": "date-time",
+        "one_line_pitch": "Format seconds into days, hours, minutes, and seconds.",
+        "inputs": [
+          "total seconds"
+        ],
+        "output": "human-readable duration"
+      },
+      {
+        "title": "Text to Leetspeak Converter",
+        "slug": "text-to-leetspeak-converter",
+        "category": "text",
+        "one_line_pitch": "Translate English text into leetspeak.",
+        "inputs": [
+          "plain text"
+        ],
+        "output": "leetspeak text"
+      },
+      {
+        "title": "Prime Number Range Finder",
+        "slug": "prime-number-range-finder",
+        "category": "math",
+        "one_line_pitch": "List all prime numbers within a given range.",
+        "inputs": [
+          "start",
+          "end"
+        ],
+        "output": "array of primes"
+      },
+      {
+        "title": "ASCII to Unicode Escape Converter",
+        "slug": "ascii-to-unicode-escape-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert ASCII text into Unicode escape sequences.",
+        "inputs": [
+          "plain text"
+        ],
+        "output": "escaped string"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -203,7 +298,15 @@
         "at": "2026-10-08T08:59:06+00:00"
       }
     ],
-    []
+    [],
+    [
+      {
+        "slug": "hex-to-cmyk-converter",
+        "title": "Hex to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-hsv-converter (similarity 0.83 > 0.8)",
+        "at": "2026-10-08T23:22:29+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -363,10 +466,37 @@
       "completion_tokens": 1850,
       "total_tokens": 5946,
       "est_cost_usd": 0.009646
+    },
+    {
+      "time": "2026-10-08T23:22:26+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-08T23:22:26+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-08T23:22:29+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 4096,
+      "completion_tokens": 1867,
+      "total_tokens": 5963,
+      "est_cost_usd": 0.009697
     }
   ],
   "budget": {
-    "tokens": 30076,
-    "usd": 0.062224
+    "tokens": 36211,
+    "usd": 0.072133
   }
 }
