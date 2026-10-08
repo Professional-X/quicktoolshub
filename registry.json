@@ -1279,6 +1279,74 @@
         "calculate day of year"
       ],
       "usage_instructions": "Enter a year, month, and day, then click Calculate to see the day's ordinal number in that year."
+    },
+    {
+      "slug": "url-path-normalizer",
+      "title": "URL Path Normalizer",
+      "category": "developer",
+      "date_published": "2026-10-08",
+      "status": "published",
+      "h1": "URL Path Normalizer",
+      "seo_description": "Quickly remove duplicate slashes and trailing slashes from any URL path. Get a clean, standardized path instantly.",
+      "keywords": [
+        "url path normalizer",
+        "remove duplicate slashes",
+        "normalize url",
+        "clean url path",
+        "url formatter"
+      ],
+      "usage_instructions": "Enter a URL path in the field below and click “Normalize”. The tool will collapse multiple slashes and strip any trailing slash, returning a clean path."
+    },
+    {
+      "slug": "word-length-histogram",
+      "title": "Word Length Histogram",
+      "category": "text",
+      "date_published": "2026-10-08",
+      "status": "published",
+      "h1": "Word Length Histogram",
+      "seo_description": "Enter any text and instantly see a histogram of word lengths. Quick, free, and easy to use.",
+      "keywords": [
+        "word length histogram",
+        "text analysis",
+        "word count",
+        "frequency of word lengths",
+        "online text tool"
+      ],
+      "usage_instructions": "Paste or type text into the box, then click “Generate Histogram”. The result shows how many words have each length."
+    },
+    {
+      "slug": "number-spiral-generator",
+      "title": "Number Spiral Generator",
+      "category": "math",
+      "date_published": "2026-10-08",
+      "status": "published",
+      "h1": "Number Spiral Generator",
+      "seo_description": "Generate a custom n×n number spiral instantly. Enter a size and see the grid visualized.",
+      "keywords": [
+        "number spiral",
+        "grid generator",
+        "math tool",
+        "n x n spiral",
+        "spiral numbers"
+      ],
+      "usage_instructions": "Enter a positive integer for the grid size and click Generate. The resulting spiral will appear below. Invalid entries show an error message."
+    },
+    {
+      "slug": "md-table-to-csv-converter",
+      "title": "Markdown Table to CSV Converter",
+      "category": "developer",
+      "date_published": "2026-10-08",
+      "status": "published",
+      "h1": "Markdown Table to CSV Converter",
+      "seo_description": "Convert markdown tables to CSV instantly. Paste your markdown and get comma‑separated values ready for spreadsheets.",
+      "keywords": [
+        "markdown to csv",
+        "markdown table converter",
+        "csv generator",
+        "online markdown csv",
+        "table to csv"
+      ],
+      "usage_instructions": "Paste a markdown table into the textarea and click “Convert to CSV”. The result will appear below, ready to copy."
     }
   ]
 }
