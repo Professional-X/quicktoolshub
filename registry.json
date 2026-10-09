@@ -1396,6 +1396,23 @@
         "lowest terms calculator"
       ],
       "usage_instructions": "Enter the numerator and denominator, then click “Simplify”. The result will appear below. Invalid input shows an error message."
+    },
+    {
+      "slug": "password-entropy-calculator",
+      "title": "Password Entropy Calculator",
+      "category": "random-fun",
+      "date_published": "2026-10-09",
+      "status": "published",
+      "h1": "Password Entropy Calculator",
+      "seo_description": "Calculate the entropy of any password in bits and see its strength category instantly. Simple, free, and works offline.",
+      "keywords": [
+        "password entropy",
+        "entropy calculator",
+        "password strength",
+        "bits of entropy",
+        "security tool"
+      ],
+      "usage_instructions": "Type your password into the field; the tool will instantly show its entropy in bits and a strength rating."
     }
   ]
 }

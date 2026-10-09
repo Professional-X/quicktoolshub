@@ -12,6 +12,18 @@
         "2026-10-09T09:06:02+00:00 PUBLISHED url-parameter-counter",
         "2026-10-09T09:06:45+00:00 PUBLISHED fraction-simplifier"
       ]
+    },
+    {
+      "started_at": "2026-10-09T17:04:40+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-09T17:04:52+00:00 Step A: proposed 8 ideas",
+        "2026-10-09T17:04:52+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-09T17:05:07+00:00 Step D FAILED 3x3-linear-system-solver: test_cases=False",
+        "2026-10-09T17:05:20+00:00 Step C rejected text-to-qr-code-generator: missing ---META--- block in LLM output",
+        "2026-10-09T17:06:03+00:00 PUBLISHED password-entropy-calculator",
+        "2026-10-09T17:06:03+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -96,6 +108,99 @@
         ],
         "output": "Simplified fraction"
       }
+    ],
+    [
+      {
+        "title": "Cubic Equation Solver",
+        "slug": "cubic-equation-solver",
+        "category": "math",
+        "one_line_pitch": "Solve ax³+bx²+cx+d=0 for real or complex roots.",
+        "inputs": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "output": "Roots (real and complex) with numerical values"
+      },
+      {
+        "title": "3x3 Linear System Solver",
+        "slug": "3x3-linear-system-solver",
+        "category": "math",
+        "one_line_pitch": "Solve 3 equations with 3 variables for unique solution or detect no/infinite solutions.",
+        "inputs": [
+          "a1",
+          "b1",
+          "c1",
+          "d1",
+          "a2",
+          "b2",
+          "c2",
+          "d2"
+        ],
+        "output": "Solution (x, y, z) or message about solvability"
+      },
+      {
+        "title": "Text to QR Code Generator",
+        "slug": "text-to-qr-code-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Generate a QR code image from any text input, downloadable as PNG.",
+        "inputs": [
+          "text",
+          "size"
+        ],
+        "output": "QR code image preview and download link"
+      },
+      {
+        "title": "Password Entropy Calculator",
+        "slug": "password-entropy-calculator",
+        "category": "random-fun",
+        "one_line_pitch": "Calculate the entropy in bits of a password based on length and character set.",
+        "inputs": [
+          "password"
+        ],
+        "output": "Entropy in bits and strength category"
+      },
+      {
+        "title": "Markdown Image Previewer",
+        "slug": "markdown-image-previewer",
+        "category": "developer",
+        "one_line_pitch": "Render markdown to HTML and display all embedded images directly in the browser.",
+        "inputs": [
+          "markdown"
+        ],
+        "output": "Rendered HTML preview with images"
+      },
+      {
+        "title": "Base64 Image Decoder",
+        "slug": "base64-image-decoder",
+        "category": "developer",
+        "one_line_pitch": "Decode a base64 image string and display the resulting image with dimensions.",
+        "inputs": [
+          "base64String"
+        ],
+        "output": "Image preview, width, height, and file size"
+      },
+      {
+        "title": "Image Color Palette Extractor",
+        "slug": "image-color-palette-extractor",
+        "category": "image",
+        "one_line_pitch": "Extract dominant colors from an uploaded image and list them as hex codes.",
+        "inputs": [
+          "imageFile"
+        ],
+        "output": "Array of top colors with hex values and frequency"
+      },
+      {
+        "title": "Prime Number Generator",
+        "slug": "prime-number-generator",
+        "category": "math",
+        "one_line_pitch": "Generate all prime numbers up to a user-specified limit.",
+        "inputs": [
+          "limit"
+        ],
+        "output": "List of prime numbers up to the limit"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -123,6 +228,14 @@
         "title": "Hex Color to HSL Converter",
         "reason": "rejected: duplicate of hex-to-rgb-converter (similarity 0.88 > 0.8)",
         "at": "2026-10-09T09:05:31+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "cubic-equation-solver",
+        "title": "Cubic Equation Solver",
+        "reason": "rejected: duplicate of quadratic-equation-solver (similarity 0.83 > 0.8)",
+        "at": "2026-10-09T17:04:52+00:00"
       }
     ]
   ],
@@ -165,6 +278,50 @@
           "detail": "scrollWidth=360"
         }
       ]
+    },
+    {
+      "slug": "3x3-linear-system-solver",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-09T17:05:07+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=277"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected 'x = 1, y = 2, z = 3' not found; actual: 'x = 2, y = 6, z = -2') | case2: PASS | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "text-to-qr-code-generator",
+      "stage": "generate",
+      "reason": "missing ---META--- block in LLM output",
+      "at": "2026-10-09T17:05:20+00:00"
     }
   ],
   "llm_calls": [
@@ -248,10 +405,64 @@
       "completion_tokens": 1885,
       "total_tokens": 2830,
       "est_cost_usd": 0.0066
+    },
+    {
+      "time": "2026-10-09T17:04:39+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-09T17:04:40+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-09T17:04:52+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 4221,
+      "completion_tokens": 1917,
+      "total_tokens": 6138,
+      "est_cost_usd": 0.009972
+    },
+    {
+      "time": "2026-10-09T17:05:00+00:00",
+      "purpose": "code_generation:3x3-linear-system-solver",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 985,
+      "completion_tokens": 4004,
+      "total_tokens": 4989,
+      "est_cost_usd": 0.012997
+    },
+    {
+      "time": "2026-10-09T17:05:20+00:00",
+      "purpose": "code_generation:text-to-qr-code-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 955,
+      "completion_tokens": 6000,
+      "total_tokens": 6955,
+      "est_cost_usd": 0.018955
+    },
+    {
+      "time": "2026-10-09T17:05:59+00:00",
+      "purpose": "code_generation:password-entropy-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 953,
+      "completion_tokens": 1869,
+      "total_tokens": 2822,
+      "est_cost_usd": 0.00656
     }
   ],
   "budget": {
-    "tokens": 18836,
-    "usd": 0.038546
+    "tokens": 39912,
+    "usd": 0.087242
   }
 }
