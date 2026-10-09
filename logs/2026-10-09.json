@@ -24,6 +24,15 @@
         "2026-10-09T17:06:03+00:00 PUBLISHED password-entropy-calculator",
         "2026-10-09T17:06:03+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-09T22:38:34+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-09T22:38:37+00:00 Step A: proposed 2 ideas",
+        "2026-10-09T22:38:38+00:00 Step B: 1 ideas survived dedup",
+        "2026-10-09T22:38:38+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -201,6 +210,28 @@
         ],
         "output": "List of prime numbers up to the limit"
       }
+    ],
+    [
+      {
+        "title": "ISBN-13 to ISBN-10 Converter",
+        "slug": "isbn-13-to-isbn-10-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert a 13‑digit ISBN to its 10‑digit form.",
+        "inputs": [
+          "ISBN‑13 number"
+        ],
+        "output": "ISBN‑10 number"
+      },
+      {
+        "title": "Color Temperature Calculator",
+        "slug": "color-temperature-calculator",
+        "category": "image",
+        "one_line_pitch": "Get the Kelvin color temperature from a hex color.",
+        "inputs": [
+          "Hex color code"
+        ],
+        "output": "Color temperature in Kelvin"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -236,6 +267,14 @@
         "title": "Cubic Equation Solver",
         "reason": "rejected: duplicate of quadratic-equation-solver (similarity 0.83 > 0.8)",
         "at": "2026-10-09T17:04:52+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "isbn-13-to-isbn-10-converter",
+        "title": "ISBN-13 to ISBN-10 Converter",
+        "reason": "rejected: duplicate of isbn-10-to-13-converter (similarity 0.93 > 0.8)",
+        "at": "2026-10-09T22:38:38+00:00"
       }
     ]
   ],
@@ -459,10 +498,37 @@
       "completion_tokens": 1869,
       "total_tokens": 2822,
       "est_cost_usd": 0.00656
+    },
+    {
+      "time": "2026-10-09T22:38:34+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-09T22:38:34+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-09T22:38:37+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 4270,
+      "completion_tokens": 2000,
+      "total_tokens": 6270,
+      "est_cost_usd": 0.01027
     }
   ],
   "budget": {
-    "tokens": 39912,
-    "usd": 0.087242
+    "tokens": 46354,
+    "usd": 0.097724
   }
 }
