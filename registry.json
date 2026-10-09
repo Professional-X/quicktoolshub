@@ -1347,6 +1347,55 @@
         "table to csv"
       ],
       "usage_instructions": "Paste a markdown table into the textarea and click “Convert to CSV”. The result will appear below, ready to copy."
+    },
+    {
+      "slug": "html-to-markdown-converter",
+      "title": "HTML to Markdown Converter",
+      "category": "developer",
+      "date_published": "2026-10-09",
+      "status": "published",
+      "h1": "HTML to Markdown Converter",
+      "seo_description": "Convert HTML snippets to clean Markdown instantly in your browser—no server needed.",
+      "keywords": [
+        "HTML to Markdown",
+        "convert HTML to markdown",
+        "online HTML markdown converter",
+        "offline markdown tool"
+      ],
+      "usage_instructions": "Paste your HTML snippet into the box below and click “Convert to Markdown”. The Markdown version will appear in the output area."
+    },
+    {
+      "slug": "url-parameter-counter",
+      "title": "URL Parameter Counter",
+      "category": "developer",
+      "date_published": "2026-10-09",
+      "status": "published",
+      "h1": "URL Parameter Counter",
+      "seo_description": "Enter any URL to instantly count and list its query parameters. Quick, free tool for developers.",
+      "keywords": [
+        "URL parameters",
+        "query string counter",
+        "count URL parameters",
+        "developer tool",
+        "query parameter list"
+      ],
+      "usage_instructions": "Enter a full URL in the field below and click “Count Parameters”. The tool will display the total number of query parameters and list each key‑value pair."
+    },
+    {
+      "slug": "fraction-simplifier",
+      "title": "Fraction Simplifier",
+      "category": "math",
+      "date_published": "2026-10-09",
+      "status": "published",
+      "h1": "Fraction Simplifier",
+      "seo_description": "Quickly simplify any fraction to its lowest terms. Enter numerator and denominator and get the reduced fraction instantly.",
+      "keywords": [
+        "fraction simplifier",
+        "simplify fraction",
+        "reduce fraction",
+        "lowest terms calculator"
+      ],
+      "usage_instructions": "Enter the numerator and denominator, then click “Simplify”. The result will appear below. Invalid input shows an error message."
     }
   ]
 }
