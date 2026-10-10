@@ -1413,6 +1413,72 @@
         "security tool"
       ],
       "usage_instructions": "Type your password into the field; the tool will instantly show its entropy in bits and a strength rating."
+    },
+    {
+      "slug": "keyword-density-checker",
+      "title": "Keyword Density Checker",
+      "category": "text",
+      "date_published": "2026-10-10",
+      "status": "published",
+      "h1": "Keyword Density Checker",
+      "seo_description": "Calculate how often a keyword appears in your text and see its density percentage instantly. Simple, free, no ads.",
+      "keywords": [
+        "keyword density",
+        "keyword frequency",
+        "text analysis",
+        "SEO tool",
+        "keyword checker"
+      ],
+      "usage_instructions": "Enter your text, type the keyword(s) you want to analyse, and click “Calculate”. The result shows how many times each keyword appears and its density percentage."
+    },
+    {
+      "slug": "modular-inverse-calculator",
+      "title": "Modular Inverse Calculator",
+      "category": "math",
+      "date_published": "2026-10-10",
+      "status": "published",
+      "h1": "Modular Inverse Calculator",
+      "seo_description": "Calculate the modular multiplicative inverse of an integer for any modulus instantly. Simple, accurate, and free.",
+      "keywords": [
+        "modular inverse",
+        "multiplicative inverse",
+        "modular arithmetic",
+        "inverse calculator",
+        "number theory"
+      ],
+      "usage_instructions": "Enter an integer a and a positive modulus m, then click “Calculate”. The result will show the modular inverse or indicate that none exists."
+    },
+    {
+      "slug": "bmr-calculator",
+      "title": "Basal Metabolic Rate (BMR) Calculator",
+      "category": "health",
+      "date_published": "2026-10-10",
+      "status": "published",
+      "h1": "Basal Metabolic Rate (BMR) Calculator",
+      "seo_description": "Calculate your Basal Metabolic Rate quickly using age, weight, height, and gender. Get daily calorie needs in seconds.",
+      "keywords": [
+        "BMR calculator",
+        "basal metabolic rate",
+        "daily calorie needs",
+        "health calculator"
+      ],
+      "usage_instructions": "Enter your gender, age, weight, and height, then click Calculate. The result shows your BMR in calories per day. Ensure all numbers are positive."
+    },
+    {
+      "slug": "dice-roll-simulator",
+      "title": "Dice Roll Simulator",
+      "category": "random-fun",
+      "date_published": "2026-10-10",
+      "status": "published",
+      "h1": "Dice Roll Simulator",
+      "seo_description": "Simulate rolling any number of dice with custom sides and rolls. Get summary stats and a frequency chart instantly.",
+      "keywords": [
+        "dice roll simulator",
+        "roll dice online",
+        "dice probability",
+        "random dice generator"
+      ],
+      "usage_instructions": "Enter the number of dice, sides per die, and how many times to roll, then click “Roll Dice”. The results and a distribution chart will appear below."
     }
   ]
 }
