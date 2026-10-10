@@ -14,6 +14,13 @@
         "2026-10-10T08:32:43+00:00 PUBLISHED bmr-calculator",
         "2026-10-10T08:32:53+00:00 PUBLISHED dice-roll-simulator"
       ]
+    },
+    {
+      "started_at": "2026-10-10T15:53:08+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-10T15:53:55+00:00 Step A failed: LLM call failed after retry: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -306,10 +313,28 @@
       "completion_tokens": 2532,
       "total_tokens": 3489,
       "est_cost_usd": 0.008553
+    },
+    {
+      "time": "2026-10-10T15:53:08+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-10T15:53:08+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
     }
   ],
   "budget": {
-    "tokens": 27151,
-    "usd": 0.059249
+    "tokens": 27323,
+    "usd": 0.059461
   }
 }
