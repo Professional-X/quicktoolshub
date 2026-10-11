@@ -14,6 +14,18 @@
         "2026-10-11T08:53:45+00:00 Step D FAILED image-to-base64-converter: test_cases=False",
         "2026-10-11T08:54:31+00:00 PUBLISHED fibonacci-sequence-generator"
       ]
+    },
+    {
+      "started_at": "2026-10-11T16:20:09+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-11T16:20:55+00:00 Step A: proposed 8 ideas",
+        "2026-10-11T16:20:55+00:00 Step B: 6 ideas survived dedup",
+        "2026-10-11T16:21:05+00:00 PUBLISHED armstrong-number-checker",
+        "2026-10-11T16:21:17+00:00 Step D FAILED easter-date-calculator: test_cases=False",
+        "2026-10-11T16:22:03+00:00 PUBLISHED hamming-distance-calculator",
+        "2026-10-11T16:22:03+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -104,6 +116,91 @@
         ],
         "output": "Shows Fibonacci sequence and sum of terms"
       }
+    ],
+    [
+      {
+        "title": "Armstrong Number Checker",
+        "slug": "armstrong-number-checker",
+        "category": "math",
+        "one_line_pitch": "Check if a number is an Armstrong number (narcissistic) instantly.",
+        "inputs": [
+          "Number (integer)"
+        ],
+        "output": "Result: Yes/No with explanation and constituent digits raised to power."
+      },
+      {
+        "title": "Speed Unit Converter",
+        "slug": "speed-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert speeds between mph, km/h, m/s, and knots instantly.",
+        "inputs": [
+          "Speed value",
+          "From unit",
+          "To unit"
+        ],
+        "output": "Converted speed value with unit."
+      },
+      {
+        "title": "Easter Date Calculator",
+        "slug": "easter-date-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Find the date of Easter Sunday for any year instantly.",
+        "inputs": [
+          "Year (integer)"
+        ],
+        "output": "Easter date (day, month, year)."
+      },
+      {
+        "title": "Hamming Distance Calculator",
+        "slug": "hamming-distance-calculator",
+        "category": "math",
+        "one_line_pitch": "Calculate Hamming distance between two equal-length strings or binary numbers.",
+        "inputs": [
+          "String or binary number 1",
+          "String or binary number 2"
+        ],
+        "output": "Hamming distance (integer)."
+      },
+      {
+        "title": "Text Word Cloud Generator",
+        "slug": "text-word-cloud-generator",
+        "category": "text",
+        "one_line_pitch": "Generate a simple word cloud from any text instantly.",
+        "inputs": [
+          "Text"
+        ],
+        "output": "Visual word cloud in the browser."
+      },
+      {
+        "title": "Morse Code Decoder",
+        "slug": "morse-code-decoder",
+        "category": "text",
+        "one_line_pitch": "Decode Morse code into readable text instantly.",
+        "inputs": [
+          "Morse code string (dots, dashes, spaces)"
+        ],
+        "output": "Decoded English text."
+      },
+      {
+        "title": "Perfect Number Checker",
+        "slug": "perfect-number-checker",
+        "category": "math",
+        "one_line_pitch": "Check if a number is a perfect number instantly.",
+        "inputs": [
+          "Number (integer)"
+        ],
+        "output": "Result: Yes/No, and list of proper divisors."
+      },
+      {
+        "title": "URL Validator",
+        "slug": "url-validator",
+        "category": "developer",
+        "one_line_pitch": "Validate any URL syntax and show its components instantly.",
+        "inputs": [
+          "URL string"
+        ],
+        "output": "Validity status and parsed components (protocol, host, path, query)."
+      }
     ]
   ],
   "ideas_rejected": [
@@ -119,6 +216,20 @@
         "title": "Pressure Unit Converter",
         "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
         "at": "2026-10-11T08:52:21+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "speed-unit-converter",
+        "title": "Speed Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
+        "at": "2026-10-11T16:20:55+00:00"
+      },
+      {
+        "slug": "perfect-number-checker",
+        "title": "Perfect Number Checker",
+        "reason": "rejected: duplicate of prime-number-checker (similarity 0.81 > 0.8)",
+        "at": "2026-10-11T16:20:55+00:00"
       }
     ]
   ],
@@ -277,6 +388,44 @@
           "detail": "scrollWidth=360"
         }
       ]
+    },
+    {
+      "slug": "easter-date-calculator",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-11T16:21:17+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=154"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected 'April 21, 2024' not found; actual: 'easter sunday in 2024 falls on march 31, 2024.') | case2: PASS | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
     }
   ],
   "llm_calls": [
@@ -378,10 +527,64 @@
       "completion_tokens": 2622,
       "total_tokens": 3571,
       "est_cost_usd": 0.008815
+    },
+    {
+      "time": "2026-10-11T16:20:09+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-11T16:20:09+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-11T16:20:55+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 4557,
+      "completion_tokens": 1923,
+      "total_tokens": 6480,
+      "est_cost_usd": 0.010326
+    },
+    {
+      "time": "2026-10-11T16:21:01+00:00",
+      "purpose": "code_generation:armstrong-number-checker",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 959,
+      "completion_tokens": 2735,
+      "total_tokens": 3694,
+      "est_cost_usd": 0.009164
+    },
+    {
+      "time": "2026-10-11T16:21:12+00:00",
+      "purpose": "code_generation:easter-date-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 950,
+      "completion_tokens": 2885,
+      "total_tokens": 3835,
+      "est_cost_usd": 0.009605
+    },
+    {
+      "time": "2026-10-11T16:21:58+00:00",
+      "purpose": "code_generation:hamming-distance-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 959,
+      "completion_tokens": 2597,
+      "total_tokens": 3556,
+      "est_cost_usd": 0.00875
     }
   ],
   "budget": {
-    "tokens": 27728,
-    "usd": 0.060598
+    "tokens": 45465,
+    "usd": 0.098655
   }
 }

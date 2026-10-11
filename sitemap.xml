@@ -79,7 +79,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/hamming-distance-calculator/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://professional-x.github.io/quicktoolshub/tools/fibonacci-sequence-generator/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/armstrong-number-checker/</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

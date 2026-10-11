@@ -1513,6 +1513,40 @@
         "math tools"
       ],
       "usage_instructions": "Enter the number of terms you want and press Generate. The tool will show the sequence and the sum of the displayed terms."
+    },
+    {
+      "slug": "armstrong-number-checker",
+      "title": "Armstrong Number Checker",
+      "category": "math",
+      "date_published": "2026-10-11",
+      "status": "published",
+      "h1": "Armstrong Number Checker",
+      "seo_description": "Enter any integer to instantly find out if it's an Armstrong (narcissistic) number with a clear explanation.",
+      "keywords": [
+        "Armstrong number",
+        "narcissistic number",
+        "math tool",
+        "number checker",
+        "digit power sum"
+      ],
+      "usage_instructions": "Enter a non‑negative integer and click “Check”. The result will tell you whether the number is an Armstrong number and show the digit‑power calculation."
+    },
+    {
+      "slug": "hamming-distance-calculator",
+      "title": "Hamming Distance Calculator",
+      "category": "math",
+      "date_published": "2026-10-11",
+      "status": "published",
+      "h1": "Hamming Distance Calculator",
+      "seo_description": "Quickly calculate the Hamming distance between two equal‑length strings or binary numbers. No ads, instant results.",
+      "keywords": [
+        "hamming distance",
+        "string distance",
+        "binary difference",
+        "calculate hamming",
+        "online hamming calculator"
+      ],
+      "usage_instructions": "Enter two equal‑length strings or binary numbers and click “Calculate”. The Hamming distance will be shown below."
     }
   ]
 }
