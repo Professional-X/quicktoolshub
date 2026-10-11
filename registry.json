@@ -1479,6 +1479,40 @@
         "random dice generator"
       ],
       "usage_instructions": "Enter the number of dice, sides per die, and how many times to roll, then click “Roll Dice”. The results and a distribution chart will appear below."
+    },
+    {
+      "slug": "lcm-calculator",
+      "title": "Least Common Multiple Calculator",
+      "category": "math",
+      "date_published": "2026-10-11",
+      "status": "published",
+      "h1": "Least Common Multiple (LCM) Calculator",
+      "seo_description": "Calculate the least common multiple of two or more integers instantly. Enter numbers separated by commas and get the LCM in seconds.",
+      "keywords": [
+        "least common multiple",
+        "LCM calculator",
+        "calculate LCM",
+        "math tool",
+        "multiple integers"
+      ],
+      "usage_instructions": "Enter two or more integers separated by commas, then click “Calculate LCM”. The smallest common multiple will appear below."
+    },
+    {
+      "slug": "fibonacci-sequence-generator",
+      "title": "Fibonacci Sequence Generator",
+      "category": "math",
+      "date_published": "2026-10-11",
+      "status": "published",
+      "h1": "Fibonacci Sequence Generator",
+      "seo_description": "Generate the first N Fibonacci numbers instantly and see their total. Simple, fast, and works offline.",
+      "keywords": [
+        "Fibonacci calculator",
+        "Fibonacci sequence",
+        "generate Fibonacci numbers",
+        "Fibonacci sum",
+        "math tools"
+      ],
+      "usage_instructions": "Enter the number of terms you want and press Generate. The tool will show the sequence and the sum of the displayed terms."
     }
   ]
 }
