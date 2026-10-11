@@ -26,6 +26,15 @@
         "2026-10-11T16:22:03+00:00 PUBLISHED hamming-distance-calculator",
         "2026-10-11T16:22:03+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-11T21:58:25+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-11T21:58:27+00:00 Step A: proposed 8 ideas",
+        "2026-10-11T21:58:27+00:00 Step B: 5 ideas survived dedup",
+        "2026-10-11T21:58:27+00:00 publish cap reached (4/day); skipping remaining 5 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -201,6 +210,101 @@
         ],
         "output": "Validity status and parsed components (protocol, host, path, query)."
       }
+    ],
+    [
+      {
+        "title": "Sentence Splitter",
+        "slug": "sentence-splitter",
+        "category": "text",
+        "one_line_pitch": "Split any paragraph into individual sentences instantly.",
+        "inputs": [
+          "Paragraph text"
+        ],
+        "output": "List of sentences separated by line breaks"
+      },
+      {
+        "title": "Combination Counter",
+        "slug": "combination-counter",
+        "category": "math",
+        "one_line_pitch": "Compute nCr combinations for given n and r.",
+        "inputs": [
+          "n (integer)",
+          "r (integer)"
+        ],
+        "output": "Number of combinations"
+      },
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate future value with compound interest over time.",
+        "inputs": [
+          "Principal amount",
+          "Annual interest rate (%)",
+          "Number of years",
+          "Compounding frequency per year"
+        ],
+        "output": "Future value and interest earned"
+      },
+      {
+        "title": "Countdown Timer",
+        "slug": "countdown-timer",
+        "category": "date-time",
+        "one_line_pitch": "Show days, hours, minutes, seconds until target date/time.",
+        "inputs": [
+          "Target date and time"
+        ],
+        "output": "Time remaining countdown"
+      },
+      {
+        "title": "Image Transparency Checker",
+        "slug": "image-transparency-checker",
+        "category": "image",
+        "one_line_pitch": "Upload an image to see percentage of transparent pixels.",
+        "inputs": [
+          "Image file"
+        ],
+        "output": "Transparency percentage and pixel count"
+      },
+      {
+        "title": "CSS Gradient Generator",
+        "slug": "css-gradient-generator",
+        "category": "developer",
+        "one_line_pitch": "Create linear or radial CSS gradient code with color stops.",
+        "inputs": [
+          "Start color",
+          "End color",
+          "Angle or shape",
+          "Optional additional color stops"
+        ],
+        "output": "CSS gradient string"
+      },
+      {
+        "title": "Angle Unit Converter",
+        "slug": "angle-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert angles between degrees, radians, gradians, turns.",
+        "inputs": [
+          "Value",
+          "From unit",
+          "To unit"
+        ],
+        "output": "Converted angle value"
+      },
+      {
+        "title": "TDEE Calculator",
+        "slug": "tdee-calculator",
+        "category": "health",
+        "one_line_pitch": "Calculate total daily energy expenditure based on activity level.",
+        "inputs": [
+          "Weight (kg)",
+          "Height (cm)",
+          "Age",
+          "Gender",
+          "Activity level"
+        ],
+        "output": "Estimated daily calorie needs"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -230,6 +334,26 @@
         "title": "Perfect Number Checker",
         "reason": "rejected: duplicate of prime-number-checker (similarity 0.81 > 0.8)",
         "at": "2026-10-11T16:20:55+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-10-11T21:58:27+00:00"
+      },
+      {
+        "slug": "angle-unit-converter",
+        "title": "Angle Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.87 > 0.8)",
+        "at": "2026-10-11T21:58:27+00:00"
+      },
+      {
+        "slug": "tdee-calculator",
+        "title": "TDEE Calculator",
+        "reason": "rejected: duplicate of age-calculator (similarity 0.83 > 0.8)",
+        "at": "2026-10-11T21:58:27+00:00"
       }
     ]
   ],
@@ -581,10 +705,37 @@
       "completion_tokens": 2597,
       "total_tokens": 3556,
       "est_cost_usd": 0.00875
+    },
+    {
+      "time": "2026-10-11T21:58:24+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-11T21:58:24+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-11T21:58:27+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 4651,
+      "completion_tokens": 1320,
+      "total_tokens": 5971,
+      "est_cost_usd": 0.008611
     }
   ],
   "budget": {
-    "tokens": 45465,
-    "usd": 0.098655
+    "tokens": 51608,
+    "usd": 0.107478
   }
 }
