@@ -1547,6 +1547,73 @@
         "online hamming calculator"
       ],
       "usage_instructions": "Enter two equal‑length strings or binary numbers and click “Calculate”. The Hamming distance will be shown below."
+    },
+    {
+      "slug": "standard-deviation-calculator",
+      "title": "Standard Deviation Calculator",
+      "category": "math",
+      "date_published": "2026-10-12",
+      "status": "published",
+      "h1": "Standard Deviation Calculator",
+      "seo_description": "Calculate the population or sample standard deviation instantly from a comma-separated list of numbers.",
+      "keywords": [
+        "standard deviation calculator",
+        "population std dev",
+        "sample std dev",
+        "calculate std dev",
+        "statistics tool"
+      ],
+      "usage_instructions": "Enter numbers separated by commas, select population or sample, then click Calculate. The result appears below."
+    },
+    {
+      "slug": "debt-repayment-schedule",
+      "title": "Debt Repayment Schedule",
+      "category": "finance",
+      "date_published": "2026-10-12",
+      "status": "published",
+      "h1": "Debt Repayment Schedule Calculator",
+      "seo_description": "Create a detailed loan amortization schedule instantly. Enter principal, rate, term and payment frequency to see dates, interest, principal, and balance.",
+      "keywords": [
+        "loan amortization",
+        "debt repayment schedule",
+        "payment calculator",
+        "interest schedule",
+        "loan payment table"
+      ],
+      "usage_instructions": "Enter the loan amount, annual interest rate, term in years, and how many payments you make each year. Click “Calculate Schedule” to view a table of payment dates, amounts, interest, principal, and remaining balance."
+    },
+    {
+      "slug": "time-to-midnight-counter",
+      "title": "Time to Midnight Counter",
+      "category": "date-time",
+      "date_published": "2026-10-12",
+      "status": "published",
+      "h1": "Time to Midnight Counter",
+      "seo_description": "Calculate how many days, hours, and minutes remain until the next midnight for any time zone. Simple, instant countdown.",
+      "keywords": [
+        "midnight countdown",
+        "time until midnight",
+        "timezone midnight timer",
+        "days hours minutes until midnight"
+      ],
+      "usage_instructions": "Enter an IANA time‑zone name (e.g., America/New_York) or leave blank to use your local time. Click “Show Countdown” to see days, hours and minutes until the next midnight in that zone."
+    },
+    {
+      "slug": "json-schema-validator",
+      "title": "JSON Schema Validator",
+      "category": "developer",
+      "date_published": "2026-10-12",
+      "status": "published",
+      "h1": "JSON Schema Validator",
+      "seo_description": "Validate JSON data against a JSON Schema instantly in your browser. No server needed, works offline.",
+      "keywords": [
+        "json validator",
+        "json schema validation",
+        "validate json",
+        "online json validator",
+        "json schema tool"
+      ],
+      "usage_instructions": "Enter JSON data and a JSON Schema, then click Validate. Errors (if any) will appear below."
     }
   ]
 }
