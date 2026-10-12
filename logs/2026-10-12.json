@@ -14,6 +14,15 @@
         "2026-10-12T09:15:28+00:00 PUBLISHED json-schema-validator",
         "2026-10-12T09:15:28+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-12T19:48:54+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-12T19:48:57+00:00 Step A: proposed 4 ideas",
+        "2026-10-12T19:48:58+00:00 Step B: 3 ideas survived dedup",
+        "2026-10-12T19:48:58+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -107,10 +116,65 @@
         ],
         "output": "Heads and tails counts, percentages."
       }
+    ],
+    [
+      {
+        "title": "Perfect Square Checker",
+        "slug": "perfect-square-checker",
+        "category": "math",
+        "one_line_pitch": "Determine if a number is a perfect square and display its square root.",
+        "inputs": [
+          "Number"
+        ],
+        "output": "Indicates whether the number is a perfect square and shows the integer square root if applicable."
+      },
+      {
+        "title": "Future Value Calculator",
+        "slug": "future-value-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate the future value of an investment with compounding interest.",
+        "inputs": [
+          "Present Value",
+          "Annual Interest Rate (%)",
+          "Years",
+          "Compounding Frequency per Year"
+        ],
+        "output": "Future value rounded to two decimals."
+      },
+      {
+        "title": "Countdown to Date",
+        "slug": "countdown-to-date",
+        "category": "date-time",
+        "one_line_pitch": "Show days, hours, minutes, and seconds until a chosen future date and time.",
+        "inputs": [
+          "Target Date & Time (YYYY-MM-DD HH:MM:SS)"
+        ],
+        "output": "Time remaining in days, hours, minutes, seconds."
+      },
+      {
+        "title": "Pressure Unit Converter",
+        "slug": "pressure-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert pressures between pascals, bar, psi, atm, and mmHg.",
+        "inputs": [
+          "Pressure Value",
+          "From Unit",
+          "To Unit"
+        ],
+        "output": "Converted pressure value with unit."
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "pressure-unit-converter",
+        "title": "Pressure Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
+        "at": "2026-10-12T19:48:58+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -243,10 +307,37 @@
       "completion_tokens": 3947,
       "total_tokens": 4893,
       "est_cost_usd": 0.012787
+    },
+    {
+      "time": "2026-10-12T19:48:54+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-12T19:48:54+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-12T19:48:57+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 4835,
+      "completion_tokens": 2000,
+      "total_tokens": 6835,
+      "est_cost_usd": 0.010835
     }
   ],
   "budget": {
-    "tokens": 28614,
-    "usd": 0.064852
+    "tokens": 35621,
+    "usd": 0.075899
   }
 }
