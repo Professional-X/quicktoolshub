@@ -33,6 +33,15 @@
         "2026-10-13T17:37:14+00:00 PUBLISHED credit-card-issuer-detector",
         "2026-10-13T17:37:14+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-13T22:45:55+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-13T22:45:58+00:00 Step A: proposed 7 ideas",
+        "2026-10-13T22:45:58+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-13T22:45:58+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -205,6 +214,87 @@
         ],
         "output": "Heat index value in the same units as temperature"
       }
+    ],
+    [
+      {
+        "title": "Density Calculator",
+        "slug": "density-calculator",
+        "category": "unit-conversion",
+        "one_line_pitch": "Compute density from mass and volume, or volume from mass and density.",
+        "inputs": [
+          "mass",
+          "mass unit",
+          "volume",
+          "volume unit"
+        ],
+        "output": "density (mass per unit volume) in the selected units"
+      },
+      {
+        "title": "Gunning Fog Index Calculator",
+        "slug": "gunning-fog-index",
+        "category": "text",
+        "one_line_pitch": "Calculate the Gunning Fog readability score for any paragraph.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Fog Index score and suggested grade level"
+      },
+      {
+        "title": "Markdown Live Preview",
+        "slug": "markdown-live-preview",
+        "category": "developer",
+        "one_line_pitch": "Render Markdown to HTML in real time as you type.",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "live HTML preview"
+      },
+      {
+        "title": "URL Query Builder",
+        "slug": "url-query-builder",
+        "category": "developer",
+        "one_line_pitch": "Create a URL with encoded query parameters from key-value pairs.",
+        "inputs": [
+          "base URL",
+          "parameters (comma-separated name=value)"
+        ],
+        "output": "full URL with query string"
+      },
+      {
+        "title": "Image File Size Estimator",
+        "slug": "image-file-size-estimator",
+        "category": "image",
+        "one_line_pitch": "Estimate JPEG/PNG file size from dimensions and color depth.",
+        "inputs": [
+          "width (px)",
+          "height (px)",
+          "color depth (bits)",
+          "compression ratio (optional)"
+        ],
+        "output": "approximate file size (bytes/kb/mb)"
+      },
+      {
+        "title": "Random Quote Generator",
+        "slug": "random-quote-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Get a random inspirational quote, optionally by theme.",
+        "inputs": [
+          "theme (optional)"
+        ],
+        "output": "quote text and author"
+      },
+      {
+        "title": "ISO 8601 Calendar Formatter",
+        "slug": "iso-8601-calendar-formatter",
+        "category": "date-time",
+        "one_line_pitch": "Convert a date into ISO 8601 string with time zone offset.",
+        "inputs": [
+          "date",
+          "time (optional)",
+          "timezone offset (optional)"
+        ],
+        "output": "ISO 8601 formatted string"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -235,7 +325,8 @@
         "reason": "rejected: duplicate of base-36-to-decimal-converter (similarity 0.96 > 0.8)",
         "at": "2026-10-13T17:36:39+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -437,10 +528,37 @@
       "completion_tokens": 3260,
       "total_tokens": 4208,
       "est_cost_usd": 0.010728
+    },
+    {
+      "time": "2026-10-13T22:45:55+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-13T22:45:55+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-13T22:45:58+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5012,
+      "completion_tokens": 2000,
+      "total_tokens": 7012,
+      "est_cost_usd": 0.011012
     }
   ],
   "budget": {
-    "tokens": 35996,
-    "usd": 0.076248
+    "tokens": 43180,
+    "usd": 0.087472
   }
 }
