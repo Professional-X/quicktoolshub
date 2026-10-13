@@ -21,6 +21,18 @@
         "2026-10-13T09:30:20+00:00 Step C rejected credit-card-type-detector: LLM call failed after retry: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxw94018ff1vfz74v0hkhnke` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199501, Requested 6951. Please try again in 46m27.263999999s. Need more tokens? Upgrade to Dev Tier today at h",
         "2026-10-13T09:31:31+00:00 Step C rejected hex-color-contrast-checker: LLM call failed after retry: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxw94018ff1vfz74v0hkhnke` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199338, Requested 1317. Please try again in 4m42.96s. Need more tokens? Upgrade to Dev Tier today at https://c"
       ]
+    },
+    {
+      "started_at": "2026-10-13T17:36:37+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-13T17:36:39+00:00 Step A: proposed 8 ideas",
+        "2026-10-13T17:36:39+00:00 Step B: 6 ideas survived dedup",
+        "2026-10-13T17:36:49+00:00 PUBLISHED url-path-depth",
+        "2026-10-13T17:37:02+00:00 PUBLISHED full-moon-countdown",
+        "2026-10-13T17:37:14+00:00 PUBLISHED credit-card-issuer-detector",
+        "2026-10-13T17:37:14+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -110,6 +122,89 @@
         ],
         "output": "Complete URL with encoded parameters"
       }
+    ],
+    [
+      {
+        "title": "Hex Color to CMYK Converter",
+        "slug": "hex-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Convert a HEX color code to CMYK values.",
+        "inputs": [
+          "Hex color code"
+        ],
+        "output": "CMYK percentages (C,M,Y,K)"
+      },
+      {
+        "title": "URL Path Depth Calculator",
+        "slug": "url-path-depth",
+        "category": "developer",
+        "one_line_pitch": "Show how many segments a URL path contains.",
+        "inputs": [
+          "URL"
+        ],
+        "output": "Number of path segments"
+      },
+      {
+        "title": "Time Until Next Full Moon",
+        "slug": "full-moon-countdown",
+        "category": "date-time",
+        "one_line_pitch": "Countdown to the next full moon from current date/time.",
+        "inputs": [
+          "Timezone (optional)"
+        ],
+        "output": "Days, hours, minutes, seconds until next full moon"
+      },
+      {
+        "title": "Credit Card Issuer Detector",
+        "slug": "credit-card-issuer-detector",
+        "category": "finance",
+        "one_line_pitch": "Identify the card issuer from a credit card number.",
+        "inputs": [
+          "Credit card number"
+        ],
+        "output": "Card issuer name and card type"
+      },
+      {
+        "title": "Text to IPA Transcription",
+        "slug": "text-to-ipa",
+        "category": "text",
+        "one_line_pitch": "Convert English words to International Phonetic Alphabet symbols.",
+        "inputs": [
+          "Text"
+        ],
+        "output": "IPA transcription"
+      },
+      {
+        "title": "ISBN-13 Check Digit Calculator",
+        "slug": "isbn13-check-digit",
+        "category": "developer",
+        "one_line_pitch": "Compute the ISBN‑13 check digit for a 12‑digit prefix.",
+        "inputs": [
+          "12‑digit ISBN prefix"
+        ],
+        "output": "Full 13‑digit ISBN including check digit"
+      },
+      {
+        "title": "Base‑60 to Decimal Converter",
+        "slug": "base60-to-decimal",
+        "category": "math",
+        "one_line_pitch": "Convert a base‑60 number to decimal.",
+        "inputs": [
+          "Base‑60 number"
+        ],
+        "output": "Decimal equivalent"
+      },
+      {
+        "title": "Heat Index Calculator",
+        "slug": "heat-index-calculator",
+        "category": "health",
+        "one_line_pitch": "Calculate the heat index (felt temperature) from temperature and humidity.",
+        "inputs": [
+          "Temperature (°F or °C)",
+          "Relative humidity (%)"
+        ],
+        "output": "Heat index value in the same units as temperature"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -125,6 +220,20 @@
         "title": "URL Parameter Builder",
         "reason": "rejected: duplicate of url-parameter-counter (similarity 0.81 > 0.8)",
         "at": "2026-10-13T09:26:22+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "hex-to-cmyk-converter",
+        "title": "Hex Color to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-rgb-converter (similarity 0.87 > 0.8)",
+        "at": "2026-10-13T17:36:39+00:00"
+      },
+      {
+        "slug": "base60-to-decimal",
+        "title": "Base‑60 to Decimal Converter",
+        "reason": "rejected: duplicate of base-36-to-decimal-converter (similarity 0.96 > 0.8)",
+        "at": "2026-10-13T17:36:39+00:00"
       }
     ]
   ],
@@ -274,10 +383,64 @@
       "completion_tokens": 1986,
       "total_tokens": 2942,
       "est_cost_usd": 0.006914
+    },
+    {
+      "time": "2026-10-13T17:36:36+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-13T17:36:36+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-13T17:36:39+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 4878,
+      "completion_tokens": 1852,
+      "total_tokens": 6730,
+      "est_cost_usd": 0.010434
+    },
+    {
+      "time": "2026-10-13T17:36:44+00:00",
+      "purpose": "code_generation:url-path-depth",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 942,
+      "completion_tokens": 1910,
+      "total_tokens": 2852,
+      "est_cost_usd": 0.006672
+    },
+    {
+      "time": "2026-10-13T17:36:57+00:00",
+      "purpose": "code_generation:full-moon-countdown",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 956,
+      "completion_tokens": 3782,
+      "total_tokens": 4738,
+      "est_cost_usd": 0.012302
+    },
+    {
+      "time": "2026-10-13T17:37:09+00:00",
+      "purpose": "code_generation:credit-card-issuer-detector",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 948,
+      "completion_tokens": 3260,
+      "total_tokens": 4208,
+      "est_cost_usd": 0.010728
     }
   ],
   "budget": {
-    "tokens": 17296,
-    "usd": 0.0359
+    "tokens": 35996,
+    "usd": 0.076248
   }
 }

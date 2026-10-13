@@ -1631,6 +1631,57 @@
         "developer tool"
       ],
       "usage_instructions": "Enter a MIME type (e.g., image/png) in the field below and click “Lookup”. The tool will display the most common file extension(s) and a short description."
+    },
+    {
+      "slug": "url-path-depth",
+      "title": "URL Path Depth Calculator",
+      "category": "developer",
+      "date_published": "2026-10-13",
+      "status": "published",
+      "h1": "URL Path Depth Calculator",
+      "seo_description": "Enter a URL to instantly see how many path segments it contains. Simple, fast, and works offline.",
+      "keywords": [
+        "URL path depth",
+        "count URL segments",
+        "URL path segments",
+        "developer tool",
+        "URL analyzer"
+      ],
+      "usage_instructions": "Enter a full URL in the field below and click “Calculate”. The tool will display the number of path segments. If the URL is empty or invalid, an error message will appear."
+    },
+    {
+      "slug": "full-moon-countdown",
+      "title": "Time Until Next Full Moon",
+      "category": "date-time",
+      "date_published": "2026-10-13",
+      "status": "published",
+      "h1": "Time Until Next Full Moon",
+      "seo_description": "Calculate days, hours, minutes, and seconds until the next full moon for any timezone.",
+      "keywords": [
+        "full moon countdown",
+        "time until full moon",
+        "moon phase calculator",
+        "next full moon",
+        "moon countdown"
+      ],
+      "usage_instructions": "Enter a timezone (e.g., America/New_York) or leave blank to use your local timezone. Click Calculate to see how long until the next full moon."
+    },
+    {
+      "slug": "credit-card-issuer-detector",
+      "title": "Credit Card Issuer Detector",
+      "category": "finance",
+      "date_published": "2026-10-13",
+      "status": "published",
+      "h1": "Credit Card Issuer Detector",
+      "seo_description": "Enter a credit card number to instantly detect its issuer and card type. Works offline, no tracking.",
+      "keywords": [
+        "credit card issuer",
+        "card type detection",
+        "credit card validator",
+        "visa mastercard amex",
+        "luhn check"
+      ],
+      "usage_instructions": "Enter a credit card number (digits only) and click Detect. The tool will display the card issuer and type, or an error if the number is invalid."
     }
   ]
 }
