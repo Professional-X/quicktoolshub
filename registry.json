@@ -1614,6 +1614,23 @@
         "json schema tool"
       ],
       "usage_instructions": "Enter JSON data and a JSON Schema, then click Validate. Errors (if any) will appear below."
+    },
+    {
+      "slug": "mime-to-file-extension-lookup",
+      "title": "MIME to File Extension Lookup",
+      "category": "developer",
+      "date_published": "2026-10-13",
+      "status": "published",
+      "h1": "MIME to File Extension Lookup",
+      "seo_description": "Enter a MIME type and instantly see the most common file extensions and a brief description.",
+      "keywords": [
+        "MIME type",
+        "file extension",
+        "lookup",
+        "MIME to extension",
+        "developer tool"
+      ],
+      "usage_instructions": "Enter a MIME type (e.g., image/png) in the field below and click “Lookup”. The tool will display the most common file extension(s) and a short description."
     }
   ]
 }
