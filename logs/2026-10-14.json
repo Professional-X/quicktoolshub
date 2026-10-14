@@ -12,6 +12,16 @@
         "2026-10-14T07:39:56+00:00 Step C rejected url-to-qr-code: missing ---META--- block in LLM output",
         "2026-10-14T07:41:15+00:00 PUBLISHED text-to-emoji"
       ]
+    },
+    {
+      "started_at": "2026-10-14T15:09:59+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-14T15:10:02+00:00 Step A: proposed 8 ideas",
+        "2026-10-14T15:10:02+00:00 Step B: 5 ideas survived dedup",
+        "2026-10-14T15:10:14+00:00 PUBLISHED text-to-leet",
+        "2026-10-14T15:10:14+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -102,6 +112,91 @@
         ],
         "output": "future value"
       }
+    ],
+    [
+      {
+        "title": "Hex Color to CMYK Converter",
+        "slug": "hex-to-cmyk",
+        "category": "image",
+        "one_line_pitch": "Convert a hex color code to its CMYK values.",
+        "inputs": [
+          "hex color code"
+        ],
+        "output": "CMYK values as percentages."
+      },
+      {
+        "title": "ASCII to Hex Converter",
+        "slug": "ascii-to-hex",
+        "category": "text",
+        "one_line_pitch": "Translate ASCII text into its hexadecimal byte representation.",
+        "inputs": [
+          "ASCII text"
+        ],
+        "output": "Hexadecimal string of bytes."
+      },
+      {
+        "title": "Text to Leet Speak Converter",
+        "slug": "text-to-leet",
+        "category": "text",
+        "one_line_pitch": "Convert English text into leet speak using common character substitutions.",
+        "inputs": [
+          "English text"
+        ],
+        "output": "Leet-speak string."
+      },
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex",
+        "category": "developer",
+        "one_line_pitch": "Transform Markdown syntax into equivalent LaTeX markup.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "LaTeX code."
+      },
+      {
+        "title": "Text to NATO Phonetic Alphabet Converter",
+        "slug": "text-to-nato",
+        "category": "text",
+        "one_line_pitch": "Encode any text as the NATO phonetic alphabet words.",
+        "inputs": [
+          "English text"
+        ],
+        "output": "NATO phonetic transcription."
+      },
+      {
+        "title": "Fraction to Mixed Number Converter",
+        "slug": "fraction-to-mixed",
+        "category": "math",
+        "one_line_pitch": "Convert any improper fraction into a mixed number.",
+        "inputs": [
+          "numerator",
+          "denominator"
+        ],
+        "output": "Mixed number representation."
+      },
+      {
+        "title": "File Size to Storage Estimator",
+        "slug": "file-size-estimator",
+        "category": "unit-conversion",
+        "one_line_pitch": "Calculate how many files fit in a given storage size.",
+        "inputs": [
+          "file size in bytes",
+          "storage size in bytes"
+        ],
+        "output": "Number of files that fit and remaining space."
+      },
+      {
+        "title": "Daylight Saving Time Transition Checker",
+        "slug": "dst-transition-checker",
+        "category": "date-time",
+        "one_line_pitch": "Determine if a date is in DST and when the next transition occurs.",
+        "inputs": [
+          "date",
+          "time zone"
+        ],
+        "output": "DST status and next transition date/time."
+      }
     ]
   ],
   "ideas_rejected": [
@@ -129,6 +224,26 @@
         "title": "Compound Interest Calculator",
         "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
         "at": "2026-10-14T07:39:23+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "hex-to-cmyk",
+        "title": "Hex Color to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-rgb-converter (similarity 0.87 > 0.8)",
+        "at": "2026-10-14T15:10:02+00:00"
+      },
+      {
+        "slug": "ascii-to-hex",
+        "title": "ASCII to Hex Converter",
+        "reason": "rejected: duplicate of ascii-to-binary-converter (similarity 0.81 > 0.8)",
+        "at": "2026-10-14T15:10:02+00:00"
+      },
+      {
+        "slug": "markdown-to-latex",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-10-14T15:10:02+00:00"
       }
     ]
   ],
@@ -222,10 +337,46 @@
       "completion_tokens": 2094,
       "total_tokens": 3038,
       "est_cost_usd": 0.007226
+    },
+    {
+      "time": "2026-10-14T15:09:59+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-14T15:09:59+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-14T15:10:02+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5153,
+      "completion_tokens": 1658,
+      "total_tokens": 6811,
+      "est_cost_usd": 0.010127
+    },
+    {
+      "time": "2026-10-14T15:10:09+00:00",
+      "purpose": "code_generation:text-to-leet",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 949,
+      "completion_tokens": 2777,
+      "total_tokens": 3726,
+      "est_cost_usd": 0.00928
     }
   ],
   "budget": {
-    "tokens": 23926,
-    "usd": 0.051984
+    "tokens": 34635,
+    "usd": 0.071603
   }
 }

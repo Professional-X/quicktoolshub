@@ -1733,6 +1733,22 @@
         "online emoji tool"
       ],
       "usage_instructions": "Type or paste your text, select an emoji dictionary, and click “Translate”. The result appears below, showing your text enriched with emojis."
+    },
+    {
+      "slug": "text-to-leet",
+      "title": "Text to Leet Speak Converter",
+      "category": "text",
+      "date_published": "2026-10-14",
+      "status": "published",
+      "h1": "Text to Leet Speak Converter",
+      "seo_description": "Convert any English text to leet speak instantly with our free online tool. Simple, fast, and works on any device.",
+      "keywords": [
+        "leet speak converter",
+        "text to leet",
+        "online leet translator",
+        "convert text to leet"
+      ],
+      "usage_instructions": "Enter English text in the box below and click Convert to see the leet‑speak version. The result appears instantly below."
     }
   ]
 }
