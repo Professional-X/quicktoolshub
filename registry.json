@@ -1682,6 +1682,57 @@
         "luhn check"
       ],
       "usage_instructions": "Enter a credit card number (digits only) and click Detect. The tool will display the card issuer and type, or an error if the number is invalid."
+    },
+    {
+      "slug": "color-contrast-checker",
+      "title": "Color Contrast Checker",
+      "category": "image",
+      "date_published": "2026-10-14",
+      "status": "published",
+      "h1": "Color Contrast Checker",
+      "seo_description": "Quickly calculate WCAG contrast ratios between two hex colors and see if they meet accessibility standards.",
+      "keywords": [
+        "color contrast",
+        "WCAG contrast ratio",
+        "accessibility tool",
+        "hex color contrast",
+        "web accessibility"
+      ],
+      "usage_instructions": "Enter background and foreground colors in hex (e.g., #ffffff). Click “Check Contrast” to see the ratio and accessibility recommendation."
+    },
+    {
+      "slug": "file-permission-converter",
+      "title": "File Permission Converter",
+      "category": "developer",
+      "date_published": "2026-10-14",
+      "status": "published",
+      "h1": "File Permission Converter",
+      "seo_description": "Quickly convert Unix file permissions between symbolic (rwxr-xr--) and octal (754) formats. No ads, instant results.",
+      "keywords": [
+        "file permission converter",
+        "unix permissions",
+        "symbolic to octal",
+        "octal to symbolic",
+        "chmod calculator"
+      ],
+      "usage_instructions": "Select the input format (symbolic like rwxr-xr-- or octal like 754) and type the permission string. Click “Convert” to see the equivalent representation."
+    },
+    {
+      "slug": "text-to-emoji",
+      "title": "Text to Emoji Translator",
+      "category": "text",
+      "date_published": "2026-10-14",
+      "status": "published",
+      "h1": "Text to Emoji Translator",
+      "seo_description": "Enter text and choose an emoji dictionary to instantly replace words with matching emojis. Fast, free, and works offline.",
+      "keywords": [
+        "text to emoji",
+        "emoji translator",
+        "convert words to emojis",
+        "emoji dictionary",
+        "online emoji tool"
+      ],
+      "usage_instructions": "Type or paste your text, select an emoji dictionary, and click “Translate”. The result appears below, showing your text enriched with emojis."
     }
   ]
 }
