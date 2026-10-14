@@ -22,6 +22,15 @@
         "2026-10-14T15:10:14+00:00 PUBLISHED text-to-leet",
         "2026-10-14T15:10:14+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-14T21:41:31+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-14T21:41:34+00:00 Step A: proposed 3 ideas",
+        "2026-10-14T21:41:34+00:00 Step B: 2 ideas survived dedup",
+        "2026-10-14T21:41:34+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -197,6 +206,42 @@
         ],
         "output": "DST status and next transition date/time."
       }
+    ],
+    [
+      {
+        "title": "Pressure Unit Converter",
+        "slug": "pressure-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert pressure values between PSI, Pa, atm, bar, and mmHg.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "converted pressure value with unit"
+      },
+      {
+        "title": "Hex Color Luminance Calculator",
+        "slug": "hex-color-luminance-calculator",
+        "category": "image",
+        "one_line_pitch": "Compute the perceived luminance of a hex color.",
+        "inputs": [
+          "hex color code"
+        ],
+        "output": "luminance value (0-255) and relative brightness percentage"
+      },
+      {
+        "title": "Caesar Cipher Encoder / Decoder",
+        "slug": "caesar-cipher",
+        "category": "text",
+        "one_line_pitch": "Encode or decode text using Caesar cipher with custom shift.",
+        "inputs": [
+          "text",
+          "shift value",
+          "mode (encode/decode)"
+        ],
+        "output": "transformed text"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -244,6 +289,14 @@
         "title": "Markdown to LaTeX Converter",
         "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
         "at": "2026-10-14T15:10:02+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "pressure-unit-converter",
+        "title": "Pressure Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
+        "at": "2026-10-14T21:41:34+00:00"
       }
     ]
   ],
@@ -373,10 +426,37 @@
       "completion_tokens": 2777,
       "total_tokens": 3726,
       "est_cost_usd": 0.00928
+    },
+    {
+      "time": "2026-10-14T21:41:31+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-14T21:41:31+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-14T21:41:34+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5204,
+      "completion_tokens": 2000,
+      "total_tokens": 7204,
+      "est_cost_usd": 0.011204
     }
   ],
   "budget": {
-    "tokens": 34635,
-    "usd": 0.071603
+    "tokens": 42011,
+    "usd": 0.083019
   }
 }
