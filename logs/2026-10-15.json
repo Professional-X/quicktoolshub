@@ -15,6 +15,15 @@
         "2026-10-15T07:30:37+00:00 PUBLISHED css-grid-template-generator",
         "2026-10-15T07:30:37+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-15T15:02:16+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-15T15:02:18+00:00 Step A: proposed 8 ideas",
+        "2026-10-15T15:02:18+00:00 Step B: 8 ideas survived dedup",
+        "2026-10-15T15:02:18+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -110,6 +119,96 @@
         ],
         "output": "Countdown display and alerts"
       }
+    ],
+    [
+      {
+        "title": "Stop Word Highlighter",
+        "slug": "stop-word-highlighter",
+        "category": "text",
+        "one_line_pitch": "Highlight common stop words in a paragraph for better readability.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Annotated text with stop words highlighted."
+      },
+      {
+        "title": "Modular Square Root Finder",
+        "slug": "modular-square-root-finder",
+        "category": "math",
+        "one_line_pitch": "Find integer solutions to x² ≡ a (mod n) instantly.",
+        "inputs": [
+          "a",
+          "n"
+        ],
+        "output": "List of square roots modulo n or 'none' if no solution."
+      },
+      {
+        "title": "Inflation-Adjusted Cost Calculator",
+        "slug": "inflation-adjusted-cost-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate future value of a cost accounting for annual inflation.",
+        "inputs": [
+          "present cost",
+          "years",
+          "annual inflation rate (%)"
+        ],
+        "output": "Adjusted cost in present value terms."
+      },
+      {
+        "title": "Easter Date Calculator",
+        "slug": "easter-date-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Compute the Gregorian date of Easter for any year.",
+        "inputs": [
+          "year"
+        ],
+        "output": "Easter date (YYYY-MM-DD)."
+      },
+      {
+        "title": "Palette Extractor",
+        "slug": "palette-extractor",
+        "category": "image",
+        "one_line_pitch": "Extract dominant colors from an uploaded image.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "List of hex color codes sorted by prominence."
+      },
+      {
+        "title": "CSS Variable Explorer",
+        "slug": "css-variable-explorer",
+        "category": "developer",
+        "one_line_pitch": "Show all custom CSS properties and their current values on a page.",
+        "inputs": [
+          "CSS code"
+        ],
+        "output": "Table of variable names and values."
+      },
+      {
+        "title": "Pressure Converter",
+        "slug": "pressure-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert pressure units between PSI, atm, bar, Pa, and Torr.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted pressure value."
+      },
+      {
+        "title": "VO2 Max Estimator",
+        "slug": "vo2-max-estimator",
+        "category": "health",
+        "one_line_pitch": "Estimate VO2 max from age, gender, resting heart rate, and exercise data.",
+        "inputs": [
+          "age",
+          "gender",
+          "resting heart rate",
+          "max heart rate"
+        ],
+        "output": "Estimated VO2 max value in ml/kg/min."
+      }
     ]
   ],
   "ideas_rejected": [
@@ -120,7 +219,8 @@
         "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
         "at": "2026-10-15T07:27:40+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
   "tools_failed": [
@@ -300,10 +400,37 @@
       "completion_tokens": 3044,
       "total_tokens": 4007,
       "est_cost_usd": 0.010095
+    },
+    {
+      "time": "2026-10-15T15:02:15+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-15T15:02:15+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-15T15:02:18+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5396,
+      "completion_tokens": 1504,
+      "total_tokens": 6900,
+      "est_cost_usd": 0.009908
     }
   ],
   "budget": {
-    "tokens": 33723,
-    "usd": 0.077067
+    "tokens": 40795,
+    "usd": 0.087187
   }
 }
