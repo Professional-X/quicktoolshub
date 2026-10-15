@@ -1749,6 +1749,74 @@
         "convert text to leet"
       ],
       "usage_instructions": "Enter English text in the box below and click Convert to see the leet‑speak version. The result appears instantly below."
+    },
+    {
+      "slug": "chinese-remainder-theorem-solver",
+      "title": "Chinese Remainder Theorem Solver",
+      "category": "math",
+      "date_published": "2026-10-15",
+      "status": "published",
+      "h1": "Chinese Remainder Theorem Solver",
+      "seo_description": "Enter remainders and moduli to instantly compute the smallest non‑negative solution using the Chinese Remainder Theorem.",
+      "keywords": [
+        "Chinese Remainder Theorem",
+        "CRT solver",
+        "simultaneous congruences",
+        "modular arithmetic",
+        "math tool"
+      ],
+      "usage_instructions": "Enter comma‑separated remainders and moduli, then click “Solve”. The tool returns the smallest non‑negative solution and the combined modulus."
+    },
+    {
+      "slug": "text-sentiment-analyzer",
+      "title": "Text Sentiment Analyzer",
+      "category": "text",
+      "date_published": "2026-10-15",
+      "status": "published",
+      "h1": "Text Sentiment Analyzer",
+      "seo_description": "Analyze any text instantly to see if it’s positive, negative, or neutral with a confidence score. No sign‑up required.",
+      "keywords": [
+        "sentiment analysis",
+        "text sentiment",
+        "positive negative detector",
+        "sentiment score",
+        "online sentiment tool"
+      ],
+      "usage_instructions": "Enter text in the box below and click “Analyze Sentiment”. The tool will display whether the sentiment is positive, negative, or neutral, along with a confidence percentage."
+    },
+    {
+      "slug": "business-days-difference-calculator",
+      "title": "Business Days Difference Calculator",
+      "category": "date-time",
+      "date_published": "2026-10-15",
+      "status": "published",
+      "h1": "Business Days Difference Calculator",
+      "seo_description": "Calculate the number of business days between two dates instantly. Excludes weekends for accurate weekday counts.",
+      "keywords": [
+        "business days calculator",
+        "weekday count",
+        "date difference",
+        "exclude weekends",
+        "working days"
+      ],
+      "usage_instructions": "Enter a start and end date, then click Calculate. The result shows the number of business days (Monday‑Friday) between the dates, inclusive."
+    },
+    {
+      "slug": "css-grid-template-generator",
+      "title": "CSS Grid Template Generator",
+      "category": "developer",
+      "date_published": "2026-10-15",
+      "status": "published",
+      "h1": "CSS Grid Template Generator",
+      "seo_description": "Generate CSS grid-template rows and columns with custom columns, rows, and gap values instantly. No coding needed.",
+      "keywords": [
+        "css grid generator",
+        "grid template rows",
+        "grid template columns",
+        "css grid gap",
+        "developer tool"
+      ],
+      "usage_instructions": "Enter the number of columns, rows, and the gap in pixels, then click Generate to receive the CSS grid template code."
     }
   ]
 }

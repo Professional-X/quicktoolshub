@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="google-site-verification" content="G2vh7thaFzRth3rRTxefSY6bvn5haiJBrooxvAYmj1M"/>
+<title>Chinese Remainder Theorem Solver – Find Smallest Solution</title>
+<meta name="description" content="Enter remainders and moduli to instantly compute the smallest non‑negative solution using the Chinese Remainder Theorem."/>
+<meta property="og:title" content="Chinese Remainder Theorem Solver – Find Smallest Solution"/>
+<meta property="og:description" content="Enter remainders and moduli to instantly compute the smallest non‑negative solution using the Chinese Remainder Theorem."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://professional-x.github.io/quicktoolshub/tools/chinese-remainder-theorem-solver/"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="https://professional-x.github.io/quicktoolshub/tools/chinese-remainder-theorem-solver/"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EQ%3C/text%3E%3C/svg%3E"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Chinese Remainder Theorem Solver", "url": "https://professional-x.github.io/quicktoolshub/tools/chinese-remainder-theorem-solver/", "description": "Enter remainders and moduli to instantly compute the smallest non‑negative solution using the Chinese Remainder Theorem.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "datePublished": "2026-10-15", "publisher": {"@type": "Organization", "name": "QuickToolsHub"}}</script>
+<style>
+:root{--bg:#f5f7fa;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--accent:#2563eb;--accent-dark:#1e40af;--border:#e5e7eb;--radius:12px;--maxw:980px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img,iframe{max-width:100%}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header.site-header{background:var(--card);border-bottom:1px solid var(--border)}
+.site-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.logo{font-weight:800;font-size:19px;color:#111827;white-space:nowrap}
+.top-nav{display:flex;gap:16px;font-size:14px}
+.top-nav a{color:var(--muted);font-weight:600}
+.top-nav a:hover{color:var(--accent)}
+.ad-zone{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 8px;overflow:hidden}
+.ad-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af}
+@media (max-width:767px){.hide-mobile{display:none!important}}
+@media (min-width:768px){.hide-desktop{display:none!important}}
+.breadcrumb{font-size:13px;color:var(--muted);margin:16px 0 2px}
+.breadcrumb .sep{margin:0 6px;color:#d1d5db}
+h1{font-size:clamp(22px,4.5vw,30px);line-height:1.25;margin:8px 0 14px;color:#111827}
+.tool-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:0 1px 2px rgba(16,24,40,.05);min-height:220px}
+.how-to{background:#eef4ff;border:1px solid #dbe7ff;border-radius:var(--radius);padding:16px 20px;margin-top:18px}
+.how-to h2{margin:0 0 6px;font-size:17px;color:#1e40af}
+.how-to p{margin:0;color:#374151;font-size:15px}
+.related{margin-top:26px}
+.related h2{font-size:19px;margin:0 0 10px}
+.related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.related li{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:14.5px}
+.related a{font-weight:600}
+.ad-native{width:100%;max-width:728px}
+footer.site-footer{margin-top:40px;background:var(--card);border-top:1px solid var(--border)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:18px 0;color:var(--muted);font-size:13.5px}
+.footer-links{display:flex;gap:14px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-inner">
+    <a class="logo" href="https://professional-x.github.io/quicktoolshub/">QuickToolsHub</a>
+    <nav class="top-nav">
+      <a href="https://professional-x.github.io/quicktoolshub/">All Tools</a>
+      <a href="https://professional-x.github.io/quicktoolshub/category/math/">Math Tools</a>
+      <a href="https://professional-x.github.io/quicktoolshub/schedule/">Schedule</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ad-zone" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <div class="hide-desktop"><script>
+  atOptions = {
+    'key' : 'b8cb302039695a8ca6be0d1670ae3030',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/b8cb302039695a8ca6be0d1670ae3030/invoke.js"></script></div>
+  <div class="hide-mobile"><script>
+  atOptions = {
+    'key' : '3e064c14d68f63c18b5aa4b6b1873c46',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/3e064c14d68f63c18b5aa4b6b1873c46/invoke.js"></script></div>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://professional-x.github.io/quicktoolshub/">Home</a><span class="sep">/</span><a href="https://professional-x.github.io/quicktoolshub/category/math/">Math</a><span class="sep">/</span><span aria-current="page">Chinese Remainder Theorem Solver</span>
+  </nav>
+  <h1>Chinese Remainder Theorem Solver</h1>
+  <div class="tool-card">
+<div id="tool-root">
+  <h2>Chinese Remainder Theorem Solver</h2>
+  <p id="tool-instructions">Enter comma‑separated remainders and moduli, then click “Solve”. The tool returns the smallest non‑negative solution and the combined modulus.</p>
+
+  <label for="f-remainders">Remainders:</label>
+  <input type="text" id="f-remainders" placeholder="e.g., 2,3,2" aria-describedby="tool-instructions">
+
+  <label for="f-moduli">Moduli:</label>
+  <input type="text" id="f-moduli" placeholder="e.g., 3,5,7" aria-describedby="tool-instructions">
+
+  <button type="button" id="tool-action">Solve</button>
+
+  <div id="tool-result" role="status" aria-live="polite"></div>
+
+  <style>
+    #tool-root {
+      max-width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      color: #222;
+    }
+    #tool-root h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    #tool-root p {
+      margin: 0.5rem 0 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    #tool-root label {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+    #tool-root input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      font-size: 1rem;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #tool-root button {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.8rem;
+      font-size: 1rem;
+      background: #0066cc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #tool-root button:hover,
+    #tool-root button:focus {
+      background: #004999;
+    }
+    #tool-result {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #006600;
+      word-wrap: break-word;
+    }
+    #tool-result.error {
+      color: #cc0000;
+    }
+  </style>
+
+  <script>
+    (function () {
+      const resultEl = document.getElementById('tool-result');
+      const btn = document.getElementById('tool-action');
+
+      function gcd(a, b) {
+        while (b !== 0) {
+          const t = b;
+          b = a % b;
+          a = t;
+        }
+        return Math.abs(a);
+      }
+
+      function extendedGcd(a, b) {
+        let old_r = a, r = b;
+        let old_s = 1, s = 0;
+        let old_t = 0, t = 1;
+        while (r !== 0) {
+          const q = Math.floor(old_r / r);
+          [old_r, r] = [r, old_r - q * r];
+          [old_s, s] = [s, old_s - q * s];
+          [old_t, t] = [t, old_t - q * t];
+        }
+        return {g: old_r, x: old_s, y: old_t};
+      }
+
+      function modInv(a, m) {
+        const {g, x} = extendedGcd(a, m);
+        if (g !== 1) return null; // inverse doesn't exist
+        return ((x % m) + m) % m;
+      }
+
+      function parseList(str) {
+        return str.split(',').map(s => s.trim()).filter(s => s.length > 0).map(s => {
+          if (!/^[-+]?\d+$/.test(s)) throw new Error('invalid');
+          return Number(s);
+        });
+      }
+
+      function solveCRT(rems, mods) {
+        if (rems.length !== mods.length) {
+          throw new Error('mismatch');
+        }
+        let x = rems[0];
+        let M = mods[0];
+        if (M <= 0) throw new Error('mod0');
+        x = ((x % M) + M) % M; // normalize
+
+        for (let i = 1; i < rems.length; i++) {
+          const a = ((rems[i] % mods[i]) + mods[i]) % mods[i];
+          const n = mods[i];
+          if (n <= 0) throw new Error('modNeg');
+
+          const g = gcd(M, n);
+          if ((a - x) % g !== 0) {
+            throw new Error('nosol');
+          }
+
+          const m1 = M / g;
+          const n1 = n / g;
+          const inv = modInv(m1 % n1, n1);
+          if (inv === null) throw new Error('invfail');
+
+          const t = (( (a - x) / g) * inv) % n1;
+          const newX = x + M * ((t + n1) % n1);
+          M = (M / g) * n; // lcm
+          x = ((newX % M) + M) % M;
+        }
+        return {solution: x, modulus: M};
+      }
+
+      function displayMessage(msg, isError) {
+        resultEl.textContent = msg;
+        resultEl.className = isError ? 'error' : '';
+      }
+
+      btn.addEventListener('click', () => {
+        try {
+          const remStr = document.getElementById('f-remainders').value;
+          const modStr = document.getElementById('f-moduli').value;
+
+          if (!remStr.trim() || !modStr.trim()) {
+            displayMessage('Error: both fields must be filled.', true);
+            return;
+          }
+
+          const rems = parseList(remStr);
+          const mods = parseList(modStr);
+
+          const {solution, modulus} = solveCRT(rems, mods);
+          displayMessage(`Solution: ${solution} (mod ${modulus})`, false);
+        } catch (e) {
+          let msg = 'Error: please enter valid integers separated by commas.';
+          if (e.message === 'mismatch') {
+            msg = 'Error: the number of remainders and moduli must be the same.';
+          } else if (e.message === 'nosol') {
+            msg = 'Error: no solution exists for the given congruences.';
+          } else if (e.message === 'invalid') {
+            msg = 'Error: please enter valid integers separated by commas.';
+          } else if (e.message === 'mod0' || e.message === 'modNeg') {
+            msg = 'Error: moduli must be positive integers.';
+          }
+          displayMessage(msg, true);
+        }
+      });
+    })();
+  </script>
+</div>
+  </div>
+
+  <section class="how-to">
+    <h2>How to use this tool</h2>
+    <p>Enter comma‑separated remainders and moduli, then click “Solve”. The tool returns the smallest non‑negative solution and the combined modulus.</p>
+  </section>
+
+  <div class="ad-zone" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-native"><script async="async" data-cfasync="false" src="https://versatilesentiment.com/5c991e90ba5b575e7b10c12fd4006cba/invoke.js"></script>
+<div id="container-5c991e90ba5b575e7b10c12fd4006cba"></div></div>
+  </div>
+
+  <section class="related">
+    <h2>Related tools</h2>
+    <ul><li><a href="https://professional-x.github.io/quicktoolshub/tools/quadratic-equation-solver/">Quadratic Equation Solver</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/prime-number-checker/">Prime Number Checker</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/roman-numeral-converter/">Roman Numeral Converter</a></li>
+      <li><a href="https://professional-x.github.io/quicktoolshub/tools/pythagorean-triple-finder/">Pythagorean Triple Finder</a></li></ul>
+  </section>
+
+  <div class="ad-zone hide-mobile" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <script>
+  atOptions = {
+    'key' : '0ed8bf9af74609561a1e84bb22ed0e94',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://versatilesentiment.com/0ed8bf9af74609561a1e84bb22ed0e94/invoke.js"></script>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>&copy; 2026 QuickToolsHub. All tools run entirely in your browser.</div>
+    <div class="footer-links">
+      <a href="https://professional-x.github.io/quicktoolshub/">Home</a>
+      <a href="https://professional-x.github.io/quicktoolshub/schedule/">Schedule</a>
+      <a href="https://professional-x.github.io/quicktoolshub/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
