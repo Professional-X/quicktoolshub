@@ -24,6 +24,15 @@
         "2026-10-15T15:02:18+00:00 Step B: 8 ideas survived dedup",
         "2026-10-15T15:02:18+00:00 publish cap reached (4/day); skipping remaining 8 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-15T21:22:51+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-15T21:22:53+00:00 Step A: proposed 3 ideas",
+        "2026-10-15T21:22:53+00:00 Step B: 3 ideas survived dedup",
+        "2026-10-15T21:22:53+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -209,6 +218,38 @@
         ],
         "output": "Estimated VO2 max value in ml/kg/min."
       }
+    ],
+    [
+      {
+        "title": "CSS Variable Linter",
+        "slug": "css-variable-linter",
+        "category": "developer",
+        "one_line_pitch": "Check CSS for missing or incorrectly used custom property references.",
+        "inputs": [
+          "css_code"
+        ],
+        "output": "List of unused or undefined CSS variables"
+      },
+      {
+        "title": "Text to ROT13 Encoder/Decoder",
+        "slug": "rot13-converter",
+        "category": "text",
+        "one_line_pitch": "Encode or decode text using the ROT13 cipher.",
+        "inputs": [
+          "text"
+        ],
+        "output": "ROT13 transformed text"
+      },
+      {
+        "title": "JSON Schema to TypeScript Interface Generator",
+        "slug": "json-schema-to-ts",
+        "category": "developer",
+        "one_line_pitch": "Generate TypeScript interfaces from a JSON schema.",
+        "inputs": [
+          "json_schema"
+        ],
+        "output": "TypeScript interface definition"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -220,6 +261,7 @@
         "at": "2026-10-15T07:27:40+00:00"
       }
     ],
+    [],
     []
   ],
   "tools_published": [],
@@ -427,10 +469,37 @@
       "completion_tokens": 1504,
       "total_tokens": 6900,
       "est_cost_usd": 0.009908
+    },
+    {
+      "time": "2026-10-15T21:22:50+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-15T21:22:51+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-15T21:22:53+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5396,
+      "completion_tokens": 1362,
+      "total_tokens": 6758,
+      "est_cost_usd": 0.009482
     }
   ],
   "budget": {
-    "tokens": 40795,
-    "usd": 0.087187
+    "tokens": 47725,
+    "usd": 0.096881
   }
 }
