@@ -1817,6 +1817,73 @@
         "developer tool"
       ],
       "usage_instructions": "Enter the number of columns, rows, and the gap in pixels, then click Generate to receive the CSS grid template code."
+    },
+    {
+      "slug": "unix-timestamp-converter",
+      "title": "Unix Timestamp Converter",
+      "category": "date-time",
+      "date_published": "2026-10-16",
+      "status": "published",
+      "h1": "Unix Timestamp Converter",
+      "seo_description": "Quickly convert Unix timestamps, ISO strings, and human‑readable dates to your desired format. No ads, instant results.",
+      "keywords": [
+        "unix timestamp",
+        "epoch converter",
+        "iso date conversion",
+        "date to timestamp",
+        "timestamp to date"
+      ],
+      "usage_instructions": "Enter a timestamp or date string, select the source format and the desired output format, then click Convert."
+    },
+    {
+      "slug": "csv-validator",
+      "title": "CSV Validator",
+      "category": "developer",
+      "date_published": "2026-10-16",
+      "status": "published",
+      "h1": "CSV Validator",
+      "seo_description": "Validate CSV text instantly. Detect row length mismatches and quoting errors. Free online CSV validator.",
+      "keywords": [
+        "CSV validator",
+        "check CSV format",
+        "online CSV validator",
+        "CSV syntax checker"
+      ],
+      "usage_instructions": "Paste your CSV data into the box and click “Validate CSV”. Errors and a summary will appear below."
+    },
+    {
+      "slug": "sql-formatter",
+      "title": "SQL Formatter",
+      "category": "developer",
+      "date_published": "2026-10-16",
+      "status": "published",
+      "h1": "SQL Formatter",
+      "seo_description": "Format SQL queries instantly with proper indentation and keyword capitalization. Free online tool.",
+      "keywords": [
+        "SQL formatter",
+        "pretty print SQL",
+        "format SQL query",
+        "online SQL formatter",
+        "SQL indentation"
+      ],
+      "usage_instructions": "Enter a SQL query in the box below and click “Format SQL”. The formatted query will appear with proper indentation and capitalized keywords."
+    },
+    {
+      "slug": "url-query-parameter-builder",
+      "title": "URL Query Parameter Builder",
+      "category": "developer",
+      "date_published": "2026-10-16",
+      "status": "published",
+      "h1": "URL Query Parameter Builder",
+      "seo_description": "Easily build URLs with encoded query parameters from key‑value pairs. Enter a base URL and parameters, then generate the full link instantly.",
+      "keywords": [
+        "URL builder",
+        "query parameters",
+        "encode URL",
+        "developer tool",
+        "generate URL"
+      ],
+      "usage_instructions": "Enter a base URL and a list of key=value pairs (one per line). Click “Build URL” to generate the full URL with encoded query parameters."
     }
   ]
 }
