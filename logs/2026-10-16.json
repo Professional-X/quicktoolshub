@@ -22,6 +22,15 @@
         "2026-10-16T14:52:13+00:00 Step B: 4 ideas survived dedup",
         "2026-10-16T14:52:13+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-16T21:08:08+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-16T21:08:54+00:00 Step A: proposed 8 ideas",
+        "2026-10-16T21:08:54+00:00 Step B: 6 ideas survived dedup",
+        "2026-10-16T21:08:54+00:00 publish cap reached (4/day); skipping remaining 6 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -201,6 +210,95 @@
         ],
         "output": "LaTeX representation of the markdown."
       }
+    ],
+    [
+      {
+        "title": "Public Holiday Countdown",
+        "slug": "public-holiday-countdown",
+        "category": "date-time",
+        "one_line_pitch": "Shows days until the next US federal holiday",
+        "inputs": [
+          "current date"
+        ],
+        "output": "Days remaining and holiday name"
+      },
+      {
+        "title": "GPA Calculator",
+        "slug": "gpa-calculator",
+        "category": "productivity",
+        "one_line_pitch": "Compute weighted GPA from grades and credit hours",
+        "inputs": [
+          "list of grades and credits"
+        ],
+        "output": "Calculated GPA"
+      },
+      {
+        "title": "Line Equation Calculator",
+        "slug": "line-equation-calculator",
+        "category": "math",
+        "one_line_pitch": "Find slope, intercept, and equation from two points",
+        "inputs": [
+          "x1",
+          "y1",
+          "x2",
+          "y2"
+        ],
+        "output": "Slope, y‑intercept, and line equation"
+      },
+      {
+        "title": "Base64 to Hex Converter",
+        "slug": "base64-to-hex",
+        "category": "developer",
+        "one_line_pitch": "Convert Base64 string to hexadecimal representation",
+        "inputs": [
+          "Base64 string"
+        ],
+        "output": "Hexadecimal string"
+      },
+      {
+        "title": "Hex to Base64 Converter",
+        "slug": "hex-to-base64",
+        "category": "developer",
+        "one_line_pitch": "Convert hexadecimal string to Base64 representation",
+        "inputs": [
+          "hex string"
+        ],
+        "output": "Base64 string"
+      },
+      {
+        "title": "Simple Interest Payment Schedule",
+        "slug": "simple-interest-schedule",
+        "category": "finance",
+        "one_line_pitch": "Generate yearly interest, principal, and balance for simple interest loan",
+        "inputs": [
+          "principal",
+          "annual rate",
+          "years",
+          "starting balance"
+        ],
+        "output": "Yearly payment schedule"
+      },
+      {
+        "title": "Text to Stutter Converter",
+        "slug": "text-to-stutter",
+        "category": "random-fun",
+        "one_line_pitch": "Add stutter effect to any text",
+        "inputs": [
+          "input text",
+          "stutter frequency"
+        ],
+        "output": "Stuttered text"
+      },
+      {
+        "title": "ROT13 Text Converter",
+        "slug": "rot13-converter",
+        "category": "text",
+        "one_line_pitch": "Encode or decode text using ROT13 cipher",
+        "inputs": [
+          "input text"
+        ],
+        "output": "ROT13 transformed text"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -248,6 +346,20 @@
         "title": "Markdown to LaTeX Converter",
         "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
         "at": "2026-10-16T14:52:13+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "gpa-calculator",
+        "title": "GPA Calculator",
+        "reason": "rejected: duplicate of age-calculator (similarity 0.86 > 0.8)",
+        "at": "2026-10-16T21:08:54+00:00"
+      },
+      {
+        "slug": "hex-to-base64",
+        "title": "Hex to Base64 Converter",
+        "reason": "rejected: duplicate of hex-to-hsv-converter (similarity 0.84 > 0.8)",
+        "at": "2026-10-16T21:08:54+00:00"
       }
     ]
   ],
@@ -409,10 +521,37 @@
       "completion_tokens": 1831,
       "total_tokens": 7407,
       "est_cost_usd": 0.011069
+    },
+    {
+      "time": "2026-10-16T21:08:08+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-16T21:08:08+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-16T21:08:54+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5576,
+      "completion_tokens": 965,
+      "total_tokens": 6541,
+      "est_cost_usd": 0.008471
     }
   ],
   "budget": {
-    "tokens": 33788,
-    "usd": 0.067434
+    "tokens": 40501,
+    "usd": 0.076117
   }
 }
