@@ -13,6 +13,15 @@
         "2026-10-16T07:11:53+00:00 PUBLISHED sql-formatter",
         "2026-10-16T07:12:38+00:00 PUBLISHED url-query-parameter-builder"
       ]
+    },
+    {
+      "started_at": "2026-10-16T14:52:10+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-16T14:52:13+00:00 Step A: proposed 8 ideas",
+        "2026-10-16T14:52:13+00:00 Step B: 4 ideas survived dedup",
+        "2026-10-16T14:52:13+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -104,6 +113,94 @@
         ],
         "output": "Full URL with encoded query string."
       }
+    ],
+    [
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate future value with compound interest and customizable periods.",
+        "inputs": [
+          "principal",
+          "annual rate (%)",
+          "years",
+          "compounding periods per year"
+        ],
+        "output": "Future value after the specified period."
+      },
+      {
+        "title": "Days Until Next Birthday",
+        "slug": "days-until-birthday",
+        "category": "date-time",
+        "one_line_pitch": "Find exact days, weeks, and months until your next birthday.",
+        "inputs": [
+          "birth date",
+          "current date (optional)"
+        ],
+        "output": "Days, weeks, and months remaining until next birthday."
+      },
+      {
+        "title": "Hex to CMYK Converter",
+        "slug": "hex-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Convert any hex color to CMYK values instantly.",
+        "inputs": [
+          "hex color code"
+        ],
+        "output": "CMYK representation of the color."
+      },
+      {
+        "title": "CSS Selector Specificity Calculator",
+        "slug": "css-selector-specificity-calculator",
+        "category": "developer",
+        "one_line_pitch": "Get the specificity score of any CSS selector.",
+        "inputs": [
+          "CSS selector string"
+        ],
+        "output": "Specificity tuple (a,b,c,d) and numeric value."
+      },
+      {
+        "title": "Pressure Unit Converter",
+        "slug": "pressure-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert pressure between psi, bar, Pa, atm, and Torr.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted pressure value."
+      },
+      {
+        "title": "Heart Rate Zone Calculator",
+        "slug": "heart-rate-zone-calculator",
+        "category": "health",
+        "one_line_pitch": "Compute training zones based on age and target heart rate.",
+        "inputs": [
+          "age"
+        ],
+        "output": "Age-based target heart rate zones (50-70%, 70-85%, 85-95%)."
+      },
+      {
+        "title": "Text Spell Checker",
+        "slug": "text-spell-checker",
+        "category": "text",
+        "one_line_pitch": "Highlight misspelled words with suggestions in any text.",
+        "inputs": [
+          "text"
+        ],
+        "output": "List of misspelled words and suggested corrections."
+      },
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert Markdown to clean LaTeX syntax instantly.",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "LaTeX representation of the markdown."
+      }
     ]
   ],
   "ideas_rejected": [
@@ -125,6 +222,32 @@
         "title": "Hex to CMYK Converter",
         "reason": "rejected: duplicate of hex-to-hsv-converter (similarity 0.83 > 0.8)",
         "at": "2026-10-16T07:10:33+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-10-16T14:52:13+00:00"
+      },
+      {
+        "slug": "hex-to-cmyk-converter",
+        "title": "Hex to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-hsv-converter (similarity 0.83 > 0.8)",
+        "at": "2026-10-16T14:52:13+00:00"
+      },
+      {
+        "slug": "pressure-unit-converter",
+        "title": "Pressure Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
+        "at": "2026-10-16T14:52:13+00:00"
+      },
+      {
+        "slug": "markdown-to-latex-converter",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-10-16T14:52:13+00:00"
       }
     ]
   ],
@@ -259,10 +382,37 @@
       "completion_tokens": 2070,
       "total_tokens": 3024,
       "est_cost_usd": 0.007164
+    },
+    {
+      "time": "2026-10-16T14:52:10+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-16T14:52:10+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-16T14:52:13+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5576,
+      "completion_tokens": 1831,
+      "total_tokens": 7407,
+      "est_cost_usd": 0.011069
     }
   ],
   "budget": {
-    "tokens": 26209,
-    "usd": 0.056153
+    "tokens": 33788,
+    "usd": 0.067434
   }
 }
