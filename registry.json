@@ -1934,6 +1934,23 @@
         "hydration needs"
       ],
       "usage_instructions": "Enter your weight, activity minutes, and select the climate, then click Calculate. The recommended daily water volume will appear below."
+    },
+    {
+      "slug": "nato-phonetic-converter",
+      "title": "NATO Phonetic Alphabet Converter",
+      "category": "text",
+      "date_published": "2026-10-17",
+      "status": "published",
+      "h1": "NATO Phonetic Alphabet Converter",
+      "seo_description": "Convert any word or phrase to its NATO phonetic alphabet representation instantly.",
+      "keywords": [
+        "NATO phonetic converter",
+        "phonetic alphabet",
+        "text to NATO",
+        "military alphabet",
+        "convert text"
+      ],
+      "usage_instructions": "Enter a word or phrase in the text box, then click Convert. The result will show the NATO phonetic spelling of each letter."
     }
   ]
 }
