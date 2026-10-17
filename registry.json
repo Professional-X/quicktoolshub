@@ -1884,6 +1884,56 @@
         "generate URL"
       ],
       "usage_instructions": "Enter a base URL and a list of key=value pairs (one per line). Click “Build URL” to generate the full URL with encoded query parameters."
+    },
+    {
+      "slug": "future-value-annuity-calculator",
+      "title": "Future Value of Annuity Calculator",
+      "category": "finance",
+      "date_published": "2026-10-17",
+      "status": "published",
+      "h1": "Future Value of Annuity Calculator",
+      "seo_description": "Calculate the future value of regular payments with interest instantly. Enter payment, rate, periods, and timing to see results.",
+      "keywords": [
+        "future value annuity",
+        "annuity calculator",
+        "future value of payments",
+        "finance calculator",
+        "interest calculator"
+      ],
+      "usage_instructions": "Enter the payment amount, interest rate per period, number of periods, and select whether payments occur at the beginning or end of each period. Click Calculate to see the future value."
+    },
+    {
+      "slug": "local-storage-size-estimator",
+      "title": "Local Storage Size Estimator",
+      "category": "developer",
+      "date_published": "2026-10-17",
+      "status": "published",
+      "h1": "Local Storage Size Estimator",
+      "seo_description": "Quickly estimate how many bytes and kilobytes a JSON object will occupy in localStorage. Paste JSON and get the size instantly.",
+      "keywords": [
+        "local storage size",
+        "JSON byte size",
+        "estimate storage",
+        "web storage calculator",
+        "localStorage bytes"
+      ],
+      "usage_instructions": "Paste a JSON object into the textarea and click “Estimate Size”. The tool will show the size in bytes and kilobytes, or an error if the JSON is invalid."
+    },
+    {
+      "slug": "hydration-calculator",
+      "title": "Hydration Calculator",
+      "category": "health",
+      "date_published": "2026-10-17",
+      "status": "published",
+      "h1": "Hydration Calculator",
+      "seo_description": "Calculate your recommended daily water intake based on weight, activity level, and climate in seconds.",
+      "keywords": [
+        "water intake calculator",
+        "daily hydration",
+        "how much water to drink",
+        "hydration needs"
+      ],
+      "usage_instructions": "Enter your weight, activity minutes, and select the climate, then click Calculate. The recommended daily water volume will appear below."
     }
   ]
 }

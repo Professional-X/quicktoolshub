@@ -7,12 +7,241 @@
       "notes": [
         "2026-10-17T06:58:57+00:00 Step A failed: LLM call failed after retry: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
       ]
+    },
+    {
+      "started_at": "2026-10-17T13:44:15+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-17T13:45:01+00:00 Step A: proposed 8 ideas",
+        "2026-10-17T13:45:37+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-17T13:45:47+00:00 Step D FAILED subject-line-length-checker: test_cases=False",
+        "2026-10-17T13:45:59+00:00 PUBLISHED future-value-annuity-calculator",
+        "2026-10-17T13:46:13+00:00 Step D FAILED dst-transition-finder: test_cases=False",
+        "2026-10-17T13:46:25+00:00 Step D FAILED dominant-color-extractor: test_cases=False",
+        "2026-10-17T13:47:09+00:00 PUBLISHED local-storage-size-estimator",
+        "2026-10-17T13:47:53+00:00 PUBLISHED hydration-calculator",
+        "2026-10-17T13:47:53+00:00 generation attempt cap reached (6); stopping for the day"
+      ]
     }
   ],
-  "ideas_proposed": [],
-  "ideas_rejected": [],
+  "ideas_proposed": [
+    [
+      {
+        "title": "Subject Line Length Checker",
+        "slug": "subject-line-length-checker",
+        "category": "productivity",
+        "one_line_pitch": "Count characters in an email subject and recommend optimal length.",
+        "inputs": [
+          "subject text"
+        ],
+        "output": "Character count and suggested max length."
+      },
+      {
+        "title": "P-Value Calculator",
+        "slug": "p-value-calculator",
+        "category": "math",
+        "one_line_pitch": "Compute the p-value for a single-sample mean test.",
+        "inputs": [
+          "sample mean",
+          "population mean",
+          "standard deviation",
+          "sample size"
+        ],
+        "output": "Calculated p-value and significance flag."
+      },
+      {
+        "title": "Future Value of Annuity Calculator",
+        "slug": "future-value-annuity-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate future value of regular payments with interest.",
+        "inputs": [
+          "payment amount",
+          "interest rate",
+          "number of periods",
+          "payment timing (begin/end)"
+        ],
+        "output": "Future value figure."
+      },
+      {
+        "title": "DST Transition Finder",
+        "slug": "dst-transition-finder",
+        "category": "date-time",
+        "one_line_pitch": "Find daylight saving start/end dates for a timezone.",
+        "inputs": [
+          "timezone",
+          "year"
+        ],
+        "output": "DST start and end dates and times."
+      },
+      {
+        "title": "Dominant Color Extractor",
+        "slug": "dominant-color-extractor",
+        "category": "image",
+        "one_line_pitch": "Extract the most common color from an uploaded image.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "Hex color code and RGB values."
+      },
+      {
+        "title": "Local Storage Size Estimator",
+        "slug": "local-storage-size-estimator",
+        "category": "developer",
+        "one_line_pitch": "Estimate how many bytes a JSON object will occupy in localStorage.",
+        "inputs": [
+          "JSON object"
+        ],
+        "output": "Size in bytes and kilobytes."
+      },
+      {
+        "title": "Hydration Calculator",
+        "slug": "hydration-calculator",
+        "category": "health",
+        "one_line_pitch": "Suggest daily water intake based on weight, activity, and climate.",
+        "inputs": [
+          "body weight",
+          "activity level",
+          "climate (hot/cold)"
+        ],
+        "output": "Recommended daily water volume."
+      },
+      {
+        "title": "Fortune Cookie Generator",
+        "slug": "fortune-cookie-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Generate a random fortune message instantly.",
+        "inputs": [],
+        "output": "Fortune text."
+      }
+    ]
+  ],
+  "ideas_rejected": [
+    [
+      {
+        "slug": "p-value-calculator",
+        "title": "P-Value Calculator",
+        "reason": "rejected: duplicate of age-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-10-17T13:45:01+00:00"
+      }
+    ]
+  ],
   "tools_published": [],
-  "tools_failed": [],
+  "tools_failed": [
+    {
+      "slug": "subject-line-length-checker",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-17T13:45:47+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=206"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: PASS | case2: PASS | case3: FAIL (expected 'Too long' not found; actual: '106 characters (exceeds the recommended max of 50).')"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "dst-transition-finder",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-17T13:46:13+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=208"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected 'DST starts:' not found; actual: 'error: invalid timezone') | case2: PASS | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "dominant-color-extractor",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-17T13:46:25+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=172"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (f-image: file inputs are not supported in automated tests) | case2: FAIL (f-image: file inputs are not supported in automated tests; expected 'Invalid file type. Please select an image.' not found; actual: 'please select an image file.') | case3: FAIL (f-image: file inputs are not supported in automated tests; expected 'Hex:' not found; actual: 'please select an image file.')"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
   "llm_calls": [
     {
       "time": "2026-10-17T06:58:09+00:00",
@@ -31,10 +260,109 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-17T13:44:15+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-17T13:44:15+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-17T13:45:01+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5576,
+      "completion_tokens": 1492,
+      "total_tokens": 7068,
+      "est_cost_usd": 0.010052
+    },
+    {
+      "time": "2026-10-17T13:45:01+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 484,
+      "completion_tokens": 189,
+      "total_tokens": 673,
+      "est_cost_usd": 0.001051
+    },
+    {
+      "time": "2026-10-17T13:45:37+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 467,
+      "completion_tokens": 118,
+      "total_tokens": 585,
+      "est_cost_usd": 0.000821
+    },
+    {
+      "time": "2026-10-17T13:45:41+00:00",
+      "purpose": "code_generation:subject-line-length-checker",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 947,
+      "completion_tokens": 1973,
+      "total_tokens": 2920,
+      "est_cost_usd": 0.006866
+    },
+    {
+      "time": "2026-10-17T13:45:53+00:00",
+      "purpose": "code_generation:future-value-annuity-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 958,
+      "completion_tokens": 2659,
+      "total_tokens": 3617,
+      "est_cost_usd": 0.008935
+    },
+    {
+      "time": "2026-10-17T13:46:07+00:00",
+      "purpose": "code_generation:dst-transition-finder",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 948,
+      "completion_tokens": 3836,
+      "total_tokens": 4784,
+      "est_cost_usd": 0.012456
+    },
+    {
+      "time": "2026-10-17T13:46:20+00:00",
+      "purpose": "code_generation:dominant-color-extractor",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 947,
+      "completion_tokens": 3093,
+      "total_tokens": 4040,
+      "est_cost_usd": 0.010226
+    },
+    {
+      "time": "2026-10-17T13:47:05+00:00",
+      "purpose": "code_generation:local-storage-size-estimator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 951,
+      "completion_tokens": 2387,
+      "total_tokens": 3338,
+      "est_cost_usd": 0.008112
+    },
+    {
+      "time": "2026-10-17T13:47:49+00:00",
+      "purpose": "code_generation:hydration-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 955,
+      "completion_tokens": 2169,
+      "total_tokens": 3124,
+      "est_cost_usd": 0.007462
     }
   ],
   "budget": {
-    "tokens": 172,
-    "usd": 0.000212
+    "tokens": 30493,
+    "usd": 0.066405
   }
 }
