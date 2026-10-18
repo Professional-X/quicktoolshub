@@ -21,6 +21,13 @@
       "notes": [
         "2026-10-18T14:02:49+00:00 Step A failed: LLM call failed after retry: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
       ]
+    },
+    {
+      "started_at": "2026-10-18T20:42:57+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-18T20:43:43+00:00 Step A failed: LLM call failed after retry: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -409,10 +416,28 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-18T20:42:56+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-18T20:42:56+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
     }
   ],
   "budget": {
-    "tokens": 40388,
-    "usd": 0.095662
+    "tokens": 40560,
+    "usd": 0.095874
   }
 }
