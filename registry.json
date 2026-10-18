@@ -1951,6 +1951,23 @@
         "convert text"
       ],
       "usage_instructions": "Enter a word or phrase in the text box, then click Convert. The result will show the NATO phonetic spelling of each letter."
+    },
+    {
+      "slug": "morse-code-audio-player",
+      "title": "Morse Code Audio Player",
+      "category": "text",
+      "date_published": "2026-10-18",
+      "status": "published",
+      "h1": "Morse Code Audio Player",
+      "seo_description": "Enter text and set speed (WPM) to hear Morse code audio instantly. Simple, fast, and works on any device.",
+      "keywords": [
+        "morse code generator",
+        "text to morse audio",
+        "morse code player",
+        "wpm morse",
+        "audio morse code"
+      ],
+      "usage_instructions": "Enter the text you want to convert, set the desired words‑per‑minute speed, and click Play. The Morse code will be played through your speakers."
     }
   ]
 }
