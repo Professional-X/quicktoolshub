@@ -79,7 +79,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/text-to-rot13/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://professional-x.github.io/quicktoolshub/tools/file-extension-icon-finder/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/base58-to-base10-converter/</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

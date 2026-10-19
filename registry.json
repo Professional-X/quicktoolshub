@@ -2002,6 +2002,40 @@
         "icon generator"
       ],
       "usage_instructions": "Type a file extension (e.g., pdf) into the box and click “Find Icon”. The tool will display an SVG icon and a short description of the file type."
+    },
+    {
+      "slug": "base58-to-base10-converter",
+      "title": "Base‑58 to Base‑10 Converter",
+      "category": "developer",
+      "date_published": "2026-10-19",
+      "status": "published",
+      "h1": "Base‑58 to Base‑10 Converter",
+      "seo_description": "Convert any Base‑58 string to its decimal (Base‑10) value instantly. Simple, free, and works offline.",
+      "keywords": [
+        "Base58 to decimal",
+        "Base58 converter",
+        "Base58 to Base10",
+        "Base58 calculator",
+        "Base58 conversion"
+      ],
+      "usage_instructions": "Enter a Base‑58 string in the field below and click “Convert”. The decimal result will appear instantly. Invalid characters will show an error message."
+    },
+    {
+      "slug": "text-to-rot13",
+      "title": "Text to ROT13 Encoder",
+      "category": "text",
+      "date_published": "2026-10-19",
+      "status": "published",
+      "h1": "ROT13 Encoder",
+      "seo_description": "Encode any text with the ROT13 cipher instantly. Simple, free, and works entirely in your browser.",
+      "keywords": [
+        "ROT13",
+        "text encoder",
+        "cipher tool",
+        "online ROT13",
+        "encode text"
+      ],
+      "usage_instructions": "Enter any text in the box and click “Encode”. The ROT13 version appears below. Only letters are shifted; numbers and symbols stay unchanged."
     }
   ]
 }

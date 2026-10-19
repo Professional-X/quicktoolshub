@@ -19,6 +19,17 @@
       "notes": [
         "2026-10-19T17:00:15+00:00 Step A failed: LLM call failed after retry: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
       ]
+    },
+    {
+      "started_at": "2026-10-19T22:21:23+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-19T22:21:26+00:00 Step A: proposed 8 ideas",
+        "2026-10-19T22:21:26+00:00 Step B: 5 ideas survived dedup",
+        "2026-10-19T22:21:37+00:00 PUBLISHED base58-to-base10-converter",
+        "2026-10-19T22:21:44+00:00 PUBLISHED text-to-rot13",
+        "2026-10-19T22:21:44+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -107,6 +118,94 @@
         ],
         "output": "Solution x"
       }
+    ],
+    [
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Compute future value with compounding frequency and time.",
+        "inputs": [
+          "principal",
+          "annual_rate",
+          "compounding_periods_per_year",
+          "years"
+        ],
+        "output": "Future value and breakdown of principal, interest, and total amount"
+      },
+      {
+        "title": "Base‑58 to Base‑10 Converter",
+        "slug": "base58-to-base10-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert a Base‑58 string to its decimal representation instantly.",
+        "inputs": [
+          "base58_string"
+        ],
+        "output": "Decimal integer"
+      },
+      {
+        "title": "Text to ROT13 Encoder",
+        "slug": "text-to-rot13",
+        "category": "text",
+        "one_line_pitch": "Apply ROT13 cipher to any input text quickly.",
+        "inputs": [
+          "plain_text"
+        ],
+        "output": "ROT13 encoded text"
+      },
+      {
+        "title": "Hex to CMYK Converter",
+        "slug": "hex-to-cmyk",
+        "category": "image",
+        "one_line_pitch": "Translate a hex color to CMYK percentages for print use.",
+        "inputs": [
+          "hex_color"
+        ],
+        "output": "cmyk_values"
+      },
+      {
+        "title": "Text to Soundex Converter",
+        "slug": "text-to-soundex",
+        "category": "text",
+        "one_line_pitch": "Generate the Soundex code for a given word or phrase.",
+        "inputs": [
+          "text"
+        ],
+        "output": "soundex_code"
+      },
+      {
+        "title": "Time Zone Daylight Saving Checker",
+        "slug": "tz-dst-checker",
+        "category": "date-time",
+        "one_line_pitch": "Determine if a given date/time falls under DST for a zone.",
+        "inputs": [
+          "datetime",
+          "timezone"
+        ],
+        "output": "dst_status"
+      },
+      {
+        "title": "Text to Base‑32 Converter",
+        "slug": "text-to-base32",
+        "category": "developer",
+        "one_line_pitch": "Encode any text into Base‑32 format quickly.",
+        "inputs": [
+          "text"
+        ],
+        "output": "base32_string"
+      },
+      {
+        "title": "Image Base64 Downloader",
+        "slug": "image-base64-downloader",
+        "category": "image",
+        "one_line_pitch": "Convert a Base64 image string into a downloadable file.",
+        "inputs": [
+          "base64_string",
+          "file_name",
+          "mime_type"
+        ],
+        "output": "downloadable_image_file"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -134,6 +233,26 @@
         "title": "Linear Equation Solver (1 Variable)",
         "reason": "rejected: duplicate of linear-equation-solver (slug match)",
         "at": "2026-10-19T07:47:58+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-10-19T22:21:26+00:00"
+      },
+      {
+        "slug": "hex-to-cmyk",
+        "title": "Hex to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-hsv-converter (similarity 0.83 > 0.8)",
+        "at": "2026-10-19T22:21:26+00:00"
+      },
+      {
+        "slug": "text-to-base32",
+        "title": "Text to Base‑32 Converter",
+        "reason": "rejected: duplicate of text-case-converter (similarity 0.82 > 0.8)",
+        "at": "2026-10-19T22:21:26+00:00"
       }
     ]
   ],
@@ -317,10 +436,55 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-19T22:21:23+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-19T22:21:23+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-19T22:21:26+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 5903,
+      "completion_tokens": 1973,
+      "total_tokens": 7876,
+      "est_cost_usd": 0.011822
+    },
+    {
+      "time": "2026-10-19T22:21:31+00:00",
+      "purpose": "code_generation:base58-to-base10-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 949,
+      "completion_tokens": 2110,
+      "total_tokens": 3059,
+      "est_cost_usd": 0.007279
+    },
+    {
+      "time": "2026-10-19T22:21:40+00:00",
+      "purpose": "code_generation:text-to-rot13",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 945,
+      "completion_tokens": 1398,
+      "total_tokens": 2343,
+      "est_cost_usd": 0.005139
     }
   ],
   "budget": {
-    "tokens": 24618,
-    "usd": 0.052186
+    "tokens": 38068,
+    "usd": 0.076638
   }
 }
