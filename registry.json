@@ -1968,6 +1968,40 @@
         "audio morse code"
       ],
       "usage_instructions": "Enter the text you want to convert, set the desired words‑per‑minute speed, and click Play. The Morse code will be played through your speakers."
+    },
+    {
+      "slug": "time-span-formatter",
+      "title": "Time Span Formatter",
+      "category": "date-time",
+      "date_published": "2026-10-19",
+      "status": "published",
+      "h1": "Time Span Formatter",
+      "seo_description": "Convert milliseconds into days, hours, minutes, and seconds instantly. Simple online tool for quick time span formatting.",
+      "keywords": [
+        "milliseconds to days",
+        "time span converter",
+        "format duration",
+        "convert ms to time",
+        "online time formatter"
+      ],
+      "usage_instructions": "Enter a duration in milliseconds and click “Format”. The result will show the equivalent days, hours, minutes, and seconds."
+    },
+    {
+      "slug": "file-extension-icon-finder",
+      "title": "File Extension Icon Finder",
+      "category": "image",
+      "date_published": "2026-10-19",
+      "status": "published",
+      "h1": "File Extension Icon Finder",
+      "seo_description": "Enter a file extension to see its representative SVG icon and description instantly. Fast, free, no ads.",
+      "keywords": [
+        "file extension icon",
+        "svg file icon",
+        "file type icon",
+        "extension lookup",
+        "icon generator"
+      ],
+      "usage_instructions": "Type a file extension (e.g., pdf) into the box and click “Find Icon”. The tool will display an SVG icon and a short description of the file type."
     }
   ]
 }
