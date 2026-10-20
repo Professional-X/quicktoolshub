@@ -2036,6 +2036,40 @@
         "encode text"
       ],
       "usage_instructions": "Enter any text in the box and click “Encode”. The ROT13 version appears below. Only letters are shifted; numbers and symbols stay unchanged."
+    },
+    {
+      "slug": "text-to-soundex-converter",
+      "title": "Text to Soundex Converter",
+      "category": "text",
+      "date_published": "2026-10-20",
+      "status": "published",
+      "h1": "Text to Soundex Converter",
+      "seo_description": "Convert any English word into its Soundex code instantly. Simple, free, and works offline.",
+      "keywords": [
+        "soundex converter",
+        "phonetic code",
+        "text to soundex",
+        "soundex generator",
+        "search indexing"
+      ],
+      "usage_instructions": "Enter an English word in the field below and click “Convert”. The Soundex code will appear instantly. Only alphabetic characters are accepted."
+    },
+    {
+      "slug": "decimal-to-bcd-converter",
+      "title": "Decimal to BCD Converter",
+      "category": "math",
+      "date_published": "2026-10-20",
+      "status": "published",
+      "h1": "Decimal ↔ BCD Converter",
+      "seo_description": "Convert decimal numbers to BCD and back instantly. Simple, accurate, mobile‑friendly tool.",
+      "keywords": [
+        "decimal to bcd",
+        "bcd converter",
+        "binary coded decimal",
+        "decimal to binary",
+        "bcd calculator"
+      ],
+      "usage_instructions": "Enter a decimal integer and click Convert to see its BCD, or enter a BCD string (4‑bit groups) and select BCD → Decimal, then click Convert."
     }
   ]
 }

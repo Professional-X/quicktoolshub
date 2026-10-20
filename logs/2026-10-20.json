@@ -14,12 +14,178 @@
       "notes": [
         "2026-10-20T15:07:49+00:00 Step A failed: LLM call failed after retry: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
       ]
+    },
+    {
+      "started_at": "2026-10-20T21:37:29+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-20T21:37:32+00:00 Step A: proposed 8 ideas",
+        "2026-10-20T21:38:08+00:00 Step B: 3 ideas survived dedup",
+        "2026-10-20T21:38:20+00:00 Step D FAILED days-until-christmas: test_cases=False",
+        "2026-10-20T21:38:31+00:00 PUBLISHED text-to-soundex-converter",
+        "2026-10-20T21:38:44+00:00 PUBLISHED decimal-to-bcd-converter"
+      ]
     }
   ],
-  "ideas_proposed": [],
-  "ideas_rejected": [],
+  "ideas_proposed": [
+    [
+      {
+        "title": "ASCII to Hex Converter",
+        "slug": "ascii-to-hex-converter",
+        "category": "text",
+        "one_line_pitch": "Convert ASCII text to its hexadecimal representation instantly",
+        "inputs": [
+          "ASCII string"
+        ],
+        "output": "Hexadecimal string of the input"
+      },
+      {
+        "title": "Number to Ordinal Converter",
+        "slug": "number-to-ordinal-converter",
+        "category": "text",
+        "one_line_pitch": "Turn any integer into its ordinal word form (1st, 2nd, 3rd, etc.)",
+        "inputs": [
+          "Integer"
+        ],
+        "output": "Ordinal representation of the number"
+      },
+      {
+        "title": "CSV to TSV Converter",
+        "slug": "csv-to-tsv-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert CSV data into tab-separated values with optional header handling",
+        "inputs": [
+          "CSV text"
+        ],
+        "output": "TSV formatted text"
+      },
+      {
+        "title": "Text to IPA Converter",
+        "slug": "text-to-ipa-converter",
+        "category": "text",
+        "one_line_pitch": "Transliterate English words into International Phonetic Alphabet symbols",
+        "inputs": [
+          "English text"
+        ],
+        "output": "IPA representation of the text"
+      },
+      {
+        "title": "Perfect Number Checker",
+        "slug": "perfect-number-checker",
+        "category": "math",
+        "one_line_pitch": "Check if an integer is a perfect number and list its divisors",
+        "inputs": [
+          "Integer"
+        ],
+        "output": "Boolean result and list of proper divisors"
+      },
+      {
+        "title": "Days Until Christmas Calculator",
+        "slug": "days-until-christmas",
+        "category": "date-time",
+        "one_line_pitch": "Calculate days, hours, minutes, and seconds remaining until next Christmas",
+        "inputs": [
+          "Optional target year"
+        ],
+        "output": "Countdown to December 25 of the target year"
+      },
+      {
+        "title": "Text to Soundex Converter",
+        "slug": "text-to-soundex-converter",
+        "category": "text",
+        "one_line_pitch": "Convert words into their Soundex phonetic code for search indexing",
+        "inputs": [
+          "English words"
+        ],
+        "output": "Soundex codes"
+      },
+      {
+        "title": "Decimal to BCD Converter",
+        "slug": "decimal-to-bcd-converter",
+        "category": "math",
+        "one_line_pitch": "Convert decimal numbers to Binary-Coded Decimal (BCD) and back",
+        "inputs": [
+          "Decimal integer"
+        ],
+        "output": "BCD representation or decimal value"
+      }
+    ]
+  ],
+  "ideas_rejected": [
+    [
+      {
+        "slug": "ascii-to-hex-converter",
+        "title": "ASCII to Hex Converter",
+        "reason": "rejected: duplicate of ascii-to-binary-converter (similarity 0.81 > 0.8)",
+        "at": "2026-10-20T21:37:32+00:00"
+      },
+      {
+        "slug": "number-to-ordinal-converter",
+        "title": "Number to Ordinal Converter",
+        "reason": "rejected: duplicate of number-to-words-converter (similarity 0.88 > 0.8)",
+        "at": "2026-10-20T21:37:32+00:00"
+      },
+      {
+        "slug": "csv-to-tsv-converter",
+        "title": "CSV to TSV Converter",
+        "reason": "rejected: duplicate of csv-to-json-converter (similarity 0.88 > 0.8)",
+        "at": "2026-10-20T21:37:32+00:00"
+      },
+      {
+        "slug": "text-to-ipa-converter",
+        "title": "Text to IPA Converter",
+        "reason": "rejected: duplicate of text-to-pig-latin-converter (similarity 0.83 > 0.8)",
+        "at": "2026-10-20T21:37:32+00:00"
+      },
+      {
+        "slug": "perfect-number-checker",
+        "title": "Perfect Number Checker",
+        "reason": "rejected: duplicate of prime-number-checker (similarity 0.81 > 0.8)",
+        "at": "2026-10-20T21:37:32+00:00"
+      }
+    ]
+  ],
   "tools_published": [],
-  "tools_failed": [],
+  "tools_failed": [
+    {
+      "slug": "days-until-christmas",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-20T21:38:20+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=174"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: PASS | case2: FAIL (f-year: fill failed: Locator.fill: Error: Cannot type text into input[type=number]\nCall log:\n  - waiting for locator(\"#f-year\").first\n    - locator resolved to <input min=\"1970\" id=; expected 'Please enter a valid year' not found; actual: 'time until christmas 2026: 65d 2h 21m 41s') | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
   "llm_calls": [
     {
       "time": "2026-10-20T07:35:32+00:00",
@@ -56,10 +222,82 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-20T21:37:29+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-20T21:37:29+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-20T21:37:32+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6002,
+      "completion_tokens": 1553,
+      "total_tokens": 7555,
+      "est_cost_usd": 0.010661
+    },
+    {
+      "time": "2026-10-20T21:37:32+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 470,
+      "completion_tokens": 109,
+      "total_tokens": 579,
+      "est_cost_usd": 0.000797
+    },
+    {
+      "time": "2026-10-20T21:38:08+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 465,
+      "completion_tokens": 117,
+      "total_tokens": 582,
+      "est_cost_usd": 0.000816
+    },
+    {
+      "time": "2026-10-20T21:38:13+00:00",
+      "purpose": "code_generation:days-until-christmas",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 955,
+      "completion_tokens": 2517,
+      "total_tokens": 3472,
+      "est_cost_usd": 0.008506
+    },
+    {
+      "time": "2026-10-20T21:38:25+00:00",
+      "purpose": "code_generation:text-to-soundex-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 947,
+      "completion_tokens": 2296,
+      "total_tokens": 3243,
+      "est_cost_usd": 0.007835
+    },
+    {
+      "time": "2026-10-20T21:38:39+00:00",
+      "purpose": "code_generation:decimal-to-bcd-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 951,
+      "completion_tokens": 3923,
+      "total_tokens": 4874,
+      "est_cost_usd": 0.01272
     }
   ],
   "budget": {
-    "tokens": 344,
-    "usd": 0.000424
+    "tokens": 20821,
+    "usd": 0.041971
   }
 }
