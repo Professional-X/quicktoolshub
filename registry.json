@@ -2070,6 +2070,23 @@
         "bcd calculator"
       ],
       "usage_instructions": "Enter a decimal integer and click Convert to see its BCD, or enter a BCD string (4‑bit groups) and select BCD → Decimal, then click Convert."
+    },
+    {
+      "slug": "text-to-base58-encoder",
+      "title": "Text to Base58 Encoder",
+      "category": "developer",
+      "date_published": "2026-10-21",
+      "status": "published",
+      "h1": "Text to Base58 Encoder",
+      "seo_description": "Encode any text into Base58 instantly. Paste your text and get the Base58 representation in seconds.",
+      "keywords": [
+        "Base58 encoder",
+        "text to Base58",
+        "encode text base58",
+        "Base58 conversion",
+        "developer tool"
+      ],
+      "usage_instructions": "Enter the text you want to encode and click “Encode”. The Base58 result will appear below. Empty input will show a reminder."
     }
   ]
 }
