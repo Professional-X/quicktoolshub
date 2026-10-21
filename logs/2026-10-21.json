@@ -16,6 +16,16 @@
         "2026-10-21T15:16:33+00:00 Step B: 1 ideas survived dedup",
         "2026-10-21T15:16:43+00:00 PUBLISHED text-to-base58-encoder"
       ]
+    },
+    {
+      "started_at": "2026-10-21T21:42:53+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-21T21:42:56+00:00 Step A: proposed 3 ideas",
+        "2026-10-21T21:43:31+00:00 Step B: 2 ideas survived dedup",
+        "2026-10-21T21:43:41+00:00 Step D FAILED fibonacci-prime-finder: test_cases=False",
+        "2026-10-21T21:43:51+00:00 PUBLISHED sudoku-puzzle-generator"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -40,6 +50,38 @@
         ],
         "output": "Base58 string"
       }
+    ],
+    [
+      {
+        "title": "Fibonacci Prime Finder",
+        "slug": "fibonacci-prime-finder",
+        "category": "math",
+        "one_line_pitch": "Find all Fibonacci numbers that are prime up to a given limit.",
+        "inputs": [
+          "Maximum Fibonacci number"
+        ],
+        "output": "List of Fibonacci primes below the limit."
+      },
+      {
+        "title": "Sudoku Puzzle Generator",
+        "slug": "sudoku-puzzle-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Generate a fresh Sudoku grid at chosen difficulty.",
+        "inputs": [
+          "Difficulty level (easy, medium, hard)"
+        ],
+        "output": "9x9 Sudoku puzzle grid."
+      },
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert Markdown syntax into LaTeX code instantly.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "Rendered LaTeX source."
+      }
     ]
   ],
   "ideas_rejected": [
@@ -50,10 +92,57 @@
         "reason": "rejected: duplicate of hex-to-rgb-converter (similarity 0.87 > 0.8)",
         "at": "2026-10-21T15:15:57+00:00"
       }
+    ],
+    [
+      {
+        "slug": "markdown-to-latex-converter",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-10-21T21:43:31+00:00"
+      }
     ]
   ],
   "tools_published": [],
-  "tools_failed": [],
+  "tools_failed": [
+    {
+      "slug": "fibonacci-prime-finder",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-21T21:43:41+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=188"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: PASS | case2: PASS | case3: FAIL (f-max: fill failed: Locator.fill: Error: Cannot type text into input[type=number]\nCall log:\n  - waiting for locator(\"#f-max\").first\n    - locator resolved to <input min=\"1\" id=\"f-m)"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
   "llm_calls": [
     {
       "time": "2026-10-21T07:40:36+00:00",
@@ -117,10 +206,64 @@
       "completion_tokens": 2755,
       "total_tokens": 3697,
       "est_cost_usd": 0.009207
+    },
+    {
+      "time": "2026-10-21T21:42:52+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-21T21:42:53+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-21T21:42:56+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6135,
+      "completion_tokens": 2000,
+      "total_tokens": 8135,
+      "est_cost_usd": 0.012135
+    },
+    {
+      "time": "2026-10-21T21:43:31+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 472,
+      "completion_tokens": 97,
+      "total_tokens": 569,
+      "est_cost_usd": 0.000763
+    },
+    {
+      "time": "2026-10-21T21:43:35+00:00",
+      "purpose": "code_generation:fibonacci-prime-finder",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 950,
+      "completion_tokens": 1900,
+      "total_tokens": 2850,
+      "est_cost_usd": 0.00665
+    },
+    {
+      "time": "2026-10-21T21:43:47+00:00",
+      "purpose": "code_generation:sudoku-puzzle-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 953,
+      "completion_tokens": 2793,
+      "total_tokens": 3746,
+      "est_cost_usd": 0.009332
     }
   ],
   "budget": {
-    "tokens": 12713,
-    "usd": 0.022531
+    "tokens": 28185,
+    "usd": 0.051623
   }
 }

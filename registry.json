@@ -2087,6 +2087,23 @@
         "developer tool"
       ],
       "usage_instructions": "Enter the text you want to encode and click “Encode”. The Base58 result will appear below. Empty input will show a reminder."
+    },
+    {
+      "slug": "sudoku-puzzle-generator",
+      "title": "Sudoku Puzzle Generator",
+      "category": "random-fun",
+      "date_published": "2026-10-21",
+      "status": "published",
+      "h1": "Sudoku Puzzle Generator",
+      "seo_description": "Generate a fresh Sudoku puzzle instantly. Choose easy, medium, or hard difficulty and get a 9x9 grid ready to play.",
+      "keywords": [
+        "Sudoku generator",
+        "free Sudoku puzzle",
+        "random Sudoku",
+        "Sudoku difficulty",
+        "online Sudoku"
+      ],
+      "usage_instructions": "Select a difficulty level and click “Generate Puzzle” to create a new Sudoku grid."
     }
   ]
 }
