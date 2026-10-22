@@ -73,6 +73,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/modular-arithmetic-table/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://professional-x.github.io/quicktoolshub/tools/iso8601-duration-parser/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -80,6 +86,12 @@
   </url>
   <url>
     <loc>https://professional-x.github.io/quicktoolshub/tools/federal-tax-bracket/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://professional-x.github.io/quicktoolshub/tools/anagram-finder/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

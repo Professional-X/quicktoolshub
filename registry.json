@@ -2138,6 +2138,40 @@
         "convert duration"
       ],
       "usage_instructions": "Enter an ISO 8601 duration (e.g., P2DT3H4M) and click Convert. The result shows days, hours, minutes, seconds and total seconds."
+    },
+    {
+      "slug": "anagram-finder",
+      "title": "Anagram Finder",
+      "category": "text",
+      "date_published": "2026-10-22",
+      "status": "published",
+      "h1": "Anagram Finder",
+      "seo_description": "Enter any word or phrase and instantly discover all valid anagrams from a built‑in dictionary. Fast, free, and easy to use.",
+      "keywords": [
+        "anagram solver",
+        "find anagrams",
+        "word scramble",
+        "phrase anagram",
+        "online anagram tool"
+      ],
+      "usage_instructions": "Enter a word or phrase and click “Find Anagrams” to see all valid anagrams from the built‑in dictionary."
+    },
+    {
+      "slug": "modular-arithmetic-table",
+      "title": "Modular Arithmetic Table Generator",
+      "category": "math",
+      "date_published": "2026-10-22",
+      "status": "published",
+      "h1": "Modular Arithmetic Table Generator",
+      "seo_description": "Generate a modular arithmetic table quickly. Input modulus, base, and range to see (a·i) mod n results in a clear table.",
+      "keywords": [
+        "modular arithmetic",
+        "modular table",
+        "a mod n",
+        "math calculator",
+        "modular multiplication"
+      ],
+      "usage_instructions": "Enter a modulus (n), a base (a), and the start and end of the range. Click Generate to see a table of (a × i) mod n for each i in the range."
     }
   ]
 }
