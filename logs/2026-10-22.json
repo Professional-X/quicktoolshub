@@ -7,12 +7,279 @@
       "notes": [
         "2026-10-22T07:36:56+00:00 Step A failed: LLM call failed after retry: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
       ]
+    },
+    {
+      "started_at": "2026-10-22T15:19:02+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-22T15:19:05+00:00 Step A: proposed 8 ideas",
+        "2026-10-22T15:19:41+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-22T15:19:54+00:00 Step D FAILED citation-generator: test_cases=False",
+        "2026-10-22T15:20:07+00:00 Step D FAILED modular-square-root: test_cases=False",
+        "2026-10-22T15:20:21+00:00 PUBLISHED federal-tax-bracket",
+        "2026-10-22T15:21:08+00:00 PUBLISHED iso8601-duration-parser",
+        "2026-10-22T15:21:21+00:00 Step D FAILED color-palette-extractor: test_cases=False",
+        "2026-10-22T15:22:09+00:00 Step D FAILED svg-path-simplifier: test_cases=False",
+        "2026-10-22T15:22:09+00:00 generation attempt cap reached (6); stopping for the day"
+      ]
     }
   ],
-  "ideas_proposed": [],
-  "ideas_rejected": [],
+  "ideas_proposed": [
+    [
+      {
+        "title": "Citation Generator",
+        "slug": "citation-generator",
+        "category": "text",
+        "one_line_pitch": "Generate APA or MLA citations from author, title, and date inputs.",
+        "inputs": [
+          "Author(s)",
+          "Title",
+          "Publication Year",
+          "Publisher",
+          "Citation Style (APA/MLA)"
+        ],
+        "output": "Formatted citation string."
+      },
+      {
+        "title": "Modular Square Root Calculator",
+        "slug": "modular-square-root",
+        "category": "math",
+        "one_line_pitch": "Find x such that x² ≡ a (mod p) for a prime p.",
+        "inputs": [
+          "a (modulus)",
+          "p (prime modulus)"
+        ],
+        "output": "All solutions x modulo p, or no solution."
+      },
+      {
+        "title": "Federal Tax Bracket Calculator",
+        "slug": "federal-tax-bracket",
+        "category": "finance",
+        "one_line_pitch": "Calculate U.S. federal income tax owed for single filers.",
+        "inputs": [
+          "Taxable Income",
+          "Filing Status (single/household)",
+          "Year"
+        ],
+        "output": "Tax owed and tax bracket details."
+      },
+      {
+        "title": "ISO 8601 Duration Parser",
+        "slug": "iso8601-duration-parser",
+        "category": "date-time",
+        "one_line_pitch": "Convert ISO 8601 duration strings into days, hours, minutes, and seconds.",
+        "inputs": [
+          "Duration string (e.g., P2DT3H4M)"
+        ],
+        "output": "Human‑readable breakdown and total seconds."
+      },
+      {
+        "title": "Color Palette Extractor",
+        "slug": "color-palette-extractor",
+        "category": "image",
+        "one_line_pitch": "Upload an image to extract its dominant colors as HEX codes.",
+        "inputs": [
+          "Image file (PNG/JPG)"
+        ],
+        "output": "List of HEX colors with swatches and percentages."
+      },
+      {
+        "title": "SVG Path Simplifier",
+        "slug": "svg-path-simplifier",
+        "category": "developer",
+        "one_line_pitch": "Reduce the complexity of SVG path commands while preserving shape.",
+        "inputs": [
+          "SVG path string"
+        ],
+        "output": "Simplified SVG path string."
+      },
+      {
+        "title": "Speed Unit Converter",
+        "slug": "speed-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert speed between km/h, mph, m/s, knots, and cm/s.",
+        "inputs": [
+          "Value",
+          "From unit",
+          "To unit"
+        ],
+        "output": "Converted speed value."
+      },
+      {
+        "title": "Fortune Cookie Generator",
+        "slug": "fortune-cookie-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Generate a random fortune or inspirational quote.",
+        "inputs": [],
+        "output": "Random fortune text."
+      }
+    ]
+  ],
+  "ideas_rejected": [
+    [
+      {
+        "slug": "speed-unit-converter",
+        "title": "Speed Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
+        "at": "2026-10-22T15:19:41+00:00"
+      }
+    ]
+  ],
   "tools_published": [],
-  "tools_failed": [],
+  "tools_failed": [
+    {
+      "slug": "citation-generator",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-22T15:19:54+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=260"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected 'Doe, J. (2022). Understanding AI. Tech Press.' not found; actual: 'doe, j.. (2022). understanding ai. tech press.') | case2: FAIL (expected 'Doe, J. Understanding AI. Tech Press, 2022.' not found; actual: 'doe, j.. understanding ai. tech press, 2022.') | case3: PASS | case4: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "modular-square-root",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-22T15:20:07+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=222"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected '6, 7' not found; actual: 'error: an unexpected problem occurred.'; js errors: ['console: TypeError: Cannot mix BigInt and other types, use explicit conversions\\n    at tonelliShanks (file:///home/runner/work/quicktoolshub/quicktoolshub/.testtmp/modular-square-root.html:148:32)\\n    at HTMLButtonElement.calculate (file:///home/runner/work/quicktoolshub/quicktoolshub/.testtmp/modular-square-root.html:198:22)']) | case2: PASS | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "color-palette-extractor",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-22T15:21:21+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=187"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (f-image: file inputs are not supported in automated tests; expected '#' not found; actual: 'please select an image file.') | case2: FAIL (f-image: file inputs are not supported in automated tests) | case3: FAIL (f-image: file inputs are not supported in automated tests; expected 'Invalid file type.' not found; actual: 'please select an image file.')"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "svg-path-simplifier",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-22T15:22:09+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=166"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: PASS | case2: PASS | case3: FAIL (expected 'Error: invalid SVG path data.' not found; actual: 'm10 10')"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
   "llm_calls": [
     {
       "time": "2026-10-22T07:36:09+00:00",
@@ -31,10 +298,109 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-22T15:19:01+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-22T15:19:01+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-22T15:19:05+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6188,
+      "completion_tokens": 1934,
+      "total_tokens": 8122,
+      "est_cost_usd": 0.01199
+    },
+    {
+      "time": "2026-10-22T15:19:40+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 481,
+      "completion_tokens": 92,
+      "total_tokens": 573,
+      "est_cost_usd": 0.000757
+    },
+    {
+      "time": "2026-10-22T15:19:41+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 489,
+      "completion_tokens": 122,
+      "total_tokens": 611,
+      "est_cost_usd": 0.000855
+    },
+    {
+      "time": "2026-10-22T15:19:47+00:00",
+      "purpose": "code_generation:citation-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 961,
+      "completion_tokens": 2449,
+      "total_tokens": 3410,
+      "est_cost_usd": 0.008308
+    },
+    {
+      "time": "2026-10-22T15:20:02+00:00",
+      "purpose": "code_generation:modular-square-root",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 964,
+      "completion_tokens": 3664,
+      "total_tokens": 4628,
+      "est_cost_usd": 0.011956
+    },
+    {
+      "time": "2026-10-22T15:20:15+00:00",
+      "purpose": "code_generation:federal-tax-bracket",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 961,
+      "completion_tokens": 3659,
+      "total_tokens": 4620,
+      "est_cost_usd": 0.011938
+    },
+    {
+      "time": "2026-10-22T15:21:03+00:00",
+      "purpose": "code_generation:iso8601-duration-parser",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 969,
+      "completion_tokens": 3292,
+      "total_tokens": 4261,
+      "est_cost_usd": 0.010845
+    },
+    {
+      "time": "2026-10-22T15:21:15+00:00",
+      "purpose": "code_generation:color-palette-extractor",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 955,
+      "completion_tokens": 3095,
+      "total_tokens": 4050,
+      "est_cost_usd": 0.01024
+    },
+    {
+      "time": "2026-10-22T15:22:04+00:00",
+      "purpose": "code_generation:svg-path-simplifier",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 947,
+      "completion_tokens": 4006,
+      "total_tokens": 4953,
+      "est_cost_usd": 0.012965
     }
   ],
   "budget": {
-    "tokens": 172,
-    "usd": 0.000212
+    "tokens": 35572,
+    "usd": 0.080278
   }
 }

@@ -2104,6 +2104,40 @@
         "online Sudoku"
       ],
       "usage_instructions": "Select a difficulty level and click “Generate Puzzle” to create a new Sudoku grid."
+    },
+    {
+      "slug": "federal-tax-bracket",
+      "title": "Federal Tax Bracket Calculator",
+      "category": "finance",
+      "date_published": "2026-10-22",
+      "status": "published",
+      "h1": "Federal Tax Bracket Calculator",
+      "seo_description": "Quickly calculate U.S. federal income tax for single or head‑of‑household filers by entering income and year.",
+      "keywords": [
+        "federal tax calculator",
+        "income tax estimate",
+        "single filer tax",
+        "head of household tax",
+        "2023 tax brackets"
+      ],
+      "usage_instructions": "Enter your taxable income, select filing status and tax year, then click Calculate. The tool shows the estimated tax owed and your marginal tax rate."
+    },
+    {
+      "slug": "iso8601-duration-parser",
+      "title": "ISO 8601 Duration Parser",
+      "category": "date-time",
+      "date_published": "2026-10-22",
+      "status": "published",
+      "h1": "ISO 8601 Duration Parser",
+      "seo_description": "Easily convert ISO 8601 duration strings into days, hours, minutes, seconds and total seconds. Fast, free, no ads.",
+      "keywords": [
+        "ISO 8601 duration",
+        "duration to seconds",
+        "parse ISO duration",
+        "date time tool",
+        "convert duration"
+      ],
+      "usage_instructions": "Enter an ISO 8601 duration (e.g., P2DT3H4M) and click Convert. The result shows days, hours, minutes, seconds and total seconds."
     }
   ]
 }
