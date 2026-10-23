@@ -2172,6 +2172,57 @@
         "modular multiplication"
       ],
       "usage_instructions": "Enter a modulus (n), a base (a), and the start and end of the range. Click Generate to see a table of (a × i) mod n for each i in the range."
+    },
+    {
+      "slug": "combination-calculator",
+      "title": "Combination Calculator",
+      "category": "math",
+      "date_published": "2026-10-23",
+      "status": "published",
+      "h1": "Combination Calculator",
+      "seo_description": "Quickly calculate binomial combinations (n choose k) online. Enter n and k to get the result instantly.",
+      "keywords": [
+        "combination calculator",
+        "n choose k",
+        "binomial coefficient",
+        "math tool",
+        "calculate combinations"
+      ],
+      "usage_instructions": "Enter non‑negative integers for n and k, then click Calculate. The result shows the number of possible combinations (n choose k). Invalid inputs display an error message."
+    },
+    {
+      "slug": "savings-goal-calculator",
+      "title": "Savings Goal Calculator",
+      "category": "finance",
+      "date_published": "2026-10-23",
+      "status": "published",
+      "h1": "Savings Goal Calculator",
+      "seo_description": "Enter your target, current savings, monthly contribution and interest rate to find out how many months you'll need or the monthly amount required.",
+      "keywords": [
+        "savings calculator",
+        "goal calculator",
+        "monthly savings",
+        "financial planning",
+        "interest rate calculator"
+      ],
+      "usage_instructions": "Enter your target amount, current savings, monthly contribution and annual interest rate, then click Calculate. The tool will show the estimated months needed or the required monthly contribution if none is entered."
+    },
+    {
+      "slug": "http-header-formatter",
+      "title": "HTTP Header Formatter",
+      "category": "developer",
+      "date_published": "2026-10-23",
+      "status": "published",
+      "h1": "HTTP Header Formatter",
+      "seo_description": "Easily convert raw HTTP header strings into formatted JSON objects. Paste your headers and get clean JSON instantly.",
+      "keywords": [
+        "http header formatter",
+        "convert headers to json",
+        "http headers to json",
+        "header parser",
+        "developer tools"
+      ],
+      "usage_instructions": "Paste raw HTTP headers into the box and click “Format to JSON”. The formatted JSON will appear below."
     }
   ]
 }
