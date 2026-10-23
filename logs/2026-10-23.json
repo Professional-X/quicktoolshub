@@ -14,6 +14,17 @@
         "2026-10-23T07:36:23+00:00 PUBLISHED http-header-formatter",
         "2026-10-23T07:36:35+00:00 Step D FAILED coin-toss-simulator: test_cases=False"
       ]
+    },
+    {
+      "started_at": "2026-10-23T15:10:31+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-23T15:10:33+00:00 Step A: proposed 5 ideas",
+        "2026-10-23T15:10:33+00:00 Step B: 3 ideas survived dedup",
+        "2026-10-23T15:10:46+00:00 Step C rejected text-to-qr-code: missing ---META--- block in LLM output",
+        "2026-10-23T15:10:57+00:00 Step D FAILED image-to-base64-encoder: test_cases=False",
+        "2026-10-23T15:11:43+00:00 PUBLISHED email-spam-score-checker"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -109,6 +120,63 @@
         ],
         "output": "Heads/Tails counts and sequence"
       }
+    ],
+    [
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert Markdown to LaTeX code instantly.",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "LaTeX formatted string"
+      },
+      {
+        "title": "Text to QR Code Generator",
+        "slug": "text-to-qr-code",
+        "category": "developer",
+        "one_line_pitch": "Generate a QR code from any text instantly.",
+        "inputs": [
+          "text",
+          "size (optional)",
+          "error correction level (optional)"
+        ],
+        "output": "QR code image (data URL)"
+      },
+      {
+        "title": "Image to Base64 Encoder",
+        "slug": "image-to-base64-encoder",
+        "category": "image",
+        "one_line_pitch": "Encode any image to Base64 instantly.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "Base64 encoded string"
+      },
+      {
+        "title": "Email Spam Score Checker",
+        "slug": "email-spam-score-checker",
+        "category": "developer",
+        "one_line_pitch": "Get a quick spam score for any email content.",
+        "inputs": [
+          "email subject",
+          "email body"
+        ],
+        "output": "spam score percentage and list of spammy keywords"
+      },
+      {
+        "title": "Markdown to PDF Converter",
+        "slug": "markdown-to-pdf-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert Markdown to a PDF on the fly.",
+        "inputs": [
+          "markdown text",
+          "page size (optional)",
+          "orientation (optional)"
+        ],
+        "output": "downloadable PDF file"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -124,6 +192,20 @@
         "title": "TDEE Calculator",
         "reason": "rejected: duplicate of age-calculator (similarity 0.83 > 0.8)",
         "at": "2026-10-23T07:34:07+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "markdown-to-latex-converter",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-10-23T15:10:33+00:00"
+      },
+      {
+        "slug": "markdown-to-pdf-converter",
+        "title": "Markdown to PDF Converter",
+        "reason": "rejected: duplicate of markdown-to-html-converter (similarity 0.86 > 0.8)",
+        "at": "2026-10-23T15:10:33+00:00"
       }
     ]
   ],
@@ -242,6 +324,50 @@
           "detail": "scrollWidth=360"
         }
       ]
+    },
+    {
+      "slug": "text-to-qr-code",
+      "stage": "generate",
+      "reason": "missing ---META--- block in LLM output",
+      "at": "2026-10-23T15:10:46+00:00"
+    },
+    {
+      "slug": "image-to-base64-encoder",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-23T15:10:57+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=212"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (f-image: file inputs are not supported in automated tests; expected 'iVBOR' not found; actual: 'error: no file selected') | case2: FAIL (f-image: file inputs are not supported in automated tests) | case3: FAIL (f-image: file inputs are not supported in automated tests; expected 'Error: Unsupported file type' not found; actual: 'error: no file selected')"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
     }
   ],
   "llm_calls": [
@@ -343,10 +469,64 @@
       "completion_tokens": 3127,
       "total_tokens": 4075,
       "est_cost_usd": 0.010329
+    },
+    {
+      "time": "2026-10-23T15:10:30+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-23T15:10:30+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-23T15:10:33+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6537,
+      "completion_tokens": 2000,
+      "total_tokens": 8537,
+      "est_cost_usd": 0.012537
+    },
+    {
+      "time": "2026-10-23T15:10:46+00:00",
+      "purpose": "code_generation:text-to-qr-code",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 955,
+      "completion_tokens": 6000,
+      "total_tokens": 6955,
+      "est_cost_usd": 0.018955
+    },
+    {
+      "time": "2026-10-23T15:10:51+00:00",
+      "purpose": "code_generation:image-to-base64-encoder",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 943,
+      "completion_tokens": 2223,
+      "total_tokens": 3166,
+      "est_cost_usd": 0.007612
+    },
+    {
+      "time": "2026-10-23T15:11:38+00:00",
+      "purpose": "code_generation:email-spam-score-checker",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 952,
+      "completion_tokens": 2481,
+      "total_tokens": 3433,
+      "est_cost_usd": 0.008395
     }
   ],
   "budget": {
-    "tokens": 36411,
-    "usd": 0.082865
+    "tokens": 58674,
+    "usd": 0.130576
   }
 }

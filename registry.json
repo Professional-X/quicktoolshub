@@ -2223,6 +2223,23 @@
         "developer tools"
       ],
       "usage_instructions": "Paste raw HTTP headers into the box and click “Format to JSON”. The formatted JSON will appear below."
+    },
+    {
+      "slug": "email-spam-score-checker",
+      "title": "Email Spam Score Checker",
+      "category": "developer",
+      "date_published": "2026-10-23",
+      "status": "published",
+      "h1": "Email Spam Score Checker",
+      "seo_description": "Calculate the spam score of any email content instantly. Enter subject and body to see percentage and spammy keywords.",
+      "keywords": [
+        "email spam score",
+        "spam checker",
+        "email content analysis",
+        "spam percentage",
+        "spammy keywords"
+      ],
+      "usage_instructions": "Enter the email subject and body, then click “Check Spam Score”. The tool will show a spam percentage and highlight any spammy words found."
     }
   ]
 }
