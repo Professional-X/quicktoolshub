@@ -2240,6 +2240,22 @@
         "spammy keywords"
       ],
       "usage_instructions": "Enter the email subject and body, then click “Check Spam Score”. The tool will show a spam percentage and highlight any spammy words found."
+    },
+    {
+      "slug": "recipe-ingredient-quantity-adjuster",
+      "title": "Recipe Ingredient Quantity Adjuster",
+      "category": "productivity",
+      "date_published": "2026-10-24",
+      "status": "published",
+      "h1": "Recipe Ingredient Quantity Adjuster",
+      "seo_description": "Quickly adjust ingredient amounts for any serving size. Paste your list, set original and desired servings, and get scaled quantities instantly.",
+      "keywords": [
+        "recipe scaling",
+        "adjust ingredient quantities",
+        "servings calculator",
+        "cookbook tool"
+      ],
+      "usage_instructions": "Enter the ingredient list (one per line, starting with the amount), the original servings, and the desired servings. Click “Adjust” to see the scaled quantities."
     }
   ]
 }

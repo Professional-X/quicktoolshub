@@ -15,6 +15,16 @@
         "2026-10-24T14:01:21+00:00 Step A: proposed 1 ideas",
         "2026-10-24T14:01:21+00:00 Step B: 0 ideas survived dedup"
       ]
+    },
+    {
+      "started_at": "2026-10-24T20:49:24+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-24T20:49:26+00:00 Step A: proposed 2 ideas",
+        "2026-10-24T20:50:02+00:00 Step B: 2 ideas survived dedup",
+        "2026-10-24T20:50:12+00:00 PUBLISHED recipe-ingredient-quantity-adjuster",
+        "2026-10-24T20:50:22+00:00 Step D FAILED cumulative-percentage-calculator: test_cases=False"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -31,6 +41,30 @@
         ],
         "output": "converted pressure value with unit"
       }
+    ],
+    [
+      {
+        "title": "Recipe Ingredient Quantity Adjuster",
+        "slug": "recipe-ingredient-quantity-adjuster",
+        "category": "productivity",
+        "one_line_pitch": "Adjust recipe amounts to match any number of servings instantly.",
+        "inputs": [
+          "ingredients list",
+          "original servings",
+          "desired servings"
+        ],
+        "output": "Adjusted ingredient amounts for the new serving size."
+      },
+      {
+        "title": "Cumulative Percentage Calculator",
+        "slug": "cumulative-percentage-calculator",
+        "category": "math",
+        "one_line_pitch": "Show each number as a percentage of the total cumulative sum.",
+        "inputs": [
+          "comma‑separated numbers"
+        ],
+        "output": "Cumulative percentages of each number."
+      }
     ]
   ],
   "ideas_rejected": [
@@ -41,10 +75,50 @@
         "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
         "at": "2026-10-24T14:01:21+00:00"
       }
-    ]
+    ],
+    []
   ],
   "tools_published": [],
-  "tools_failed": [],
+  "tools_failed": [
+    {
+      "slug": "cumulative-percentage-calculator",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-24T20:50:22+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=196"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected '33.33%, 66.67%, 100.00%' not found; actual: '16.67%, 50%, 100%') | case2: PASS | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
   "llm_calls": [
     {
       "time": "2026-10-24T07:18:19+00:00",
@@ -90,10 +164,64 @@
       "completion_tokens": 2000,
       "total_tokens": 8583,
       "est_cost_usd": 0.012583
+    },
+    {
+      "time": "2026-10-24T20:49:23+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-24T20:49:23+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-24T20:49:26+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6583,
+      "completion_tokens": 2000,
+      "total_tokens": 8583,
+      "est_cost_usd": 0.012583
+    },
+    {
+      "time": "2026-10-24T20:50:02+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 470,
+      "completion_tokens": 136,
+      "total_tokens": 606,
+      "est_cost_usd": 0.000878
+    },
+    {
+      "time": "2026-10-24T20:50:07+00:00",
+      "purpose": "code_generation:recipe-ingredient-quantity-adjuster",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 957,
+      "completion_tokens": 2260,
+      "total_tokens": 3217,
+      "est_cost_usd": 0.007737
+    },
+    {
+      "time": "2026-10-24T20:50:17+00:00",
+      "purpose": "code_generation:cumulative-percentage-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 951,
+      "completion_tokens": 2114,
+      "total_tokens": 3065,
+      "est_cost_usd": 0.007293
     }
   ],
   "budget": {
-    "tokens": 8927,
-    "usd": 0.013007
+    "tokens": 24570,
+    "usd": 0.04171
   }
 }
