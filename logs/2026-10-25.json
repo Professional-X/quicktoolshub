@@ -1,0 +1,297 @@
+{
+  "date": "2026-10-25",
+  "runs": [
+    {
+      "started_at": "2026-10-25T07:35:58+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-25T07:36:00+00:00 Step A: proposed 8 ideas",
+        "2026-10-25T07:36:36+00:00 Step B: 8 ideas survived dedup",
+        "2026-10-25T07:36:49+00:00 Step D FAILED image-exif-viewer: test_cases=False",
+        "2026-10-25T07:36:59+00:00 PUBLISHED markdown-heading-outline",
+        "2026-10-25T07:37:43+00:00 PUBLISHED random-username-generator",
+        "2026-10-25T07:37:55+00:00 Step D FAILED css-gradient-generator: test_cases=False",
+        "2026-10-25T07:38:40+00:00 PUBLISHED binary-gray-converter",
+        "2026-10-25T07:38:49+00:00 PUBLISHED text-html-table-converter",
+        "2026-10-25T07:38:49+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
+      ]
+    }
+  ],
+  "ideas_proposed": [
+    [
+      {
+        "title": "Image EXIF Data Viewer",
+        "slug": "image-exif-viewer",
+        "category": "image",
+        "one_line_pitch": "View EXIF metadata of an uploaded image instantly.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "Table of EXIF tags and values."
+      },
+      {
+        "title": "Markdown Heading Outline Generator",
+        "slug": "markdown-heading-outline",
+        "category": "developer",
+        "one_line_pitch": "Generate a hierarchical outline from markdown headings.",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "Ordered list of headings with levels."
+      },
+      {
+        "title": "Random Username Generator",
+        "slug": "random-username-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Create a unique username with optional numbers and symbols.",
+        "inputs": [
+          "length",
+          "include numbers",
+          "include symbols"
+        ],
+        "output": "Random username string."
+      },
+      {
+        "title": "CSS Gradient Generator",
+        "slug": "css-gradient-generator",
+        "category": "developer",
+        "one_line_pitch": "Build CSS gradient code with colors, angle, and type.",
+        "inputs": [
+          "start color",
+          "end color",
+          "angle",
+          "gradient type"
+        ],
+        "output": "CSS gradient string."
+      },
+      {
+        "title": "Binary to Gray Code Converter",
+        "slug": "binary-gray-converter",
+        "category": "math",
+        "one_line_pitch": "Convert binary number to Gray code representation.",
+        "inputs": [
+          "binary string or number"
+        ],
+        "output": "Gray code string."
+      },
+      {
+        "title": "Text to HTML Table Converter",
+        "slug": "text-html-table-converter",
+        "category": "developer",
+        "one_line_pitch": "Turn CSV or TSV text into an HTML table.",
+        "inputs": [
+          "comma/tab separated text"
+        ],
+        "output": "HTML table markup."
+      },
+      {
+        "title": "Unicode Character Inspector",
+        "slug": "unicode-character-inspector",
+        "category": "text",
+        "one_line_pitch": "Show Unicode details for a character or code point.",
+        "inputs": [
+          "character or code point"
+        ],
+        "output": "Name, category, numeric value, script, etc."
+      },
+      {
+        "title": "Time Until Next Event Countdown",
+        "slug": "time-until-next-event",
+        "category": "date-time",
+        "one_line_pitch": "Countdown to a future date-time in real time.",
+        "inputs": [
+          "event date-time",
+          "time zone"
+        ],
+        "output": "Live countdown timer."
+      }
+    ]
+  ],
+  "ideas_rejected": [
+    []
+  ],
+  "tools_published": [],
+  "tools_failed": [
+    {
+      "slug": "image-exif-viewer",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-25T07:36:49+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=201"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (f-image: file inputs are not supported in automated tests; expected 'Make' not found; actual: 'please select an image file.') | case2: FAIL (f-image: file inputs are not supported in automated tests)"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "css-gradient-generator",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-25T07:37:55+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=241"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: PASS | case2: PASS | case3: FAIL (f-angle: fill failed: Locator.fill: Error: Cannot type text into input[type=number]\nCall log:\n  - waiting for locator(\"#f-angle\").first\n    - locator resolved to <input id=\"f-angle\" ; expected 'Error: angle must be a number.' not found; actual: 'please provide an angle for linear gradients.')"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
+  "llm_calls": [
+    {
+      "time": "2026-10-25T07:35:57+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-25T07:35:57+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-25T07:36:00+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6635,
+      "completion_tokens": 1849,
+      "total_tokens": 8484,
+      "est_cost_usd": 0.012182
+    },
+    {
+      "time": "2026-10-25T07:36:36+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 461,
+      "completion_tokens": 106,
+      "total_tokens": 567,
+      "est_cost_usd": 0.000779
+    },
+    {
+      "time": "2026-10-25T07:36:36+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 466,
+      "completion_tokens": 101,
+      "total_tokens": 567,
+      "est_cost_usd": 0.000769
+    },
+    {
+      "time": "2026-10-25T07:36:45+00:00",
+      "purpose": "code_generation:image-exif-viewer",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 948,
+      "completion_tokens": 3838,
+      "total_tokens": 4786,
+      "est_cost_usd": 0.012462
+    },
+    {
+      "time": "2026-10-25T07:36:54+00:00",
+      "purpose": "code_generation:markdown-heading-outline",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 944,
+      "completion_tokens": 2350,
+      "total_tokens": 3294,
+      "est_cost_usd": 0.007994
+    },
+    {
+      "time": "2026-10-25T07:37:39+00:00",
+      "purpose": "code_generation:random-username-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 949,
+      "completion_tokens": 2377,
+      "total_tokens": 3326,
+      "est_cost_usd": 0.00808
+    },
+    {
+      "time": "2026-10-25T07:37:50+00:00",
+      "purpose": "code_generation:css-gradient-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 952,
+      "completion_tokens": 3464,
+      "total_tokens": 4416,
+      "est_cost_usd": 0.011344
+    },
+    {
+      "time": "2026-10-25T07:38:35+00:00",
+      "purpose": "code_generation:binary-gray-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 944,
+      "completion_tokens": 2007,
+      "total_tokens": 2951,
+      "est_cost_usd": 0.006965
+    },
+    {
+      "time": "2026-10-25T07:38:45+00:00",
+      "purpose": "code_generation:text-html-table-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 946,
+      "completion_tokens": 2288,
+      "total_tokens": 3234,
+      "est_cost_usd": 0.00781
+    }
+  ],
+  "budget": {
+    "tokens": 31797,
+    "usd": 0.068597
+  }
+}

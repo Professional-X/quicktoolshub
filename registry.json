@@ -2256,6 +2256,74 @@
         "cookbook tool"
       ],
       "usage_instructions": "Enter the ingredient list (one per line, starting with the amount), the original servings, and the desired servings. Click “Adjust” to see the scaled quantities."
+    },
+    {
+      "slug": "markdown-heading-outline",
+      "title": "Markdown Heading Outline Generator",
+      "category": "developer",
+      "date_published": "2026-10-25",
+      "status": "published",
+      "h1": "Markdown Heading Outline Generator",
+      "seo_description": "Generate a hierarchical outline from your markdown headings instantly. Paste markdown and get a clean ordered list of headings.",
+      "keywords": [
+        "markdown outline",
+        "heading generator",
+        "markdown tool",
+        "outline from markdown",
+        "markdown headings"
+      ],
+      "usage_instructions": "Paste your markdown into the textarea and click “Generate Outline”. The tool will display a nested ordered list of all headings. If no headings are found, a friendly message will appear."
+    },
+    {
+      "slug": "random-username-generator",
+      "title": "Random Username Generator",
+      "category": "random-fun",
+      "date_published": "2026-10-25",
+      "status": "published",
+      "h1": "Random Username Generator",
+      "seo_description": "Generate a random username instantly. Choose length and optional numbers or symbols. No signup needed.",
+      "keywords": [
+        "random username generator",
+        "username generator",
+        "random username",
+        "unique usernames",
+        "online username tool"
+      ],
+      "usage_instructions": "Enter the desired length, tick numbers or symbols if you want them, then click Generate. The result appears below."
+    },
+    {
+      "slug": "binary-gray-converter",
+      "title": "Binary to Gray Code Converter",
+      "category": "math",
+      "date_published": "2026-10-25",
+      "status": "published",
+      "h1": "Binary to Gray Code Converter",
+      "seo_description": "Convert any binary number to its Gray code representation instantly with this free online converter.",
+      "keywords": [
+        "binary to gray code",
+        "gray code converter",
+        "binary conversion",
+        "online gray code tool",
+        "binary gray code"
+      ],
+      "usage_instructions": "Enter a binary number in the field below and click Convert. The Gray code will appear below. Invalid input shows an error message."
+    },
+    {
+      "slug": "text-html-table-converter",
+      "title": "Text to HTML Table Converter",
+      "category": "developer",
+      "date_published": "2026-10-25",
+      "status": "published",
+      "h1": "Text to HTML Table Converter",
+      "seo_description": "Convert comma- or tab-separated text into clean HTML table markup instantly.",
+      "keywords": [
+        "CSV to HTML",
+        "TSV to table",
+        "text to HTML table",
+        "convert CSV",
+        "online table generator"
+      ],
+      "usage_instructions": "Paste your comma‑ or tab‑separated data into the box and click “Convert”. The generated HTML table appears below, ready to copy."
     }
   ]
 }
