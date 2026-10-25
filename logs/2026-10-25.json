@@ -15,6 +15,15 @@
         "2026-10-25T07:38:49+00:00 PUBLISHED text-html-table-converter",
         "2026-10-25T07:38:49+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-25T14:23:36+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-25T14:23:39+00:00 Step A: proposed 4 ideas",
+        "2026-10-25T14:23:39+00:00 Step B: 4 ideas survived dedup",
+        "2026-10-25T14:23:39+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -105,9 +114,52 @@
         ],
         "output": "Live countdown timer."
       }
+    ],
+    [
+      {
+        "title": "Easter Sunday Calculator",
+        "slug": "easter-sunday-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Calculate the date of Easter Sunday for any year instantly.",
+        "inputs": [
+          "Year (e.g., 2025)"
+        ],
+        "output": "The Gregorian date of Easter Sunday (e.g., April 20, 2025)."
+      },
+      {
+        "title": "Birthday Countdown Timer",
+        "slug": "birthday-countdown-timer",
+        "category": "date-time",
+        "one_line_pitch": "Show days, hours, minutes until your next birthday.",
+        "inputs": [
+          "Birth date (YYYY-MM-DD)"
+        ],
+        "output": "Time remaining until next birthday in days, hours, minutes, seconds."
+      },
+      {
+        "title": "HTML Minifier",
+        "slug": "html-minifier",
+        "category": "developer",
+        "one_line_pitch": "Compress HTML code into a single line, removing whitespace and comments.",
+        "inputs": [
+          "HTML code"
+        ],
+        "output": "Minified single-line HTML string."
+      },
+      {
+        "title": "Emoji Counter",
+        "slug": "emoji-counter",
+        "category": "text",
+        "one_line_pitch": "Count how many emojis appear in any given text.",
+        "inputs": [
+          "Text"
+        ],
+        "output": "Total number of emojis and a breakdown per emoji type."
+      }
     ]
   ],
   "ideas_rejected": [
+    [],
     []
   ],
   "tools_published": [],
@@ -288,10 +340,37 @@
       "completion_tokens": 2288,
       "total_tokens": 3234,
       "est_cost_usd": 0.00781
+    },
+    {
+      "time": "2026-10-25T14:23:35+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-25T14:23:36+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-25T14:23:39+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6803,
+      "completion_tokens": 2000,
+      "total_tokens": 8803,
+      "est_cost_usd": 0.012803
     }
   ],
   "budget": {
-    "tokens": 31797,
-    "usd": 0.068597
+    "tokens": 40772,
+    "usd": 0.081612
   }
 }
