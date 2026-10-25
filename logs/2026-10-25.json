@@ -24,6 +24,15 @@
         "2026-10-25T14:23:39+00:00 Step B: 4 ideas survived dedup",
         "2026-10-25T14:23:39+00:00 publish cap reached (4/day); skipping remaining 4 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-25T20:50:52+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-25T20:50:55+00:00 Step A: proposed 8 ideas",
+        "2026-10-25T20:50:55+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-25T20:50:55+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -156,11 +165,105 @@
         ],
         "output": "Total number of emojis and a breakdown per emoji type."
       }
+    ],
+    [
+      {
+        "title": "EXIF Data Viewer",
+        "slug": "exif-data-viewer",
+        "category": "image",
+        "one_line_pitch": "View embedded metadata from image files in the browser.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "JSON object listing EXIF tags and values"
+      },
+      {
+        "title": "Word Ladder Solver",
+        "slug": "word-ladder-solver",
+        "category": "text",
+        "one_line_pitch": "Find the shortest word ladder between two words using a built‑in dictionary.",
+        "inputs": [
+          "start word",
+          "end word",
+          "optional dictionary"
+        ],
+        "output": "Sequence of words forming the ladder or message if none found"
+      },
+      {
+        "title": "Hex to CMYK Converter",
+        "slug": "hex-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Convert any hex color code to its CMYK components instantly.",
+        "inputs": [
+          "hex color code"
+        ],
+        "output": "CMYK values (C, M, Y, K) in percentages"
+      },
+      {
+        "title": "Markdown Emoji Previewer",
+        "slug": "markdown-emoji-previewer",
+        "category": "text",
+        "one_line_pitch": "Render Markdown text with emoji shortcodes into live preview.",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "HTML preview showing rendered emojis"
+      },
+      {
+        "title": "SQL to JSON Schema Converter",
+        "slug": "sql-to-json-schema-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert a SQL CREATE TABLE statement into a JSON Schema representation.",
+        "inputs": [
+          "SQL CREATE TABLE statement"
+        ],
+        "output": "JSON Schema object"
+      },
+      {
+        "title": "Password Reuse Detector",
+        "slug": "password-reuse-detector",
+        "category": "random-fun",
+        "one_line_pitch": "Check if a password appears in a local list of common compromised passwords.",
+        "inputs": [
+          "password"
+        ],
+        "output": "Boolean result and list of matching entries if any"
+      },
+      {
+        "title": "Unicode Block Finder",
+        "slug": "unicode-block-finder",
+        "category": "developer",
+        "one_line_pitch": "Show the Unicode block name and range for a given code point.",
+        "inputs": [
+          "Unicode code point (decimal or hex)"
+        ],
+        "output": "Block name, start and end code points"
+      },
+      {
+        "title": "Cooking Unit Converter",
+        "slug": "cooking-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert between common cooking units (tsp, tbsp, oz, cup, ml, l).",
+        "inputs": [
+          "amount",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted amount"
+      }
     ]
   ],
   "ideas_rejected": [
     [],
-    []
+    [],
+    [
+      {
+        "slug": "hex-to-cmyk-converter",
+        "title": "Hex to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-hsv-converter (similarity 0.83 > 0.8)",
+        "at": "2026-10-25T20:50:55+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -367,10 +470,37 @@
       "completion_tokens": 2000,
       "total_tokens": 8803,
       "est_cost_usd": 0.012803
+    },
+    {
+      "time": "2026-10-25T20:50:52+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-25T20:50:52+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-25T20:50:55+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6803,
+      "completion_tokens": 1505,
+      "total_tokens": 8308,
+      "est_cost_usd": 0.011318
     }
   ],
   "budget": {
-    "tokens": 40772,
-    "usd": 0.081612
+    "tokens": 49252,
+    "usd": 0.093142
   }
 }
