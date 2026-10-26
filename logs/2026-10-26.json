@@ -14,6 +14,13 @@
       "notes": [
         "2026-10-26T16:48:59+00:00 Step A failed: LLM call failed after retry: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kxw94018ff1vfz74v0hkhnke` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 1338, Requested 7197. Please try again in 4.0125s. Need more tokens? Upgrade to Dev Tier today at https://cons"
       ]
+    },
+    {
+      "started_at": "2026-10-26T22:49:02+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-26T22:49:46+00:00 Step A failed: LLM call failed after retry: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kxw94018ff1vfz74v0hkhnke` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 1420, Requested 6813. Please try again in 1.7475s. Need more tokens? Upgrade to Dev Tier today at https://cons"
+      ]
     }
   ],
   "ideas_proposed": [],
@@ -56,10 +63,28 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-26T22:49:02+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-26T22:49:02+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
     }
   ],
   "budget": {
-    "tokens": 344,
-    "usd": 0.000424
+    "tokens": 516,
+    "usd": 0.000636
   }
 }
