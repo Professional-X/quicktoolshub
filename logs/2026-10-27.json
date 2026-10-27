@@ -19,6 +19,19 @@
         "2026-10-27T16:01:30+00:00 PUBLISHED text-to-base32-encoder-decoder",
         "2026-10-27T16:01:43+00:00 Step C rejected text-to-qr-code-generator: missing ---META--- block in LLM output"
       ]
+    },
+    {
+      "started_at": "2026-10-27T22:14:04+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-27T22:14:07+00:00 Step A: proposed 8 ideas",
+        "2026-10-27T22:14:07+00:00 Step B: 5 ideas survived dedup",
+        "2026-10-27T22:14:16+00:00 PUBLISHED base64-to-hex-converter",
+        "2026-10-27T22:14:29+00:00 Step D FAILED image-to-ascii-art: test_cases=False",
+        "2026-10-27T22:14:41+00:00 Step C rejected qr-code-generator: missing ---META--- block in LLM output",
+        "2026-10-27T22:16:05+00:00 Step D FAILED dominant-color-palette-extractor: test_cases=False",
+        "2026-10-27T22:16:50+00:00 Step D FAILED text-to-speech-synthesizer: test_cases=False"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -84,6 +97,89 @@
         ],
         "output": "QR code image (PNG)"
       }
+    ],
+    [
+      {
+        "title": "Base64 to Hex Converter",
+        "slug": "base64-to-hex-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert a Base64 string into a hexadecimal representation instantly.",
+        "inputs": [
+          "Base64 encoded string"
+        ],
+        "output": "Hexadecimal string"
+      },
+      {
+        "title": "CSV to XML Converter",
+        "slug": "csv-to-xml-converter",
+        "category": "developer",
+        "one_line_pitch": "Paste CSV data to receive a clean XML representation without a server.",
+        "inputs": [
+          "CSV text"
+        ],
+        "output": "XML formatted string"
+      },
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex-converter",
+        "category": "developer",
+        "one_line_pitch": "Transform Markdown content into LaTeX code for academic documents.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "LaTeX code"
+      },
+      {
+        "title": "Image to ASCII Art",
+        "slug": "image-to-ascii-art",
+        "category": "image",
+        "one_line_pitch": "Generate an ASCII art representation of any uploaded image in your browser.",
+        "inputs": [
+          "Image file or image URL"
+        ],
+        "output": "ASCII art text"
+      },
+      {
+        "title": "QR Code Generator",
+        "slug": "qr-code-generator",
+        "category": "random-fun",
+        "one_line_pitch": "Create a scannable QR code from any text instantly, no server needed.",
+        "inputs": [
+          "Text string"
+        ],
+        "output": "QR code image (canvas)"
+      },
+      {
+        "title": "Dominant Color Palette Extractor",
+        "slug": "dominant-color-palette-extractor",
+        "category": "image",
+        "one_line_pitch": "Extract the most common colors from an image and display them as hex swatches.",
+        "inputs": [
+          "Image file or image URL"
+        ],
+        "output": "List of top N hex color codes with swatches"
+      },
+      {
+        "title": "Text to Speech Synthesizer",
+        "slug": "text-to-speech-synthesizer",
+        "category": "text",
+        "one_line_pitch": "Hear any typed text spoken aloud using the browser’s SpeechSynthesis API.",
+        "inputs": [
+          "Text string",
+          "Voice options (optional)"
+        ],
+        "output": "Audio playback in the browser"
+      },
+      {
+        "title": "Base58 to Base64 Converter",
+        "slug": "base58-to-base64-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert a Base58 encoded string into a Base64 representation instantly.",
+        "inputs": [
+          "Base58 encoded string"
+        ],
+        "output": "Base64 string"
+      }
     ]
   ],
   "ideas_rejected": [
@@ -99,6 +195,26 @@
         "title": "Markdown to LaTeX Converter",
         "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
         "at": "2026-10-27T16:00:54+00:00"
+      }
+    ],
+    [
+      {
+        "slug": "csv-to-xml-converter",
+        "title": "CSV to XML Converter",
+        "reason": "rejected: duplicate of csv-to-json-converter (similarity 0.83 > 0.8)",
+        "at": "2026-10-27T22:14:07+00:00"
+      },
+      {
+        "slug": "markdown-to-latex-converter",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-10-27T22:14:07+00:00"
+      },
+      {
+        "slug": "base58-to-base64-converter",
+        "title": "Base58 to Base64 Converter",
+        "reason": "rejected: duplicate of base58-to-base10-converter (similarity 0.89 > 0.8)",
+        "at": "2026-10-27T22:14:07+00:00"
       }
     ]
   ],
@@ -147,6 +263,126 @@
       "stage": "generate",
       "reason": "missing ---META--- block in LLM output",
       "at": "2026-10-27T16:01:43+00:00"
+    },
+    {
+      "slug": "image-to-ascii-art",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-27T22:14:29+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=174"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected '@' not found; actual: 'error loading image.') | case2: PASS | case3: FAIL (js errors: [\"console: Access to image at 'file:///home/runner/work/quicktoolshub/quicktoolshub/.testtmp/invalid-url' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.\"])"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "qr-code-generator",
+      "stage": "generate",
+      "reason": "missing ---META--- block in LLM output",
+      "at": "2026-10-27T22:14:41+00:00"
+    },
+    {
+      "slug": "dominant-color-palette-extractor",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-27T22:16:05+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=195"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected '#FF0000' not found; actual: 'unable to load image from url (possible cors issue).') | case2: FAIL (expected 'Error:' not found; actual: 'unable to load image from url (possible cors issue).'; js errors: [\"console: Access to image at 'file:///home/runner/work/quicktoolshub/quicktoolshub/.testtmp/not-a-url' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.\"]) | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "text-to-speech-synthesizer",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-27T22:16:50+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=213"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected 'Speaking...' not found; actual: 'error: speech failed.'; js errors: ['console: SpeechSynthesisErrorEvent']) | case2: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
     }
   ],
   "llm_calls": [
@@ -248,10 +484,82 @@
       "completion_tokens": 6000,
       "total_tokens": 6944,
       "est_cost_usd": 0.018944
+    },
+    {
+      "time": "2026-10-27T22:14:04+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-27T22:14:04+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-27T22:14:07+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6903,
+      "completion_tokens": 1763,
+      "total_tokens": 8666,
+      "est_cost_usd": 0.012192
+    },
+    {
+      "time": "2026-10-27T22:14:12+00:00",
+      "purpose": "code_generation:base64-to-hex-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 947,
+      "completion_tokens": 2252,
+      "total_tokens": 3199,
+      "est_cost_usd": 0.007703
+    },
+    {
+      "time": "2026-10-27T22:14:23+00:00",
+      "purpose": "code_generation:image-to-ascii-art",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 949,
+      "completion_tokens": 3307,
+      "total_tokens": 4256,
+      "est_cost_usd": 0.01087
+    },
+    {
+      "time": "2026-10-27T22:14:41+00:00",
+      "purpose": "code_generation:qr-code-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 952,
+      "completion_tokens": 6000,
+      "total_tokens": 6952,
+      "est_cost_usd": 0.018952
+    },
+    {
+      "time": "2026-10-27T22:16:00+00:00",
+      "purpose": "code_generation:dominant-color-palette-extractor",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 961,
+      "completion_tokens": 4080,
+      "total_tokens": 5041,
+      "est_cost_usd": 0.013201
+    },
+    {
+      "time": "2026-10-27T22:16:46+00:00",
+      "purpose": "code_generation:text-to-speech-synthesizer",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 957,
+      "completion_tokens": 2530,
+      "total_tokens": 3487,
+      "est_cost_usd": 0.008547
     }
   ],
   "budget": {
-    "tokens": 27914,
-    "usd": 0.060014
+    "tokens": 59687,
+    "usd": 0.131691
   }
 }

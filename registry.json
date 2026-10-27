@@ -2358,6 +2358,23 @@
         "encode Base32"
       ],
       "usage_instructions": "Enter plain text or a Base32 string, choose Encode or Decode, then click the button. The result appears below. Invalid or empty input shows a friendly error."
+    },
+    {
+      "slug": "base64-to-hex-converter",
+      "title": "Base64 to Hex Converter",
+      "category": "developer",
+      "date_published": "2026-10-27",
+      "status": "published",
+      "h1": "Base64 to Hex Converter",
+      "seo_description": "Convert any Base64 string to its hexadecimal representation instantly with this free online tool.",
+      "keywords": [
+        "Base64 to hex",
+        "Base64 converter",
+        "hexadecimal conversion",
+        "online Base64 tool",
+        "decode Base64"
+      ],
+      "usage_instructions": "Paste a Base64 string into the input field and click the Convert button to get its hexadecimal representation."
     }
   ]
 }
