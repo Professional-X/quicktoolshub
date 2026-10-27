@@ -7,12 +7,148 @@
       "notes": [
         "2026-10-27T07:53:44+00:00 Step A failed: LLM call failed after retry: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kxw94018ff1vfz74v0hkhnke` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 1210, Requested 7059. Please try again in 2.0175s. Need more tokens? Upgrade to Dev Tier today at https://cons"
       ]
+    },
+    {
+      "started_at": "2026-10-27T16:00:14+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-27T16:00:17+00:00 Step A: proposed 6 ideas",
+        "2026-10-27T16:00:54+00:00 Step B: 4 ideas survived dedup",
+        "2026-10-27T16:01:08+00:00 PUBLISHED credit-card-expiry-checker",
+        "2026-10-27T16:01:20+00:00 Step D FAILED next-workday-calculator: test_cases=False",
+        "2026-10-27T16:01:30+00:00 PUBLISHED text-to-base32-encoder-decoder",
+        "2026-10-27T16:01:43+00:00 Step C rejected text-to-qr-code-generator: missing ---META--- block in LLM output"
+      ]
     }
   ],
-  "ideas_proposed": [],
-  "ideas_rejected": [],
+  "ideas_proposed": [
+    [
+      {
+        "title": "Hex to CMYK Converter",
+        "slug": "hex-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Convert hex color codes to CMYK values instantly",
+        "inputs": [
+          "hex color code"
+        ],
+        "output": "CMYK percentages (C, M, Y, K)"
+      },
+      {
+        "title": "Credit Card Expiry Checker",
+        "slug": "credit-card-expiry-checker",
+        "category": "finance",
+        "one_line_pitch": "Check whether a credit card has expired based on its expiry date",
+        "inputs": [
+          "card number",
+          "expiry month/year"
+        ],
+        "output": "Validity status (Valid / Expired)"
+      },
+      {
+        "title": "Next Workday Calculator",
+        "slug": "next-workday-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Find the next business day after a given date",
+        "inputs": [
+          "starting date (YYYY-MM-DD)"
+        ],
+        "output": "Next workday date (YYYY-MM-DD)"
+      },
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert Markdown text into clean LaTeX code",
+        "inputs": [
+          "markdown text"
+        ],
+        "output": "LaTeX source"
+      },
+      {
+        "title": "Text to Base32 Encoder/Decoder",
+        "slug": "text-to-base32-encoder-decoder",
+        "category": "text",
+        "one_line_pitch": "Encode or decode text using Base32",
+        "inputs": [
+          "text or Base32 string"
+        ],
+        "output": "Base32 encoded/decoded string"
+      },
+      {
+        "title": "Text to QR Code Generator",
+        "slug": "text-to-qr-code-generator",
+        "category": "text",
+        "one_line_pitch": "Generate a QR code image from any text",
+        "inputs": [
+          "text"
+        ],
+        "output": "QR code image (PNG)"
+      }
+    ]
+  ],
+  "ideas_rejected": [
+    [
+      {
+        "slug": "hex-to-cmyk-converter",
+        "title": "Hex to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-hsv-converter (similarity 0.83 > 0.8)",
+        "at": "2026-10-27T16:00:17+00:00"
+      },
+      {
+        "slug": "markdown-to-latex-converter",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-10-27T16:00:54+00:00"
+      }
+    ]
+  ],
   "tools_published": [],
-  "tools_failed": [],
+  "tools_failed": [
+    {
+      "slug": "next-workday-calculator",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-27T16:01:20+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=154"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: PASS | case2: PASS | case3: PASS | case4: FAIL (f-start-date: fill failed: Locator.fill: Error: Malformed value\nCall log:\n  - waiting for locator(\"#f-start-date\").first\n    - locator resolved to <input type=\"date\" id=\"f-start-date\" ari; expected 'Invalid date' not found; actual: 'error: please enter a date.')"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    },
+    {
+      "slug": "text-to-qr-code-generator",
+      "stage": "generate",
+      "reason": "missing ---META--- block in LLM output",
+      "at": "2026-10-27T16:01:43+00:00"
+    }
+  ],
   "llm_calls": [
     {
       "time": "2026-10-27T07:53:00+00:00",
@@ -31,10 +167,91 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-27T16:00:14+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-27T16:00:14+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-27T16:00:17+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 6803,
+      "completion_tokens": 2000,
+      "total_tokens": 8803,
+      "est_cost_usd": 0.012803
+    },
+    {
+      "time": "2026-10-27T16:00:53+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 482,
+      "completion_tokens": 153,
+      "total_tokens": 635,
+      "est_cost_usd": 0.000941
+    },
+    {
+      "time": "2026-10-27T16:00:54+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 472,
+      "completion_tokens": 110,
+      "total_tokens": 582,
+      "est_cost_usd": 0.000802
+    },
+    {
+      "time": "2026-10-27T16:01:00+00:00",
+      "purpose": "code_generation:credit-card-expiry-checker",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 956,
+      "completion_tokens": 2898,
+      "total_tokens": 3854,
+      "est_cost_usd": 0.00965
+    },
+    {
+      "time": "2026-10-27T16:01:14+00:00",
+      "purpose": "code_generation:next-workday-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 953,
+      "completion_tokens": 2669,
+      "total_tokens": 3622,
+      "est_cost_usd": 0.00896
+    },
+    {
+      "time": "2026-10-27T16:01:25+00:00",
+      "purpose": "code_generation:text-to-base32-encoder-decoder",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 950,
+      "completion_tokens": 2180,
+      "total_tokens": 3130,
+      "est_cost_usd": 0.00749
+    },
+    {
+      "time": "2026-10-27T16:01:43+00:00",
+      "purpose": "code_generation:text-to-qr-code-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 944,
+      "completion_tokens": 6000,
+      "total_tokens": 6944,
+      "est_cost_usd": 0.018944
     }
   ],
   "budget": {
-    "tokens": 172,
-    "usd": 0.000212
+    "tokens": 27914,
+    "usd": 0.060014
   }
 }

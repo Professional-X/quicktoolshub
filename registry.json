@@ -2324,6 +2324,40 @@
         "online table generator"
       ],
       "usage_instructions": "Paste your comma‑ or tab‑separated data into the box and click “Convert”. The generated HTML table appears below, ready to copy."
+    },
+    {
+      "slug": "credit-card-expiry-checker",
+      "title": "Credit Card Expiry Checker",
+      "category": "finance",
+      "date_published": "2026-10-27",
+      "status": "published",
+      "h1": "Credit Card Expiry Checker",
+      "seo_description": "Quickly check if your credit card has expired by entering the number and expiry date. Instant results, no sign‑up required.",
+      "keywords": [
+        "credit card expiry",
+        "card expiration check",
+        "validate credit card date",
+        "expiry calculator",
+        "financial tools"
+      ],
+      "usage_instructions": "Enter your credit card number and its expiry month and year. Click “Check Expiry” to see if the card is still valid."
+    },
+    {
+      "slug": "text-to-base32-encoder-decoder",
+      "title": "Text to Base32 Encoder/Decoder",
+      "category": "text",
+      "date_published": "2026-10-27",
+      "status": "published",
+      "h1": "Text to Base32 Encoder/Decoder",
+      "seo_description": "Encode text to Base32 or decode Base32 strings instantly. Simple, free online tool works on any device.",
+      "keywords": [
+        "Base32 encoder",
+        "Base32 decoder",
+        "text to Base32",
+        "online Base32 tool",
+        "encode Base32"
+      ],
+      "usage_instructions": "Enter plain text or a Base32 string, choose Encode or Decode, then click the button. The result appears below. Invalid or empty input shows a friendly error."
     }
   ]
 }
