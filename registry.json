@@ -2375,6 +2375,73 @@
         "decode Base64"
       ],
       "usage_instructions": "Paste a Base64 string into the input field and click the Convert button to get its hexadecimal representation."
+    },
+    {
+      "slug": "markdown-link-extractor",
+      "title": "Markdown Link Extractor",
+      "category": "developer",
+      "date_published": "2026-10-28",
+      "status": "published",
+      "h1": "Markdown Link Extractor",
+      "seo_description": "Paste markdown text and instantly extract all URLs. Quick, free, no ads.",
+      "keywords": [
+        "markdown link extractor",
+        "extract urls from markdown",
+        "markdown url tool",
+        "online markdown parser"
+      ],
+      "usage_instructions": "Paste your markdown into the box below and click “Extract URLs”. The list of links will appear below. If no URLs are found, a friendly message will be shown."
+    },
+    {
+      "slug": "plain-text-to-csv-converter",
+      "title": "Plain Text to CSV Converter",
+      "category": "developer",
+      "date_published": "2026-10-28",
+      "status": "published",
+      "h1": "Plain Text to CSV Converter",
+      "seo_description": "Convert any delimited plain text into properly quoted CSV format instantly. Paste text, set delimiter, and get CSV ready to copy.",
+      "keywords": [
+        "plain text to csv",
+        "csv converter",
+        "delimited text to csv",
+        "online csv tool",
+        "text to csv conversion"
+      ],
+      "usage_instructions": "Paste your delimited text, specify the delimiter (e.g., comma, tab, space), and click Convert. The CSV output will appear below, ready to copy."
+    },
+    {
+      "slug": "email-address-obfuscator",
+      "title": "Email Address Obfuscator",
+      "category": "developer",
+      "date_published": "2026-10-28",
+      "status": "published",
+      "h1": "Email Address Obfuscator",
+      "seo_description": "Obfuscate email addresses instantly to protect them from bots while keeping them clickable. Simple, free tool.",
+      "keywords": [
+        "email obfuscator",
+        "hide email from bots",
+        "mailto link generator",
+        "email protection tool",
+        "obfuscate email address"
+      ],
+      "usage_instructions": "Enter an email address below and click “Obfuscate”. The tool will show a bot‑friendly version and a clickable mailto link. Invalid emails will display an error."
+    },
+    {
+      "slug": "word-difficulty-rating",
+      "title": "Word Difficulty Rating",
+      "category": "text",
+      "date_published": "2026-10-28",
+      "status": "published",
+      "h1": "Word Difficulty Rating",
+      "seo_description": "Enter any paragraph and instantly get its Flesch Reading Ease score and suggested grade level. Quick, free, and easy to use.",
+      "keywords": [
+        "Flesch reading ease",
+        "text difficulty calculator",
+        "grade level estimator",
+        "readability score",
+        "paragraph analysis"
+      ],
+      "usage_instructions": "Paste a paragraph into the box and click “Calculate”. The result shows the Flesch Reading Ease score and an approximate U.S. grade level."
     }
   ]
 }
