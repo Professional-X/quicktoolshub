@@ -14,6 +14,15 @@
         "2026-10-28T08:35:44+00:00 PUBLISHED word-difficulty-rating",
         "2026-10-28T08:35:44+00:00 publish cap reached (4/day); skipping remaining 2 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-28T16:38:33+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-28T16:38:37+00:00 Step A: proposed 3 ideas",
+        "2026-10-28T16:38:37+00:00 Step B: 1 ideas survived dedup",
+        "2026-10-28T16:38:37+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -95,10 +104,61 @@
         ],
         "output": "CSS gradient string (linear-gradient)"
       }
+    ],
+    [
+      {
+        "title": "Compound Interest Calculator",
+        "slug": "compound-interest-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate future value with compounding interest.",
+        "inputs": [
+          "Principal amount",
+          "Annual interest rate (%)",
+          "Compounding periods per year",
+          "Number of years"
+        ],
+        "output": "Future value of the investment."
+      },
+      {
+        "title": "Recipe Unit Converter",
+        "slug": "recipe-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert cooking measurements between metric and US units.",
+        "inputs": [
+          "Quantity",
+          "From unit",
+          "To unit"
+        ],
+        "output": "Converted amount."
+      },
+      {
+        "title": "File Name Sanitizer",
+        "slug": "file-name-sanitizer",
+        "category": "developer",
+        "one_line_pitch": "Remove illegal characters from file names for safe saving.",
+        "inputs": [
+          "Original file name"
+        ],
+        "output": "Sanitized file name."
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "reason": "rejected: duplicate of simple-interest-calculator (similarity 0.81 > 0.8)",
+        "at": "2026-10-28T16:38:37+00:00"
+      },
+      {
+        "slug": "recipe-unit-converter",
+        "title": "Recipe Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.85 > 0.8)",
+        "at": "2026-10-28T16:38:37+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -231,10 +291,37 @@
       "completion_tokens": 2198,
       "total_tokens": 3145,
       "est_cost_usd": 0.007541
+    },
+    {
+      "time": "2026-10-28T16:38:33+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-28T16:38:33+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-28T16:38:37+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 7131,
+      "completion_tokens": 2000,
+      "total_tokens": 9131,
+      "est_cost_usd": 0.013131
     }
   ],
   "budget": {
-    "tokens": 27165,
-    "usd": 0.055889
+    "tokens": 36468,
+    "usd": 0.069232
   }
 }
