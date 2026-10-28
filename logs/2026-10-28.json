@@ -23,6 +23,13 @@
         "2026-10-28T16:38:37+00:00 Step B: 1 ideas survived dedup",
         "2026-10-28T16:38:37+00:00 publish cap reached (4/day); skipping remaining 1 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-28T22:35:14+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-28T22:35:58+00:00 Step A failed: LLM call failed after retry: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kxw94018ff1vfz74v0hkhnke` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2016, Requested 7141. Please try again in 8.6775s. Need more tokens? Upgrade to Dev Tier today at https://cons"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -318,10 +325,28 @@
       "completion_tokens": 2000,
       "total_tokens": 9131,
       "est_cost_usd": 0.013131
+    },
+    {
+      "time": "2026-10-28T22:35:13+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-28T22:35:14+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
     }
   ],
   "budget": {
-    "tokens": 36468,
-    "usd": 0.069232
+    "tokens": 36640,
+    "usd": 0.069444
   }
 }
