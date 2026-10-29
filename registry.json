@@ -2442,6 +2442,73 @@
         "paragraph analysis"
       ],
       "usage_instructions": "Paste a paragraph into the box and click “Calculate”. The result shows the Flesch Reading Ease score and an approximate U.S. grade level."
+    },
+    {
+      "slug": "svg-path-length-calculator",
+      "title": "SVG Path Length Calculator",
+      "category": "developer",
+      "date_published": "2026-10-29",
+      "status": "published",
+      "h1": "SVG Path Length Calculator",
+      "seo_description": "Enter any SVG path data and instantly get its total length in pixels, inches, or centimeters, plus the number of commands.",
+      "keywords": [
+        "svg path length",
+        "path length calculator",
+        "svg path tool",
+        "measure svg path",
+        "svg length"
+      ],
+      "usage_instructions": "Enter an SVG path data string, choose the output unit, and click Calculate. The result shows the total length and the number of path commands."
+    },
+    {
+      "slug": "imperial-metric-volume-converter",
+      "title": "Imperial‑to‑Metric Volume Converter",
+      "category": "unit-conversion",
+      "date_published": "2026-10-29",
+      "status": "published",
+      "h1": "Imperial‑to‑Metric Volume Converter",
+      "seo_description": "Convert volumes between US customary, Imperial, and metric units instantly. Enter a value, choose units, and get the result rounded to two decimals.",
+      "keywords": [
+        "volume converter",
+        "imperial to metric",
+        "unit conversion",
+        "volume conversion",
+        "metric volume calculator"
+      ],
+      "usage_instructions": "Enter a volume, select the unit you have and the unit you want, then click Convert. The result appears below, rounded to two decimal places."
+    },
+    {
+      "slug": "base12-converter",
+      "title": "Base‑12 Number Converter",
+      "category": "math",
+      "date_published": "2026-10-29",
+      "status": "published",
+      "h1": "Base‑12 Number Converter",
+      "seo_description": "Quickly convert numbers between decimal, base‑12 (duodecimal) and other bases. Simple online tool for accurate conversions.",
+      "keywords": [
+        "base 12 converter",
+        "duodecimal converter",
+        "decimal to base 12",
+        "number base conversion"
+      ],
+      "usage_instructions": "Enter the number, choose its current base and the base you want to convert to, then press Convert. The result appears below; any errors are shown inline."
+    },
+    {
+      "slug": "hex-color-brightness-calculator",
+      "title": "Hex Color Brightness Calculator",
+      "category": "image",
+      "date_published": "2026-10-29",
+      "status": "published",
+      "h1": "Hex Color Brightness Calculator",
+      "seo_description": "Enter any hex code to instantly see its RGB values and perceived brightness (0‑255). Fast, free, no ads.",
+      "keywords": [
+        "hex color brightness",
+        "hex to rgb",
+        "color luminance calculator",
+        "perceived brightness",
+        "hex color tool"
+      ],
+      "usage_instructions": "Enter a hex color code (e.g., #ff8800 or ff8800). The tool shows the RGB components and the perceived brightness (0‑255)."
     }
   ]
 }
