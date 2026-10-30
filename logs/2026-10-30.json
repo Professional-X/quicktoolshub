@@ -7,12 +7,159 @@
       "notes": [
         "2026-10-30T08:39:53+00:00 Step A failed: LLM call failed after retry: 413 Client Error: Payload Too Large for url: https://api.groq.com/openai/v1/chat/completions"
       ]
+    },
+    {
+      "started_at": "2026-10-30T16:42:27+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-30T16:42:29+00:00 Step A: proposed 8 ideas",
+        "2026-10-30T16:43:06+00:00 Step B: 8 ideas survived dedup",
+        "2026-10-30T16:43:16+00:00 PUBLISHED collatz-sequence-length",
+        "2026-10-30T16:43:32+00:00 Step D FAILED timezone-dst-checker: test_cases=False",
+        "2026-10-30T16:43:41+00:00 PUBLISHED sentence-readability-visualizer",
+        "2026-10-30T16:43:51+00:00 PUBLISHED nutrition-macro-calculator",
+        "2026-10-30T16:44:34+00:00 PUBLISHED file-size-compression-estimator",
+        "2026-10-30T16:44:34+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
+      ]
     }
   ],
-  "ideas_proposed": [],
-  "ideas_rejected": [],
+  "ideas_proposed": [
+    [
+      {
+        "title": "Collatz Sequence Length Calculator",
+        "slug": "collatz-sequence-length",
+        "category": "math",
+        "one_line_pitch": "Compute the length of the Collatz sequence for a given integer.",
+        "inputs": [
+          "integer n"
+        ],
+        "output": "Sequence length and optional full sequence"
+      },
+      {
+        "title": "Time Zone DST Checker",
+        "slug": "timezone-dst-checker",
+        "category": "date-time",
+        "one_line_pitch": "Determine if a specific date/time is in Daylight Saving Time for a chosen zone.",
+        "inputs": [
+          "date/time string",
+          "time zone ID"
+        ],
+        "output": "DST status and next transition dates"
+      },
+      {
+        "title": "Sentence Readability Visualizer",
+        "slug": "sentence-readability-visualizer",
+        "category": "text",
+        "one_line_pitch": "Show each sentence’s readability level with color coding in a paragraph.",
+        "inputs": [
+          "paragraph text"
+        ],
+        "output": "List of sentences with readability grade and color tags"
+      },
+      {
+        "title": "Nutrition Macro Calculator",
+        "slug": "nutrition-macro-calculator",
+        "category": "health",
+        "one_line_pitch": "Calculate grams of protein, fat, and carbs from total calories and macro percentages.",
+        "inputs": [
+          "total calories",
+          "protein %",
+          "fat %",
+          "carb %"
+        ],
+        "output": "grams of protein, fat, and carbs"
+      },
+      {
+        "title": "File Size Compression Estimator",
+        "slug": "file-size-compression-estimator",
+        "category": "unit-conversion",
+        "one_line_pitch": "Estimate compressed file size using common algorithms like Gzip or Brotli.",
+        "inputs": [
+          "original size in bytes",
+          "compression algorithm"
+        ],
+        "output": "estimated compressed size in bytes and compression ratio"
+      },
+      {
+        "title": "Email Header Spam Keyword Highlighter",
+        "slug": "email-header-spam-highlighter",
+        "category": "developer",
+        "one_line_pitch": "Identify and highlight spam‑related keywords in raw email headers.",
+        "inputs": [
+          "raw email header string"
+        ],
+        "output": "highlighted header with spam keyword list"
+      },
+      {
+        "title": "Coin Toss Probability Visualizer",
+        "slug": "coin-toss-probability-visualizer",
+        "category": "random-fun",
+        "one_line_pitch": "Show probability distribution of heads/tails for multiple coin tosses.",
+        "inputs": [
+          "number of tosses",
+          "probability of heads (optional)"
+        ],
+        "output": "probability chart and expected counts"
+      },
+      {
+        "title": "Interest Comparator",
+        "slug": "interest-comparator",
+        "category": "finance",
+        "one_line_pitch": "Compare total returns of simple vs. compound interest over a period.",
+        "inputs": [
+          "principal",
+          "annual rate",
+          "years",
+          "compound frequency"
+        ],
+        "output": "total amount for simple and compound interest, difference"
+      }
+    ]
+  ],
+  "ideas_rejected": [
+    []
+  ],
   "tools_published": [],
-  "tools_failed": [],
+  "tools_failed": [
+    {
+      "slug": "timezone-dst-checker",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-10-30T16:43:32+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=232"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: PASS | case2: FAIL (expected 'DST: No' not found; actual: 'dst: yes. next transition: mar 26, 2023, 00:56:15.') | case3: PASS | case4: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
   "llm_calls": [
     {
       "time": "2026-10-30T08:39:43+00:00",
@@ -31,10 +178,100 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-30T16:42:27+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-30T16:42:27+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-30T16:42:29+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 7341,
+      "completion_tokens": 1266,
+      "total_tokens": 8607,
+      "est_cost_usd": 0.011139
+    },
+    {
+      "time": "2026-10-30T16:43:05+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 473,
+      "completion_tokens": 96,
+      "total_tokens": 569,
+      "est_cost_usd": 0.000761
+    },
+    {
+      "time": "2026-10-30T16:43:06+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 478,
+      "completion_tokens": 122,
+      "total_tokens": 600,
+      "est_cost_usd": 0.000844
+    },
+    {
+      "time": "2026-10-30T16:43:11+00:00",
+      "purpose": "code_generation:collatz-sequence-length",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 950,
+      "completion_tokens": 2198,
+      "total_tokens": 3148,
+      "est_cost_usd": 0.007544
+    },
+    {
+      "time": "2026-10-30T16:43:25+00:00",
+      "purpose": "code_generation:timezone-dst-checker",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 959,
+      "completion_tokens": 4063,
+      "total_tokens": 5022,
+      "est_cost_usd": 0.013148
+    },
+    {
+      "time": "2026-10-30T16:43:37+00:00",
+      "purpose": "code_generation:sentence-readability-visualizer",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 953,
+      "completion_tokens": 2241,
+      "total_tokens": 3194,
+      "est_cost_usd": 0.007676
+    },
+    {
+      "time": "2026-10-30T16:43:46+00:00",
+      "purpose": "code_generation:nutrition-macro-calculator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 959,
+      "completion_tokens": 2420,
+      "total_tokens": 3379,
+      "est_cost_usd": 0.008219
+    },
+    {
+      "time": "2026-10-30T16:44:31+00:00",
+      "purpose": "code_generation:file-size-compression-estimator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 960,
+      "completion_tokens": 1866,
+      "total_tokens": 2826,
+      "est_cost_usd": 0.006558
     }
   ],
   "budget": {
-    "tokens": 172,
-    "usd": 0.000212
+    "tokens": 27689,
+    "usd": 0.056313
   }
 }

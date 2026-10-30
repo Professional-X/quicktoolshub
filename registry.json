@@ -2509,6 +2509,73 @@
         "hex color tool"
       ],
       "usage_instructions": "Enter a hex color code (e.g., #ff8800 or ff8800). The tool shows the RGB components and the perceived brightness (0‑255)."
+    },
+    {
+      "slug": "collatz-sequence-length",
+      "title": "Collatz Sequence Length Calculator",
+      "category": "math",
+      "date_published": "2026-10-30",
+      "status": "published",
+      "h1": "Collatz Sequence Length Calculator",
+      "seo_description": "Enter a positive integer to calculate the Collatz sequence length and view the full sequence instantly.",
+      "keywords": [
+        "Collatz sequence",
+        "sequence length",
+        "Collatz calculator",
+        "math tool",
+        "integer sequence"
+      ],
+      "usage_instructions": "Enter a positive integer in the field below and click “Calculate”. Optionally check “Show full sequence” to see each step. Results appear below."
+    },
+    {
+      "slug": "sentence-readability-visualizer",
+      "title": "Sentence Readability Visualizer",
+      "category": "text",
+      "date_published": "2026-10-30",
+      "status": "published",
+      "h1": "Sentence Readability Visualizer",
+      "seo_description": "Enter a paragraph and instantly see each sentence's readability grade with color coding. Quick, free, and easy to use.",
+      "keywords": [
+        "readability calculator",
+        "sentence grade",
+        "text analysis",
+        "Flesch Kincaid",
+        "readability tool"
+      ],
+      "usage_instructions": "Paste a paragraph into the box and click “Analyze”. Each sentence will appear with its reading‑grade level, colour‑coded from easy (green) to hard (red)."
+    },
+    {
+      "slug": "nutrition-macro-calculator",
+      "title": "Nutrition Macro Calculator",
+      "category": "health",
+      "date_published": "2026-10-30",
+      "status": "published",
+      "h1": "Nutrition Macro Calculator",
+      "seo_description": "Enter total calories and macro percentages to instantly calculate grams of protein, fat, and carbs. Simple, free tool.",
+      "keywords": [
+        "macro calculator",
+        "nutrition calculator",
+        "protein fat carb grams",
+        "calorie macro split"
+      ],
+      "usage_instructions": "Enter your total calories and the desired percentages for protein, fat, and carbs, then click Calculate. The tool will show the gram amounts for each macro."
+    },
+    {
+      "slug": "file-size-compression-estimator",
+      "title": "File Size Compression Estimator",
+      "category": "unit-conversion",
+      "date_published": "2026-10-30",
+      "status": "published",
+      "h1": "File Size Compression Estimator",
+      "seo_description": "Estimate compressed file size for Gzip, Brotli, Deflate, and LZMA instantly. Enter original bytes and get size and compression ratio.",
+      "keywords": [
+        "file size compression",
+        "gzip size estimator",
+        "brotli compression calculator",
+        "estimate compressed size",
+        "compression ratio"
+      ],
+      "usage_instructions": "Enter the original file size in bytes, select a compression algorithm, and click “Estimate”. The tool shows the estimated compressed size and compression ratio."
     }
   ]
 }
