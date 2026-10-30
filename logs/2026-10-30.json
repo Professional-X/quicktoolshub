@@ -21,6 +21,15 @@
         "2026-10-30T16:44:34+00:00 PUBLISHED file-size-compression-estimator",
         "2026-10-30T16:44:34+00:00 publish cap reached (4/day); skipping remaining 3 candidate(s)"
       ]
+    },
+    {
+      "started_at": "2026-10-30T22:19:28+00:00",
+      "status": "running",
+      "notes": [
+        "2026-10-30T22:19:31+00:00 Step A: proposed 8 ideas",
+        "2026-10-30T22:19:31+00:00 Step B: 7 ideas survived dedup",
+        "2026-10-30T22:19:31+00:00 publish cap reached (4/day); skipping remaining 7 candidate(s)"
+      ]
     }
   ],
   "ideas_proposed": [
@@ -114,10 +123,110 @@
         ],
         "output": "total amount for simple and compound interest, difference"
       }
+    ],
+    [
+      {
+        "title": "Citation Style Formatter",
+        "slug": "citation-style-formatter",
+        "category": "text",
+        "one_line_pitch": "Format plain text references into APA style instantly.",
+        "inputs": [
+          "reference text"
+        ],
+        "output": "APA formatted reference string"
+      },
+      {
+        "title": "Polynomial GCD Calculator",
+        "slug": "polynomial-gcd-calculator",
+        "category": "math",
+        "one_line_pitch": "Compute the greatest common divisor of two polynomials.",
+        "inputs": [
+          "polynomial A",
+          "polynomial B"
+        ],
+        "output": "GCD polynomial in readable form"
+      },
+      {
+        "title": "Moon Phase Calculator",
+        "slug": "moon-phase-calculator",
+        "category": "date-time",
+        "one_line_pitch": "Determine current moon phase for any date and location.",
+        "inputs": [
+          "date",
+          "latitude",
+          "longitude"
+        ],
+        "output": "Moon phase name and age"
+      },
+      {
+        "title": "Color Palette Extractor",
+        "slug": "color-palette-extractor",
+        "category": "image",
+        "one_line_pitch": "Extract dominant colors from an uploaded image.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "List of hex colors with percentages"
+      },
+      {
+        "title": "Regex Tester with Live Output",
+        "slug": "regex-tester-live-output",
+        "category": "developer",
+        "one_line_pitch": "Test regular expressions against sample text and view matches.",
+        "inputs": [
+          "regex pattern",
+          "test string"
+        ],
+        "output": "Match results and captured groups"
+      },
+      {
+        "title": "Pressure Unit Converter",
+        "slug": "pressure-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert pressure between Pa, atm, psi, bar, and torr.",
+        "inputs": [
+          "value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted pressure value"
+      },
+      {
+        "title": "Capital Gains Tax Calculator",
+        "slug": "capital-gains-tax-calculator",
+        "category": "finance",
+        "one_line_pitch": "Calculate tax owed on capital gains with holding period.",
+        "inputs": [
+          "purchase price",
+          "sale price",
+          "holding period days",
+          "tax rate"
+        ],
+        "output": "Tax amount due"
+      },
+      {
+        "title": "Daylight Saving Time Checker",
+        "slug": "daylight-saving-time-checker",
+        "category": "date-time",
+        "one_line_pitch": "Check if DST applies for a timezone on a specific date.",
+        "inputs": [
+          "timezone",
+          "date"
+        ],
+        "output": "DST status and offset"
+      }
     ]
   ],
   "ideas_rejected": [
-    []
+    [],
+    [
+      {
+        "slug": "pressure-unit-converter",
+        "title": "Pressure Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.81 > 0.8)",
+        "at": "2026-10-30T22:19:31+00:00"
+      }
+    ]
   ],
   "tools_published": [],
   "tools_failed": [
@@ -268,10 +377,37 @@
       "completion_tokens": 1866,
       "total_tokens": 2826,
       "est_cost_usd": 0.006558
+    },
+    {
+      "time": "2026-10-30T22:19:28+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-30T22:19:28+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-10-30T22:19:31+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 7536,
+      "completion_tokens": 1626,
+      "total_tokens": 9162,
+      "est_cost_usd": 0.012414
     }
   ],
   "budget": {
-    "tokens": 27689,
-    "usd": 0.056313
+    "tokens": 37023,
+    "usd": 0.068939
   }
 }
