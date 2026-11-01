@@ -2576,6 +2576,40 @@
         "compression ratio"
       ],
       "usage_instructions": "Enter the original file size in bytes, select a compression algorithm, and click “Estimate”. The tool shows the estimated compressed size and compression ratio."
+    },
+    {
+      "slug": "daylight-saving-checker",
+      "title": "Daylight Saving Time Checker",
+      "category": "date-time",
+      "date_published": "2026-11-01",
+      "status": "published",
+      "h1": "Daylight Saving Time Checker",
+      "seo_description": "Enter a date/time and select a timezone to instantly see if DST applies and view the UTC offset. Simple, fast, no ads.",
+      "keywords": [
+        "DST checker",
+        "daylight saving time",
+        "UTC offset",
+        "timezone DST",
+        "date time DST"
+      ],
+      "usage_instructions": "Select a timezone, enter a date and time, then click “Check DST”. The result shows whether DST is active and the UTC offset."
+    },
+    {
+      "slug": "weight-converter",
+      "title": "Weight Converter (Imperial ↔ Metric)",
+      "category": "unit-conversion",
+      "date_published": "2026-11-01",
+      "status": "published",
+      "h1": "Weight Converter (Imperial ↔ Metric)",
+      "seo_description": "Easily convert weight between pounds, ounces, kilograms, and stones. Fast, accurate, and mobile-friendly conversion tool.",
+      "keywords": [
+        "weight converter",
+        "pounds to kilograms",
+        "ounces to stones",
+        "metric to imperial conversion",
+        "convert weight"
+      ],
+      "usage_instructions": "Enter a number, select the unit you have and the unit you want, then click Convert. The result will appear below. Supports pounds, ounces, kilograms, and stones."
     }
   ]
 }
