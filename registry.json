@@ -2610,6 +2610,56 @@
         "convert weight"
       ],
       "usage_instructions": "Enter a number, select the unit you have and the unit you want, then click Convert. The result will appear below. Supports pounds, ounces, kilograms, and stones."
+    },
+    {
+      "slug": "length-to-volume-converter",
+      "title": "Length to Volume Converter",
+      "category": "unit-conversion",
+      "date_published": "2026-11-03",
+      "status": "published",
+      "h1": "Length to Volume Converter",
+      "seo_description": "Convert any length into the volume of a cube with that edge. Quick, accurate, no‑login tool.",
+      "keywords": [
+        "length to volume",
+        "cube volume calculator",
+        "convert length to cubic",
+        "volume from length",
+        "unit conversion"
+      ],
+      "usage_instructions": "Enter a length and select its unit. The tool will calculate the volume of a cube with that edge length."
+    },
+    {
+      "slug": "pomodoro-timer-custom-breaks",
+      "title": "Pomodoro Timer with Custom Breaks",
+      "category": "productivity",
+      "date_published": "2026-11-03",
+      "status": "published",
+      "h1": "Pomodoro Timer with Custom Breaks",
+      "seo_description": "Set your own work, short break, long break intervals and cycles. Start a personalized Pomodoro timer instantly and stay focused.",
+      "keywords": [
+        "pomodoro timer",
+        "custom break timer",
+        "productivity timer",
+        "work break cycle",
+        "focus timer"
+      ],
+      "usage_instructions": "Enter the minutes for work, short break, long break, and how many cycles before a long break. Click Start to begin the timer. The countdown and progress bar will update automatically."
+    },
+    {
+      "slug": "dice-probability-calculator",
+      "title": "Dice Probability Calculator",
+      "category": "random-fun",
+      "date_published": "2026-11-03",
+      "status": "published",
+      "h1": "Dice Probability Calculator",
+      "seo_description": "Calculate the probability distribution for any number of dice and sides. Quick, accurate results for tabletop games.",
+      "keywords": [
+        "dice probability",
+        "roll odds",
+        "dice calculator",
+        "probability distribution"
+      ],
+      "usage_instructions": "Enter the number of dice and sides per die, then click “Calculate” to see the probability of each possible total."
     }
   ]
 }
