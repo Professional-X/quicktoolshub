@@ -2660,6 +2660,74 @@
         "probability distribution"
       ],
       "usage_instructions": "Enter the number of dice and sides per die, then click “Calculate” to see the probability of each possible total."
+    },
+    {
+      "slug": "css-selector-specificity-calculator",
+      "title": "CSS Selector Specificity Calculator",
+      "category": "developer",
+      "date_published": "2026-11-04",
+      "status": "published",
+      "h1": "CSS Selector Specificity Calculator",
+      "seo_description": "Enter any CSS selector to instantly see its specificity tuple (a,b,c) and numeric value. Fast, accurate, no ads.",
+      "keywords": [
+        "CSS specificity calculator",
+        "selector specificity",
+        "CSS selector score",
+        "specificity tuple",
+        "calculate CSS specificity"
+      ],
+      "usage_instructions": "Type a CSS selector into the field and click “Calculate”. The specificity (a, b, c) and its numeric value will appear below. Invalid selectors show an error message."
+    },
+    {
+      "slug": "json-path-tester",
+      "title": "JSON Path Tester",
+      "category": "developer",
+      "date_published": "2026-11-04",
+      "status": "published",
+      "h1": "JSON Path Tester",
+      "seo_description": "Enter JSON data and a JSONPath query to instantly see matching values. Fast, free, no ads.",
+      "keywords": [
+        "JSONPath tester",
+        "test JSONPath",
+        "JSON query tool",
+        "online JSONPath",
+        "JSONPath evaluator"
+      ],
+      "usage_instructions": "Enter JSON data and a JSONPath expression, then click Test to see matching values."
+    },
+    {
+      "slug": "text-to-caesar-cipher",
+      "title": "Text to Caesar Cipher",
+      "category": "text",
+      "date_published": "2026-11-04",
+      "status": "published",
+      "h1": "Text to Caesar Cipher",
+      "seo_description": "Encrypt or decrypt any text with a Caesar shift. Enter text, set shift (positive or negative), and get instant results.",
+      "keywords": [
+        "caesar cipher",
+        "text encryption",
+        "shift cipher",
+        "decode text",
+        "encrypt text"
+      ],
+      "usage_instructions": "Enter the text you want to encrypt or decrypt and specify the shift amount (positive for right shift, negative for left). Click \"Transform\" to see the result."
+    },
+    {
+      "slug": "text-to-hashtag-generator",
+      "title": "Text to Hashtag Generator",
+      "category": "text",
+      "date_published": "2026-11-04",
+      "status": "published",
+      "h1": "Text to Hashtag Generator",
+      "seo_description": "Generate clean, ready‑to‑use hashtags from any words or phrase. Simple, fast, and works entirely in your browser.",
+      "keywords": [
+        "hashtag generator",
+        "text to hashtag",
+        "create hashtags",
+        "social media hashtags",
+        "online hashtag tool"
+      ],
+      "usage_instructions": "Enter words or a phrase below and click “Generate Hashtag” to get a clean hashtag ready for social media."
     }
   ]
 }
