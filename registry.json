@@ -2728,6 +2728,23 @@
         "online hashtag tool"
       ],
       "usage_instructions": "Enter words or a phrase below and click “Generate Hashtag” to get a clean hashtag ready for social media."
+    },
+    {
+      "slug": "text-to-ipa-transcriber",
+      "title": "Text to IPA Transcriber",
+      "category": "text",
+      "date_published": "2026-11-05",
+      "status": "published",
+      "h1": "English to IPA Transcriber",
+      "seo_description": "Enter any English word or phrase and instantly see its IPA transcription. Simple, fast, and works offline.",
+      "keywords": [
+        "IPA transcription",
+        "English to IPA",
+        "phonetic converter",
+        "text to IPA",
+        "phonetic transcription tool"
+      ],
+      "usage_instructions": "Type an English word or phrase into the box and click “Transcribe”. The IPA transcription will appear below. Empty input shows a hint."
     }
   ]
 }

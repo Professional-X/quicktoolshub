@@ -14,12 +14,222 @@
       "notes": [
         "2026-11-05T18:01:55+00:00 Step A failed: LLM call failed after retry: 413 Client Error: Payload Too Large for url: https://api.groq.com/openai/v1/chat/completions"
       ]
+    },
+    {
+      "started_at": "2026-11-05T23:46:58+00:00",
+      "status": "running",
+      "notes": [
+        "2026-11-05T23:47:07+00:00 Step A: proposed 8 ideas",
+        "2026-11-05T23:47:42+00:00 Step B: 4 ideas survived dedup",
+        "2026-11-05T23:47:53+00:00 Step C rejected qr-code-generator: self-inserted ad/tracking content: 'gtag('",
+        "2026-11-05T23:48:02+00:00 Step D FAILED image-to-base64-encoder: test_cases=False",
+        "2026-11-05T23:48:14+00:00 PUBLISHED text-to-ipa-transcriber",
+        "2026-11-05T23:48:59+00:00 Step D FAILED energy-unit-converter: test_cases=False"
+      ]
     }
   ],
-  "ideas_proposed": [],
-  "ideas_rejected": [],
+  "ideas_proposed": [
+    [
+      {
+        "title": "QR Code Generator",
+        "slug": "qr-code-generator",
+        "category": "developer",
+        "one_line_pitch": "Generate a QR code from any text, instantly.",
+        "inputs": [
+          "text",
+          "size (optional)"
+        ],
+        "output": "QR code image (PNG) displayed on screen"
+      },
+      {
+        "title": "ASCII to Hex Converter",
+        "slug": "ascii-to-hex-converter",
+        "category": "text",
+        "one_line_pitch": "Convert any ASCII text into its hexadecimal representation.",
+        "inputs": [
+          "text"
+        ],
+        "output": "Hexadecimal string"
+      },
+      {
+        "title": "Image to Base64 Encoder",
+        "slug": "image-to-base64-encoder",
+        "category": "image",
+        "one_line_pitch": "Encode any uploaded image file to a Base64 string.",
+        "inputs": [
+          "image file"
+        ],
+        "output": "Base64 data URI"
+      },
+      {
+        "title": "Hex Color to CMYK Converter",
+        "slug": "hex-to-cmyk-converter",
+        "category": "image",
+        "one_line_pitch": "Convert a hex color code into CMYK values for printing.",
+        "inputs": [
+          "hex color code"
+        ],
+        "output": "CMYK percentages"
+      },
+      {
+        "title": "Speed Unit Converter",
+        "slug": "speed-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert speeds between m/s, km/h, mph, knots, and more.",
+        "inputs": [
+          "numeric value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted speed"
+      },
+      {
+        "title": "Text to IPA Transcriber",
+        "slug": "text-to-ipa-transcriber",
+        "category": "text",
+        "one_line_pitch": "Transcribe English words into International Phonetic Alphabet symbols.",
+        "inputs": [
+          "English word or phrase"
+        ],
+        "output": "IPA transcription"
+      },
+      {
+        "title": "Markdown to LaTeX Converter",
+        "slug": "markdown-to-latex-converter",
+        "category": "developer",
+        "one_line_pitch": "Convert Markdown syntax into LaTeX code for academic documents.",
+        "inputs": [
+          "Markdown text"
+        ],
+        "output": "LaTeX source"
+      },
+      {
+        "title": "Energy Unit Converter",
+        "slug": "energy-unit-converter",
+        "category": "unit-conversion",
+        "one_line_pitch": "Convert energy units between joules, calories, BTU, electronvolts, and more.",
+        "inputs": [
+          "numeric value",
+          "from unit",
+          "to unit"
+        ],
+        "output": "Converted energy value"
+      }
+    ]
+  ],
+  "ideas_rejected": [
+    [
+      {
+        "slug": "ascii-to-hex-converter",
+        "title": "ASCII to Hex Converter",
+        "reason": "rejected: duplicate of base64-to-hex-converter (similarity 0.84 > 0.8)",
+        "at": "2026-11-05T23:47:42+00:00"
+      },
+      {
+        "slug": "hex-to-cmyk-converter",
+        "title": "Hex Color to CMYK Converter",
+        "reason": "rejected: duplicate of hex-to-rgb-converter (similarity 0.87 > 0.8)",
+        "at": "2026-11-05T23:47:42+00:00"
+      },
+      {
+        "slug": "speed-unit-converter",
+        "title": "Speed Unit Converter",
+        "reason": "rejected: duplicate of area-unit-converter (similarity 0.82 > 0.8)",
+        "at": "2026-11-05T23:47:42+00:00"
+      },
+      {
+        "slug": "markdown-to-latex-converter",
+        "title": "Markdown to LaTeX Converter",
+        "reason": "rejected: duplicate of markdown-to-plain-text-converter (similarity 0.92 > 0.8)",
+        "at": "2026-11-05T23:47:42+00:00"
+      }
+    ]
+  ],
   "tools_published": [],
-  "tools_failed": [],
+  "tools_failed": [
+    {
+      "slug": "qr-code-generator",
+      "stage": "generate",
+      "reason": "self-inserted ad/tracking content: 'gtag('",
+      "at": "2026-11-05T23:47:53+00:00"
+    },
+    {
+      "slug": "image-to-base64-encoder",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-11-05T23:48:02+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=207"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (f-image: file inputs are not supported in automated tests; expected 'data:image/' not found; actual: 'error: no file selected.') | case2: FAIL (f-image: file inputs are not supported in automated tests)"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=362"
+        }
+      ]
+    },
+    {
+      "slug": "energy-unit-converter",
+      "stage": "test",
+      "reason": "test_cases=False",
+      "at": "2026-11-05T23:48:59+00:00",
+      "checks": [
+        {
+          "check": "forbidden_content",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "zero_js_errors",
+          "passed": true,
+          "detail": "no errors"
+        },
+        {
+          "check": "render",
+          "passed": true,
+          "detail": "visible=True text_len=426"
+        },
+        {
+          "check": "test_cases",
+          "passed": false,
+          "detail": "case1: FAIL (expected '23.9 cal' not found; actual: '23.9006 cal') | case2: PASS | case3: PASS"
+        },
+        {
+          "check": "labels",
+          "passed": true,
+          "detail": "all controls labelled"
+        },
+        {
+          "check": "responsive_360",
+          "passed": true,
+          "detail": "scrollWidth=360"
+        }
+      ]
+    }
+  ],
   "llm_calls": [
     {
       "time": "2026-11-05T09:30:33+00:00",
@@ -56,10 +266,91 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-11-05T23:46:57+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-11-05T23:46:58+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-11-05T23:47:07+00:00",
+      "purpose": "idea_generation",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 7984,
+      "completion_tokens": 1594,
+      "total_tokens": 9578,
+      "est_cost_usd": 0.012766
+    },
+    {
+      "time": "2026-11-05T23:47:42+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 467,
+      "completion_tokens": 95,
+      "total_tokens": 562,
+      "est_cost_usd": 0.000752
+    },
+    {
+      "time": "2026-11-05T23:47:42+00:00",
+      "purpose": "dedup_check",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 466,
+      "completion_tokens": 113,
+      "total_tokens": 579,
+      "est_cost_usd": 0.000805
+    },
+    {
+      "time": "2026-11-05T23:47:53+00:00",
+      "purpose": "code_generation:qr-code-generator",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 951,
+      "completion_tokens": 4770,
+      "total_tokens": 5721,
+      "est_cost_usd": 0.015261
+    },
+    {
+      "time": "2026-11-05T23:47:57+00:00",
+      "purpose": "code_generation:image-to-base64-encoder",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 946,
+      "completion_tokens": 1834,
+      "total_tokens": 2780,
+      "est_cost_usd": 0.006448
+    },
+    {
+      "time": "2026-11-05T23:48:09+00:00",
+      "purpose": "code_generation:text-to-ipa-transcriber",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 947,
+      "completion_tokens": 3239,
+      "total_tokens": 4186,
+      "est_cost_usd": 0.010664
+    },
+    {
+      "time": "2026-11-05T23:48:54+00:00",
+      "purpose": "code_generation:energy-unit-converter",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 959,
+      "completion_tokens": 2575,
+      "total_tokens": 3534,
+      "est_cost_usd": 0.008684
     }
   ],
   "budget": {
-    "tokens": 344,
-    "usd": 0.000424
+    "tokens": 27456,
+    "usd": 0.056016
   }
 }
