@@ -21,6 +21,13 @@
       "notes": [
         "2026-11-10T17:51:31+00:00 Step A failed: LLM call failed after retry: 413 Client Error: Payload Too Large for url: https://api.groq.com/openai/v1/chat/completions"
       ]
+    },
+    {
+      "started_at": "2026-11-10T23:20:52+00:00",
+      "status": "running",
+      "notes": [
+        "2026-11-10T23:20:59+00:00 Step A failed: LLM call failed after retry: 413 Client Error: Payload Too Large for url: https://api.groq.com/openai/v1/chat/completions"
+      ]
     }
   ],
   "ideas_proposed": [],
@@ -81,10 +88,28 @@
       "completion_tokens": 10,
       "total_tokens": 86,
       "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-11-10T23:20:52+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-20b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
+    },
+    {
+      "time": "2026-11-10T23:20:52+00:00",
+      "purpose": "preflight",
+      "model": "openai/gpt-oss-120b",
+      "prompt_tokens": 76,
+      "completion_tokens": 10,
+      "total_tokens": 86,
+      "est_cost_usd": 0.000106
     }
   ],
   "budget": {
-    "tokens": 516,
-    "usd": 0.000636
+    "tokens": 688,
+    "usd": 0.000848
   }
 }
